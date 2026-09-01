@@ -1,0 +1,56 @@
+{
+  "schema": "falcon-prospective-adapted-models-v1",
+  "status": "fit-on-adaptation-only",
+  "feature_calibrators": "MMDS final-development calibrators",
+  "fusion_config_sha256": "62325139b8fa3de867984a23e9819332ead398fa6eca710d22781337736fc569",
+  "adaptation_sample_count": 710,
+  "adaptation_group_count": 708,
+  "primary_soft_model": {
+    "estimator": "sklearn.linear_model.LogisticRegression",
+    "feature_names": [
+      "qwen",
+      "safework",
+      "minicpm"
+    ],
+    "penalty": "l2",
+    "C": 0.03,
+    "solver": "lbfgs",
+    "max_iter": 10000,
+    "tol": 1e-09,
+    "class_weight": null,
+    "random_state": 20260802,
+    "decision_threshold": 0.5,
+    "intercept": 1.248401400644392,
+    "coefficients": [
+      0.6533966776041441,
+      0.5992287399605638,
+      0.32113912702822606
+    ],
+    "n_iter": 14
+  },
+  "mechanism_control_hard_model": {
+    "estimator": "sklearn.linear_model.LogisticRegression",
+    "feature_names": [
+      "qwen",
+      "safework",
+      "minicpm"
+    ],
+    "penalty": "l2",
+    "C": 0.03,
+    "solver": "lbfgs",
+    "max_iter": 10000,
+    "tol": 1e-09,
+    "class_weight": null,
+    "random_state": 20260802,
+    "decision_threshold": 0.5,
+    "intercept": -2.019587438264912,
+    "coefficients": [
+      1.381351209976532,
+      1.2463908207717238,
+      0.8211427891207486
+    ],
+    "n_iter": 12
+  },
+  "confirmation_labels_accessed": false,
+  "content_sha256": "2a038c1a1c8da683c0977066c22aa534533fe0fbcc8f1157f157aee625c4b980"
+}

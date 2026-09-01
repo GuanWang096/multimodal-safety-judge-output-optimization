@@ -1,0 +1,2612 @@
+{
+  "schema": "softfusion-fixed-pool-audit-v1",
+  "status": "completed",
+  "judge_pool": [
+    "qwen",
+    "safework",
+    "minicpm"
+  ],
+  "probe": {
+    "family": "main_effects_logistic",
+    "feature": "logit_of_selected_calibrated_probability",
+    "l2_strength": 0.1,
+    "selection_role": "preliminary_gate_only_no_model_or_subset_selection"
+  },
+  "models": {
+    "all": {
+      "included_judges": [
+        "qwen",
+        "safework",
+        "minicpm"
+      ],
+      "probe_role": "fixed_l2_preliminary_complementarity_probe_not_final_fusion",
+      "l2_strength": 0.1,
+      "fit_oof_metrics": {
+        "classification_at_0_5": {
+          "sample_count": 1364,
+          "accuracy": 0.8372434017595308,
+          "macro_f1": 0.6307651787107851,
+          "unsafe_recall": 0.24596774193548387,
+          "false_safe_rate": 0.7540322580645161,
+          "unsafe_true_positive": 61,
+          "unsafe_false_positive": 35,
+          "unsafe_false_negative": 187
+        },
+        "calibration": {
+          "cluster_averaged_log_loss": 0.15140027738920045,
+          "cluster_averaged_brier": 0.04269454909586812,
+          "adaptive_ece": 0.04789147076813858,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "record_count": 137,
+              "weight": 0.147331583552056,
+              "minimum_probability": 0.007943312924654191,
+              "maximum_probability": 0.02217540328515253,
+              "mean_probability": 0.01859829553233032,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.01859829553233032
+            },
+            {
+              "bin": 1,
+              "record_count": 137,
+              "weight": 0.14164479440069994,
+              "minimum_probability": 0.022198586594214448,
+              "maximum_probability": 0.02709350673447079,
+              "mean_probability": 0.02469154263590903,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.02469154263590903
+            },
+            {
+              "bin": 2,
+              "record_count": 137,
+              "weight": 0.13033870766154232,
+              "minimum_probability": 0.027108232617322092,
+              "maximum_probability": 0.03161600514873296,
+              "mean_probability": 0.029106338099555155,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.029106338099555155
+            },
+            {
+              "bin": 3,
+              "record_count": 137,
+              "weight": 0.12485689288838894,
+              "minimum_probability": 0.03172761327888079,
+              "maximum_probability": 0.037895346197847186,
+              "mean_probability": 0.03465399832313955,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.03465399832313955
+            },
+            {
+              "bin": 4,
+              "record_count": 136,
+              "weight": 0.14537182852143482,
+              "minimum_probability": 0.03791360243256583,
+              "maximum_probability": 0.0455077160793987,
+              "mean_probability": 0.04145455784963613,
+              "observed_unsafe_rate": 0.005416466056812711,
+              "absolute_gap": 0.03603809179282342
+            },
+            {
+              "bin": 5,
+              "record_count": 136,
+              "weight": 0.11335313854998894,
+              "minimum_probability": 0.04564774234629074,
+              "maximum_probability": 0.06318235130494441,
+              "mean_probability": 0.05261377372265175,
+              "observed_unsafe_rate": 0.014300011874268461,
+              "absolute_gap": 0.03831376184838328
+            },
+            {
+              "bin": 6,
+              "record_count": 136,
+              "weight": 0.07619124532510359,
+              "minimum_probability": 0.06378580673738118,
+              "maximum_probability": 0.0976111382292483,
+              "mean_probability": 0.07798375603888716,
+              "observed_unsafe_rate": 0.11284902736697591,
+              "absolute_gap": 0.034865271328088754
+            },
+            {
+              "bin": 7,
+              "record_count": 136,
+              "weight": 0.04574621354148913,
+              "minimum_probability": 0.09860582841487749,
+              "maximum_probability": 0.14746882803197212,
+              "mean_probability": 0.11676485457914577,
+              "observed_unsafe_rate": 0.33249962122811505,
+              "absolute_gap": 0.2157347666489693
+            },
+            {
+              "bin": 8,
+              "record_count": 136,
+              "weight": 0.03379240182389788,
+              "minimum_probability": 0.14746882803197212,
+              "maximum_probability": 0.45011501076834226,
+              "mean_probability": 0.3010484483908888,
+              "observed_unsafe_rate": 0.5078993434090278,
+              "absolute_gap": 0.20685089501813897
+            },
+            {
+              "bin": 9,
+              "record_count": 136,
+              "weight": 0.04137319373539846,
+              "minimum_probability": 0.45011501076834226,
+              "maximum_probability": 0.6446832334988034,
+              "mean_probability": 0.5252152721873946,
+              "observed_unsafe_rate": 0.6324363577213101,
+              "absolute_gap": 0.10722108553391552
+            }
+          ]
+        }
+      },
+      "select_frozen_metrics": {
+        "classification_at_0_5": {
+          "sample_count": 396,
+          "accuracy": 0.851010101010101,
+          "macro_f1": 0.6812333719899039,
+          "unsafe_recall": 0.3380281690140845,
+          "false_safe_rate": 0.6619718309859155,
+          "unsafe_true_positive": 24,
+          "unsafe_false_positive": 12,
+          "unsafe_false_negative": 47
+        },
+        "calibration": {
+          "cluster_averaged_log_loss": 0.14124391313092782,
+          "cluster_averaged_brier": 0.04038517906590354,
+          "adaptive_ece": 0.05393659785614975,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "record_count": 40,
+              "weight": 0.12343189964157708,
+              "minimum_probability": 0.013594286224192167,
+              "maximum_probability": 0.02270978448062958,
+              "mean_probability": 0.019725355003001648,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.019725355003001648
+            },
+            {
+              "bin": 1,
+              "record_count": 40,
+              "weight": 0.15542114695340503,
+              "minimum_probability": 0.022725413005145443,
+              "maximum_probability": 0.02686263996247076,
+              "mean_probability": 0.02494914582526952,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.02494914582526952
+            },
+            {
+              "bin": 2,
+              "record_count": 40,
+              "weight": 0.1224910394265233,
+              "minimum_probability": 0.02709514521734566,
+              "maximum_probability": 0.0303629255472994,
+              "mean_probability": 0.02867200001906977,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.02867200001906977
+            },
+            {
+              "bin": 3,
+              "record_count": 40,
+              "weight": 0.1478046594982079,
+              "minimum_probability": 0.030363944662627058,
+              "maximum_probability": 0.03514391304642103,
+              "mean_probability": 0.032241522893560026,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.032241522893560026
+            },
+            {
+              "bin": 4,
+              "record_count": 40,
+              "weight": 0.10770609318996416,
+              "minimum_probability": 0.035678502797745565,
+              "maximum_probability": 0.04262466733537676,
+              "mean_probability": 0.038858561973036984,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.038858561973036984
+            },
+            {
+              "bin": 5,
+              "record_count": 40,
+              "weight": 0.12608806963645675,
+              "minimum_probability": 0.042973653983353705,
+              "maximum_probability": 0.05575660444495321,
+              "mean_probability": 0.048678774235256336,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.048678774235256336
+            },
+            {
+              "bin": 6,
+              "record_count": 39,
+              "weight": 0.08421445639187573,
+              "minimum_probability": 0.05610842066019321,
+              "maximum_probability": 0.09375471406772572,
+              "mean_probability": 0.07152818886977101,
+              "observed_unsafe_rate": 0.03724064550452209,
+              "absolute_gap": 0.034287543365248925
+            },
+            {
+              "bin": 7,
+              "record_count": 39,
+              "weight": 0.04620669056152928,
+              "minimum_probability": 0.09380314918037792,
+              "maximum_probability": 0.22779006492793266,
+              "mean_probability": 0.1287502916212886,
+              "observed_unsafe_rate": 0.40820943762120215,
+              "absolute_gap": 0.27945914599991356
+            },
+            {
+              "bin": 8,
+              "record_count": 39,
+              "weight": 0.041084229390681015,
+              "minimum_probability": 0.22779006492793266,
+              "maximum_probability": 0.4857882471408628,
+              "mean_probability": 0.4166923817122936,
+              "observed_unsafe_rate": 0.6375863322428206,
+              "absolute_gap": 0.22089395053052696
+            },
+            {
+              "bin": 9,
+              "record_count": 39,
+              "weight": 0.045551715309779826,
+              "minimum_probability": 0.4857882471408628,
+              "maximum_probability": 0.6441400874862004,
+              "mean_probability": 0.5457246804864614,
+              "observed_unsafe_rate": 0.6367851622874807,
+              "absolute_gap": 0.09106048180101933
+            }
+          ]
+        }
+      },
+      "combined_development_metrics": {
+        "classification_at_0_5": {
+          "sample_count": 1760,
+          "accuracy": 0.8403409090909091,
+          "macro_f1": 0.6426896820287851,
+          "unsafe_recall": 0.2664576802507837,
+          "false_safe_rate": 0.7335423197492164,
+          "unsafe_true_positive": 85,
+          "unsafe_false_positive": 47,
+          "unsafe_false_negative": 234
+        },
+        "calibration": {
+          "cluster_averaged_log_loss": 0.1490993227582154,
+          "cluster_averaged_brier": 0.04217135442403688,
+          "adaptive_ece": 0.04770446880219876,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "record_count": 176,
+              "weight": 0.1420185410745703,
+              "minimum_probability": 0.007943312924654191,
+              "maximum_probability": 0.022408519217548863,
+              "mean_probability": 0.018813799767986666,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.018813799767986666
+            },
+            {
+              "bin": 1,
+              "record_count": 176,
+              "weight": 0.14304033022059817,
+              "minimum_probability": 0.02243231795989719,
+              "maximum_probability": 0.026969824325334357,
+              "mean_probability": 0.02473930064826161,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.02473930064826161
+            },
+            {
+              "bin": 2,
+              "record_count": 176,
+              "weight": 0.13030663341260174,
+              "minimum_probability": 0.02698523390854208,
+              "maximum_probability": 0.031071348432867123,
+              "mean_probability": 0.02893582914117418,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.02893582914117418
+            },
+            {
+              "bin": 3,
+              "record_count": 176,
+              "weight": 0.1242280996848597,
+              "minimum_probability": 0.03107587719907316,
+              "maximum_probability": 0.037124389888877236,
+              "mean_probability": 0.033880120065154035,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.033880120065154035
+            },
+            {
+              "bin": 4,
+              "record_count": 176,
+              "weight": 0.1401083657173791,
+              "minimum_probability": 0.037184151685974165,
+              "maximum_probability": 0.04483548760552358,
+              "mean_probability": 0.04074135453112246,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.04074135453112246
+            },
+            {
+              "bin": 5,
+              "record_count": 176,
+              "weight": 0.11545879009338204,
+              "minimum_probability": 0.04484271792138476,
+              "maximum_probability": 0.05984057409910475,
+              "mean_probability": 0.05116191720256954,
+              "observed_unsafe_rate": 0.015321821036106749,
+              "absolute_gap": 0.03584009616646279
+            },
+            {
+              "bin": 6,
+              "record_count": 176,
+              "weight": 0.07964973178127867,
+              "minimum_probability": 0.060284824861365105,
+              "maximum_probability": 0.09516540434918078,
+              "mean_probability": 0.07565827611811433,
+              "observed_unsafe_rate": 0.09053119701847026,
+              "absolute_gap": 0.014872920900355927
+            },
+            {
+              "bin": 7,
+              "record_count": 176,
+              "weight": 0.04711689717779852,
+              "minimum_probability": 0.09516540434918078,
+              "maximum_probability": 0.15637514583179024,
+              "mean_probability": 0.11737340253254716,
+              "observed_unsafe_rate": 0.3337057443308353,
+              "absolute_gap": 0.2163323417982881
+            },
+            {
+              "bin": 8,
+              "record_count": 176,
+              "weight": 0.03646472623330114,
+              "minimum_probability": 0.15637514583179024,
+              "maximum_probability": 0.4662331563150539,
+              "mean_probability": 0.3329715822472617,
+              "observed_unsafe_rate": 0.5455333429981317,
+              "absolute_gap": 0.21256176075087002
+            },
+            {
+              "bin": 9,
+              "record_count": 176,
+              "weight": 0.041607884604230524,
+              "minimum_probability": 0.46667535449914316,
+              "maximum_probability": 0.6446832334988034,
+              "mean_probability": 0.5322225336304358,
+              "observed_unsafe_rate": 0.6413280861847726,
+              "absolute_gap": 0.10910555255433674
+            }
+          ]
+        }
+      },
+      "fold_records": [
+        {
+          "fold": 0,
+          "calibrators": {
+            "qwen": {
+              "method": "beta",
+              "a": 0.30140716026566927,
+              "b": 0.006737946999085467,
+              "c": 0.6864333949674741,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.1701057742481796,
+              "monotonic": true
+            },
+            "safework": {
+              "method": "beta",
+              "a": 2.557151617820337,
+              "b": 0.006737946999085467,
+              "c": 0.9904459905010616,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.11541631713444352,
+              "monotonic": true
+            },
+            "minicpm": {
+              "method": "temperature",
+              "temperature": 1.7246673192732607,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.2154193602098008
+            }
+          },
+          "probe": {
+            "feature_names": [
+              "qwen",
+              "safework",
+              "minicpm"
+            ],
+            "mean": [
+              -3.192923171184115,
+              -5.783701717959175,
+              -2.956215663914939
+            ],
+            "scale": [
+              1.005359424012376,
+              2.9665630092451987,
+              1.0452260931455728
+            ],
+            "coefficients": [
+              0.4233458086917655,
+              0.5444846387381832,
+              0.11143916161723585
+            ],
+            "intercept": -3.0588431863887093,
+            "l2_strength": 0.1
+          }
+        },
+        {
+          "fold": 1,
+          "calibrators": {
+            "qwen": {
+              "method": "beta",
+              "a": 0.29919839487244104,
+              "b": 0.006737946999085467,
+              "c": 0.7079399797710209,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.17327032508127405,
+              "monotonic": true
+            },
+            "safework": {
+              "method": "beta",
+              "a": 2.659047160852323,
+              "b": 0.006737946999085467,
+              "c": 0.9807886512597163,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.11322537243895128,
+              "monotonic": true
+            },
+            "minicpm": {
+              "method": "temperature",
+              "temperature": 1.7315821570451564,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.21540004050741648
+            }
+          },
+          "probe": {
+            "feature_names": [
+              "qwen",
+              "safework",
+              "minicpm"
+            ],
+            "mean": [
+              -3.1559381507283604,
+              -6.028600563480424,
+              -2.9709730371259204
+            ],
+            "scale": [
+              0.9733407440091463,
+              3.084103575821543,
+              1.013780750418698
+            ],
+            "coefficients": [
+              0.4089672300979168,
+              0.5582851012761701,
+              0.12274248502406827
+            ],
+            "intercept": -3.0590209251663882,
+            "l2_strength": 0.1
+          }
+        },
+        {
+          "fold": 2,
+          "calibrators": {
+            "qwen": {
+              "method": "beta",
+              "a": 0.3073071614337049,
+              "b": 0.006737946999085467,
+              "c": 0.7375898321190235,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.16719137453943422,
+              "monotonic": true
+            },
+            "safework": {
+              "method": "beta",
+              "a": 2.726166606982152,
+              "b": 0.006737946999085467,
+              "c": 1.0809869348105634,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.1079902256297908,
+              "monotonic": true
+            },
+            "minicpm": {
+              "method": "temperature",
+              "temperature": 1.6921396224702052,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.20795929331917284
+            }
+          },
+          "probe": {
+            "feature_names": [
+              "qwen",
+              "safework",
+              "minicpm"
+            ],
+            "mean": [
+              -3.217440095688531,
+              -6.252135404681364,
+              -3.031818749491292
+            ],
+            "scale": [
+              1.022137428991485,
+              3.2119382018391787,
+              1.073758025365697
+            ],
+            "coefficients": [
+              0.4212870223527504,
+              0.5516747344287829,
+              0.14433974727887577
+            ],
+            "intercept": -3.0901425608192015,
+            "l2_strength": 0.1
+          }
+        },
+        {
+          "fold": 3,
+          "calibrators": {
+            "qwen": {
+              "method": "beta",
+              "a": 0.2951749580066957,
+              "b": 0.006737946999085467,
+              "c": 0.6470014412151006,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.1741604890847887,
+              "monotonic": true
+            },
+            "safework": {
+              "method": "beta",
+              "a": 2.4847310014010406,
+              "b": 0.006737946999085467,
+              "c": 0.9295873322362826,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.11654119696542908,
+              "monotonic": true
+            },
+            "minicpm": {
+              "method": "temperature",
+              "temperature": 1.7284784774267725,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.21351567323722648
+            }
+          },
+          "probe": {
+            "feature_names": [
+              "qwen",
+              "safework",
+              "minicpm"
+            ],
+            "mean": [
+              -3.1615453665700053,
+              -5.7530960314834125,
+              -2.9762996042607535
+            ],
+            "scale": [
+              0.9648353229255419,
+              2.9175244414933723,
+              1.076132240479837
+            ],
+            "coefficients": [
+              0.39820336236095033,
+              0.548439757364709,
+              0.12222983595462678
+            ],
+            "intercept": -3.05809927430159,
+            "l2_strength": 0.1
+          }
+        },
+        {
+          "fold": 4,
+          "calibrators": {
+            "qwen": {
+              "method": "beta",
+              "a": 0.3029009084507262,
+              "b": 0.006737946999085467,
+              "c": 0.6653410213993669,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.16673550360331815,
+              "monotonic": true
+            },
+            "safework": {
+              "method": "beta",
+              "a": 2.6602395658751727,
+              "b": 0.006737946999085467,
+              "c": 0.9736063869312976,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.11140052929856865,
+              "monotonic": true
+            },
+            "minicpm": {
+              "method": "temperature",
+              "temperature": 1.6932202549066628,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.20681536103397788
+            }
+          },
+          "probe": {
+            "feature_names": [
+              "qwen",
+              "safework",
+              "minicpm"
+            ],
+            "mean": [
+              -3.231105176335,
+              -6.120631719472221,
+              -3.0238580857253536
+            ],
+            "scale": [
+              1.0139143162202682,
+              3.133062026884792,
+              1.065389446762198
+            ],
+            "coefficients": [
+              0.42148591457225243,
+              0.5380290706429665,
+              0.14369136594306334
+            ],
+            "intercept": -3.0961417681270054,
+            "l2_strength": 0.1
+          }
+        }
+      ],
+      "final_fit_probe": {
+        "feature_names": [
+          "qwen",
+          "safework",
+          "minicpm"
+        ],
+        "mean": [
+          -3.1911161598254387,
+          -5.97581121511797,
+          -2.99143060650898
+        ],
+        "scale": [
+          0.9956779375453755,
+          3.0568867898837286,
+          1.054915271378004
+        ],
+        "coefficients": [
+          0.4146833866458382,
+          0.5482554582493477,
+          0.12858920866525161
+        ],
+        "intercept": -3.0720372971231504,
+        "l2_strength": 0.1
+      }
+    },
+    "without_qwen": {
+      "included_judges": [
+        "safework",
+        "minicpm"
+      ],
+      "probe_role": "fixed_l2_preliminary_complementarity_probe_not_final_fusion",
+      "l2_strength": 0.1,
+      "fit_oof_metrics": {
+        "classification_at_0_5": {
+          "sample_count": 1364,
+          "accuracy": 0.8189149560117303,
+          "macro_f1": 0.4581094274496684,
+          "unsafe_recall": 0.008064516129032258,
+          "false_safe_rate": 0.9919354838709677,
+          "unsafe_true_positive": 2,
+          "unsafe_false_positive": 1,
+          "unsafe_false_negative": 246
+        },
+        "calibration": {
+          "cluster_averaged_log_loss": 0.16740839662704182,
+          "cluster_averaged_brier": 0.048458215546767124,
+          "adaptive_ece": 0.05660921645240166,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "record_count": 137,
+              "weight": 0.1462029746281715,
+              "minimum_probability": 0.006176388206426303,
+              "maximum_probability": 0.02287074975506823,
+              "mean_probability": 0.017971087045517455,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.017971087045517455
+            },
+            {
+              "bin": 1,
+              "record_count": 137,
+              "weight": 0.14517060367454068,
+              "minimum_probability": 0.0229296393318309,
+              "maximum_probability": 0.029744456945385613,
+              "mean_probability": 0.026340170694101328,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.026340170694101328
+            },
+            {
+              "bin": 2,
+              "record_count": 137,
+              "weight": 0.12753905761779777,
+              "minimum_probability": 0.029750372247510558,
+              "maximum_probability": 0.036273624799762344,
+              "mean_probability": 0.03306846183405136,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.03306846183405136
+            },
+            {
+              "bin": 3,
+              "record_count": 137,
+              "weight": 0.12793650793650796,
+              "minimum_probability": 0.03643633841818552,
+              "maximum_probability": 0.046107039712221666,
+              "mean_probability": 0.04111129424073169,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.04111129424073169
+            },
+            {
+              "bin": 4,
+              "record_count": 136,
+              "weight": 0.1378477690288714,
+              "minimum_probability": 0.04616397106505953,
+              "maximum_probability": 0.058771906174126094,
+              "mean_probability": 0.05218359708472295,
+              "observed_unsafe_rate": 0.00856816450875857,
+              "absolute_gap": 0.04361543257596438
+            },
+            {
+              "bin": 5,
+              "record_count": 136,
+              "weight": 0.1140193052791478,
+              "minimum_probability": 0.05878492261046383,
+              "maximum_probability": 0.09120750284515038,
+              "mean_probability": 0.07045603535619371,
+              "observed_unsafe_rate": 0.014709738783033673,
+              "absolute_gap": 0.05574629657316004
+            },
+            {
+              "bin": 6,
+              "record_count": 136,
+              "weight": 0.07920291432102455,
+              "minimum_probability": 0.09126617124106325,
+              "maximum_probability": 0.14486772167986287,
+              "mean_probability": 0.11359243439022183,
+              "observed_unsafe_rate": 0.13631691250422373,
+              "absolute_gap": 0.022724478114001898
+            },
+            {
+              "bin": 7,
+              "record_count": 136,
+              "weight": 0.044445239799570505,
+              "minimum_probability": 0.14684347610036386,
+              "maximum_probability": 0.18827235044267304,
+              "mean_probability": 0.16428463037267815,
+              "observed_unsafe_rate": 0.35057149503920326,
+              "absolute_gap": 0.1862868646665251
+            },
+            {
+              "bin": 8,
+              "record_count": 136,
+              "weight": 0.03797542352660463,
+              "minimum_probability": 0.18827235044267304,
+              "maximum_probability": 0.27112910058042045,
+              "mean_probability": 0.2224379659953278,
+              "observed_unsafe_rate": 0.4885309469205671,
+              "absolute_gap": 0.26609298092523925
+            },
+            {
+              "bin": 9,
+              "record_count": 136,
+              "weight": 0.03966020418776324,
+              "minimum_probability": 0.27112910058042045,
+              "maximum_probability": 0.544726326204845,
+              "mean_probability": 0.34366298776484594,
+              "observed_unsafe_rate": 0.5486031507850517,
+              "absolute_gap": 0.2049401630202058
+            }
+          ]
+        }
+      },
+      "select_frozen_metrics": {
+        "classification_at_0_5": {
+          "sample_count": 396,
+          "accuracy": 0.8232323232323232,
+          "macro_f1": 0.4652777777777778,
+          "unsafe_recall": 0.014084507042253521,
+          "false_safe_rate": 0.9859154929577465,
+          "unsafe_true_positive": 1,
+          "unsafe_false_positive": 0,
+          "unsafe_false_negative": 70
+        },
+        "calibration": {
+          "cluster_averaged_log_loss": 0.1639573705469294,
+          "cluster_averaged_brier": 0.04858449883469858,
+          "adaptive_ece": 0.07060681830946916,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "record_count": 40,
+              "weight": 0.11939964157706094,
+              "minimum_probability": 0.011886674203984147,
+              "maximum_probability": 0.022665638062991336,
+              "mean_probability": 0.01931747744852262,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.01931747744852262
+            },
+            {
+              "bin": 1,
+              "record_count": 40,
+              "weight": 0.160573476702509,
+              "minimum_probability": 0.022671784948124572,
+              "maximum_probability": 0.029510599440221972,
+              "mean_probability": 0.026096028511289025,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.026096028511289025
+            },
+            {
+              "bin": 2,
+              "record_count": 40,
+              "weight": 0.12562724014336918,
+              "minimum_probability": 0.02967480315641809,
+              "maximum_probability": 0.03522434510291944,
+              "mean_probability": 0.03215602082837328,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.03215602082837328
+            },
+            {
+              "bin": 3,
+              "record_count": 40,
+              "weight": 0.13727598566308244,
+              "minimum_probability": 0.03528423159062376,
+              "maximum_probability": 0.042513509150089626,
+              "mean_probability": 0.03861468664810799,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.03861468664810799
+            },
+            {
+              "bin": 4,
+              "record_count": 40,
+              "weight": 0.11559139784946237,
+              "minimum_probability": 0.04266615741142221,
+              "maximum_probability": 0.05392576968387441,
+              "mean_probability": 0.047866761855609744,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.047866761855609744
+            },
+            {
+              "bin": 5,
+              "record_count": 40,
+              "weight": 0.12383512544802869,
+              "minimum_probability": 0.054013795931342895,
+              "maximum_probability": 0.07570574700704569,
+              "mean_probability": 0.06468669072978614,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.06468669072978614
+            },
+            {
+              "bin": 6,
+              "record_count": 39,
+              "weight": 0.08581029185867894,
+              "minimum_probability": 0.07649462418364711,
+              "maximum_probability": 0.14863629499899358,
+              "mean_probability": 0.10451274943251171,
+              "observed_unsafe_rate": 0.0616096069217573,
+              "absolute_gap": 0.04290314251075441
+            },
+            {
+              "bin": 7,
+              "record_count": 39,
+              "weight": 0.04847670250896058,
+              "minimum_probability": 0.14904683605556568,
+              "maximum_probability": 0.19939024839922662,
+              "mean_probability": 0.17691915754224358,
+              "observed_unsafe_rate": 0.3890942698706099,
+              "absolute_gap": 0.21217511232836633
+            },
+            {
+              "bin": 8,
+              "record_count": 39,
+              "weight": 0.03803763440860215,
+              "minimum_probability": 0.19939024839922662,
+              "maximum_probability": 0.2952038540845559,
+              "mean_probability": 0.235867509754634,
+              "observed_unsafe_rate": 0.613270514330585,
+              "absolute_gap": 0.377403004575951
+            },
+            {
+              "bin": 9,
+              "record_count": 39,
+              "weight": 0.045372503840245784,
+              "minimum_probability": 0.2952038540845559,
+              "maximum_probability": 0.5900655017687824,
+              "mean_probability": 0.37071183360610793,
+              "observed_unsafe_rate": 0.6550994498518831,
+              "absolute_gap": 0.28438761624577513
+            }
+          ]
+        }
+      },
+      "combined_development_metrics": {
+        "classification_at_0_5": {
+          "sample_count": 1760,
+          "accuracy": 0.8198863636363637,
+          "macro_f1": 0.45971019657554346,
+          "unsafe_recall": 0.009404388714733543,
+          "false_safe_rate": 0.9905956112852664,
+          "unsafe_true_positive": 3,
+          "unsafe_false_positive": 1,
+          "unsafe_false_negative": 316
+        },
+        "calibration": {
+          "cluster_averaged_log_loss": 0.16662655637015883,
+          "cluster_averaged_brier": 0.048486825402498254,
+          "adaptive_ece": 0.0579516219361562,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "record_count": 176,
+              "weight": 0.13830355934497224,
+              "minimum_probability": 0.006176388206426303,
+              "maximum_probability": 0.02276842321806528,
+              "mean_probability": 0.01816796721193218,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.01816796721193218
+            },
+            {
+              "bin": 1,
+              "record_count": 176,
+              "weight": 0.1489646772228989,
+              "minimum_probability": 0.02281870599339522,
+              "maximum_probability": 0.02963968471216234,
+              "mean_probability": 0.026205423160010642,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.026205423160010642
+            },
+            {
+              "bin": 2,
+              "record_count": 176,
+              "weight": 0.12558339616804903,
+              "minimum_probability": 0.029669274744067154,
+              "maximum_probability": 0.03591284589511662,
+              "mean_probability": 0.032733446501911394,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.032733446501911394
+            },
+            {
+              "bin": 3,
+              "record_count": 176,
+              "weight": 0.12873286545637336,
+              "minimum_probability": 0.03592151998614834,
+              "maximum_probability": 0.04472656580106804,
+              "mean_probability": 0.04014224637868517,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.04014224637868517
+            },
+            {
+              "bin": 4,
+              "record_count": 176,
+              "weight": 0.13209500609013397,
+              "minimum_probability": 0.044983243991643,
+              "maximum_probability": 0.058152912733611076,
+              "mean_probability": 0.05089510901643468,
+              "observed_unsafe_rate": 0.004610419548178884,
+              "absolute_gap": 0.0462846894682558
+            },
+            {
+              "bin": 5,
+              "record_count": 176,
+              "weight": 0.11893968462177962,
+              "minimum_probability": 0.05816146658360078,
+              "maximum_probability": 0.08395249623421185,
+              "mean_probability": 0.06794250046953891,
+              "observed_unsafe_rate": 0.01200376242928643,
+              "absolute_gap": 0.055938738040252484
+            },
+            {
+              "bin": 6,
+              "record_count": 176,
+              "weight": 0.0820227478570962,
+              "minimum_probability": 0.08395249623421185,
+              "maximum_probability": 0.14422104718370185,
+              "mean_probability": 0.11083338351763436,
+              "observed_unsafe_rate": 0.11556303515828113,
+              "absolute_gap": 0.004729651640646773
+            },
+            {
+              "bin": 7,
+              "record_count": 176,
+              "weight": 0.04423818839165977,
+              "minimum_probability": 0.14486772167986287,
+              "maximum_probability": 0.18965718455642092,
+              "mean_probability": 0.16521240693648148,
+              "observed_unsafe_rate": 0.38051884328024643,
+              "absolute_gap": 0.21530643634376495
+            },
+            {
+              "bin": 8,
+              "record_count": 176,
+              "weight": 0.03973922274774893,
+              "minimum_probability": 0.18965718455642092,
+              "maximum_probability": 0.2725045627972671,
+              "mean_probability": 0.22329523862677003,
+              "observed_unsafe_rate": 0.4873937128893509,
+              "absolute_gap": 0.2640984742625809
+            },
+            {
+              "bin": 9,
+              "record_count": 176,
+              "weight": 0.0413806520992879,
+              "minimum_probability": 0.2725045627972671,
+              "maximum_probability": 0.5900655017687824,
+              "mean_probability": 0.34993723823569345,
+              "observed_unsafe_rate": 0.5694058726934002,
+              "absolute_gap": 0.2194686344577067
+            }
+          ]
+        }
+      },
+      "fold_records": [
+        {
+          "fold": 0,
+          "calibrators": {
+            "safework": {
+              "method": "beta",
+              "a": 2.557151617820337,
+              "b": 0.006737946999085467,
+              "c": 0.9904459905010616,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.11541631713444352,
+              "monotonic": true
+            },
+            "minicpm": {
+              "method": "temperature",
+              "temperature": 1.7246673192732607,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.2154193602098008
+            }
+          },
+          "probe": {
+            "feature_names": [
+              "safework",
+              "minicpm"
+            ],
+            "mean": [
+              -5.783701717959175,
+              -2.956215663914939
+            ],
+            "scale": [
+              2.9665630092451987,
+              1.0452260931455728
+            ],
+            "coefficients": [
+              0.6856570053820747,
+              0.2646934394864527
+            ],
+            "intercept": -2.9348982642164,
+            "l2_strength": 0.1
+          }
+        },
+        {
+          "fold": 1,
+          "calibrators": {
+            "safework": {
+              "method": "beta",
+              "a": 2.659047160852323,
+              "b": 0.006737946999085467,
+              "c": 0.9807886512597163,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.11322537243895128,
+              "monotonic": true
+            },
+            "minicpm": {
+              "method": "temperature",
+              "temperature": 1.7315821570451564,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.21540004050741648
+            }
+          },
+          "probe": {
+            "feature_names": [
+              "safework",
+              "minicpm"
+            ],
+            "mean": [
+              -6.028600563480424,
+              -2.9709730371259204
+            ],
+            "scale": [
+              3.084103575821543,
+              1.013780750418698
+            ],
+            "coefficients": [
+              0.6935239104314785,
+              0.26203135300921787
+            ],
+            "intercept": -2.940187121298345,
+            "l2_strength": 0.1
+          }
+        },
+        {
+          "fold": 2,
+          "calibrators": {
+            "safework": {
+              "method": "beta",
+              "a": 2.726166606982152,
+              "b": 0.006737946999085467,
+              "c": 1.0809869348105634,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.1079902256297908,
+              "monotonic": true
+            },
+            "minicpm": {
+              "method": "temperature",
+              "temperature": 1.6921396224702052,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.20795929331917284
+            }
+          },
+          "probe": {
+            "feature_names": [
+              "safework",
+              "minicpm"
+            ],
+            "mean": [
+              -6.252135404681364,
+              -3.031818749491292
+            ],
+            "scale": [
+              3.2119382018391787,
+              1.073758025365697
+            ],
+            "coefficients": [
+              0.6913159629949522,
+              0.290222220680915
+            ],
+            "intercept": -2.964839701535665,
+            "l2_strength": 0.1
+          }
+        },
+        {
+          "fold": 3,
+          "calibrators": {
+            "safework": {
+              "method": "beta",
+              "a": 2.4847310014010406,
+              "b": 0.006737946999085467,
+              "c": 0.9295873322362826,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.11654119696542908,
+              "monotonic": true
+            },
+            "minicpm": {
+              "method": "temperature",
+              "temperature": 1.7284784774267725,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.21351567323722648
+            }
+          },
+          "probe": {
+            "feature_names": [
+              "safework",
+              "minicpm"
+            ],
+            "mean": [
+              -5.7530960314834125,
+              -2.9762996042607535
+            ],
+            "scale": [
+              2.9175244414933723,
+              1.076132240479837
+            ],
+            "coefficients": [
+              0.6768390631505797,
+              0.2684816464586467
+            ],
+            "intercept": -2.946883608631774,
+            "l2_strength": 0.1
+          }
+        },
+        {
+          "fold": 4,
+          "calibrators": {
+            "safework": {
+              "method": "beta",
+              "a": 2.6602395658751727,
+              "b": 0.006737946999085467,
+              "c": 0.9736063869312976,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.11140052929856865,
+              "monotonic": true
+            },
+            "minicpm": {
+              "method": "temperature",
+              "temperature": 1.6932202549066628,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.20681536103397788
+            }
+          },
+          "probe": {
+            "feature_names": [
+              "safework",
+              "minicpm"
+            ],
+            "mean": [
+              -6.120631719472221,
+              -3.0238580857253536
+            ],
+            "scale": [
+              3.133062026884792,
+              1.065389446762198
+            ],
+            "coefficients": [
+              0.672700818930095,
+              0.28899136155823585
+            ],
+            "intercept": -2.968735918166832,
+            "l2_strength": 0.1
+          }
+        }
+      ],
+      "final_fit_probe": {
+        "feature_names": [
+          "safework",
+          "minicpm"
+        ],
+        "mean": [
+          -5.97581121511797,
+          -2.99143060650898
+        ],
+        "scale": [
+          3.0568867898837286,
+          1.054915271378004
+        ],
+        "coefficients": [
+          0.6840711805036429,
+          0.27475588170055515
+        ],
+        "intercept": -2.9508214180641485,
+        "l2_strength": 0.1
+      }
+    },
+    "without_safework": {
+      "included_judges": [
+        "qwen",
+        "minicpm"
+      ],
+      "probe_role": "fixed_l2_preliminary_complementarity_probe_not_final_fusion",
+      "l2_strength": 0.1,
+      "fit_oof_metrics": {
+        "classification_at_0_5": {
+          "sample_count": 1364,
+          "accuracy": 0.8269794721407625,
+          "macro_f1": 0.5501595872531428,
+          "unsafe_recall": 0.11693548387096774,
+          "false_safe_rate": 0.8830645161290323,
+          "unsafe_true_positive": 29,
+          "unsafe_false_positive": 17,
+          "unsafe_false_negative": 219
+        },
+        "calibration": {
+          "cluster_averaged_log_loss": 0.17963215537691615,
+          "cluster_averaged_brier": 0.046940161876958555,
+          "adaptive_ece": 0.0361559589364936,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "record_count": 137,
+              "weight": 0.12023727803255363,
+              "minimum_probability": 0.02562640838258049,
+              "maximum_probability": 0.037224507073576364,
+              "mean_probability": 0.03434500297762072,
+              "observed_unsafe_rate": 0.026391625300649913,
+              "absolute_gap": 0.007953377676970807
+            },
+            {
+              "bin": 1,
+              "record_count": 137,
+              "weight": 0.13615923009623798,
+              "minimum_probability": 0.037224507073576364,
+              "maximum_probability": 0.040154480400705544,
+              "mean_probability": 0.038799766932497884,
+              "observed_unsafe_rate": 0.014071837049412067,
+              "absolute_gap": 0.024727929883085815
+            },
+            {
+              "bin": 2,
+              "record_count": 137,
+              "weight": 0.12684414448193976,
+              "minimum_probability": 0.040154480400705544,
+              "maximum_probability": 0.04234428820698274,
+              "mean_probability": 0.04136939364503666,
+              "observed_unsafe_rate": 0.02196318776604131,
+              "absolute_gap": 0.01940620587899535
+            },
+            {
+              "bin": 3,
+              "record_count": 137,
+              "weight": 0.13002374703162106,
+              "minimum_probability": 0.04234428820698274,
+              "maximum_probability": 0.04454672222409777,
+              "mean_probability": 0.04350914992210098,
+              "observed_unsafe_rate": 0.010093048292832973,
+              "absolute_gap": 0.03341610162926801
+            },
+            {
+              "bin": 4,
+              "record_count": 136,
+              "weight": 0.11248517886313163,
+              "minimum_probability": 0.044716970888378386,
+              "maximum_probability": 0.04688446139291901,
+              "mean_probability": 0.04561894549612676,
+              "observed_unsafe_rate": 0.027222406243150206,
+              "absolute_gap": 0.018396539252976553
+            },
+            {
+              "bin": 5,
+              "record_count": 136,
+              "weight": 0.11944478094084393,
+              "minimum_probability": 0.04688446139291901,
+              "maximum_probability": 0.050030834873947085,
+              "mean_probability": 0.04821823375698104,
+              "observed_unsafe_rate": 0.01773972718513886,
+              "absolute_gap": 0.03047850657184218
+            },
+            {
+              "bin": 6,
+              "record_count": 136,
+              "weight": 0.11387139107611549,
+              "minimum_probability": 0.050051703026278406,
+              "maximum_probability": 0.055971596170982504,
+              "mean_probability": 0.05271713780177917,
+              "observed_unsafe_rate": 0.04167009664301355,
+              "absolute_gap": 0.01104704115876562
+            },
+            {
+              "bin": 7,
+              "record_count": 136,
+              "weight": 0.06483232865122629,
+              "minimum_probability": 0.05615041525399783,
+              "maximum_probability": 0.10004233682016124,
+              "mean_probability": 0.064335507359185,
+              "observed_unsafe_rate": 0.13958304447085707,
+              "absolute_gap": 0.07524753711167206
+            },
+            {
+              "bin": 8,
+              "record_count": 136,
+              "weight": 0.035384724636693135,
+              "minimum_probability": 0.10142013106326549,
+              "maximum_probability": 0.40043484734700874,
+              "mean_probability": 0.24020039465964427,
+              "observed_unsafe_rate": 0.44113581301406934,
+              "absolute_gap": 0.20093541835442508
+            },
+            {
+              "bin": 9,
+              "record_count": 136,
+              "weight": 0.04071719618963713,
+              "minimum_probability": 0.40043484734700874,
+              "maximum_probability": 0.6499476243408877,
+              "mean_probability": 0.48391324163020377,
+              "observed_unsafe_rate": 0.6329899168843542,
+              "absolute_gap": 0.14907667525415047
+            }
+          ]
+        }
+      },
+      "select_frozen_metrics": {
+        "classification_at_0_5": {
+          "sample_count": 396,
+          "accuracy": 0.8383838383838383,
+          "macro_f1": 0.6137291958788027,
+          "unsafe_recall": 0.2112676056338028,
+          "false_safe_rate": 0.7887323943661972,
+          "unsafe_true_positive": 15,
+          "unsafe_false_positive": 8,
+          "unsafe_false_negative": 56
+        },
+        "calibration": {
+          "cluster_averaged_log_loss": 0.16731798867285003,
+          "cluster_averaged_brier": 0.045045594478398565,
+          "adaptive_ece": 0.05242664674447035,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "record_count": 40,
+              "weight": 0.12697132616487455,
+              "minimum_probability": 0.03005114863696175,
+              "maximum_probability": 0.03730730559089085,
+              "mean_probability": 0.035246325743593696,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.035246325743593696
+            },
+            {
+              "bin": 1,
+              "record_count": 40,
+              "weight": 0.11559139784946237,
+              "minimum_probability": 0.03730730559089085,
+              "maximum_probability": 0.04018010936295895,
+              "mean_probability": 0.03884564653864542,
+              "observed_unsafe_rate": 0.01937984496124031,
+              "absolute_gap": 0.019465801577405108
+            },
+            {
+              "bin": 2,
+              "record_count": 40,
+              "weight": 0.12939068100358425,
+              "minimum_probability": 0.04018010936295895,
+              "maximum_probability": 0.04231596307452532,
+              "mean_probability": 0.04117068258306914,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.04117068258306914
+            },
+            {
+              "bin": 3,
+              "record_count": 40,
+              "weight": 0.13440860215053765,
+              "minimum_probability": 0.04231596307452532,
+              "maximum_probability": 0.044889792289057484,
+              "mean_probability": 0.04351040163812975,
+              "observed_unsafe_rate": 0.006666666666666665,
+              "absolute_gap": 0.03684373497146308
+            },
+            {
+              "bin": 4,
+              "record_count": 40,
+              "weight": 0.11998207885304658,
+              "minimum_probability": 0.044889792289057484,
+              "maximum_probability": 0.0469173803706041,
+              "mean_probability": 0.04611921616557625,
+              "observed_unsafe_rate": 0.007468259895444362,
+              "absolute_gap": 0.03865095627013189
+            },
+            {
+              "bin": 5,
+              "record_count": 40,
+              "weight": 0.12634408602150538,
+              "minimum_probability": 0.04726367065484043,
+              "maximum_probability": 0.05049138406701787,
+              "mean_probability": 0.048629232434683686,
+              "observed_unsafe_rate": 0.02127659574468085,
+              "absolute_gap": 0.027352636690002836
+            },
+            {
+              "bin": 6,
+              "record_count": 39,
+              "weight": 0.09807347670250895,
+              "minimum_probability": 0.05049138406701787,
+              "maximum_probability": 0.05592987453708238,
+              "mean_probability": 0.052973620367820384,
+              "observed_unsafe_rate": 0.03197807217907721,
+              "absolute_gap": 0.020995548188743177
+            },
+            {
+              "bin": 7,
+              "record_count": 39,
+              "weight": 0.06282642089093704,
+              "minimum_probability": 0.0563387525820294,
+              "maximum_probability": 0.15441278774945888,
+              "mean_probability": 0.06992971646044316,
+              "observed_unsafe_rate": 0.19325590872045634,
+              "absolute_gap": 0.12332619226001318
+            },
+            {
+              "bin": 8,
+              "record_count": 39,
+              "weight": 0.04115890083632019,
+              "minimum_probability": 0.15441278774945888,
+              "maximum_probability": 0.4096716696948388,
+              "mean_probability": 0.3411553959144815,
+              "observed_unsafe_rate": 0.6364296081277214,
+              "absolute_gap": 0.2952742122132399
+            },
+            {
+              "bin": 9,
+              "record_count": 39,
+              "weight": 0.045253029527223085,
+              "minimum_probability": 0.4096716696948388,
+              "maximum_probability": 0.7084302261429446,
+              "mean_probability": 0.5223574441601398,
+              "observed_unsafe_rate": 0.640988166517373,
+              "absolute_gap": 0.11863072235723315
+            }
+          ]
+        }
+      },
+      "combined_development_metrics": {
+        "classification_at_0_5": {
+          "sample_count": 1760,
+          "accuracy": 0.8295454545454546,
+          "macro_f1": 0.5655093415491567,
+          "unsafe_recall": 0.13793103448275862,
+          "false_safe_rate": 0.8620689655172413,
+          "unsafe_true_positive": 44,
+          "unsafe_false_positive": 25,
+          "unsafe_false_negative": 275
+        },
+        "calibration": {
+          "cluster_averaged_log_loss": 0.1768423441625966,
+          "cluster_averaged_brier": 0.04651094197911183,
+          "adaptive_ece": 0.03997699525464459,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "record_count": 176,
+              "weight": 0.12115388333415131,
+              "minimum_probability": 0.02562640838258049,
+              "maximum_probability": 0.03730730559089085,
+              "mean_probability": 0.034543836975444615,
+              "observed_unsafe_rate": 0.02025809025486796,
+              "absolute_gap": 0.014285746720576656
+            },
+            {
+              "bin": 1,
+              "record_count": 176,
+              "weight": 0.13058600622547029,
+              "minimum_probability": 0.03730730559089085,
+              "maximum_probability": 0.040154480400705544,
+              "mean_probability": 0.038786051356408585,
+              "observed_unsafe_rate": 0.015234739351228106,
+              "absolute_gap": 0.02355131200518048
+            },
+            {
+              "bin": 2,
+              "record_count": 176,
+              "weight": 0.12815865282369546,
+              "minimum_probability": 0.040154480400705544,
+              "maximum_probability": 0.04233191954116302,
+              "mean_probability": 0.04130334992449684,
+              "observed_unsafe_rate": 0.01681312464642655,
+              "absolute_gap": 0.024490225278070293
+            },
+            {
+              "bin": 3,
+              "record_count": 176,
+              "weight": 0.12926454381996405,
+              "minimum_probability": 0.04233191954116302,
+              "maximum_probability": 0.044560081401992746,
+              "mean_probability": 0.043477430675867686,
+              "observed_unsafe_rate": 0.009422744710923652,
+              "absolute_gap": 0.034054685964944036
+            },
+            {
+              "bin": 4,
+              "record_count": 176,
+              "weight": 0.11286409489819964,
+              "minimum_probability": 0.044560081401992746,
+              "maximum_probability": 0.04688446139291901,
+              "mean_probability": 0.04567623349304989,
+              "observed_unsafe_rate": 0.024581727009922,
+              "absolute_gap": 0.02109450648312789
+            },
+            {
+              "bin": 5,
+              "record_count": 176,
+              "weight": 0.12107550725090312,
+              "minimum_probability": 0.04688446139291901,
+              "maximum_probability": 0.050030834873947085,
+              "mean_probability": 0.048207643483622345,
+              "observed_unsafe_rate": 0.01688929205556248,
+              "absolute_gap": 0.03131835142805987
+            },
+            {
+              "bin": 6,
+              "record_count": 176,
+              "weight": 0.11347272973338746,
+              "minimum_probability": 0.050030834873947085,
+              "maximum_probability": 0.05592987453708238,
+              "mean_probability": 0.05267120568881996,
+              "observed_unsafe_rate": 0.03770988984776331,
+              "absolute_gap": 0.01496131584105665
+            },
+            {
+              "bin": 7,
+              "record_count": 176,
+              "weight": 0.06444893582530611,
+              "minimum_probability": 0.05592987453708238,
+              "maximum_probability": 0.10307648203559955,
+              "mean_probability": 0.06484594753369555,
+              "observed_unsafe_rate": 0.14734547275437632,
+              "absolute_gap": 0.08249952522068077
+            },
+            {
+              "bin": 8,
+              "record_count": 176,
+              "weight": 0.037328962146258124,
+              "minimum_probability": 0.10307648203559955,
+              "maximum_probability": 0.40659620996281687,
+              "mean_probability": 0.26437943455253266,
+              "observed_unsafe_rate": 0.4866627351133618,
+              "absolute_gap": 0.22228330056082912
+            },
+            {
+              "bin": 9,
+              "record_count": 176,
+              "weight": 0.04164668394266445,
+              "minimum_probability": 0.40709587438356887,
+              "maximum_probability": 0.7084302261429446,
+              "mean_probability": 0.4936103703286945,
+              "observed_unsafe_rate": 0.6411621306437263,
+              "absolute_gap": 0.1475517603150318
+            }
+          ]
+        }
+      },
+      "fold_records": [
+        {
+          "fold": 0,
+          "calibrators": {
+            "qwen": {
+              "method": "beta",
+              "a": 0.30140716026566927,
+              "b": 0.006737946999085467,
+              "c": 0.6864333949674741,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.1701057742481796,
+              "monotonic": true
+            },
+            "minicpm": {
+              "method": "temperature",
+              "temperature": 1.7246673192732607,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.2154193602098008
+            }
+          },
+          "probe": {
+            "feature_names": [
+              "qwen",
+              "minicpm"
+            ],
+            "mean": [
+              -3.192923171184115,
+              -2.956215663914939
+            ],
+            "scale": [
+              1.005359424012376,
+              1.0452260931455728
+            ],
+            "coefficients": [
+              0.5620375415274923,
+              0.20427663540910268
+            ],
+            "intercept": -2.878195445637538,
+            "l2_strength": 0.1
+          }
+        },
+        {
+          "fold": 1,
+          "calibrators": {
+            "qwen": {
+              "method": "beta",
+              "a": 0.29919839487244104,
+              "b": 0.006737946999085467,
+              "c": 0.7079399797710209,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.17327032508127405,
+              "monotonic": true
+            },
+            "minicpm": {
+              "method": "temperature",
+              "temperature": 1.7315821570451564,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.21540004050741648
+            }
+          },
+          "probe": {
+            "feature_names": [
+              "qwen",
+              "minicpm"
+            ],
+            "mean": [
+              -3.1559381507283604,
+              -2.9709730371259204
+            ],
+            "scale": [
+              0.9733407440091463,
+              1.013780750418698
+            ],
+            "coefficients": [
+              0.5485650430936575,
+              0.21391370219068023
+            ],
+            "intercept": -2.870324609342527,
+            "l2_strength": 0.1
+          }
+        },
+        {
+          "fold": 2,
+          "calibrators": {
+            "qwen": {
+              "method": "beta",
+              "a": 0.3073071614337049,
+              "b": 0.006737946999085467,
+              "c": 0.7375898321190235,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.16719137453943422,
+              "monotonic": true
+            },
+            "minicpm": {
+              "method": "temperature",
+              "temperature": 1.6921396224702052,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.20795929331917284
+            }
+          },
+          "probe": {
+            "feature_names": [
+              "qwen",
+              "minicpm"
+            ],
+            "mean": [
+              -3.217440095688531,
+              -3.031818749491292
+            ],
+            "scale": [
+              1.022137428991485,
+              1.073758025365697
+            ],
+            "coefficients": [
+              0.5596122658462834,
+              0.24076946825364456
+            ],
+            "intercept": -2.899698710681839,
+            "l2_strength": 0.1
+          }
+        },
+        {
+          "fold": 3,
+          "calibrators": {
+            "qwen": {
+              "method": "beta",
+              "a": 0.2951749580066957,
+              "b": 0.006737946999085467,
+              "c": 0.6470014412151006,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.1741604890847887,
+              "monotonic": true
+            },
+            "minicpm": {
+              "method": "temperature",
+              "temperature": 1.7284784774267725,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.21351567323722648
+            }
+          },
+          "probe": {
+            "feature_names": [
+              "qwen",
+              "minicpm"
+            ],
+            "mean": [
+              -3.1615453665700053,
+              -2.9762996042607535
+            ],
+            "scale": [
+              0.9648353229255419,
+              1.076132240479837
+            ],
+            "coefficients": [
+              0.5342527366145395,
+              0.2173850125922761
+            ],
+            "intercept": -2.876775251964539,
+            "l2_strength": 0.1
+          }
+        },
+        {
+          "fold": 4,
+          "calibrators": {
+            "qwen": {
+              "method": "beta",
+              "a": 0.3029009084507262,
+              "b": 0.006737946999085467,
+              "c": 0.6653410213993669,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.16673550360331815,
+              "monotonic": true
+            },
+            "minicpm": {
+              "method": "temperature",
+              "temperature": 1.6932202549066628,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.20681536103397788
+            }
+          },
+          "probe": {
+            "feature_names": [
+              "qwen",
+              "minicpm"
+            ],
+            "mean": [
+              -3.231105176335,
+              -3.0238580857253536
+            ],
+            "scale": [
+              1.0139143162202682,
+              1.065389446762198
+            ],
+            "coefficients": [
+              0.5525507139481081,
+              0.2411596944076242
+            ],
+            "intercept": -2.9122433995709787,
+            "l2_strength": 0.1
+          }
+        }
+      ],
+      "final_fit_probe": {
+        "feature_names": [
+          "qwen",
+          "minicpm"
+        ],
+        "mean": [
+          -3.1911161598254387,
+          -2.99143060650898
+        ],
+        "scale": [
+          0.9956779375453755,
+          1.054915271378004
+        ],
+        "coefficients": [
+          0.5514389652900189,
+          0.22326777468615366
+        ],
+        "intercept": -2.8871873387452918,
+        "l2_strength": 0.1
+      }
+    },
+    "without_minicpm": {
+      "included_judges": [
+        "qwen",
+        "safework"
+      ],
+      "probe_role": "fixed_l2_preliminary_complementarity_probe_not_final_fusion",
+      "l2_strength": 0.1,
+      "fit_oof_metrics": {
+        "classification_at_0_5": {
+          "sample_count": 1364,
+          "accuracy": 0.8313782991202346,
+          "macro_f1": 0.583810918661912,
+          "unsafe_recall": 0.16532258064516128,
+          "false_safe_rate": 0.8346774193548387,
+          "unsafe_true_positive": 41,
+          "unsafe_false_positive": 23,
+          "unsafe_false_negative": 207
+        },
+        "calibration": {
+          "cluster_averaged_log_loss": 0.15054479075816837,
+          "cluster_averaged_brier": 0.04238637205759127,
+          "adaptive_ece": 0.051797772742675004,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "record_count": 137,
+              "weight": 0.14719160104986878,
+              "minimum_probability": 0.008372163727221285,
+              "maximum_probability": 0.0236111356268614,
+              "mean_probability": 0.01979880724582027,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.01979880724582027
+            },
+            {
+              "bin": 1,
+              "record_count": 137,
+              "weight": 0.13421697287839018,
+              "minimum_probability": 0.023727532540853736,
+              "maximum_probability": 0.028258169340159213,
+              "mean_probability": 0.025910256873205965,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.025910256873205965
+            },
+            {
+              "bin": 2,
+              "record_count": 137,
+              "weight": 0.13501937257842767,
+              "minimum_probability": 0.02825830934337796,
+              "maximum_probability": 0.03314087150767095,
+              "mean_probability": 0.030277293301963267,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.030277293301963267
+            },
+            {
+              "bin": 3,
+              "record_count": 137,
+              "weight": 0.13373328333958256,
+              "minimum_probability": 0.033485296730823,
+              "maximum_probability": 0.03905120007327312,
+              "mean_probability": 0.036210658964791115,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.036210658964791115
+            },
+            {
+              "bin": 4,
+              "record_count": 136,
+              "weight": 0.13755405574303212,
+              "minimum_probability": 0.039053843381971404,
+              "maximum_probability": 0.04694195882841027,
+              "mean_probability": 0.042887163655316904,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.042887163655316904
+            },
+            {
+              "bin": 5,
+              "record_count": 136,
+              "weight": 0.11560679915010624,
+              "minimum_probability": 0.04694263922478916,
+              "maximum_probability": 0.06341793169481866,
+              "mean_probability": 0.0540090050733842,
+              "observed_unsafe_rate": 0.013622063418273024,
+              "absolute_gap": 0.040386941655111176
+            },
+            {
+              "bin": 6,
+              "record_count": 136,
+              "weight": 0.07255713228154173,
+              "minimum_probability": 0.06358575620309842,
+              "maximum_probability": 0.09328061995478769,
+              "mean_probability": 0.07659999054660357,
+              "observed_unsafe_rate": 0.09955166933112138,
+              "absolute_gap": 0.0229516787845178
+            },
+            {
+              "bin": 7,
+              "record_count": 136,
+              "weight": 0.04676401900811349,
+              "minimum_probability": 0.09328061995478769,
+              "maximum_probability": 0.13488909802361534,
+              "mean_probability": 0.11060794085269957,
+              "observed_unsafe_rate": 0.3307150910503699,
+              "absolute_gap": 0.22010715019767033
+            },
+            {
+              "bin": 8,
+              "record_count": 136,
+              "weight": 0.03938439513242663,
+              "minimum_probability": 0.1380759251074326,
+              "maximum_probability": 0.47072448173618636,
+              "mean_probability": 0.31443560140663884,
+              "observed_unsafe_rate": 0.5335909597087352,
+              "absolute_gap": 0.21915535830209631
+            },
+            {
+              "bin": 9,
+              "record_count": 136,
+              "weight": 0.037972368838510566,
+              "minimum_probability": 0.4720125027017933,
+              "maximum_probability": 0.522735466240852,
+              "mean_probability": 0.49904826784373374,
+              "observed_unsafe_rate": 0.6390804685007673,
+              "absolute_gap": 0.14003220065703353
+            }
+          ]
+        }
+      },
+      "select_frozen_metrics": {
+        "classification_at_0_5": {
+          "sample_count": 396,
+          "accuracy": 0.8409090909090909,
+          "macro_f1": 0.6299339909515687,
+          "unsafe_recall": 0.23943661971830985,
+          "false_safe_rate": 0.7605633802816901,
+          "unsafe_true_positive": 17,
+          "unsafe_false_positive": 9,
+          "unsafe_false_negative": 54
+        },
+        "calibration": {
+          "cluster_averaged_log_loss": 0.1427272465315901,
+          "cluster_averaged_brier": 0.040665770199220484,
+          "adaptive_ece": 0.05799172233319659,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "record_count": 40,
+              "weight": 0.12410394265232977,
+              "minimum_probability": 0.01403363979884518,
+              "maximum_probability": 0.023907471242279016,
+              "mean_probability": 0.021040828876087433,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.021040828876087433
+            },
+            {
+              "bin": 1,
+              "record_count": 40,
+              "weight": 0.148252688172043,
+              "minimum_probability": 0.025337176353037935,
+              "maximum_probability": 0.028441722806531712,
+              "mean_probability": 0.02664967053448026,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.02664967053448026
+            },
+            {
+              "bin": 2,
+              "record_count": 40,
+              "weight": 0.14426523297491042,
+              "minimum_probability": 0.028441855289197664,
+              "maximum_probability": 0.03187015555682803,
+              "mean_probability": 0.029652524025406538,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.029652524025406538
+            },
+            {
+              "bin": 3,
+              "record_count": 40,
+              "weight": 0.13095878136200717,
+              "minimum_probability": 0.03187784814278311,
+              "maximum_probability": 0.03568076960805329,
+              "mean_probability": 0.03313456958320873,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.03313456958320873
+            },
+            {
+              "bin": 4,
+              "record_count": 40,
+              "weight": 0.11529057859703024,
+              "minimum_probability": 0.035680869549072444,
+              "maximum_probability": 0.04439986420097443,
+              "mean_probability": 0.039688598943439554,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.039688598943439554
+            },
+            {
+              "bin": 5,
+              "record_count": 40,
+              "weight": 0.1153673835125448,
+              "minimum_probability": 0.044404475027219024,
+              "maximum_probability": 0.05465983732339779,
+              "mean_probability": 0.05017515551130422,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.05017515551130422
+            },
+            {
+              "bin": 6,
+              "record_count": 39,
+              "weight": 0.08294504181600953,
+              "minimum_probability": 0.054660483863202686,
+              "maximum_probability": 0.09372231370538923,
+              "mean_probability": 0.0711954929482281,
+              "observed_unsafe_rate": 0.021606049693914303,
+              "absolute_gap": 0.0495894432543138
+            },
+            {
+              "bin": 7,
+              "record_count": 39,
+              "weight": 0.052180406212664295,
+              "minimum_probability": 0.09372231370538923,
+              "maximum_probability": 0.22700643372379609,
+              "mean_probability": 0.11966979923892496,
+              "observed_unsafe_rate": 0.3872352604464796,
+              "absolute_gap": 0.26756546120755464
+            },
+            {
+              "bin": 8,
+              "record_count": 39,
+              "weight": 0.04601254480286738,
+              "minimum_probability": 0.22700643372379609,
+              "maximum_probability": 0.4849659208460678,
+              "mean_probability": 0.44239715952442193,
+              "observed_unsafe_rate": 0.5832521908471276,
+              "absolute_gap": 0.14085503132270571
+            },
+            {
+              "bin": 9,
+              "record_count": 39,
+              "weight": 0.04062339989759345,
+              "minimum_probability": 0.48669334596155256,
+              "maximum_probability": 0.5156463345061337,
+              "mean_probability": 0.5039522849100033,
+              "observed_unsafe_rate": 0.6982301349719027,
+              "absolute_gap": 0.19427785006189935
+            }
+          ]
+        }
+      },
+      "combined_development_metrics": {
+        "classification_at_0_5": {
+          "sample_count": 1760,
+          "accuracy": 0.8335227272727272,
+          "macro_f1": 0.5947183234189903,
+          "unsafe_recall": 0.18181818181818182,
+          "false_safe_rate": 0.8181818181818181,
+          "unsafe_true_positive": 58,
+          "unsafe_false_positive": 32,
+          "unsafe_false_negative": 261
+        },
+        "calibration": {
+          "cluster_averaged_log_loss": 0.14877370278479013,
+          "cluster_averaged_brier": 0.04199656457201641,
+          "adaptive_ece": 0.05140240897276023,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "record_count": 176,
+              "weight": 0.14358505887129516,
+              "minimum_probability": 0.008372163727221285,
+              "maximum_probability": 0.02389467289723634,
+              "mean_probability": 0.02007898161295983,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.02007898161295983
+            },
+            {
+              "bin": 1,
+              "record_count": 176,
+              "weight": 0.13469684666395992,
+              "minimum_probability": 0.02389520989301338,
+              "maximum_probability": 0.02840792935481463,
+              "mean_probability": 0.02610164438362035,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.02610164438362035
+            },
+            {
+              "bin": 2,
+              "record_count": 176,
+              "weight": 0.1390798097558146,
+              "minimum_probability": 0.028407999525559394,
+              "maximum_probability": 0.03188254925295375,
+              "mean_probability": 0.030078445354961663,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.030078445354961663
+            },
+            {
+              "bin": 3,
+              "record_count": 176,
+              "weight": 0.12961303482009937,
+              "minimum_probability": 0.031882592348620814,
+              "maximum_probability": 0.03877112866832381,
+              "mean_probability": 0.03541737281516545,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.03541737281516545
+            },
+            {
+              "bin": 4,
+              "record_count": 176,
+              "weight": 0.1300978288189007,
+              "minimum_probability": 0.03877270950510783,
+              "maximum_probability": 0.046643373514198824,
+              "mean_probability": 0.042085094361690445,
+              "observed_unsafe_rate": 0.0,
+              "absolute_gap": 0.042085094361690445
+            },
+            {
+              "bin": 5,
+              "record_count": 176,
+              "weight": 0.11691268874581906,
+              "minimum_probability": 0.04664736437139485,
+              "maximum_probability": 0.0615064275927211,
+              "mean_probability": 0.05253629651416696,
+              "observed_unsafe_rate": 0.01041826006788406,
+              "absolute_gap": 0.042118036446282904
+            },
+            {
+              "bin": 6,
+              "record_count": 176,
+              "weight": 0.07794401092208644,
+              "minimum_probability": 0.06153644310345528,
+              "maximum_probability": 0.09277604390478354,
+              "mean_probability": 0.07465271391906302,
+              "observed_unsafe_rate": 0.07115554964059456,
+              "absolute_gap": 0.0034971642784684537
+            },
+            {
+              "bin": 7,
+              "record_count": 176,
+              "weight": 0.04829861233637117,
+              "minimum_probability": 0.09277604390478354,
+              "maximum_probability": 0.14327061860246762,
+              "mean_probability": 0.1113012091992791,
+              "observed_unsafe_rate": 0.3493786623705256,
+              "absolute_gap": 0.2380774531712465
+            },
+            {
+              "bin": 8,
+              "record_count": 176,
+              "weight": 0.040945385646969076,
+              "minimum_probability": 0.14435187059782353,
+              "maximum_probability": 0.4763309213873827,
+              "mean_probability": 0.3457904706318695,
+              "observed_unsafe_rate": 0.5467000772664836,
+              "absolute_gap": 0.2009096066346141
+            },
+            {
+              "bin": 9,
+              "record_count": 176,
+              "weight": 0.038826723418684435,
+              "minimum_probability": 0.4763309213873827,
+              "maximum_probability": 0.522735466240852,
+              "mean_probability": 0.5002697127916388,
+              "observed_unsafe_rate": 0.65049287453006,
+              "absolute_gap": 0.1502231617384212
+            }
+          ]
+        }
+      },
+      "fold_records": [
+        {
+          "fold": 0,
+          "calibrators": {
+            "qwen": {
+              "method": "beta",
+              "a": 0.30140716026566927,
+              "b": 0.006737946999085467,
+              "c": 0.6864333949674741,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.1701057742481796,
+              "monotonic": true
+            },
+            "safework": {
+              "method": "beta",
+              "a": 2.557151617820337,
+              "b": 0.006737946999085467,
+              "c": 0.9904459905010616,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.11541631713444352,
+              "monotonic": true
+            }
+          },
+          "probe": {
+            "feature_names": [
+              "qwen",
+              "safework"
+            ],
+            "mean": [
+              -3.192923171184115,
+              -5.783701717959175
+            ],
+            "scale": [
+              1.005359424012376,
+              2.9665630092451987
+            ],
+            "coefficients": [
+              0.45604407465977986,
+              0.565182285493617
+            ],
+            "intercept": -3.033075441462006,
+            "l2_strength": 0.1
+          }
+        },
+        {
+          "fold": 1,
+          "calibrators": {
+            "qwen": {
+              "method": "beta",
+              "a": 0.29919839487244104,
+              "b": 0.006737946999085467,
+              "c": 0.7079399797710209,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.17327032508127405,
+              "monotonic": true
+            },
+            "safework": {
+              "method": "beta",
+              "a": 2.659047160852323,
+              "b": 0.006737946999085467,
+              "c": 0.9807886512597163,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.11322537243895128,
+              "monotonic": true
+            }
+          },
+          "probe": {
+            "feature_names": [
+              "qwen",
+              "safework"
+            ],
+            "mean": [
+              -3.1559381507283604,
+              -6.028600563480424
+            ],
+            "scale": [
+              0.9733407440091463,
+              3.084103575821543
+            ],
+            "coefficients": [
+              0.44193958493830454,
+              0.5799262442630353
+            ],
+            "intercept": -3.0311654455316153,
+            "l2_strength": 0.1
+          }
+        },
+        {
+          "fold": 2,
+          "calibrators": {
+            "qwen": {
+              "method": "beta",
+              "a": 0.3073071614337049,
+              "b": 0.006737946999085467,
+              "c": 0.7375898321190235,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.16719137453943422,
+              "monotonic": true
+            },
+            "safework": {
+              "method": "beta",
+              "a": 2.726166606982152,
+              "b": 0.006737946999085467,
+              "c": 1.0809869348105634,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.1079902256297908,
+              "monotonic": true
+            }
+          },
+          "probe": {
+            "feature_names": [
+              "qwen",
+              "safework"
+            ],
+            "mean": [
+              -3.217440095688531,
+              -6.252135404681364
+            ],
+            "scale": [
+              1.022137428991485,
+              3.2119382018391787
+            ],
+            "coefficients": [
+              0.46106901347210827,
+              0.5791921317420925
+            ],
+            "intercept": -3.053313598302927,
+            "l2_strength": 0.1
+          }
+        },
+        {
+          "fold": 3,
+          "calibrators": {
+            "qwen": {
+              "method": "beta",
+              "a": 0.2951749580066957,
+              "b": 0.006737946999085467,
+              "c": 0.6470014412151006,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.1741604890847887,
+              "monotonic": true
+            },
+            "safework": {
+              "method": "beta",
+              "a": 2.4847310014010406,
+              "b": 0.006737946999085467,
+              "c": 0.9295873322362826,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.11654119696542908,
+              "monotonic": true
+            }
+          },
+          "probe": {
+            "feature_names": [
+              "qwen",
+              "safework"
+            ],
+            "mean": [
+              -3.1615453665700053,
+              -5.7530960314834125
+            ],
+            "scale": [
+              0.9648353229255419,
+              2.9175244414933723
+            ],
+            "coefficients": [
+              0.43422309781250634,
+              0.5715244591557378
+            ],
+            "intercept": -3.029182762905471,
+            "l2_strength": 0.1
+          }
+        },
+        {
+          "fold": 4,
+          "calibrators": {
+            "qwen": {
+              "method": "beta",
+              "a": 0.3029009084507262,
+              "b": 0.006737946999085467,
+              "c": 0.6653410213993669,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.16673550360331815,
+              "monotonic": true
+            },
+            "safework": {
+              "method": "beta",
+              "a": 2.6602395658751727,
+              "b": 0.006737946999085467,
+              "c": 0.9736063869312976,
+              "optimizer": "L-BFGS-B",
+              "objective": 0.11140052929856865,
+              "monotonic": true
+            }
+          },
+          "probe": {
+            "feature_names": [
+              "qwen",
+              "safework"
+            ],
+            "mean": [
+              -3.231105176335,
+              -6.120631719472221
+            ],
+            "scale": [
+              1.0139143162202682,
+              3.133062026884792
+            ],
+            "coefficients": [
+              0.46158997849716954,
+              0.5671040953481222
+            ],
+            "intercept": -3.0582276324472955,
+            "l2_strength": 0.1
+          }
+        }
+      ],
+      "final_fit_probe": {
+        "feature_names": [
+          "qwen",
+          "safework"
+        ],
+        "mean": [
+          -3.1911161598254387,
+          -5.97581121511797
+        ],
+        "scale": [
+          0.9956779375453755,
+          3.0568867898837286
+        ],
+        "coefficients": [
+          0.4510147679217913,
+          0.5725328719506988
+        ],
+        "intercept": -3.0408254590267223,
+        "l2_strength": 0.1
+      }
+    }
+  },
+  "marginal_contributions": {
+    "qwen": {
+      "log_loss_delta_reduced_minus_full": 0.017527233611943416,
+      "macro_f1_delta_full_minus_reduced": 0.1829794854532416,
+      "unsafe_recall_delta_full_minus_reduced": 0.25705329153605017,
+      "hard_prediction_change_rate": 0.07272727272727272,
+      "mean_absolute_probability_change": 0.05053864499249722,
+      "bootstrap": {
+        "schema": "softfusion-cluster-bootstrap-marginal-v1",
+        "seed": 20260829,
+        "replicates": 500,
+        "component_count": 821,
+        "positive_log_loss_fraction": 1.0,
+        "positive_macro_f1_fraction": 1.0,
+        "nonnegative_unsafe_recall_fraction": 1.0,
+        "log_loss_delta_ci95": [
+          0.013070925799547614,
+          0.021501664060459443
+        ],
+        "macro_f1_delta_ci95": [
+          0.14935828979069066,
+          0.2147580038294274
+        ],
+        "unsafe_recall_delta_ci95": [
+          0.19487478159580665,
+          0.32232094040459264
+        ],
+        "hard_prediction_change_rate_ci95": [
+          0.05304078186895253,
+          0.09343523068185446
+        ],
+        "mean_absolute_probability_change_ci95": [
+          0.022511913768132805,
+          0.028249688533864267
+        ]
+      },
+      "probability_quality_marginal_gate": {
+        "positive_point_log_loss_delta": true,
+        "positive_in_at_least_70_percent_bootstraps": true,
+        "passed": true
+      },
+      "classification_marginal_gate": {
+        "positive_point_macro_f1_delta": true,
+        "positive_macro_f1_in_at_least_70_percent_bootstraps": true,
+        "nonnegative_point_unsafe_recall_delta": true,
+        "changes_at_least_1_percent_hard_predictions": true,
+        "passed": true
+      },
+      "preliminary_marginal_gate": {
+        "basis": "primary_macro_f1_with_nonnegative_unsafe_recall_and_prediction_change",
+        "passed": true
+      }
+    },
+    "safework": {
+      "log_loss_delta_reduced_minus_full": 0.027743021404381174,
+      "macro_f1_delta_full_minus_reduced": 0.0771803404796284,
+      "unsafe_recall_delta_full_minus_reduced": 0.12852664576802508,
+      "hard_prediction_change_rate": 0.03579545454545455,
+      "mean_absolute_probability_change": 0.0274140353581637,
+      "bootstrap": {
+        "schema": "softfusion-cluster-bootstrap-marginal-v1",
+        "seed": 20260830,
+        "replicates": 500,
+        "component_count": 821,
+        "positive_log_loss_fraction": 1.0,
+        "positive_macro_f1_fraction": 1.0,
+        "nonnegative_unsafe_recall_fraction": 1.0,
+        "log_loss_delta_ci95": [
+          0.022696854612422473,
+          0.03324079357725393
+        ],
+        "macro_f1_delta_ci95": [
+          0.05168038332675691,
+          0.10226796467490698
+        ],
+        "unsafe_recall_delta_ci95": [
+          0.08489314992632735,
+          0.1787167541745567
+        ],
+        "hard_prediction_change_rate_ci95": [
+          0.022100537889574435,
+          0.04961205777182924
+        ],
+        "mean_absolute_probability_change_ci95": [
+          0.018148956539579767,
+          0.020535452060848048
+        ]
+      },
+      "probability_quality_marginal_gate": {
+        "positive_point_log_loss_delta": true,
+        "positive_in_at_least_70_percent_bootstraps": true,
+        "passed": true
+      },
+      "classification_marginal_gate": {
+        "positive_point_macro_f1_delta": true,
+        "positive_macro_f1_in_at_least_70_percent_bootstraps": true,
+        "nonnegative_point_unsafe_recall_delta": true,
+        "changes_at_least_1_percent_hard_predictions": true,
+        "passed": true
+      },
+      "preliminary_marginal_gate": {
+        "basis": "primary_macro_f1_with_nonnegative_unsafe_recall_and_prediction_change",
+        "passed": true
+      }
+    },
+    "minicpm": {
+      "log_loss_delta_reduced_minus_full": -0.00032561997342528404,
+      "macro_f1_delta_full_minus_reduced": 0.047971358609794734,
+      "unsafe_recall_delta_full_minus_reduced": 0.08463949843260188,
+      "hard_prediction_change_rate": 0.04318181818181818,
+      "mean_absolute_probability_change": 0.010661459767699107,
+      "bootstrap": {
+        "schema": "softfusion-cluster-bootstrap-marginal-v1",
+        "seed": 20260831,
+        "replicates": 500,
+        "component_count": 821,
+        "positive_log_loss_fraction": 0.29,
+        "positive_macro_f1_fraction": 0.998,
+        "nonnegative_unsafe_recall_fraction": 0.998,
+        "log_loss_delta_ci95": [
+          -0.0013472811317663993,
+          0.0007962494710232902
+        ],
+        "macro_f1_delta_ci95": [
+          0.015814724560175894,
+          0.07714044040679592
+        ],
+        "unsafe_recall_delta_ci95": [
+          0.027492365726603213,
+          0.13679937022042285
+        ],
+        "hard_prediction_change_rate_ci95": [
+          0.02669500866282591,
+          0.05862378053062609
+        ],
+        "mean_absolute_probability_change_ci95": [
+          0.005057577005130462,
+          0.006471035251344655
+        ]
+      },
+      "probability_quality_marginal_gate": {
+        "positive_point_log_loss_delta": false,
+        "positive_in_at_least_70_percent_bootstraps": false,
+        "passed": false
+      },
+      "classification_marginal_gate": {
+        "positive_point_macro_f1_delta": true,
+        "positive_macro_f1_in_at_least_70_percent_bootstraps": true,
+        "nonnegative_point_unsafe_recall_delta": true,
+        "changes_at_least_1_percent_hard_predictions": true,
+        "passed": true
+      },
+      "preliminary_marginal_gate": {
+        "basis": "primary_macro_f1_with_nonnegative_unsafe_recall_and_prediction_change",
+        "passed": true
+      }
+    }
+  },
+  "gate": {
+    "rule": "all_three_frozen_judges_must_improve_primary_macro_f1_in_at_least_70_percent_component_bootstraps_without_reducing_point_unsafe_recall_and_must_change_at_least_one_percent_of_hard_predictions",
+    "passed": true
+  }
+}

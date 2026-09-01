@@ -1,0 +1,91 @@
+{
+  "schema": "beavertails-v-external-raw-output-freeze-v1",
+  "status": "frozen",
+  "dataset": "PKU-Alignment/BeaverTails-V",
+  "sample_count": 1180,
+  "manifest_sha256": "7ee7522afca751ffc6e96d82ffc654a017502cc57814b066752e107bab74754a",
+  "analysis_plan_sha256": "3ca280d99a513f641b23475b0345e4983c7111852cf56b03a2edc972da8a1ae1",
+  "judges": {
+    "qwen": {
+      "adapter_version": "qwen3-vl-soft-score-v1",
+      "record_count": 1180,
+      "files": {
+        "judgments": {
+          "path": "/root/result/multijudge-v15/external-transfer/beavertails-v/raw/qwen/formal/judgments.jsonl",
+          "sha256": "f5fe5fa4337fc296f32a3b09fe15da9baaa6b31f9126b36f14e7a4ceb8418b3d"
+        },
+        "config": {
+          "path": "/root/result/multijudge-v15/external-transfer/beavertails-v/raw/qwen/formal/config.json",
+          "sha256": "960884f6544ba439da594c05c9529b0b9e26a32f7057e620614da7d5e2ff92c2"
+        },
+        "status": {
+          "path": "/root/result/multijudge-v15/external-transfer/beavertails-v/raw/qwen/formal/status.json",
+          "sha256": "63369e1b657dcbbfd518942a5ed0a34fc1514566a9751888cc30e1691f795c4c"
+        },
+        "coverage_audit": {
+          "path": "/root/result/multijudge-v15/external-transfer/beavertails-v/raw/qwen/formal/coverage_audit.json",
+          "sha256": "40c9f8cb5bcf377a3b6fd9c9afce95674e8e46ebca413ec74731ff9d2f39ca16"
+        },
+        "model_fingerprint": {
+          "path": "/root/result/multijudge-v15/external-transfer/beavertails-v/raw/qwen/formal/model_fingerprint.json",
+          "sha256": "cfd4d578ed5a1c108c5a00588a28d6f6bc59442addbe64d3c38c80e319d14863"
+        }
+      }
+    },
+    "safework": {
+      "adapter_version": "safework-rm-safety-native-sequence-sum-v3",
+      "record_count": 1180,
+      "files": {
+        "judgments": {
+          "path": "/root/result/multijudge-v15/external-transfer/beavertails-v/raw/safework/formal/judgments.jsonl",
+          "sha256": "35bf9ba38391011fbdb282ef69897d498d1fcba09576341ecff933285fb75012"
+        },
+        "config": {
+          "path": "/root/result/multijudge-v15/external-transfer/beavertails-v/raw/safework/formal/config.json",
+          "sha256": "a499a56a869289758b59a4e722e1d67f7dbc7cb0b0d90aa4a11c28095e93ecf0"
+        },
+        "status": {
+          "path": "/root/result/multijudge-v15/external-transfer/beavertails-v/raw/safework/formal/status.json",
+          "sha256": "cdbd42c332c42d055adcb721660992188eff8393f299ca9db62bf9505d77d40d"
+        },
+        "coverage_audit": {
+          "path": "/root/result/multijudge-v15/external-transfer/beavertails-v/raw/safework/formal/coverage_audit.json",
+          "sha256": "d6c702af6278b0de4a81968e788efebdeb4b9c805b5ad375889a67aca0bdf17f"
+        },
+        "model_fingerprint": {
+          "path": "/root/result/multijudge-v15/external-transfer/beavertails-v/raw/safework/formal/model_fingerprint.json",
+          "sha256": "46cfd39bccfb7efe405eedb78f869768e1735e04874b422381eb6a4257ebc1f9"
+        }
+      }
+    },
+    "minicpm": {
+      "adapter_version": "minicpm-v4.5-soft-score-v1",
+      "record_count": 1180,
+      "files": {
+        "judgments": {
+          "path": "/root/result/multijudge-v15/external-transfer/beavertails-v/raw/minicpm/formal/judgments.jsonl",
+          "sha256": "a9538d308933fcdd8631d70eceea1b7e79e6f978de67897ffbb108cd72a76e0c"
+        },
+        "config": {
+          "path": "/root/result/multijudge-v15/external-transfer/beavertails-v/raw/minicpm/formal/config.json",
+          "sha256": "58a77a6a2f7af45ca94e29f772329dd8b92470aaf0b41d6b41b4557dc447cbb9"
+        },
+        "status": {
+          "path": "/root/result/multijudge-v15/external-transfer/beavertails-v/raw/minicpm/formal/status.json",
+          "sha256": "70dc938bd87ae62f617f9d3a2845c22e01ed055966bf07e5cc2465fab3cb6527"
+        },
+        "coverage_audit": {
+          "path": "/root/result/multijudge-v15/external-transfer/beavertails-v/raw/minicpm/formal/coverage_audit.json",
+          "sha256": "76245b9b8b681c1e352822fb856961c1fb32bcc6ee4a303e8a6738491ba385a2"
+        },
+        "model_fingerprint": {
+          "path": "/root/result/multijudge-v15/external-transfer/beavertails-v/raw/minicpm/formal/model_fingerprint.json",
+          "sha256": "6de8d148c13a4493c17d099b95f68da8c9016102022246c443be54d2dc01c897"
+        }
+      }
+    }
+  },
+  "labels_accessed": false,
+  "external_model_fitting_performed": false,
+  "content_sha256": "e200ff1d2396d7d33a1214a12a616e398ae9c167eca4fcb830b63050dd3961a1"
+}

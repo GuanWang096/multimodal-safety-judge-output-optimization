@@ -1,0 +1,95 @@
+{
+  "schema": "softfusion-fusion-config-v1",
+  "status": "frozen",
+  "seed": 20260729,
+  "feature_scope": "canonical_only",
+  "judge_order": [
+    "qwen",
+    "safework",
+    "minicpm"
+  ],
+  "adapter_versions": {
+    "qwen": "qwen3-vl-soft-score-v1",
+    "safework": "safework-rm-safety-native-sequence-sum-v3",
+    "minicpm": "minicpm-v4.5-soft-score-v1"
+  },
+  "calibrator_methods": {
+    "qwen": "beta",
+    "safework": "beta",
+    "minicpm": "temperature"
+  },
+  "final_development_calibrators": {
+    "qwen": {
+      "method": "beta",
+      "a": 0.30465503442202674,
+      "b": 0.006737946999085467,
+      "c": 0.6771033074904367,
+      "optimizer": "L-BFGS-B",
+      "objective": 0.16696356729821205,
+      "monotonic": true
+    },
+    "safework": {
+      "method": "beta",
+      "a": 2.730912319083189,
+      "b": 0.006737946999085467,
+      "c": 1.0447366839522523,
+      "optimizer": "L-BFGS-B",
+      "objective": 0.11025551780758154,
+      "monotonic": true
+    },
+    "minicpm": {
+      "method": "temperature",
+      "temperature": 1.6967220583025642,
+      "optimizer": "L-BFGS-B",
+      "objective": 0.20881337614761464
+    }
+  },
+  "model": {
+    "feature_family": "F1",
+    "feature_names": [
+      "qwen",
+      "safework",
+      "minicpm"
+    ],
+    "judge_order": [
+      "qwen",
+      "safework",
+      "minicpm"
+    ],
+    "mean": [
+      -3.226968368362874,
+      -6.227509350325508,
+      -3.008767597227752
+    ],
+    "scale": [
+      1.0502473520552593,
+      3.1927769543629556,
+      1.081359888796814
+    ],
+    "coefficients": [
+      0.3204198565472162,
+      2.3934961898010747,
+      -0.20225918625145192
+    ],
+    "intercept": -5.09048487974305,
+    "penalty": "l2",
+    "C": 0.3,
+    "l1_ratio": null
+  },
+  "threshold": 0.2943076502105866,
+  "threshold_metrics": {
+    "sample_count": 1760,
+    "accuracy": 0.8744318181818181,
+    "macro_f1": 0.8133187044617578,
+    "unsafe_recall": 0.8338557993730408,
+    "safe_specificity": 0.8834142956280361,
+    "false_safe_rate": 0.16614420062695923,
+    "mcc": 0.6410522508404093,
+    "unsafe_true_positive": 266,
+    "safe_true_positive": 1273,
+    "unsafe_false_positive": 168,
+    "unsafe_false_negative": 53
+  },
+  "confirmatory_labels_accessed": false,
+  "config_sha256": "62325139b8fa3de867984a23e9819332ead398fa6eca710d22781337736fc569"
+}

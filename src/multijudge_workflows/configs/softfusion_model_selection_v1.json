@@ -1,0 +1,34 @@
+{
+  "schema": "softfusion-model-selection-config-v1",
+  "seed": 20260729,
+  "judge_order": ["qwen", "safework", "minicpm"],
+  "feature_families": ["F1", "F2"],
+  "feature_scope": "canonical_only",
+  "outer_fold_count": 5,
+  "inner_fold_count": 4,
+  "penalties": ["l2", "elasticnet"],
+  "C_grid": [0.03, 0.1, 0.3, 1.0, 3.0],
+  "elasticnet_l1_ratio_grid": [0.25, 0.5, 0.75],
+  "one_standard_error_preference": [
+    "l2_before_elasticnet",
+    "stronger_regularization_before_weaker_regularization",
+    "lower_l1_ratio_before_higher_l1_ratio"
+  ],
+  "complexity_gate": {
+    "minimum_macro_f1_gain": 0.01,
+    "minimum_unsafe_recall_gain": 0.02,
+    "minimum_positive_component_bootstrap_fraction": 0.7,
+    "bootstrap_replicates": 500
+  },
+  "threshold_constraints": {
+    "unsafe_recall_margin_below_reference": 0.01,
+    "safe_specificity_margin_below_reference": 0.03
+  },
+  "judge_marginal_gate": {
+    "minimum_hard_prediction_change_rate": 0.01,
+    "minimum_positive_component_bootstrap_fraction": 0.7,
+    "require_nonnegative_point_unsafe_recall_delta": true
+  },
+  "selection_rule": "hyperparameters by D_fit nested component CV; family by D_select with the frozen complexity gate; final threshold by development OOF only",
+  "confirmatory_labels_accessed": false
+}

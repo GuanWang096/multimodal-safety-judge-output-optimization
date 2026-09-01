@@ -1,0 +1,153 @@
+{
+  "schema": "softfusion-sf0-freeze-v1",
+  "status": "frozen",
+  "passed": true,
+  "freeze_policy": "After this manifest passes, confirm membership and labels, near-duplicate decisions, model identities, and SIUO annotation policy cannot be changed in response to model outputs.",
+  "gates": {
+    "split_frozen": true,
+    "allocation_passed": true,
+    "exact_leakage_passed": true,
+    "perceptual_leakage_passed": true,
+    "power_design_passed": true,
+    "model_overlap_passed": true,
+    "siuo_policy_frozen": true
+  },
+  "confirm_unlabeled_check": {
+    "record_count": 513,
+    "forbidden_field_violations": []
+  },
+  "siuo_blind_sheet_checks": {
+    "siuo-blind-annotator-a.csv": {
+      "row_count": 668,
+      "forbidden_headers": []
+    },
+    "siuo-blind-annotator-b.csv": {
+      "row_count": 668,
+      "forbidden_headers": []
+    }
+  },
+  "design_precision_boundary": {
+    "minimum_power_at_delta_0_05": 0.456,
+    "minimum_detectable_delta_at_80_percent_power": 0.07
+  },
+  "model_data_boundary": {
+    "mmds": "No audited model card directly names MMDS. Because the full training corpora are not disclosed, this is not proof of zero training overlap.",
+    "siuo": "SafeWork's official card reports SIUO evaluation performance. SIUO results involving SafeWork are benchmark-exposed and require a leave-SafeWork-out sensitivity analysis.",
+    "claim_boundary": "The audit supports transparent disclosure and sensitivity analysis; it does not establish sample-level training-data independence."
+  },
+  "hashes": {
+    "results/multijudge-v15/softfusion/sf0-data/split_manifest.json": {
+      "sha256": "80021e933441568660d2c582803d3e2a347ccc880327cfa8758798d867bdffa4",
+      "bytes": 8835
+    },
+    "results/multijudge-v15/softfusion/sf0-data/fit.jsonl": {
+      "sha256": "37d17c873237e68d05624edc0c65be9e9f7b2637877014b943f86ef5096f0117",
+      "bytes": 889902
+    },
+    "results/multijudge-v15/softfusion/sf0-data/select.jsonl": {
+      "sha256": "414ff4af682209af7aa3e237e2051e794c19ccc01c0e1b7c211ece0edd114215",
+      "bytes": 260885
+    },
+    "results/multijudge-v15/softfusion/sf0-data/confirm-unlabeled.jsonl": {
+      "sha256": "f6457ddcf2fef60032a33645a28a158efad8e08c959ec80d401df16e8b798550",
+      "bytes": 297759
+    },
+    "results/multijudge-v15/softfusion/sf0-data/confirm-labels.jsonl": {
+      "sha256": "762398fdc3ddd54d8e4dc02c6aa1a3cd0ac6f0ec85128443256b3c3415f53fe1",
+      "bytes": 72987
+    },
+    "results/multijudge-v15/softfusion/sf0-data/eligibility_audit.json": {
+      "sha256": "4d606600dee2223507f22329603109c598336b229602d71750afd3bf2106810b",
+      "bytes": 416010
+    },
+    "results/multijudge-v15/softfusion/sf0-data/component_audit.json": {
+      "sha256": "79bc0f3971d31fa01505ebb64fbf31112131d454817c046aa0bd30ab7a03583b",
+      "bytes": 351602
+    },
+    "results/multijudge-v15/softfusion/sf0-data/perceptual_candidate_audit.json": {
+      "sha256": "a214befad273de99b9f6ea293f39bd5e17d9ed72ad7cf581dd2c7fa117ef856b",
+      "bytes": 49115
+    },
+    "results/multijudge-v15/softfusion/sf0-data/near_duplicate_decisions.json": {
+      "sha256": "4b9550a503822943b0981559cb0a2ae21115463debcd568c03d5e7440f45ab23",
+      "bytes": 7400
+    },
+    "results/multijudge-v15/softfusion/sf0-data/leakage_audit.json": {
+      "sha256": "e863b30ad89f83e282275cf70a8a9c22f548755d12e78c08994f22ca5d5ed1bd",
+      "bytes": 2479
+    },
+    "results/multijudge-v15/softfusion/sf0-data/power_precision_audit.json": {
+      "sha256": "991ecae1b867c6d96afc4e9233f93998f4215d6125c745ca2957516ca543bd9e",
+      "bytes": 4039
+    },
+    "results/multijudge-v15/softfusion/sf0-data/model_data_overlap_audit.json": {
+      "sha256": "049e411234c574f5e1b6e256f2f8cfafd545e0f2e9b941be0100f4bb60bca5ec",
+      "bytes": 7058
+    },
+    "results/multijudge-v15/softfusion/sf0-data/MODEL_DATA_OVERLAP_AUDIT.md": {
+      "sha256": "fa96b047194416112d2fcbd7ef9a6f6e42132cc8ce5c5ba5b72678ef696b1ed8",
+      "bytes": 4489
+    },
+    "results/multijudge-v15/softfusion/sf0-data/sf0_test_report.json": {
+      "sha256": "ea9eb386f71bf64f5518fb6b327a13f97b6ab4f98eb84aea5b3ca8252b30b4fa",
+      "bytes": 424
+    },
+    "results/multijudge-v15/softfusion/sf0-data/siuo-annotation/annotation_manifest.json": {
+      "sha256": "2f261b51a069d6b3d187f51577c706a7f72780f3020244a0502a65698681d01b",
+      "bytes": 1354
+    },
+    "results/multijudge-v15/softfusion/sf0-data/siuo-annotation/SIUO_BINARY_ANNOTATION_PROTOCOL.md": {
+      "sha256": "3e15384d4919f7ce6817bb5ee99af6a60a80c3cd3088a41700adc2b0be4414b8",
+      "bytes": 2652
+    },
+    "results/multijudge-v15/softfusion/sf0-data/siuo-annotation/siuo-blind-annotator-a.csv": {
+      "sha256": "0791491de6fc1960e815c1508066a48d9b9dfae568071ac0fa6c7d6af5ed6c0e",
+      "bytes": 703888
+    },
+    "results/multijudge-v15/softfusion/sf0-data/siuo-annotation/siuo-blind-annotator-b.csv": {
+      "sha256": "9dea1ed8246524ac57fdc9c57d602139586d2c9b50e404d93074a46970d5c845",
+      "bytes": 703888
+    },
+    "results/multijudge-v15/softfusion/sf0-data/siuo-annotation/siuo-blind-id-map.json": {
+      "sha256": "40d0bb104bd6e87acbb4e7ff7bf83adeb0a4787f667b49752983248bec8900b9",
+      "bytes": 179373
+    },
+    "experiments/exp-multijudge/prepare_softfusion_splits.py": {
+      "sha256": "3142ab43d4bc57975514151188260de7f9574f5b0afa6ae2fa09eb9e11f683d4",
+      "bytes": 54864
+    },
+    "experiments/exp-multijudge/prepare_siuo_blind_annotation.py": {
+      "sha256": "0562f02f5c2276ac4495cae0fc574f8d79da8a7406ff230ddf0e2dc2c2ef7ba3",
+      "bytes": 10824
+    },
+    "experiments/exp-multijudge/audit_model_data_overlap.py": {
+      "sha256": "21cc5e67914b5e8da077c14e4c63a8151a70c2794b954c22e22a1c84b02619c1",
+      "bytes": 10782
+    },
+    "experiments/exp-multijudge/freeze_sf0.py": {
+      "sha256": "fe1d24f9bbe23c9e2503408f6713cb7e39976ad563fca80092474452512562cd",
+      "bytes": 8067
+    },
+    "experiments/exp-multijudge/configs/model_data_overlap_evidence.json": {
+      "sha256": "400ebf102b79c9bc1360b1ff5db94bfd34c855311ee342a0ac00eca3894eb40f",
+      "bytes": 3053
+    },
+    "experiments/exp-multijudge/tests/test_softfusion_splits.py": {
+      "sha256": "bf0e946ab8d8bd7aff8ec5f8a9447aa421ef6e607f0406aca0529bcc468c287c",
+      "bytes": 7207
+    },
+    "experiments/exp-multijudge/tests/test_siuo_blind_annotation.py": {
+      "sha256": "0284b381213c58d7d66032a50ef4101284f1d427ec7d987a104e88a71b93ba17",
+      "bytes": 2239
+    },
+    "experiments/exp-multijudge/tests/test_model_data_overlap.py": {
+      "sha256": "0401fde654b7a082114252f27073068533aac504aeb437eb44d8ce30068121b6",
+      "bytes": 1077
+    },
+    "revision-audit/PUBLICATION_OVERLAP_AUDIT-v15.md": {
+      "sha256": "70346fbf5b40bcca7d8896c26e5b1d5bd5f0522294ad1684a0e9d6e74a3d6a4b",
+      "bytes": 7135
+    }
+  },
+  "errors": []
+}

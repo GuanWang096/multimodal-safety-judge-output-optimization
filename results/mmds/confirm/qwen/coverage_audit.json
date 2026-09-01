@@ -1,0 +1,43 @@
+{
+  "schema": "softfusion-confirmatory-output-audit-v1",
+  "passed": true,
+  "labels_accessed": false,
+  "judge": "qwen",
+  "adapter_version": "qwen3-vl-soft-score-v1",
+  "manifest_sha256": "f6457ddcf2fef60032a33645a28a158efad8e08c959ec80d401df16e8b798550",
+  "judgments_sha256": "914abb7e81c8e5c1af549db7c255792fc9b4a15132a22904a563fd062a9b8044",
+  "expected_count": 513,
+  "observed_count": 513,
+  "sample_order_exact": true,
+  "duplicate_count": 0,
+  "missing_count": 0,
+  "missing_sample_ids": [],
+  "unexpected_count": 0,
+  "unexpected_sample_ids": [],
+  "manifest_forbidden_fields": [],
+  "output_forbidden_field_count": 0,
+  "output_forbidden_fields": {},
+  "invalid_record_count": 0,
+  "invalid_records": [],
+  "wrong_adapter_count": 0,
+  "finite_scores": true,
+  "probabilities_in_range": true,
+  "unique_probability_count": 194,
+  "probability_population_std": 0.4233941241381339,
+  "nondegenerate": true,
+  "status_state": "completed",
+  "config_checks": {
+    "manifest_hash_matches": true,
+    "selected_count_matches": true,
+    "canonical_view": true,
+    "original_images": true,
+    "adapter_matches": true,
+    "adapter_version_matches": true,
+    "hard_regression_disabled": true
+  },
+  "repeatability": {
+    "required": false,
+    "passed": true
+  },
+  "missing_artifacts": []
+}

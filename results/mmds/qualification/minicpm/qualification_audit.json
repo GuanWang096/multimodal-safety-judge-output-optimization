@@ -1,0 +1,34 @@
+{
+  "schema": "soft-score-qualification-audit-v1",
+  "passed": true,
+  "sample_count": 100,
+  "repeatability": {
+    "max_absolute_margin_difference": 0.0,
+    "maximum_allowed_margin_difference": 0.0001,
+    "direction_mismatch_count": 0,
+    "direction_mismatch_sample_ids": [],
+    "sample_order_identical": true
+  },
+  "codebook_sensitivity": {
+    "mode": "paired_codebooks",
+    "applicable": true,
+    "native_sequence_fallback_accepted": false,
+    "pearson_margin_correlation": 0.9045964470997828,
+    "spearman_margin_correlation": 0.869221050683619,
+    "pearson_probability_correlation": 0.8968094247323667,
+    "spearman_probability_correlation": 0.8692604670936499,
+    "sign_flip_count": 9,
+    "sign_flip_rate": 0.09,
+    "mean_absolute_margin_difference": 1.75,
+    "mean_absolute_probability_difference": 0.08375732424587179,
+    "gate_enforced": true,
+    "minimum_spearman": 0.5,
+    "maximum_sign_flip_rate": 0.25,
+    "gate_passed": true
+  },
+  "hard_regression": {
+    "valid_count": 100,
+    "argmax_agreement_rate": 0.96,
+    "minimum_argmax_agreement": 0.95
+  }
+}

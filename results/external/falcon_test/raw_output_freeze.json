@@ -1,0 +1,101 @@
+{
+  "schema": "falcon-test-external-raw-output-freeze-v1",
+  "status": "frozen-before-adaptation-label-access",
+  "dataset": "zhangrjjj/Falcon",
+  "subset": "Falcon-test",
+  "sample_count": 1778,
+  "manifest_sha256": "66fb681ec55caf7afd3cc0fbfa4318b5877aed25396ace1de0e1189acf8d0b21",
+  "protocol_file_sha256": "e04eb797fa9364811c2f4c48ec5572e774e47ebca440664564275eff35666bea",
+  "protocol_content_sha256": "dbc1f2214dd7bb2d964c4a02e2b32273851e50f0e15888efacb8f4401aa43103",
+  "protocol_freeze_record_sha256": "a033cdd1dde5d90d86595bcebcf3d554d80b238342b573b02a50d0988ff49ec8",
+  "preparation_record_sha256": "9ff1e8ef72851c920571993f691ac011741fcbf3e5ae825325caf761bbb116d6",
+  "judge_order": [
+    "qwen",
+    "safework",
+    "minicpm"
+  ],
+  "judges": {
+    "qwen": {
+      "adapter_version": "qwen3-vl-soft-score-v1",
+      "record_count": 1778,
+      "files": {
+        "judgments": {
+          "path": "/root/result/multijudge-v15/external-transfer/falcon-test/raw/qwen/formal/judgments.jsonl",
+          "sha256": "6e88cf03e52728e3b9f4965c4f5ef7968e212bd82b21a752e4c74e87a41b1448"
+        },
+        "config": {
+          "path": "/root/result/multijudge-v15/external-transfer/falcon-test/raw/qwen/formal/config.json",
+          "sha256": "0f520be276bad0f6ec79c45e6d986af5596236d735b0cb3985343a038f160ae5"
+        },
+        "status": {
+          "path": "/root/result/multijudge-v15/external-transfer/falcon-test/raw/qwen/formal/status.json",
+          "sha256": "cdb0921e7626fa0b90b1b060d5de73d07469fdf74a09c16f51473a6f843d094c"
+        },
+        "coverage_audit": {
+          "path": "/root/result/multijudge-v15/external-transfer/falcon-test/raw/qwen/formal/coverage_audit.json",
+          "sha256": "28f341f16185b45a57ef9bf81d71b2f47ccd2a80101ba69d68aadadbea3e85c9"
+        },
+        "model_fingerprint": {
+          "path": "/root/result/multijudge-v15/external-transfer/falcon-test/raw/qwen/formal/model_fingerprint.json",
+          "sha256": "cfd4d578ed5a1c108c5a00588a28d6f6bc59442addbe64d3c38c80e319d14863"
+        }
+      }
+    },
+    "safework": {
+      "adapter_version": "safework-rm-safety-native-sequence-sum-v3",
+      "record_count": 1778,
+      "files": {
+        "judgments": {
+          "path": "/root/result/multijudge-v15/external-transfer/falcon-test/raw/safework/formal/judgments.jsonl",
+          "sha256": "96d61bf222de8b01cc1c744c4d0babfee71ef515c7734dd446f15c13f0b474e4"
+        },
+        "config": {
+          "path": "/root/result/multijudge-v15/external-transfer/falcon-test/raw/safework/formal/config.json",
+          "sha256": "31c39475200714e66a963ceff305a6afee06e3b95cf4bc8f01d14f75949a1f14"
+        },
+        "status": {
+          "path": "/root/result/multijudge-v15/external-transfer/falcon-test/raw/safework/formal/status.json",
+          "sha256": "76702b8e5946545c3b7f1c876d933dd75dcb5f60351e38cf656efe4e53e91b79"
+        },
+        "coverage_audit": {
+          "path": "/root/result/multijudge-v15/external-transfer/falcon-test/raw/safework/formal/coverage_audit.json",
+          "sha256": "07ab46cc49b066335c8f05335f28f49452dce49f831736a20eeb11691c37dfbc"
+        },
+        "model_fingerprint": {
+          "path": "/root/result/multijudge-v15/external-transfer/falcon-test/raw/safework/formal/model_fingerprint.json",
+          "sha256": "46cfd39bccfb7efe405eedb78f869768e1735e04874b422381eb6a4257ebc1f9"
+        }
+      }
+    },
+    "minicpm": {
+      "adapter_version": "minicpm-v4.5-soft-score-v1",
+      "record_count": 1778,
+      "files": {
+        "judgments": {
+          "path": "/root/result/multijudge-v15/external-transfer/falcon-test/raw/minicpm/formal/judgments.jsonl",
+          "sha256": "97468fc01a255519329e9aec48df78afd57052948b80e714b6407f4c2981822b"
+        },
+        "config": {
+          "path": "/root/result/multijudge-v15/external-transfer/falcon-test/raw/minicpm/formal/config.json",
+          "sha256": "9ec879e34cc051369c62083f78eb720e0ea4be0947d3cd8043c15e4b4d41a410"
+        },
+        "status": {
+          "path": "/root/result/multijudge-v15/external-transfer/falcon-test/raw/minicpm/formal/status.json",
+          "sha256": "b056887f5520baa4cc6e13b75ccba34883211ca83f4fd65e1f3c35fbaf597050"
+        },
+        "coverage_audit": {
+          "path": "/root/result/multijudge-v15/external-transfer/falcon-test/raw/minicpm/formal/coverage_audit.json",
+          "sha256": "d1ce6cbeb2cf370340f111eacb0199ec78286a03bc742cbb5a46bd326040ef5f"
+        },
+        "model_fingerprint": {
+          "path": "/root/result/multijudge-v15/external-transfer/falcon-test/raw/minicpm/formal/model_fingerprint.json",
+          "sha256": "6de8d148c13a4493c17d099b95f68da8c9016102022246c443be54d2dc01c897"
+        }
+      }
+    }
+  },
+  "labels_accessed": false,
+  "adaptation_model_fitting_performed": false,
+  "confirmation_labels_opened": false,
+  "content_sha256": "4f451458c311902fa61baee15fb6f4cf6df0a62d6c9b3380b4bf37150e391875"
+}

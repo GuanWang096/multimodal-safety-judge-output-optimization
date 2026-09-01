@@ -1,0 +1,77 @@
+{
+  "schema": "external-small-budget-adaptation-protocol-v1",
+  "protocol_status": "frozen-before-budget-sweep-execution",
+  "frozen_on": "2026-08-02",
+  "evidence_role": "retrospective_exploratory_repeated_group_holdout",
+  "claim": "A fixed lightweight soft-score adapter can use a limited target-label budget to improve held-out Macro-F1 over same-pool majority voting.",
+  "anti_claims": [
+    "This protocol is not a prospective confirmation because both datasets' labels had already been opened before it was written.",
+    "Repeated holdout intervals describe split variability and are not confidence intervals or hypothesis tests.",
+    "A positive result does not establish zero-shot transfer or universal superiority."
+  ],
+  "datasets": [
+    {
+      "id": "beavertails-v",
+      "predictions": "results/external/beavertails_v/predictions.jsonl",
+      "majority_prediction_key": "majority",
+      "label_field": "expected_label",
+      "group_field": "group_id",
+      "known_history": "Labels and aggregate adaptation diagnostics were observed before this unified protocol."
+    },
+    {
+      "id": "falcon-test-confirmation",
+      "predictions": "results/external/falcon_test/confirmation_predictions_labeled.jsonl",
+      "majority_prediction_key": "same_pool_majority",
+      "label_field": "expected_label",
+      "group_field": "group_id",
+      "known_history": "Confirmation labels and aggregate prospective metrics were observed before this budget sweep; only split-specific budget outcomes remain uncomputed at protocol freeze."
+    }
+  ],
+  "judges": [
+    "qwen",
+    "safework",
+    "minicpm"
+  ],
+  "budget_fractions": [
+    0.01,
+    0.05,
+    0.1,
+    0.2,
+    0.4
+  ],
+  "repeat_count": 100,
+  "random_seed": 20260802,
+  "split_unit": "dataset-defined group_id",
+  "sampling": "uniform groups without replacement; deterministically resample until adaptation and evaluation partitions both contain safe and unsafe records",
+  "primary_method": {
+    "id": "adapted_soft_logits",
+    "features": "logits of the three MMDS-calibrated unsafe probabilities",
+    "model": "L2 logistic regression",
+    "C": 0.03,
+    "solver": "lbfgs",
+    "threshold": "maximize Macro-F1 on the adaptation subset only; break ties by unsafe recall then safe specificity"
+  },
+  "comparators": [
+    "same_pool_majority",
+    "adapted_binary_judges with the same L2 logistic capacity and train-only threshold selection",
+    "adapted_calibrated_soft_mean with train-only threshold selection"
+  ],
+  "primary_budget_fraction": 0.1,
+  "claim_gate": {
+    "all_datasets_required": true,
+    "mean_macro_f1_delta_vs_majority_must_exceed": 0.0,
+    "positive_repeat_fraction_vs_majority_must_reach": 0.75,
+    "mean_macro_f1_delta_vs_adapted_binary_must_exceed": 0.0,
+    "positive_repeat_fraction_vs_adapted_binary_must_reach": 0.6
+  },
+  "reporting": {
+    "primary_metric": "Macro-F1",
+    "secondary_metrics": [
+      "unsafe recall",
+      "safe specificity",
+      "MCC"
+    ],
+    "uncertainty": "2.5th and 97.5th percentiles across deterministic repeated group holdouts",
+    "minimum_language": "retrospective exploratory evidence"
+  }
+}

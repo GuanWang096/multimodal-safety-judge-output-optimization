@@ -1,0 +1,21 @@
+{
+  "schema": "softfusion-freeze-record-v1",
+  "status": "frozen",
+  "fusion_config_sha256": "62325139b8fa3de867984a23e9819332ead398fa6eca710d22781337736fc569",
+  "selection_config_sha256": "261a68a6308233a871b00a61cae91d33a97c57756819ac7063de5cc1eb30599a",
+  "screening_decision_sha256": "ff8b35894061c79ee0fa4f4427bfab2ae680651642aeaebbcfe1f490b7185c29",
+  "fit_record_count": 1364,
+  "select_record_count": 396,
+  "development_component_count": 821,
+  "confirmatory_labels_accessed": false,
+  "confirmatory_run_permitted": true,
+  "stop_gate": {
+    "canonical_only_scope_frozen": true,
+    "selection_threshold_feasible": true,
+    "development_threshold_feasible": true,
+    "not_equivalent_to_simple_rule": true,
+    "fixed_three_judge_pool_passed": true,
+    "selection_macro_f1_exceeds_majority": true,
+    "passed": true
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "schema": "model-data-overlap-evidence-v1",
+  "audited_datasets": {
+    "mmds": {
+      "display_name": "Multimodal Multi-turn Dialogue Safety (MMDS)",
+      "search_terms": [
+        "MMDS",
+        "Multimodal Multi-turn Dialogue Safety"
+      ]
+    },
+    "siuo": {
+      "display_name": "Safe Inputs but Unsafe Output (SIUO)",
+      "search_terms": [
+        "SIUO",
+        "Safe Inputs but Unsafe Output"
+      ]
+    }
+  },
+  "models": {
+    "qwen": {
+      "model_id": "Qwen/Qwen3-VL-8B-Instruct",
+      "model_revision": "5d854aab08710c16b980ec6d603d863b3821b915",
+      "metadata_readme": "model-metadata/qwen3-vl-8b-instruct/README.md",
+      "official_source": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct",
+      "training_disclosure": "The model card describes broad higher-quality pretraining but does not provide a complete itemized corpus list.",
+      "declared_training_overlap": [],
+      "declared_evaluation_overlap": [],
+      "required_sensitivity": []
+    },
+    "safework": {
+      "model_id": "AI45Research/SafeWork-RM-Safety-7B",
+      "model_revision": "be345f29425fe94586c0598785a143703bbbc4fc",
+      "metadata_readme": "model-metadata/safework-rm-safety-7b/README.md",
+      "official_source": "https://huggingface.co/AI45Research/SafeWork-RM-Safety-7B",
+      "training_disclosure": "The model card states that curated safety, moral-reasoning, and factual-verification dialogues were used, without a complete itemized corpus list.",
+      "declared_training_overlap": [],
+      "declared_evaluation_overlap": [
+        "siuo"
+      ],
+      "required_sensitivity": [
+        "Tag every SIUO result involving SafeWork as benchmark-exposed rather than fully external.",
+        "Report a leave-SafeWork-out SIUO sensitivity analysis.",
+        "Do not use SafeWork's SIUO result alone as evidence of cross-dataset generalization."
+      ]
+    },
+    "internvl": {
+      "model_id": "OpenGVLab/InternVL3_5-8B-Instruct",
+      "model_revision": "6c2034f6f3d22bbbff919b11b91c5721bba84f8d",
+      "metadata_readme": "model-metadata/internvl3_5-8b-instruct/README.md",
+      "official_source": "https://internvl.github.io/blog/2025-08-26-InternVL-3.5/",
+      "training_disclosure": "The model card describes large CPT and SFT corpora inherited partly from InternVL3, but the complete sample-level corpus membership is not disclosed.",
+      "declared_training_overlap": [],
+      "declared_evaluation_overlap": [],
+      "required_sensitivity": []
+    },
+    "minicpm": {
+      "model_id": "OpenBMB/MiniCPM-V-4_5",
+      "model_revision": "2626e837a54905aab70fae9325153ef3454387ab",
+      "metadata_readme": "model-metadata/minicpm-v-4_5/README.md",
+      "official_source": "https://huggingface.co/openbmb/MiniCPM-V-4_5",
+      "training_disclosure": "The model card describes document pretraining and multimodal reinforcement learning but does not provide a complete itemized corpus list.",
+      "declared_training_overlap": [],
+      "declared_evaluation_overlap": [],
+      "required_sensitivity": []
+    }
+  }
+}

@@ -1,0 +1,286 @@
+{
+  "schema": "softfusion-confirmatory-analysis-plan-v1",
+  "status": "frozen",
+  "seed_base": 20260724,
+  "confirmatory_manifest_sha256": "f6457ddcf2fef60032a33645a28a158efad8e08c959ec80d401df16e8b798550",
+  "confirmatory_record_count": 513,
+  "fusion_config_sha256": "62325139b8fa3de867984a23e9819332ead398fa6eca710d22781337736fc569",
+  "fusion_config_file_sha256": "b6fd5f6113f01f39404796e681f740e77a9de7dc5d8758ad452769cdec39c156",
+  "freeze_record_file_sha256": "13ecf524c5c1e3a0e9962d9edcf09bdc536c96c283d826a9a748c66ccea0b7ba",
+  "feature_scope": "canonical_only",
+  "judge_order": [
+    "qwen",
+    "safework",
+    "minicpm"
+  ],
+  "adapter_versions": {
+    "qwen": "qwen3-vl-soft-score-v1",
+    "safework": "safework-rm-safety-native-sequence-sum-v3",
+    "minicpm": "minicpm-v4.5-soft-score-v1"
+  },
+  "main_method": {
+    "family": "F1",
+    "threshold": 0.2943076502105866,
+    "description": "calibrated canonical soft-evidence main-effect stacker"
+  },
+  "confirmatory_hierarchy": [
+    "fusion_vs_majority",
+    "fusion_vs_or_1_of_n"
+  ],
+  "strongest_simple_baseline": "or_1_of_n",
+  "hard_baselines": [
+    "majority",
+    "or_1_of_n",
+    "and_n_of_n",
+    "single_qwen",
+    "single_safework",
+    "single_minicpm"
+  ],
+  "calibrated_soft_mean": {
+    "aggregation": "arithmetic_mean_of_final_calibrated_probabilities",
+    "threshold": 0.1648065627960821,
+    "development_oof_metrics": {
+      "sample_count": 1760,
+      "accuracy": 0.8471590909090909,
+      "macro_f1": 0.7833796598149227,
+      "unsafe_recall": 0.8401253918495298,
+      "safe_specificity": 0.8487161693268563,
+      "false_safe_rate": 0.15987460815047017,
+      "mcc": 0.5935315721582431,
+      "unsafe_true_positive": 268,
+      "safe_true_positive": 1223,
+      "unsafe_false_positive": 218,
+      "unsafe_false_negative": 51
+    },
+    "role": "prespecified_nonparametric_soft_baseline"
+  },
+  "risk_constraints": {
+    "reference": "or_1_of_n",
+    "unsafe_recall_margin_below_reference": 0.01,
+    "safe_specificity_margin_below_reference": 0.03
+  },
+  "leave_one_judge_out": {
+    "qwen": {
+      "included_judges": [
+        "safework",
+        "minicpm"
+      ],
+      "calibrators": {
+        "safework": {
+          "method": "beta",
+          "a": 2.730912319083189,
+          "b": 0.006737946999085467,
+          "c": 1.0447366839522523,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.11025551780758154,
+          "monotonic": true
+        },
+        "minicpm": {
+          "method": "temperature",
+          "temperature": 1.6967220583025642,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.20881337614761464
+        }
+      },
+      "model": {
+        "feature_family": "F1",
+        "feature_names": [
+          "safework",
+          "minicpm"
+        ],
+        "judge_order": [
+          "safework",
+          "minicpm"
+        ],
+        "mean": [
+          -6.227509350325508,
+          -3.008767597227752
+        ],
+        "scale": [
+          3.1927769543629556,
+          1.081359888796814
+        ],
+        "coefficients": [
+          2.7067249660540904,
+          -0.022780604657706652
+        ],
+        "intercept": -5.358334131074453,
+        "penalty": "l2",
+        "C": 0.3,
+        "l1_ratio": null
+      },
+      "threshold": 0.2943076502105866,
+      "development_oof_metrics_at_full_threshold": {
+        "sample_count": 1760,
+        "accuracy": 0.8613636363636363,
+        "macro_f1": 0.7952707856598017,
+        "unsafe_recall": 0.8087774294670846,
+        "safe_specificity": 0.8730048577376822,
+        "false_safe_rate": 0.19122257053291536,
+        "mcc": 0.6060819544048702,
+        "unsafe_true_positive": 258,
+        "safe_true_positive": 1258,
+        "unsafe_false_positive": 183,
+        "unsafe_false_negative": 61
+      }
+    },
+    "safework": {
+      "included_judges": [
+        "qwen",
+        "minicpm"
+      ],
+      "calibrators": {
+        "qwen": {
+          "method": "beta",
+          "a": 0.30465503442202674,
+          "b": 0.006737946999085467,
+          "c": 0.6771033074904367,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.16696356729821205,
+          "monotonic": true
+        },
+        "minicpm": {
+          "method": "temperature",
+          "temperature": 1.6967220583025642,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.20881337614761464
+        }
+      },
+      "model": {
+        "feature_family": "F1",
+        "feature_names": [
+          "qwen",
+          "minicpm"
+        ],
+        "judge_order": [
+          "qwen",
+          "minicpm"
+        ],
+        "mean": [
+          -3.226968368362874,
+          -3.008767597227752
+        ],
+        "scale": [
+          1.0502473520552593,
+          1.081359888796814
+        ],
+        "coefficients": [
+          0.9549282689151026,
+          0.1485056376033584
+        ],
+        "intercept": -3.2172451770195756,
+        "penalty": "l2",
+        "C": 0.3,
+        "l1_ratio": null
+      },
+      "threshold": 0.2943076502105866,
+      "development_oof_metrics_at_full_threshold": {
+        "sample_count": 1760,
+        "accuracy": 0.8653409090909091,
+        "macro_f1": 0.7616019852784426,
+        "unsafe_recall": 0.567398119122257,
+        "safe_specificity": 0.9312977099236641,
+        "false_safe_rate": 0.432601880877743,
+        "mcc": 0.5252344389464787,
+        "unsafe_true_positive": 181,
+        "safe_true_positive": 1342,
+        "unsafe_false_positive": 99,
+        "unsafe_false_negative": 138
+      }
+    },
+    "minicpm": {
+      "included_judges": [
+        "qwen",
+        "safework"
+      ],
+      "calibrators": {
+        "qwen": {
+          "method": "beta",
+          "a": 0.30465503442202674,
+          "b": 0.006737946999085467,
+          "c": 0.6771033074904367,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.16696356729821205,
+          "monotonic": true
+        },
+        "safework": {
+          "method": "beta",
+          "a": 2.730912319083189,
+          "b": 0.006737946999085467,
+          "c": 1.0447366839522523,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.11025551780758154,
+          "monotonic": true
+        }
+      },
+      "model": {
+        "feature_family": "F1",
+        "feature_names": [
+          "qwen",
+          "safework"
+        ],
+        "judge_order": [
+          "qwen",
+          "safework"
+        ],
+        "mean": [
+          -3.226968368362874,
+          -6.227509350325508
+        ],
+        "scale": [
+          1.0502473520552593,
+          3.1927769543629556
+        ],
+        "coefficients": [
+          0.2423298599701938,
+          2.3203259445767848
+        ],
+        "intercept": -5.078410454238182,
+        "penalty": "l2",
+        "C": 0.3,
+        "l1_ratio": null
+      },
+      "threshold": 0.2943076502105866,
+      "development_oof_metrics_at_full_threshold": {
+        "sample_count": 1760,
+        "accuracy": 0.86875,
+        "macro_f1": 0.8005845713004823,
+        "unsafe_recall": 0.7836990595611285,
+        "safe_specificity": 0.8875780707841776,
+        "false_safe_rate": 0.2163009404388715,
+        "mcc": 0.6107108408793434,
+        "unsafe_true_positive": 250,
+        "safe_true_positive": 1279,
+        "unsafe_false_positive": 162,
+        "unsafe_false_negative": 69
+      }
+    }
+  },
+  "marginal_gate": {
+    "minimum_hard_prediction_change_rate": 0.01,
+    "minimum_positive_component_bootstrap_fraction": 0.7,
+    "require_nonnegative_point_unsafe_recall_delta": true
+  },
+  "statistics": {
+    "paired_unit": "component_id",
+    "bootstrap_replicates": 10000,
+    "randomization_replicates": 10000,
+    "confidence_level": 0.95,
+    "primary_metric": "macro_f1",
+    "primary_pass_rule": "paired_component_bootstrap_ci_lower_gt_zero",
+    "randomization_role": "supporting_inference",
+    "mcnemar_role": "compatibility_appendix_only"
+  },
+  "excluded_confirmatory_features": [
+    "policy_consistency",
+    "visual_consistency",
+    "pairwise_interactions"
+  ],
+  "excluded_claims": [
+    "multi_view_consistency_improves_accuracy",
+    "pairwise_dependence_terms_improve_accuracy"
+  ],
+  "confirmatory_labels_accessed": false,
+  "confirmatory_predictions_generated": false,
+  "analysis_plan_sha256": "c44055a41c7ab3d902601060fcda45d20febdd33de57ed3a211bbfb3f19776b5"
+}

@@ -1,0 +1,342 @@
+{
+  "schema": "softfusion-posthoc-hard-label-control-v1",
+  "status": "completed",
+  "inferential_role": "post_hoc_mechanism_control_not_part_of_the_frozen_confirmatory_hierarchy",
+  "leakage_guard": {
+    "model_fit_data": "D_fit plus D_select development records only",
+    "threshold_selection_data": "five-fold component-grouped development OOF predictions only",
+    "confirmatory_labels_used_for_fit_or_threshold": false,
+    "confirmatory_labels_used_for_final_evaluation": true
+  },
+  "control_definition": {
+    "input_features": "three binary judge decisions obtained by thresholding each raw p_unsafe at 0.5",
+    "learner": "three-main-effect component-weighted L2 logistic regression",
+    "C": 0.3,
+    "feature_count": 3,
+    "fitted_parameter_count": 4,
+    "comparator_difference": "input information only; learner family, regularization strength, development split, component grouping, risk constraints, and threshold-selection rule match the frozen F1 pipeline"
+  },
+  "implementation_verification": {
+    "check": "Node Newton solver refit on the frozen continuous features versus stored scikit-learn model",
+    "maximum_absolute_parameter_or_scaling_difference": 2.6963052235373652e-8,
+    "passed": true
+  },
+  "development": {
+    "record_count": 1760,
+    "component_count": 821,
+    "fold_audit": [
+      {
+        "fold": 0,
+        "training_record_count": 1408,
+        "validation_record_count": 352,
+        "training_component_count": 657,
+        "validation_component_count": 164
+      },
+      {
+        "fold": 1,
+        "training_record_count": 1408,
+        "validation_record_count": 352,
+        "training_component_count": 657,
+        "validation_component_count": 164
+      },
+      {
+        "fold": 2,
+        "training_record_count": 1408,
+        "validation_record_count": 352,
+        "training_component_count": 657,
+        "validation_component_count": 164
+      },
+      {
+        "fold": 3,
+        "training_record_count": 1408,
+        "validation_record_count": 352,
+        "training_component_count": 657,
+        "validation_component_count": 164
+      },
+      {
+        "fold": 4,
+        "training_record_count": 1408,
+        "validation_record_count": 352,
+        "training_component_count": 656,
+        "validation_component_count": 165
+      }
+    ],
+    "threshold": {
+      "feasible": true,
+      "threshold": 0.06852936919386016,
+      "metrics": {
+        "sample_count": 1760,
+        "accuracy": 0.8676136363636363,
+        "macro_f1": 0.8057920457521509,
+        "unsafe_recall": 0.8369905956112853,
+        "safe_specificity": 0.8743927827897293,
+        "false_safe_rate": 0.1630094043887147,
+        "mcc": 0.6291078741582877,
+        "unsafe_true_positive": 267,
+        "safe_true_positive": 1260,
+        "unsafe_false_positive": 181,
+        "unsafe_false_negative": 52
+      },
+      "minimum_unsafe_recall": 0.8269905956112853,
+      "minimum_safe_specificity": 0.8263497571131159,
+      "candidate_count": 67
+    },
+    "final_model": {
+      "mean": [
+        0.05870064094790072,
+        0.10239215041285767,
+        0.02574075673953888
+      ],
+      "scale": [
+        0.23506355672499718,
+        0.3031633189333598,
+        0.15836088589678604
+      ],
+      "coefficients": [
+        0.3715221801419477,
+        1.070059753360892,
+        -0.0730867200056891
+      ],
+      "intercept": -3.6131554737302607,
+      "penalty": "l2",
+      "C": 0.3,
+      "iterations": 6
+    }
+  },
+  "confirmatory": {
+    "record_count": 513,
+    "component_count": 257,
+    "continuous_fusion_metrics": {
+      "sample_count": 513,
+      "accuracy": 0.8421052631578947,
+      "macro_f1": 0.8095864360178715,
+      "unsafe_recall": 0.8870967741935484,
+      "safe_specificity": 0.8277634961439588,
+      "false_safe_rate": 0.11290322580645162,
+      "mcc": 0.6437993478135268,
+      "unsafe_true_positive": 110,
+      "safe_true_positive": 322,
+      "unsafe_false_positive": 67,
+      "unsafe_false_negative": 14
+    },
+    "hard_label_logistic_metrics": {
+      "sample_count": 513,
+      "accuracy": 0.8401559454191033,
+      "macro_f1": 0.8097800528162644,
+      "unsafe_recall": 0.9112903225806451,
+      "safe_specificity": 0.8174807197943444,
+      "false_safe_rate": 0.08870967741935487,
+      "mcc": 0.650533836204173,
+      "unsafe_true_positive": 113,
+      "safe_true_positive": 318,
+      "unsafe_false_positive": 71,
+      "unsafe_false_negative": 11
+    },
+    "continuous_fusion_probability_metrics": {
+      "sample_count": 513,
+      "brier_score": 0.10487405988004016,
+      "log_loss": 0.304514431284705,
+      "ece": 0.04456906426385314,
+      "ece_bins": 10,
+      "populated_ece_bins": 9
+    },
+    "hard_label_logistic_probability_metrics": {
+      "sample_count": 513,
+      "brier_score": 0.11967957925268237,
+      "log_loss": 0.3715671169265259,
+      "ece": 0.06939432841360836,
+      "ece_bins": 10,
+      "populated_ece_bins": 4
+    },
+    "fusion_minus_hard_label_control": {
+      "point_differences": {
+        "macro_f1": -0.0001936167983929149,
+        "unsafe_recall": -0.024193548387096753,
+        "safe_specificity": 0.010282776349614386,
+        "mcc": -0.006734488390646276
+      },
+      "bootstrap": {
+        "schema": "paired-component-bootstrap-probability-v1",
+        "replicates": 10000,
+        "seed": 202608071,
+        "component_count": 257,
+        "difference_direction": "left_minus_right",
+        "metrics": {
+          "macro_f1": {
+            "mean_delta": -0.00021941720706405182,
+            "median_delta": -0.00007323531869318778,
+            "ci95": [
+              -0.00855190442440691,
+              0.0076535705388741035
+            ],
+            "positive_fraction": 0.488
+          },
+          "unsafe_recall": {
+            "mean_delta": -0.024204402656684446,
+            "median_delta": -0.02298850574712641,
+            "ci95": [
+              -0.054545454545454564,
+              0
+            ],
+            "positive_fraction": 0
+          },
+          "safe_specificity": {
+            "mean_delta": 0.010259526263580093,
+            "median_delta": 0.010126582278481067,
+            "ci95": [
+              0.0024750947316953963,
+              0.021276595744680882
+            ],
+            "positive_fraction": 0.9806
+          },
+          "mcc": {
+            "mean_delta": -0.006795918772022605,
+            "median_delta": -0.006349927423342339,
+            "ci95": [
+              -0.026200445816992293,
+              0.009609681680668869
+            ],
+            "positive_fraction": 0.2265
+          },
+          "brier_score": {
+            "mean_delta": -0.014794139434235253,
+            "median_delta": -0.014596445865145281,
+            "ci95": [
+              -0.024192193035250813,
+              -0.006574145221405768
+            ],
+            "positive_fraction": 0
+          },
+          "log_loss": {
+            "mean_delta": -0.06704499619875215,
+            "median_delta": -0.06627154209234232,
+            "ci95": [
+              -0.10954495043309218,
+              -0.030738106396000275
+            ],
+            "positive_fraction": 0
+          }
+        }
+      },
+      "randomization": {
+        "schema": "paired-component-randomization-v1",
+        "replicates": 10000,
+        "seed": 202608072,
+        "component_count": 257,
+        "metric": "macro_f1",
+        "observed_delta": -0.0001936167983929149,
+        "one_sided_p_value": 0.525947405259474,
+        "two_sided_p_value": 1
+      }
+    },
+    "fusion_minus_calibrated_soft_mean_probability_bootstrap": {
+      "schema": "paired-component-bootstrap-probability-v1",
+      "replicates": 10000,
+      "seed": 202608073,
+      "component_count": 257,
+      "difference_direction": "left_minus_right",
+      "metrics": {
+        "macro_f1": {
+          "mean_delta": 0.029781710653599167,
+          "median_delta": 0.029807224873639238,
+          "ci95": [
+            0.003323657732000127,
+            0.05648892316138703
+          ],
+          "positive_fraction": 0.9864
+        },
+        "unsafe_recall": {
+          "mean_delta": -0.032022727193278186,
+          "median_delta": -0.02877697841726623,
+          "ci95": [
+            -0.09302325581395343,
+            0.010872551361681798
+          ],
+          "positive_fraction": 0.0653
+        },
+        "safe_specificity": {
+          "mean_delta": 0.05372154650476474,
+          "median_delta": 0.053021175611537075,
+          "ci95": [
+            0.023560209424083767,
+            0.08730351363846497
+          ],
+          "positive_fraction": 1
+        },
+        "mcc": {
+          "mean_delta": 0.03632923755187121,
+          "median_delta": 0.037325137262421315,
+          "ci95": [
+            -0.015151305540103941,
+            0.08284454450077725
+          ],
+          "positive_fraction": 0.9215
+        },
+        "brier_score": {
+          "mean_delta": -0.013098606676148497,
+          "median_delta": -0.0132727979265847,
+          "ci95": [
+            -0.021168152082845153,
+            -0.003957371209210267
+          ],
+          "positive_fraction": 0.0032
+        },
+        "log_loss": {
+          "mean_delta": -0.039805944618782604,
+          "median_delta": -0.041071250671700726,
+          "ci95": [
+            -0.06558801264285267,
+            -0.00624523094788328
+          ],
+          "positive_fraction": 0.0119
+        }
+      }
+    }
+  },
+  "multiple_testing_clarification": {
+    "primary_majority_comparison_excluded_from_holm_family": true,
+    "secondary_family_size": 5,
+    "family": [
+      {
+        "comparator": "or_1_of_n",
+        "raw_one_sided_p_value": 0.0420957904209579,
+        "holm_adjusted_one_sided_p_value": 0.0841915808419158
+      },
+      {
+        "comparator": "calibrated_soft_mean",
+        "raw_one_sided_p_value": 0.015398460153984602,
+        "holm_adjusted_one_sided_p_value": 0.0461953804619538
+      },
+      {
+        "comparator": "single_qwen",
+        "raw_one_sided_p_value": 0.004899510048995101,
+        "holm_adjusted_one_sided_p_value": 0.019598040195980403
+      },
+      {
+        "comparator": "single_safework",
+        "raw_one_sided_p_value": 0.0527947205279472,
+        "holm_adjusted_one_sided_p_value": 0.0841915808419158
+      },
+      {
+        "comparator": "single_minicpm",
+        "raw_one_sided_p_value": 0.00009999000099990002,
+        "holm_adjusted_one_sided_p_value": 0.0004999500049995
+      }
+    ]
+  },
+  "ece_definition": "10 fixed-width bins on [0,1], left-closed and right-open except the final right-closed bin; record-weighted absolute calibration gaps",
+  "source_files_sha256": {
+    "experiments/exp-multijudge/configs/softfusion_fit.jsonl": "37d17c873237e68d05624edc0c65be9e9f7b2637877014b943f86ef5096f0117",
+    "experiments/exp-multijudge/configs/softfusion_select.jsonl": "414ff4af682209af7aa3e237e2051e794c19ccc01c0e1b7c211ece0edd114215",
+    "results/multijudge-v15/softfusion/sf4-evaluation/confirmatory_predictions.jsonl": "ffc9ce5fbdc4d56455d3efa8f9015d08d9d0577ee83258229a7b65b13f276918",
+    "results/multijudge-v15/softfusion/sf3-fit/fusion_config.json": "b6fd5f6113f01f39404796e681f740e77a9de7dc5d8758ad452769cdec39c156",
+    "results/multijudge-v15/softfusion/sf3-fit/confirmatory_analysis_plan.json": "abee9cabb0e8a7c92ead3681110a8fb77fc839c60b38d59aeb9409d806edb26c",
+    "results/multijudge-v15/softfusion/sf4-evaluation/confirmatory_results.json": "c62f445b6876374f192041ffd231d6d96eb3a931bd232c7330352a83456eb00c",
+    "results/multijudge-v15/softfusion/sf1-soft/qwen/fit/judgments.jsonl": "201aaa0538084de442660619296757ac0f787e6c32f481e6267873c6cf94446e",
+    "results/multijudge-v15/softfusion/sf1-soft/qwen/select/judgments.jsonl": "7e938fa3a5ae2f7994cb65bfa4e0b5c6801e55697f492f4c9567a29bbb46b229",
+    "results/multijudge-v15/softfusion/sf1-soft/safework/fit/judgments.jsonl": "b9504dbff869a7bd00ba936213bdf33bf1297341afe763f7b7badcecfc09e73b",
+    "results/multijudge-v15/softfusion/sf1-soft/safework/select/judgments.jsonl": "fc97240bb3c43cda46ef6707db85aab9abf761c1e8ae474ef2de32c1ec160044",
+    "results/multijudge-v15/softfusion/sf1-soft/minicpm/fit/judgments.jsonl": "68f5ad16c3f894f843c1be4aa9ca831443120a7bb5215fb22b76cdcb8efd5598",
+    "results/multijudge-v15/softfusion/sf1-soft/minicpm/select/judgments.jsonl": "d31e6e89cc8bee01a27c74e37b6da54288bd1e5f858fd24c941d0763d341425e"
+  }
+}

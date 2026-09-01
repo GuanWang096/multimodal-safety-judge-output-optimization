@@ -1,0 +1,35 @@
+{
+  "schema": "falcon-experiment-audit-v1",
+  "overall_verdict": "fail",
+  "result_validity": "pass",
+  "protocol_enforcement": "fail",
+  "evaluation_type": "real_gt",
+  "checks": {
+    "ground_truth_provenance": "pass",
+    "metric_recomputation": "pass",
+    "artifact_and_count_consistency": "pass",
+    "preview_id_exclusion": "pass",
+    "group_atomic_label_independent_split": "pass",
+    "adaptation_only_fitting_labels": "pass",
+    "prediction_freeze_before_opening": "pass",
+    "single_opening_enforcement": "fail",
+    "no_observed_post_confirmation_tuning": "pass_with_caveat",
+    "statistical_implementation_for_recorded_run": "pass"
+  },
+  "blocking_finding": {
+    "id": "FALCON-AUDIT-001",
+    "description": "The historical evaluator wrote a confirmation opening record but did not mutate confirmation_label_seal.json to opened=true, so exactly-once opening was recorded but not enforced.",
+    "metric_impact": "none_detected",
+    "claim_impact": "Do not claim cryptographically enforced one-time opening for the historical run."
+  },
+  "result_to_claim": {
+    "FALCON-C1": "not_supported",
+    "FALCON-C2": "not_supported",
+    "descriptive_external_performance": "supported"
+  },
+  "remediation": {
+    "future_evaluator_patched": true,
+    "historical_results_modified": false,
+    "second_opening_now_refused_by_existing_opening_record": true
+  }
+}

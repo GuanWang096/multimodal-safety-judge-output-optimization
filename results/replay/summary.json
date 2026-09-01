@@ -1,0 +1,50 @@
+{
+  "all_fabric_transactions_valid": true,
+  "batch_count": 9,
+  "committee_confirmed_batch_count": 9,
+  "elapsed_seconds": 210.83508610600006,
+  "expected_record_count": 513,
+  "fabric_anchor_pass_count": 513,
+  "ipfs_round_trip_pass_count": 9,
+  "labels_accessed_before_certificate_admission": false,
+  "latency": {
+    "certify": {
+      "count": 9,
+      "max_ms": 2824.303396999994,
+      "mean_ms": 2678.4843416666918,
+      "median_ms": 2681.467977000011
+    },
+    "committee_vote": {
+      "count": 18,
+      "max_ms": 2700.371111999857,
+      "mean_ms": 2606.171877944411,
+      "median_ms": 2601.6382604999535
+    },
+    "freeze": {
+      "count": 9,
+      "max_ms": 2729.442226999936,
+      "mean_ms": 2684.3017193333353,
+      "median_ms": 2681.933157000003
+    },
+    "ipfs_add": {
+      "count": 9,
+      "max_ms": 88.24833399989984,
+      "mean_ms": 50.98257622216806,
+      "median_ms": 42.16649199997846
+    },
+    "settle": {
+      "count": 9,
+      "max_ms": 2915.4430339999635,
+      "mean_ms": 2814.783043888913,
+      "median_ms": 2811.899440999923
+    }
+  },
+  "off_chain_recomputation_pass_count": 513,
+  "passed": true,
+  "record_count": 513,
+  "rgg_certificate_count": 9,
+  "run_id": "evidence-v2-formal-20260802T100751Z",
+  "schema": "multijudge-evidence-v2-replay-summary",
+  "settled_batch_count": 9,
+  "valid_fabric_transaction_count": 45
+}

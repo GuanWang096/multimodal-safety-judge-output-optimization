@@ -1,0 +1,43 @@
+{
+  "schema": "softfusion-confirmatory-output-audit-v1",
+  "passed": true,
+  "labels_accessed": false,
+  "judge": "minicpm",
+  "adapter_version": "minicpm-v4.5-soft-score-v1",
+  "manifest_sha256": "f6457ddcf2fef60032a33645a28a158efad8e08c959ec80d401df16e8b798550",
+  "judgments_sha256": "05b0cd8563d621d9b932ee82f6bb497fc41d1428ab1093a590d0038f02a82be0",
+  "expected_count": 513,
+  "observed_count": 513,
+  "sample_order_exact": true,
+  "duplicate_count": 0,
+  "missing_count": 0,
+  "missing_sample_ids": [],
+  "unexpected_count": 0,
+  "unexpected_sample_ids": [],
+  "manifest_forbidden_fields": [],
+  "output_forbidden_field_count": 0,
+  "output_forbidden_fields": {},
+  "invalid_record_count": 0,
+  "invalid_records": [],
+  "wrong_adapter_count": 0,
+  "finite_scores": true,
+  "probabilities_in_range": true,
+  "unique_probability_count": 135,
+  "probability_population_std": 0.22034277670907493,
+  "nondegenerate": true,
+  "status_state": "completed",
+  "config_checks": {
+    "manifest_hash_matches": true,
+    "selected_count_matches": true,
+    "canonical_view": true,
+    "original_images": true,
+    "adapter_matches": true,
+    "adapter_version_matches": true,
+    "hard_regression_disabled": true
+  },
+  "repeatability": {
+    "required": false,
+    "passed": true
+  },
+  "missing_artifacts": []
+}

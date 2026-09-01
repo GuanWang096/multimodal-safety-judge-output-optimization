@@ -1,0 +1,28 @@
+{
+  "schema": "falcon-prospective-adapted-model-freeze-v1",
+  "status": "frozen-before-confirmation-label-access",
+  "protocol_file_sha256": "e04eb797fa9364811c2f4c48ec5572e774e47ebca440664564275eff35666bea",
+  "raw_output_freeze_sha256": "4f451458c311902fa61baee15fb6f4cf6df0a62d6c9b3380b4bf37150e391875",
+  "fusion_config_sha256": "62325139b8fa3de867984a23e9819332ead398fa6eca710d22781337736fc569",
+  "adaptation_labels_sha256": "f4a42fec7e724aee76c03884edf84a7ee4e678b1fe97aedfc251213a4d37f4e6",
+  "adaptation_sample_count": 710,
+  "adaptation_class_counts": {
+    "safe": 462,
+    "unsafe": 248
+  },
+  "confirmation_sample_count": 1068,
+  "confirmation_label_seal_sha256": "90510db002807a83a9ddc9ff116e00c4a4f3f6ae8d61d80e65ea86d68082ff91",
+  "sealed_confirmation_labels_sha256": "52d89797ea8aab9e446eae9404f15b699be4a4026a8040791971091f707d0773",
+  "models_file": "C:\\Users\\guan\\Desktop\\zte-sci\\v15\\results\\multijudge-v15\\external-transfer\\falcon-test\\model-freeze\\adapted_models.json",
+  "models_file_sha256": "1875689a011b3d3f0fc46b00ac5e63c589b759b51ea5795c25e5ece560e5aeef",
+  "predictions_file": "C:\\Users\\guan\\Desktop\\zte-sci\\v15\\results\\multijudge-v15\\external-transfer\\falcon-test\\model-freeze\\confirmation_predictions.frozen.jsonl",
+  "predictions_file_sha256": "f3ed3244ddb945a2642945e0ee8b6478555fd43b06bdc3c15af064e61c3e3ebc",
+  "judgment_sha256": {
+    "qwen": "6e88cf03e52728e3b9f4965c4f5ef7968e212bd82b21a752e4c74e87a41b1448",
+    "safework": "96d61bf222de8b01cc1c744c4d0babfee71ef515c7734dd446f15c13f0b474e4",
+    "minicpm": "97468fc01a255519329e9aec48df78afd57052948b80e714b6407f4c2981822b"
+  },
+  "confirmation_labels_opened": false,
+  "model_or_threshold_selection_after_adaptation_fit": false,
+  "content_sha256": "e9b50cc4d7a1bd1c985a35ac8b623d22db0a0aa28ec97b3a12c224dbce36e994"
+}

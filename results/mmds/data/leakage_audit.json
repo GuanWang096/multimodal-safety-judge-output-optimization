@@ -1,0 +1,75 @@
+{
+  "schema": "softfusion-leakage-audit-v1",
+  "exact": {
+    "pairwise": {
+      "fit__select": {
+        "shared_component_count": 0,
+        "shared_pixel_digest_count": 0,
+        "shared_conversation_digest_count": 0
+      },
+      "fit__confirm": {
+        "shared_component_count": 0,
+        "shared_pixel_digest_count": 0,
+        "shared_conversation_digest_count": 0
+      },
+      "fit__engineering": {
+        "shared_component_count": 0,
+        "shared_pixel_digest_count": 0,
+        "shared_conversation_digest_count": 0
+      },
+      "fit__legacy_val": {
+        "shared_component_count": 0,
+        "shared_pixel_digest_count": 0,
+        "shared_conversation_digest_count": 0
+      },
+      "fit__legacy_test": {
+        "shared_component_count": 0,
+        "shared_pixel_digest_count": 0,
+        "shared_conversation_digest_count": 0
+      },
+      "select__confirm": {
+        "shared_component_count": 0,
+        "shared_pixel_digest_count": 0,
+        "shared_conversation_digest_count": 0
+      },
+      "select__engineering": {
+        "shared_component_count": 0,
+        "shared_pixel_digest_count": 0,
+        "shared_conversation_digest_count": 0
+      },
+      "select__legacy_val": {
+        "shared_component_count": 0,
+        "shared_pixel_digest_count": 0,
+        "shared_conversation_digest_count": 0
+      },
+      "select__legacy_test": {
+        "shared_component_count": 0,
+        "shared_pixel_digest_count": 0,
+        "shared_conversation_digest_count": 0
+      },
+      "confirm__engineering": {
+        "shared_component_count": 0,
+        "shared_pixel_digest_count": 0,
+        "shared_conversation_digest_count": 0
+      },
+      "confirm__legacy_val": {
+        "shared_component_count": 0,
+        "shared_pixel_digest_count": 0,
+        "shared_conversation_digest_count": 0
+      },
+      "confirm__legacy_test": {
+        "shared_component_count": 0,
+        "shared_pixel_digest_count": 0,
+        "shared_conversation_digest_count": 0
+      }
+    },
+    "passed": true
+  },
+  "perceptual_near_duplicate_status": "passed",
+  "perceptual_near_duplicate_candidate_count": 51,
+  "perceptual_unresolved_count": 0,
+  "perceptual_confirmed_same_count": 51,
+  "perceptual_confirmed_same_unmerged_count": 0,
+  "passed": true,
+  "note": "A confirmed-same pair requires component merging and a fresh split; a confirmed-different pair remains separate."
+}

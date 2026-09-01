@@ -1,0 +1,69 @@
+{
+  "schema": "softfusion-committee-freeze-v2",
+  "qualified_soft_judges": [
+    {
+      "judge": "qwen",
+      "adapter_version": "qwen3-vl-soft-score-v1",
+      "qualification_audit_sha256": "e3d7520bf497b38c312eb6cefc4939c702352fbb5e4664066c7b93a6c2f45982",
+      "qualification_runs": [
+        {
+          "run": "qual100-a",
+          "judgments_sha256": "dafe4cc5ff040658aaeddf93a3c5bdb5a9166b5d2c044a282f9c830d3a99bce8",
+          "summary_sha256": "0c9def9ff7bd95a46ffd33eda751fb9240f4817426f3f5cdaab0b16f62e15564"
+        },
+        {
+          "run": "qual100-b",
+          "judgments_sha256": "8fbc5103297659e3b63257e94589524a7716fd4a01c73bd5666f7782f219a417",
+          "summary_sha256": "0c9def9ff7bd95a46ffd33eda751fb9240f4817426f3f5cdaab0b16f62e15564"
+        }
+      ]
+    },
+    {
+      "judge": "safework",
+      "adapter_version": "safework-rm-safety-native-sequence-sum-v3",
+      "qualification_audit_sha256": "dd06ebd394f6c7b091da4deb1377f22949e6bff89033ff4b1f7965d0642a1977",
+      "qualification_runs": [
+        {
+          "run": "qual100-a",
+          "judgments_sha256": "4d447580cb5a38125bd1fe1f3a712a4f537595c2386c6826d466bcda04ec8860",
+          "summary_sha256": "9e91ca0be583ef2b4192b76d58fa95c256f610489f065f526399fdca80345c3c"
+        },
+        {
+          "run": "qual100-b",
+          "judgments_sha256": "b4047b694ff5dbeb71b6df5ca13c8141f6febae147d604e9a420c54eae0bd533",
+          "summary_sha256": "9e91ca0be583ef2b4192b76d58fa95c256f610489f065f526399fdca80345c3c"
+        }
+      ]
+    },
+    {
+      "judge": "minicpm",
+      "adapter_version": "minicpm-v4.5-soft-score-v1",
+      "qualification_audit_sha256": "c2990dd4da17f8829906350489d4b083617e4c1b9f98beb8c27acf52821cd04e",
+      "qualification_runs": [
+        {
+          "run": "qual100-a",
+          "judgments_sha256": "3bd1d41e228c98d7dabedce3a68f3cf99af4d5c732533f0e662a4dd873c9136b",
+          "summary_sha256": "0957dd37437feb517616ff038d7ed6efec1dc77ac0c68592edd78a289f48075f"
+        },
+        {
+          "run": "qual100-b",
+          "judgments_sha256": "b157556f43804595bfa30673688edcdeb9622051483f718a8c19df84ea4f4b28",
+          "summary_sha256": "0957dd37437feb517616ff038d7ed6efec1dc77ac0c68592edd78a289f48075f"
+        }
+      ]
+    }
+  ],
+  "hard_only_judges": [
+    {
+      "judge": "internvl",
+      "reason": "frozen_soft_hard_agreement_gate_failed",
+      "numeric_codebook_agreement": 0.93,
+      "direct_label_agreement": 0.92,
+      "minimum_required_agreement": 0.95,
+      "allowed_role": "hard_vote_baseline_only"
+    }
+  ],
+  "primary_simple_baseline": "two_of_three_hard_majority_same_pool",
+  "additional_baseline": "four_judge_hard_majority",
+  "missing_score_policy": "fail_closed_no_imputation"
+}

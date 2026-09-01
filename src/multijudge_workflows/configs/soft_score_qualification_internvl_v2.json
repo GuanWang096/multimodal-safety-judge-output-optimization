@@ -1,0 +1,39 @@
+{
+  "schema": "soft-score-qualification-config-v3",
+  "frozen_at": "2026-07-29",
+  "amends": "soft_score_qualification_v2.json",
+  "amendment_trigger": {
+    "adapter": "OpenGVLab/InternVL3_5-8B-Instruct",
+    "engineering_sample_count": 100,
+    "numeric_codebook_hard_argmax_agreement": 0.93,
+    "minimum_required_agreement": 0.95,
+    "numeric_codebook_probability_spearman": 0.9204348064581436,
+    "numeric_codebook_direction_flip_rate": 0.1,
+    "selection_metric": "hard_argmax_agreement_only",
+    "action": "replace numeric codes with direct semantic labels and average two label-order prompts"
+  },
+  "engineering_manifest": "configs/mmds_smoke_100.json",
+  "seed": 20260729,
+  "repeat_count": 2,
+  "deterministic_margin_tolerance": 0.0001,
+  "minimum_hard_argmax_agreement": 0.95,
+  "minimum_codebook_probability_spearman": 0.5,
+  "maximum_codebook_direction_flip_rate": 0.25,
+  "native_label_sequence_fallback_satisfies_codebook_gate": false,
+  "direct_label_orders": {
+    "safe_first": [
+      "safe",
+      "unsafe"
+    ],
+    "unsafe_first": [
+      "unsafe",
+      "safe"
+    ]
+  },
+  "record_semantics": {
+    "internvl": "mean of unsafe-oriented margins from two direct-label order prompts",
+    "numeric_codebooks": "engineering diagnostic only",
+    "candidate_normalization": "softmax over safe and unsafe candidate logits",
+    "hard_regression": "original canonical JSON generation interface"
+  }
+}

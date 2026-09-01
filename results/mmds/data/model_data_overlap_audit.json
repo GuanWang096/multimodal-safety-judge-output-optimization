@@ -1,0 +1,143 @@
+{
+  "schema": "model-data-overlap-audit-v1",
+  "status": "pass_with_declared_limitations",
+  "passed": true,
+  "config": "C:\\Users\\guan\\Desktop\\zte-sci\\v15\\experiments\\exp-multijudge\\configs\\model_data_overlap_evidence.json",
+  "config_sha256": "400ebf102b79c9bc1360b1ff5db94bfd34c855311ee342a0ac00eca3894eb40f",
+  "acceptance": "C:\\Users\\guan\\Desktop\\zte-sci\\v15\\results\\multijudge-v15\\formal\\test\\acceptance.json",
+  "acceptance_sha256": "9e4882721f625029d74b8a85cf4ecf0ad7f9f9f7fcb406dc263983ad3e35d81b",
+  "models": {
+    "qwen": {
+      "model_id": "Qwen/Qwen3-VL-8B-Instruct",
+      "model_revision": "5d854aab08710c16b980ec6d603d863b3821b915",
+      "identity_verified": true,
+      "adapter_version": "qwen3-vl-binary-judge-v4",
+      "metadata_readme": "C:\\Users\\guan\\Desktop\\zte-sci\\v15\\experiments\\exp-multijudge\\model-metadata\\qwen3-vl-8b-instruct\\README.md",
+      "metadata_readme_sha256": "6d5d06e0c3f069097002445d30dce9ee107db3afaf15563f09e6df49b8dcb4d7",
+      "official_source": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct",
+      "training_disclosure": "The model card describes broad higher-quality pretraining but does not provide a complete itemized corpus list.",
+      "training_corpus_completeness": "incomplete",
+      "datasets": {
+        "mmds": {
+          "display_name": "Multimodal Multi-turn Dialogue Safety (MMDS)",
+          "status": "no_direct_overlap_disclosed",
+          "term_line_matches": {
+            "MMDS": [],
+            "Multimodal Multi-turn Dialogue Safety": []
+          }
+        },
+        "siuo": {
+          "display_name": "Safe Inputs but Unsafe Output (SIUO)",
+          "status": "no_direct_overlap_disclosed",
+          "term_line_matches": {
+            "SIUO": [],
+            "Safe Inputs but Unsafe Output": []
+          }
+        }
+      },
+      "required_sensitivity": []
+    },
+    "safework": {
+      "model_id": "AI45Research/SafeWork-RM-Safety-7B",
+      "model_revision": "be345f29425fe94586c0598785a143703bbbc4fc",
+      "identity_verified": true,
+      "adapter_version": "safework-rm-safety-turnwise-v5",
+      "metadata_readme": "C:\\Users\\guan\\Desktop\\zte-sci\\v15\\experiments\\exp-multijudge\\model-metadata\\safework-rm-safety-7b\\README.md",
+      "metadata_readme_sha256": "55c310505b6fa6547f0fe940f4206cde29f2cc6eb1bc4217f9c54d81322b1b64",
+      "official_source": "https://huggingface.co/AI45Research/SafeWork-RM-Safety-7B",
+      "training_disclosure": "The model card states that curated safety, moral-reasoning, and factual-verification dialogues were used, without a complete itemized corpus list.",
+      "training_corpus_completeness": "incomplete",
+      "datasets": {
+        "mmds": {
+          "display_name": "Multimodal Multi-turn Dialogue Safety (MMDS)",
+          "status": "no_direct_overlap_disclosed",
+          "term_line_matches": {
+            "MMDS": [],
+            "Multimodal Multi-turn Dialogue Safety": []
+          }
+        },
+        "siuo": {
+          "display_name": "Safe Inputs but Unsafe Output (SIUO)",
+          "status": "declared_evaluation_exposure",
+          "term_line_matches": {
+            "SIUO": [
+              63
+            ],
+            "Safe Inputs but Unsafe Output": []
+          }
+        }
+      },
+      "required_sensitivity": [
+        "Tag every SIUO result involving SafeWork as benchmark-exposed rather than fully external.",
+        "Report a leave-SafeWork-out SIUO sensitivity analysis.",
+        "Do not use SafeWork's SIUO result alone as evidence of cross-dataset generalization."
+      ]
+    },
+    "internvl": {
+      "model_id": "OpenGVLab/InternVL3_5-8B-Instruct",
+      "model_revision": "6c2034f6f3d22bbbff919b11b91c5721bba84f8d",
+      "identity_verified": true,
+      "adapter_version": "internvl3.5-binary-judge-v3",
+      "metadata_readme": "C:\\Users\\guan\\Desktop\\zte-sci\\v15\\experiments\\exp-multijudge\\model-metadata\\internvl3_5-8b-instruct\\README.md",
+      "metadata_readme_sha256": "3a3cb7d94d543886041befafbcb7ea4d865e536e524bebc9200284b4f364db65",
+      "official_source": "https://internvl.github.io/blog/2025-08-26-InternVL-3.5/",
+      "training_disclosure": "The model card describes large CPT and SFT corpora inherited partly from InternVL3, but the complete sample-level corpus membership is not disclosed.",
+      "training_corpus_completeness": "incomplete",
+      "datasets": {
+        "mmds": {
+          "display_name": "Multimodal Multi-turn Dialogue Safety (MMDS)",
+          "status": "no_direct_overlap_disclosed",
+          "term_line_matches": {
+            "MMDS": [],
+            "Multimodal Multi-turn Dialogue Safety": []
+          }
+        },
+        "siuo": {
+          "display_name": "Safe Inputs but Unsafe Output (SIUO)",
+          "status": "no_direct_overlap_disclosed",
+          "term_line_matches": {
+            "SIUO": [],
+            "Safe Inputs but Unsafe Output": []
+          }
+        }
+      },
+      "required_sensitivity": []
+    },
+    "minicpm": {
+      "model_id": "OpenBMB/MiniCPM-V-4_5",
+      "model_revision": "2626e837a54905aab70fae9325153ef3454387ab",
+      "identity_verified": true,
+      "adapter_version": "minicpm-v4.5-binary-judge-v2",
+      "metadata_readme": "C:\\Users\\guan\\Desktop\\zte-sci\\v15\\experiments\\exp-multijudge\\model-metadata\\minicpm-v-4_5\\README.md",
+      "metadata_readme_sha256": "5ea75ed3217e073b80ae1c857f5b90b64f120b63d755177d28fd478120b3fa64",
+      "official_source": "https://huggingface.co/openbmb/MiniCPM-V-4_5",
+      "training_disclosure": "The model card describes document pretraining and multimodal reinforcement learning but does not provide a complete itemized corpus list.",
+      "training_corpus_completeness": "incomplete",
+      "datasets": {
+        "mmds": {
+          "display_name": "Multimodal Multi-turn Dialogue Safety (MMDS)",
+          "status": "no_direct_overlap_disclosed",
+          "term_line_matches": {
+            "MMDS": [],
+            "Multimodal Multi-turn Dialogue Safety": []
+          }
+        },
+        "siuo": {
+          "display_name": "Safe Inputs but Unsafe Output (SIUO)",
+          "status": "no_direct_overlap_disclosed",
+          "term_line_matches": {
+            "SIUO": [],
+            "Safe Inputs but Unsafe Output": []
+          }
+        }
+      },
+      "required_sensitivity": []
+    }
+  },
+  "gate_errors": [],
+  "frozen_interpretation": {
+    "mmds": "No audited model card directly names MMDS. Because the full training corpora are not disclosed, this is not proof of zero training overlap.",
+    "siuo": "SafeWork's official card reports SIUO evaluation performance. SIUO results involving SafeWork are benchmark-exposed and require a leave-SafeWork-out sensitivity analysis.",
+    "claim_boundary": "The audit supports transparent disclosure and sensitivity analysis; it does not establish sample-level training-data independence."
+  }
+}

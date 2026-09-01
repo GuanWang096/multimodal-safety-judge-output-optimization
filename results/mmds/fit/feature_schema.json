@@ -1,0 +1,20 @@
+{
+  "schema": "softfusion-feature-schema-v1",
+  "scope": "canonical_only",
+  "selected_family": "F1",
+  "judge_order": [
+    "qwen",
+    "safework",
+    "minicpm"
+  ],
+  "feature_names": [
+    "qwen",
+    "safework",
+    "minicpm"
+  ],
+  "excluded_features": [
+    "multi_view_mean",
+    "multi_view_standard_deviation",
+    "multi_view_direction_agreement"
+  ]
+}

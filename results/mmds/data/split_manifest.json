@@ -1,0 +1,287 @@
+{
+  "schema": "softfusion-split-v1",
+  "status": "frozen",
+  "source": {
+    "mmds_jsonl": "C:\\Users\\guan\\Desktop\\zte-sci\\datasets\\MMDS\\mmds.jsonl",
+    "mmds_jsonl_sha256": "6c09ce1a459b1d7c3ca7aeff9d9225361c0269851da04dad84eb8630aec5b0c7",
+    "engineering_manifest": "C:\\Users\\guan\\Desktop\\zte-sci\\v15\\experiments\\exp-multijudge\\configs\\mmds_smoke_100.json",
+    "engineering_manifest_sha256": "6d81019e5cb6e120c0953787b3c46c05dfd35c49206487d84f831610c1f2654b",
+    "near_duplicate_decisions": "C:\\Users\\guan\\Desktop\\zte-sci\\v15\\results\\multijudge-v15\\softfusion\\sf0-data\\near_duplicate_decisions.json",
+    "near_duplicate_decisions_sha256": "4b9550a503822943b0981559cb0a2ae21115463debcd568c03d5e7440f45ab23"
+  },
+  "seed": 20260729,
+  "component_identity": "connected components over decoded RGB pixel SHA-256 and exact canonical conversation SHA-256",
+  "split_ratios": {
+    "fit": 0.6,
+    "select": 0.175,
+    "confirm": 0.225
+  },
+  "minimums": {
+    "fit": {
+      "unsafe_bearing_components": 80,
+      "unsafe_records": 200
+    },
+    "select": {
+      "unsafe_bearing_components": 25,
+      "unsafe_records": 60
+    },
+    "confirm": {
+      "unsafe_bearing_components": 50,
+      "unsafe_records": 120,
+      "safe_only_components": 100
+    }
+  },
+  "split_counts": {
+    "fit": {
+      "record_count": 1364,
+      "record_fraction": 0.6000879894412671,
+      "component_count": 635,
+      "label_counts": {
+        "safe": 1116,
+        "unsafe": 248
+      },
+      "unsafe_bearing_component_count": 83,
+      "safe_only_component_count": 552,
+      "component_composition_counts": {
+        "mixed": 82,
+        "safe-only": 552,
+        "unsafe-only": 1
+      },
+      "dimension_counts": {
+        "Deception & Misinformation": 43,
+        "Hate & Harassment": 10,
+        "Illegal Activities": 37,
+        "Malicious Disruption": 48,
+        "NA: None applying": 1116,
+        "Privacy Violation": 40,
+        "Self-Harm & Suicide": 20,
+        "Sexual Content": 22,
+        "Violence & Harm": 28
+      },
+      "data_type_counts": {
+        "augmentation": 308,
+        "default": 1056
+      },
+      "target_model_counts": {
+        "GPT-4o": 259,
+        "Qwen2.5-VL-72B-Instruct": 230,
+        "unspecified": 875
+      },
+      "image_count_bucket_counts": {
+        "1": 55,
+        "2-3": 760,
+        "4+": 549
+      }
+    },
+    "select": {
+      "record_count": 396,
+      "record_fraction": 0.17421909370875496,
+      "component_count": 186,
+      "label_counts": {
+        "safe": 325,
+        "unsafe": 71
+      },
+      "unsafe_bearing_component_count": 25,
+      "safe_only_component_count": 161,
+      "component_composition_counts": {
+        "mixed": 25,
+        "safe-only": 161
+      },
+      "dimension_counts": {
+        "Deception & Misinformation": 15,
+        "Hate & Harassment": 3,
+        "Illegal Activities": 16,
+        "Malicious Disruption": 13,
+        "NA: None applying": 325,
+        "Privacy Violation": 5,
+        "Self-Harm & Suicide": 11,
+        "Violence & Harm": 8
+      },
+      "data_type_counts": {
+        "augmentation": 77,
+        "default": 319
+      },
+      "target_model_counts": {
+        "GPT-4o": 65,
+        "Qwen2.5-VL-72B-Instruct": 64,
+        "unspecified": 267
+      },
+      "image_count_bucket_counts": {
+        "1": 26,
+        "2-3": 206,
+        "4+": 164
+      }
+    },
+    "confirm": {
+      "record_count": 513,
+      "record_fraction": 0.225692916849978,
+      "component_count": 257,
+      "label_counts": {
+        "safe": 389,
+        "unsafe": 124
+      },
+      "unsafe_bearing_component_count": 50,
+      "safe_only_component_count": 207,
+      "component_composition_counts": {
+        "mixed": 48,
+        "safe-only": 207,
+        "unsafe-only": 2
+      },
+      "dimension_counts": {
+        "Deception & Misinformation": 17,
+        "Hate & Harassment": 20,
+        "Illegal Activities": 21,
+        "Malicious Disruption": 21,
+        "NA: None applying": 389,
+        "Privacy Violation": 11,
+        "Self-Harm & Suicide": 14,
+        "Sexual Content": 9,
+        "Violence & Harm": 11
+      },
+      "data_type_counts": {
+        "augmentation": 133,
+        "default": 380
+      },
+      "target_model_counts": {
+        "GPT-4o": 121,
+        "Qwen2.5-VL-72B-Instruct": 109,
+        "unspecified": 283
+      },
+      "image_count_bucket_counts": {
+        "1": 50,
+        "2-3": 272,
+        "4+": 191
+      }
+    }
+  },
+  "allocation_gate": {
+    "checks": {
+      "fit_record_fraction": true,
+      "fit_unsafe_bearing_components": true,
+      "fit_unsafe_records": true,
+      "select_record_fraction": true,
+      "select_unsafe_bearing_components": true,
+      "select_unsafe_records": true,
+      "confirm_record_fraction": true,
+      "confirm_unsafe_bearing_components": true,
+      "confirm_unsafe_records": true,
+      "confirm_safe_only_components": true
+    },
+    "passed": true
+  },
+  "exact_leakage_gate": {
+    "pairwise": {
+      "fit__select": {
+        "shared_component_count": 0,
+        "shared_pixel_digest_count": 0,
+        "shared_conversation_digest_count": 0
+      },
+      "fit__confirm": {
+        "shared_component_count": 0,
+        "shared_pixel_digest_count": 0,
+        "shared_conversation_digest_count": 0
+      },
+      "fit__engineering": {
+        "shared_component_count": 0,
+        "shared_pixel_digest_count": 0,
+        "shared_conversation_digest_count": 0
+      },
+      "fit__legacy_val": {
+        "shared_component_count": 0,
+        "shared_pixel_digest_count": 0,
+        "shared_conversation_digest_count": 0
+      },
+      "fit__legacy_test": {
+        "shared_component_count": 0,
+        "shared_pixel_digest_count": 0,
+        "shared_conversation_digest_count": 0
+      },
+      "select__confirm": {
+        "shared_component_count": 0,
+        "shared_pixel_digest_count": 0,
+        "shared_conversation_digest_count": 0
+      },
+      "select__engineering": {
+        "shared_component_count": 0,
+        "shared_pixel_digest_count": 0,
+        "shared_conversation_digest_count": 0
+      },
+      "select__legacy_val": {
+        "shared_component_count": 0,
+        "shared_pixel_digest_count": 0,
+        "shared_conversation_digest_count": 0
+      },
+      "select__legacy_test": {
+        "shared_component_count": 0,
+        "shared_pixel_digest_count": 0,
+        "shared_conversation_digest_count": 0
+      },
+      "confirm__engineering": {
+        "shared_component_count": 0,
+        "shared_pixel_digest_count": 0,
+        "shared_conversation_digest_count": 0
+      },
+      "confirm__legacy_val": {
+        "shared_component_count": 0,
+        "shared_pixel_digest_count": 0,
+        "shared_conversation_digest_count": 0
+      },
+      "confirm__legacy_test": {
+        "shared_component_count": 0,
+        "shared_pixel_digest_count": 0,
+        "shared_conversation_digest_count": 0
+      }
+    },
+    "passed": true
+  },
+  "perceptual_leakage_gate": {
+    "passed": true,
+    "candidate_count": 51,
+    "unresolved_count": 0,
+    "confirmed_same_count": 51,
+    "confirmed_same_unmerged_count": 0
+  },
+  "power_precision_gate": {
+    "passed": true,
+    "power_at_delta_0_05": 0.456,
+    "minimum_detectable_delta": 0.07
+  },
+  "output_files": {
+    "fit.jsonl": {
+      "sha256": "37d17c873237e68d05624edc0c65be9e9f7b2637877014b943f86ef5096f0117",
+      "bytes": 889902
+    },
+    "select.jsonl": {
+      "sha256": "414ff4af682209af7aa3e237e2051e794c19ccc01c0e1b7c211ece0edd114215",
+      "bytes": 260885
+    },
+    "confirm-unlabeled.jsonl": {
+      "sha256": "f6457ddcf2fef60032a33645a28a158efad8e08c959ec80d401df16e8b798550",
+      "bytes": 297759
+    },
+    "confirm-labels.jsonl": {
+      "sha256": "762398fdc3ddd54d8e4dc02c6aa1a3cd0ac6f0ec85128443256b3c3415f53fe1",
+      "bytes": 72987
+    },
+    "eligibility_audit.json": {
+      "sha256": "4d606600dee2223507f22329603109c598336b229602d71750afd3bf2106810b",
+      "bytes": 416010
+    },
+    "component_audit.json": {
+      "sha256": "79bc0f3971d31fa01505ebb64fbf31112131d454817c046aa0bd30ab7a03583b",
+      "bytes": 351602
+    },
+    "perceptual_candidate_audit.json": {
+      "sha256": "a214befad273de99b9f6ea293f39bd5e17d9ed72ad7cf581dd2c7fa117ef856b",
+      "bytes": 49115
+    },
+    "leakage_audit.json": {
+      "sha256": "e863b30ad89f83e282275cf70a8a9c22f548755d12e78c08994f22ca5d5ed1bd",
+      "bytes": 2479
+    },
+    "power_precision_audit.json": {
+      "sha256": "991ecae1b867c6d96afc4e9233f93998f4215d6125c745ca2957516ca543bd9e",
+      "bytes": 4039
+    }
+  }
+}

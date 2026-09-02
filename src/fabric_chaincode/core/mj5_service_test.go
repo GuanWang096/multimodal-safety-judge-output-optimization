@@ -522,6 +522,23 @@ func TestMJ5LeaderCommitteeValidation(t *testing.T) {
 	requireMJ5Code(t, err, "ERR_INVALID_CERTIFICATE_QUORUM")
 }
 
+func TestCertificateQuorumForMemberCount(t *testing.T) {
+	cases := []struct {
+		memberCount int
+		want        int64
+	}{
+		{memberCount: 4, want: 3},
+		{memberCount: 5, want: 4},
+		{memberCount: 6, want: 4},
+		{memberCount: 7, want: 5},
+	}
+	for _, testCase := range cases {
+		if got := certificateQuorumForMemberCount(testCase.memberCount); got != testCase.want {
+			t.Fatalf("member count %d: got quorum %d, want %d", testCase.memberCount, got, testCase.want)
+		}
+	}
+}
+
 func TestMJ5ProtocolCertificateDigestMatchesPython(t *testing.T) {
 	fixture := newMJ5Fixture(t)
 	digest := strings.Repeat("c", 64)

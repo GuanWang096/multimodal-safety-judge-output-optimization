@@ -12,7 +12,7 @@ def quorum(member_count):
     if member_count < 1:
         raise ValueError("member count must be positive")
     faults = (member_count - 1) // 3
-    return 2 * faults + 1
+    return (member_count + faults) // 2 + 1
 
 
 def private_key(node_id):

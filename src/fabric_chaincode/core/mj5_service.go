@@ -693,7 +693,7 @@ func validateLeaderCommittee(
 	if len(validatorIDs) == 0 {
 		return nil, CodeError{Code: "ERR_INVALID_LEADER_COMMITTEE", Message: "leader committee is empty"}
 	}
-	expectedQuorum := int64(2*((len(validatorIDs)-1)/3) + 1)
+	expectedQuorum := certificateQuorumForMemberCount(len(validatorIDs))
 	if certificateQuorum != expectedQuorum {
 		return nil, CodeError{
 			Code: "ERR_INVALID_CERTIFICATE_QUORUM",
@@ -726,6 +726,11 @@ func validateLeaderCommittee(
 		normalized = append(normalized, validatorID)
 	}
 	return normalized, nil
+}
+
+func certificateQuorumForMemberCount(memberCount int) int64 {
+	faultBound := (memberCount - 1) / 3
+	return int64((memberCount + faultBound + 2) / 2)
 }
 
 func decodeEd25519PublicKey(value string) (ed25519.PublicKey, string, error) {

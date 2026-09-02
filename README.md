@@ -2,7 +2,7 @@
 
 Article: **Optimizing Multimodal Safety Judge Outputs for Auditable Enterprise Model Acceptance**  
 Journal: **Multimedia Systems**  
-Repository snapshot: **2026-09-01**
+Repository snapshot: **2026-09-02**
 
 Authors: Jinxin Zhang, Guan Wang, Zhipeng Ruan, Changsheng Wan, Yunhao Xia, and Weichen Lu.
 
@@ -96,7 +96,16 @@ Run the repository's unit tests with:
 python -m pytest src/multijudge_workflows/tests
 ```
 
+Run the Fabric chaincode tests from its Go module:
+
+```bash
+cd src/fabric_chaincode
+go test ./...
+```
+
 External-dataset scripts are supplied, but regenerating raw judge scores requires the licensed source records and model checkpoints. The evidence replay and MJ5 scripts preserve the exact evaluated interfaces; full re-execution additionally requires the Docker, IPFS, and Fabric services described by their command-line help and source comments.
+
+The consensus code applies `ceil((n + t + 1) / 2)`, with `t = floor((n - 1) / 3)`, to local groups and the leader committee. Boundary tests cover the membership sizes used in the article.
 
 ## Repository release
 

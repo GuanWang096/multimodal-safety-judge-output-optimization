@@ -70,7 +70,7 @@ python src/multijudge_workflows/evaluate_softfusion_confirmatory.py \
   --output-root results/reproduced/softfusion-confirmatory
 ```
 
-Expected headline values are Macro-F1 0.8096 for frozen fusion, 0.7512 for same-output 2-of-3 majority, and a difference of 0.0583. The component-bootstrap 95% confidence interval is [0.0257, 0.0942], and the one-sided component-randomization p value is 0.00030.
+Expected headline values are Macro-F1 0.8096 for frozen fusion, 0.7512 for 2-of-3 score-binarized majority over the same judge scores, and a difference of 0.0583. The component-bootstrap 95% confidence interval is [0.0257, 0.0942], and the one-sided component-randomization p value is 0.00030.
 
 ## Sequential judge-reputation diagnostic
 
@@ -107,6 +107,6 @@ External-dataset scripts are supplied, but regenerating raw judge scores require
 
 The consensus code applies `ceil((n + t + 1) / 2)`, with `t = floor((n - 1) / 3)`, to local groups and the leader committee. Boundary tests cover the membership sizes used in the article.
 
-## Repository release
+## Repository version
 
-This is the clean public repository for the current article. It is independent of the earlier 330-record reliability-aggregation manuscript because that history describes a different method and evidence base. A versioned release tag and archival snapshot should be created after the submission files are frozen. No open-source license is asserted until the authors' institutions approve one. The code repository is not a journal ESM upload.
+This is the public reproduction repository for the current article. Version `v1.0.0` identifies the code, frozen configurations, and retained result artifacts prepared for submission. The separate 330-record sequential judge-reputation diagnostic remains outside the 513-record confirmatory claim hierarchy. No open-source license is asserted until the authors' institutions approve one. The code repository is not a journal ESM upload.

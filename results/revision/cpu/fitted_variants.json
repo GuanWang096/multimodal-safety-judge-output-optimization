@@ -1,0 +1,1911 @@
+{
+  "full_refit": {
+    "calibrators": {
+      "qwen": {
+        "method": "beta",
+        "a": 0.30465503442202674,
+        "b": 0.006737946999085467,
+        "c": 0.6771033074904367,
+        "optimizer": "L-BFGS-B",
+        "objective": 0.16696356729821205,
+        "monotonic": true
+      },
+      "safework": {
+        "method": "beta",
+        "a": 2.730912319083189,
+        "b": 0.006737946999085467,
+        "c": 1.0447366839522523,
+        "optimizer": "L-BFGS-B",
+        "objective": 0.11025551780758154,
+        "monotonic": true
+      },
+      "minicpm": {
+        "method": "temperature",
+        "temperature": 1.6967220583025642,
+        "optimizer": "L-BFGS-B",
+        "objective": 0.20881337614761464
+      }
+    },
+    "model": {
+      "feature_family": "F1",
+      "feature_names": [
+        "qwen",
+        "safework",
+        "minicpm"
+      ],
+      "judge_order": [
+        "qwen",
+        "safework",
+        "minicpm"
+      ],
+      "mean": [
+        -3.226968368362874,
+        -6.227509350325508,
+        -3.008767597227752
+      ],
+      "scale": [
+        1.0502473520552593,
+        3.1927769543629556,
+        1.081359888796814
+      ],
+      "coefficients": [
+        0.3204198565472162,
+        2.3934961898010747,
+        -0.20225918625145192
+      ],
+      "intercept": -5.09048487974305,
+      "penalty": "l2",
+      "C": 0.3,
+      "l1_ratio": null
+    },
+    "constrained_threshold": {
+      "feasible": true,
+      "threshold": 0.2943076502105866,
+      "metrics": {
+        "sample_count": 1760,
+        "accuracy": 0.8744318181818181,
+        "macro_f1": 0.8133187044617578,
+        "unsafe_recall": 0.8338557993730408,
+        "safe_specificity": 0.8834142956280361,
+        "false_safe_rate": 0.16614420062695923,
+        "mcc": 0.6410522508404093,
+        "unsafe_true_positive": 266,
+        "safe_true_positive": 1273,
+        "unsafe_false_positive": 168,
+        "unsafe_false_negative": 53
+      },
+      "minimum_unsafe_recall": 0.8269905956112853,
+      "minimum_safe_specificity": 0.8263497571131159,
+      "candidate_count": 2907
+    },
+    "unrestricted_diagnostic_threshold": {
+      "feasible": true,
+      "threshold": 0.2943076502105866,
+      "metrics": {
+        "sample_count": 1760,
+        "accuracy": 0.8744318181818181,
+        "macro_f1": 0.8133187044617578,
+        "unsafe_recall": 0.8338557993730408,
+        "safe_specificity": 0.8834142956280361,
+        "false_safe_rate": 0.16614420062695923,
+        "mcc": 0.6410522508404093,
+        "unsafe_true_positive": 266,
+        "safe_true_positive": 1273,
+        "unsafe_false_positive": 168,
+        "unsafe_false_negative": 53
+      },
+      "minimum_unsafe_recall": 0.0,
+      "minimum_safe_specificity": 0.0,
+      "candidate_count": 2907
+    },
+    "folds": [
+      {
+        "fold": 0,
+        "calibrators": {
+          "qwen": {
+            "method": "beta",
+            "a": 0.3055550401090371,
+            "b": 0.006737946999085467,
+            "c": 0.7115703803144454,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.1678787165799591,
+            "monotonic": true
+          },
+          "safework": {
+            "method": "beta",
+            "a": 2.7941383271471656,
+            "b": 0.006737946999085467,
+            "c": 1.1412620499969763,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.10849291197625081,
+            "monotonic": true
+          },
+          "minicpm": {
+            "method": "temperature",
+            "temperature": 1.6835632630484216,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.20781995683980656
+          }
+        },
+        "model": {
+          "feature_family": "F1",
+          "feature_names": [
+            "qwen",
+            "safework",
+            "minicpm"
+          ],
+          "judge_order": [
+            "qwen",
+            "safework",
+            "minicpm"
+          ],
+          "mean": [
+            -3.2074091655028476,
+            -6.33577336424619,
+            -3.020530557165603
+          ],
+          "scale": [
+            1.0515580726524871,
+            3.262654972984625,
+            1.084155055356429
+          ],
+          "coefficients": [
+            0.29868629789350565,
+            2.325808189528271,
+            -0.13703732094648907
+          ],
+          "intercept": -4.999667200521474,
+          "penalty": "l2",
+          "C": 0.3,
+          "l1_ratio": null
+        }
+      },
+      {
+        "fold": 1,
+        "calibrators": {
+          "qwen": {
+            "method": "beta",
+            "a": 0.3031236517306386,
+            "b": 0.006737946999085467,
+            "c": 0.6644156271477923,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.1683989930677967,
+            "monotonic": true
+          },
+          "safework": {
+            "method": "beta",
+            "a": 2.738375270191534,
+            "b": 0.006737946999085467,
+            "c": 1.0200435256157718,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.11007282614229573,
+            "monotonic": true
+          },
+          "minicpm": {
+            "method": "temperature",
+            "temperature": 1.727200827436498,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.21276820287161655
+          }
+        },
+        "model": {
+          "feature_family": "F1",
+          "feature_names": [
+            "qwen",
+            "safework",
+            "minicpm"
+          ],
+          "judge_order": [
+            "qwen",
+            "safework",
+            "minicpm"
+          ],
+          "mean": [
+            -3.217707224594179,
+            -6.297243755348744,
+            -2.966314594983839
+          ],
+          "scale": [
+            1.044489446788864,
+            3.2326882038342037,
+            1.0445982464616248
+          ],
+          "coefficients": [
+            0.3188962229134364,
+            2.3188838016259874,
+            -0.17935500995106124
+          ],
+          "intercept": -4.994896413813943,
+          "penalty": "l2",
+          "C": 0.3,
+          "l1_ratio": null
+        }
+      },
+      {
+        "fold": 2,
+        "calibrators": {
+          "qwen": {
+            "method": "beta",
+            "a": 0.3023678784120719,
+            "b": 0.006737946999085467,
+            "c": 0.6406903819532377,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.1670737593328492,
+            "monotonic": true
+          },
+          "safework": {
+            "method": "beta",
+            "a": 2.8220099469336644,
+            "b": 0.006737946999085467,
+            "c": 1.0397739767475758,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.10904907022970128,
+            "monotonic": true
+          },
+          "minicpm": {
+            "method": "temperature",
+            "temperature": 1.6858627746199502,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.206385693066459
+          }
+        },
+        "model": {
+          "feature_family": "F1",
+          "feature_names": [
+            "qwen",
+            "safework",
+            "minicpm"
+          ],
+          "judge_order": [
+            "qwen",
+            "safework",
+            "minicpm"
+          ],
+          "mean": [
+            -3.2334347343887075,
+            -6.438965798546026,
+            -3.0346922629932673
+          ],
+          "scale": [
+            1.0417459400288274,
+            3.3191759318590583,
+            1.072406430873762
+          ],
+          "coefficients": [
+            0.30575358571704897,
+            2.3408820854139516,
+            -0.15297087096461678
+          ],
+          "intercept": -5.032899278865946,
+          "penalty": "l2",
+          "C": 0.3,
+          "l1_ratio": null
+        }
+      },
+      {
+        "fold": 3,
+        "calibrators": {
+          "qwen": {
+            "method": "beta",
+            "a": 0.30768489889254935,
+            "b": 0.006737946999085467,
+            "c": 0.7002044227231974,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.16520689113539488,
+            "monotonic": true
+          },
+          "safework": {
+            "method": "beta",
+            "a": 2.659654394084188,
+            "b": 0.006737946999085467,
+            "c": 1.0422781093641704,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.11307637620420792,
+            "monotonic": true
+          },
+          "minicpm": {
+            "method": "temperature",
+            "temperature": 1.6996175136862606,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.21018567463521987
+          }
+        },
+        "model": {
+          "feature_family": "F1",
+          "feature_names": [
+            "qwen",
+            "safework",
+            "minicpm"
+          ],
+          "judge_order": [
+            "qwen",
+            "safework",
+            "minicpm"
+          ],
+          "mean": [
+            -3.242748072859988,
+            -6.033616100412217,
+            -2.996645690102786
+          ],
+          "scale": [
+            1.0588645005306336,
+            3.090485964026873,
+            1.1028248558480513
+          ],
+          "coefficients": [
+            0.37270801356550864,
+            2.241338078054262,
+            -0.23423558427785926
+          ],
+          "intercept": -4.881186473368213,
+          "penalty": "l2",
+          "C": 0.3,
+          "l1_ratio": null
+        }
+      },
+      {
+        "fold": 4,
+        "calibrators": {
+          "qwen": {
+            "method": "beta",
+            "a": 0.3046897450859209,
+            "b": 0.006737946999085467,
+            "c": 0.6700455254455502,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.16622220181215988,
+            "monotonic": true
+          },
+          "safework": {
+            "method": "beta",
+            "a": 2.6636135469773756,
+            "b": 0.006737946999085467,
+            "c": 0.9930775615685101,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.11030754656374321,
+            "monotonic": true
+          },
+          "minicpm": {
+            "method": "temperature",
+            "temperature": 1.6868263706838782,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.2068238997271451
+          }
+        },
+        "model": {
+          "feature_family": "F1",
+          "feature_names": [
+            "qwen",
+            "safework",
+            "minicpm"
+          ],
+          "judge_order": [
+            "qwen",
+            "safework",
+            "minicpm"
+          ],
+          "mean": [
+            -3.234032935697427,
+            -6.0808220457605495,
+            -3.02776490742667
+          ],
+          "scale": [
+            1.0550430537910096,
+            3.0855554497132403,
+            1.1030965011010234
+          ],
+          "coefficients": [
+            0.361793514230744,
+            2.302440783114983,
+            -0.26318000367741234
+          ],
+          "intercept": -4.948410323704105,
+          "penalty": "l2",
+          "C": 0.3,
+          "l1_ratio": null
+        }
+      }
+    ]
+  },
+  "nonnegative": {
+    "calibrators": {
+      "qwen": {
+        "method": "beta",
+        "a": 0.30465503442202674,
+        "b": 0.006737946999085467,
+        "c": 0.6771033074904367,
+        "optimizer": "L-BFGS-B",
+        "objective": 0.16696356729821205,
+        "monotonic": true
+      },
+      "safework": {
+        "method": "beta",
+        "a": 2.730912319083189,
+        "b": 0.006737946999085467,
+        "c": 1.0447366839522523,
+        "optimizer": "L-BFGS-B",
+        "objective": 0.11025551780758154,
+        "monotonic": true
+      },
+      "minicpm": {
+        "method": "temperature",
+        "temperature": 1.6967220583025642,
+        "optimizer": "L-BFGS-B",
+        "objective": 0.20881337614761464
+      }
+    },
+    "model": {
+      "feature_family": "F1",
+      "feature_names": [
+        "qwen",
+        "safework",
+        "minicpm"
+      ],
+      "judge_order": [
+        "qwen",
+        "safework",
+        "minicpm"
+      ],
+      "mean": [
+        -3.2269683683628383,
+        -6.22750935032552,
+        -3.0087675972277492
+      ],
+      "scale": [
+        1.050247352055279,
+        3.192776954362952,
+        1.0813598887968139
+      ],
+      "coefficients": [
+        0.24233002016191774,
+        2.3203259157975005,
+        0.0
+      ],
+      "intercept": -5.078410752910179,
+      "penalty": "l2",
+      "C": 0.3,
+      "l1_ratio": null
+    },
+    "constrained_threshold": {
+      "feasible": true,
+      "threshold": 0.27434322732800365,
+      "metrics": {
+        "sample_count": 1760,
+        "accuracy": 0.8732954545454545,
+        "macro_f1": 0.812712260313161,
+        "unsafe_recall": 0.8401253918495298,
+        "safe_specificity": 0.8806384455239417,
+        "false_safe_rate": 0.15987460815047017,
+        "mcc": 0.6412199367057746,
+        "unsafe_true_positive": 268,
+        "safe_true_positive": 1269,
+        "unsafe_false_positive": 172,
+        "unsafe_false_negative": 51
+      },
+      "minimum_unsafe_recall": 0.8269905956112853,
+      "minimum_safe_specificity": 0.8263497571131159,
+      "candidate_count": 2907
+    },
+    "unrestricted_diagnostic_threshold": {
+      "feasible": true,
+      "threshold": 0.27434322732800365,
+      "metrics": {
+        "sample_count": 1760,
+        "accuracy": 0.8732954545454545,
+        "macro_f1": 0.812712260313161,
+        "unsafe_recall": 0.8401253918495298,
+        "safe_specificity": 0.8806384455239417,
+        "false_safe_rate": 0.15987460815047017,
+        "mcc": 0.6412199367057746,
+        "unsafe_true_positive": 268,
+        "safe_true_positive": 1269,
+        "unsafe_false_positive": 172,
+        "unsafe_false_negative": 51
+      },
+      "minimum_unsafe_recall": 0.0,
+      "minimum_safe_specificity": 0.0,
+      "candidate_count": 2907
+    },
+    "folds": [
+      {
+        "fold": 0,
+        "calibrators": {
+          "qwen": {
+            "method": "beta",
+            "a": 0.3055550401090371,
+            "b": 0.006737946999085467,
+            "c": 0.7115703803144454,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.1678787165799591,
+            "monotonic": true
+          },
+          "safework": {
+            "method": "beta",
+            "a": 2.7941383271471656,
+            "b": 0.006737946999085467,
+            "c": 1.1412620499969763,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.10849291197625081,
+            "monotonic": true
+          },
+          "minicpm": {
+            "method": "temperature",
+            "temperature": 1.6835632630484216,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.20781995683980656
+          }
+        },
+        "model": {
+          "feature_family": "F1",
+          "feature_names": [
+            "qwen",
+            "safework",
+            "minicpm"
+          ],
+          "judge_order": [
+            "qwen",
+            "safework",
+            "minicpm"
+          ],
+          "mean": [
+            -3.2074091655028134,
+            -6.335773364246182,
+            -3.0205305571656016
+          ],
+          "scale": [
+            1.0515580726524827,
+            3.2626549729846235,
+            1.0841550553564292
+          ],
+          "coefficients": [
+            0.2484379097215256,
+            2.279297659149418,
+            0.0
+          ],
+          "intercept": -5.000007379769362,
+          "penalty": "l2",
+          "C": 0.3,
+          "l1_ratio": null
+        }
+      },
+      {
+        "fold": 1,
+        "calibrators": {
+          "qwen": {
+            "method": "beta",
+            "a": 0.3031236517306386,
+            "b": 0.006737946999085467,
+            "c": 0.6644156271477923,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.1683989930677967,
+            "monotonic": true
+          },
+          "safework": {
+            "method": "beta",
+            "a": 2.738375270191534,
+            "b": 0.006737946999085467,
+            "c": 1.0200435256157718,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.11007282614229573,
+            "monotonic": true
+          },
+          "minicpm": {
+            "method": "temperature",
+            "temperature": 1.727200827436498,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.21276820287161655
+          }
+        },
+        "model": {
+          "feature_family": "F1",
+          "feature_names": [
+            "qwen",
+            "safework",
+            "minicpm"
+          ],
+          "judge_order": [
+            "qwen",
+            "safework",
+            "minicpm"
+          ],
+          "mean": [
+            -3.217707224594133,
+            -6.297243755348739,
+            -2.9663145949838454
+          ],
+          "scale": [
+            1.0444894467888801,
+            3.232688203834198,
+            1.0445982464616248
+          ],
+          "coefficients": [
+            0.248923855813528,
+            2.262379952743762,
+            0.0
+          ],
+          "intercept": -4.9907290531105115,
+          "penalty": "l2",
+          "C": 0.3,
+          "l1_ratio": null
+        }
+      },
+      {
+        "fold": 2,
+        "calibrators": {
+          "qwen": {
+            "method": "beta",
+            "a": 0.3023678784120719,
+            "b": 0.006737946999085467,
+            "c": 0.6406903819532377,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.1670737593328492,
+            "monotonic": true
+          },
+          "safework": {
+            "method": "beta",
+            "a": 2.8220099469336644,
+            "b": 0.006737946999085467,
+            "c": 1.0397739767475758,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.10904907022970128,
+            "monotonic": true
+          },
+          "minicpm": {
+            "method": "temperature",
+            "temperature": 1.6858627746199502,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.206385693066459
+          }
+        },
+        "model": {
+          "feature_family": "F1",
+          "feature_names": [
+            "qwen",
+            "safework",
+            "minicpm"
+          ],
+          "judge_order": [
+            "qwen",
+            "safework",
+            "minicpm"
+          ],
+          "mean": [
+            -3.2334347343886716,
+            -6.4389657985460165,
+            -3.0346922629932735
+          ],
+          "scale": [
+            1.0417459400288376,
+            3.3191759318590597,
+            1.0724064308737635
+          ],
+          "coefficients": [
+            0.2484631725037961,
+            2.2889234431408423,
+            0.0
+          ],
+          "intercept": -5.03337792944384,
+          "penalty": "l2",
+          "C": 0.3,
+          "l1_ratio": null
+        }
+      },
+      {
+        "fold": 3,
+        "calibrators": {
+          "qwen": {
+            "method": "beta",
+            "a": 0.30768489889254935,
+            "b": 0.006737946999085467,
+            "c": 0.7002044227231974,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.16520689113539488,
+            "monotonic": true
+          },
+          "safework": {
+            "method": "beta",
+            "a": 2.659654394084188,
+            "b": 0.006737946999085467,
+            "c": 1.0422781093641704,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.11307637620420792,
+            "monotonic": true
+          },
+          "minicpm": {
+            "method": "temperature",
+            "temperature": 1.6996175136862606,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.21018567463521987
+          }
+        },
+        "model": {
+          "feature_family": "F1",
+          "feature_names": [
+            "qwen",
+            "safework",
+            "minicpm"
+          ],
+          "judge_order": [
+            "qwen",
+            "safework",
+            "minicpm"
+          ],
+          "mean": [
+            -3.2427480728599862,
+            -6.0336161004122,
+            -2.9966456901027816
+          ],
+          "scale": [
+            1.0588645005306252,
+            3.0904859640268736,
+            1.1028248558480533
+          ],
+          "coefficients": [
+            0.28065155239599676,
+            2.1583080314916936,
+            0.0
+          ],
+          "intercept": -4.86657192581693,
+          "penalty": "l2",
+          "C": 0.3,
+          "l1_ratio": null
+        }
+      },
+      {
+        "fold": 4,
+        "calibrators": {
+          "qwen": {
+            "method": "beta",
+            "a": 0.3046897450859209,
+            "b": 0.006737946999085467,
+            "c": 0.6700455254455502,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.16622220181215988,
+            "monotonic": true
+          },
+          "safework": {
+            "method": "beta",
+            "a": 2.6636135469773756,
+            "b": 0.006737946999085467,
+            "c": 0.9930775615685101,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.11030754656374321,
+            "monotonic": true
+          },
+          "minicpm": {
+            "method": "temperature",
+            "temperature": 1.6868263706838782,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.2068238997271451
+          }
+        },
+        "model": {
+          "feature_family": "F1",
+          "feature_names": [
+            "qwen",
+            "safework",
+            "minicpm"
+          ],
+          "judge_order": [
+            "qwen",
+            "safework",
+            "minicpm"
+          ],
+          "mean": [
+            -3.234032935697395,
+            -6.0808220457605495,
+            -3.027764907426679
+          ],
+          "scale": [
+            1.055043053791001,
+            3.0855554497132416,
+            1.103096501101023
+          ],
+          "coefficients": [
+            0.25508465540857456,
+            2.1972231943204217,
+            0.0
+          ],
+          "intercept": -4.916759824451943,
+          "penalty": "l2",
+          "C": 0.3,
+          "l1_ratio": null
+        }
+      }
+    ]
+  },
+  "without_qwen": {
+    "calibrators": {
+      "safework": {
+        "method": "beta",
+        "a": 2.730912319083189,
+        "b": 0.006737946999085467,
+        "c": 1.0447366839522523,
+        "optimizer": "L-BFGS-B",
+        "objective": 0.11025551780758154,
+        "monotonic": true
+      },
+      "minicpm": {
+        "method": "temperature",
+        "temperature": 1.6967220583025642,
+        "optimizer": "L-BFGS-B",
+        "objective": 0.20881337614761464
+      }
+    },
+    "model": {
+      "feature_family": "F1",
+      "feature_names": [
+        "safework",
+        "minicpm"
+      ],
+      "judge_order": [
+        "safework",
+        "minicpm"
+      ],
+      "mean": [
+        -6.227509350325508,
+        -3.008767597227752
+      ],
+      "scale": [
+        3.1927769543629556,
+        1.081359888796814
+      ],
+      "coefficients": [
+        2.7067249660540904,
+        -0.022780604657706652
+      ],
+      "intercept": -5.358334131074453,
+      "penalty": "l2",
+      "C": 0.3,
+      "l1_ratio": null
+    },
+    "constrained_threshold": {
+      "feasible": true,
+      "threshold": 0.2801050179880292,
+      "metrics": {
+        "sample_count": 1760,
+        "accuracy": 0.8613636363636363,
+        "macro_f1": 0.7983228637552222,
+        "unsafe_recall": 0.8338557993730408,
+        "safe_specificity": 0.8674531575294934,
+        "false_safe_rate": 0.16614420062695923,
+        "mcc": 0.6161783141698763,
+        "unsafe_true_positive": 266,
+        "safe_true_positive": 1250,
+        "unsafe_false_positive": 191,
+        "unsafe_false_negative": 53
+      },
+      "minimum_unsafe_recall": 0.8269905956112853,
+      "minimum_safe_specificity": 0.8263497571131159,
+      "candidate_count": 2907
+    },
+    "unrestricted_diagnostic_threshold": {
+      "feasible": true,
+      "threshold": 0.2801050179880292,
+      "metrics": {
+        "sample_count": 1760,
+        "accuracy": 0.8613636363636363,
+        "macro_f1": 0.7983228637552222,
+        "unsafe_recall": 0.8338557993730408,
+        "safe_specificity": 0.8674531575294934,
+        "false_safe_rate": 0.16614420062695923,
+        "mcc": 0.6161783141698763,
+        "unsafe_true_positive": 266,
+        "safe_true_positive": 1250,
+        "unsafe_false_positive": 191,
+        "unsafe_false_negative": 53
+      },
+      "minimum_unsafe_recall": 0.0,
+      "minimum_safe_specificity": 0.0,
+      "candidate_count": 2907
+    },
+    "folds": [
+      {
+        "fold": 0,
+        "calibrators": {
+          "safework": {
+            "method": "beta",
+            "a": 2.7941383271471656,
+            "b": 0.006737946999085467,
+            "c": 1.1412620499969763,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.10849291197625081,
+            "monotonic": true
+          },
+          "minicpm": {
+            "method": "temperature",
+            "temperature": 1.6835632630484216,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.20781995683980656
+          }
+        },
+        "model": {
+          "feature_family": "F1",
+          "feature_names": [
+            "safework",
+            "minicpm"
+          ],
+          "judge_order": [
+            "safework",
+            "minicpm"
+          ],
+          "mean": [
+            -6.33577336424619,
+            -3.020530557165603
+          ],
+          "scale": [
+            3.262654972984625,
+            1.084155055356429
+          ],
+          "coefficients": [
+            2.626775073188298,
+            0.020698330844260135
+          ],
+          "intercept": -5.2589815481273625,
+          "penalty": "l2",
+          "C": 0.3,
+          "l1_ratio": null
+        }
+      },
+      {
+        "fold": 1,
+        "calibrators": {
+          "safework": {
+            "method": "beta",
+            "a": 2.738375270191534,
+            "b": 0.006737946999085467,
+            "c": 1.0200435256157718,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.11007282614229573,
+            "monotonic": true
+          },
+          "minicpm": {
+            "method": "temperature",
+            "temperature": 1.727200827436498,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.21276820287161655
+          }
+        },
+        "model": {
+          "feature_family": "F1",
+          "feature_names": [
+            "safework",
+            "minicpm"
+          ],
+          "judge_order": [
+            "safework",
+            "minicpm"
+          ],
+          "mean": [
+            -6.297243755348744,
+            -2.966314594983839
+          ],
+          "scale": [
+            3.2326882038342037,
+            1.0445982464616248
+          ],
+          "coefficients": [
+            2.625906872539908,
+            -0.007076273259231329
+          ],
+          "intercept": -5.239373715421557,
+          "penalty": "l2",
+          "C": 0.3,
+          "l1_ratio": null
+        }
+      },
+      {
+        "fold": 2,
+        "calibrators": {
+          "safework": {
+            "method": "beta",
+            "a": 2.8220099469336644,
+            "b": 0.006737946999085467,
+            "c": 1.0397739767475758,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.10904907022970128,
+            "monotonic": true
+          },
+          "minicpm": {
+            "method": "temperature",
+            "temperature": 1.6858627746199502,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.206385693066459
+          }
+        },
+        "model": {
+          "feature_family": "F1",
+          "feature_names": [
+            "safework",
+            "minicpm"
+          ],
+          "judge_order": [
+            "safework",
+            "minicpm"
+          ],
+          "mean": [
+            -6.438965798546026,
+            -3.0346922629932673
+          ],
+          "scale": [
+            3.3191759318590583,
+            1.072406430873762
+          ],
+          "coefficients": [
+            2.640182872683721,
+            0.01447572573657738
+          ],
+          "intercept": -5.282860958567783,
+          "penalty": "l2",
+          "C": 0.3,
+          "l1_ratio": null
+        }
+      },
+      {
+        "fold": 3,
+        "calibrators": {
+          "safework": {
+            "method": "beta",
+            "a": 2.659654394084188,
+            "b": 0.006737946999085467,
+            "c": 1.0422781093641704,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.11307637620420792,
+            "monotonic": true
+          },
+          "minicpm": {
+            "method": "temperature",
+            "temperature": 1.6996175136862606,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.21018567463521987
+          }
+        },
+        "model": {
+          "feature_family": "F1",
+          "feature_names": [
+            "safework",
+            "minicpm"
+          ],
+          "judge_order": [
+            "safework",
+            "minicpm"
+          ],
+          "mean": [
+            -6.033616100412217,
+            -2.996645690102786
+          ],
+          "scale": [
+            3.090485964026873,
+            1.1028248558480513
+          ],
+          "coefficients": [
+            2.5771130503405946,
+            -0.021978915745987475
+          ],
+          "intercept": -5.133334445653247,
+          "penalty": "l2",
+          "C": 0.3,
+          "l1_ratio": null
+        }
+      },
+      {
+        "fold": 4,
+        "calibrators": {
+          "safework": {
+            "method": "beta",
+            "a": 2.6636135469773756,
+            "b": 0.006737946999085467,
+            "c": 0.9930775615685101,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.11030754656374321,
+            "monotonic": true
+          },
+          "minicpm": {
+            "method": "temperature",
+            "temperature": 1.6868263706838782,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.2068238997271451
+          }
+        },
+        "model": {
+          "feature_family": "F1",
+          "feature_names": [
+            "safework",
+            "minicpm"
+          ],
+          "judge_order": [
+            "safework",
+            "minicpm"
+          ],
+          "mean": [
+            -6.0808220457605495,
+            -3.02776490742667
+          ],
+          "scale": [
+            3.0855554497132403,
+            1.1030965011010234
+          ],
+          "coefficients": [
+            2.5949942789181155,
+            -0.04098960458524699
+          ],
+          "intercept": -5.17903589742951,
+          "penalty": "l2",
+          "C": 0.3,
+          "l1_ratio": null
+        }
+      }
+    ]
+  },
+  "without_safework": {
+    "calibrators": {
+      "qwen": {
+        "method": "beta",
+        "a": 0.30465503442202674,
+        "b": 0.006737946999085467,
+        "c": 0.6771033074904367,
+        "optimizer": "L-BFGS-B",
+        "objective": 0.16696356729821205,
+        "monotonic": true
+      },
+      "minicpm": {
+        "method": "temperature",
+        "temperature": 1.6967220583025642,
+        "optimizer": "L-BFGS-B",
+        "objective": 0.20881337614761464
+      }
+    },
+    "model": {
+      "feature_family": "F1",
+      "feature_names": [
+        "qwen",
+        "minicpm"
+      ],
+      "judge_order": [
+        "qwen",
+        "minicpm"
+      ],
+      "mean": [
+        -3.226968368362874,
+        -3.008767597227752
+      ],
+      "scale": [
+        1.0502473520552593,
+        1.081359888796814
+      ],
+      "coefficients": [
+        0.9549282689151026,
+        0.1485056376033584
+      ],
+      "intercept": -3.2172451770195756,
+      "penalty": "l2",
+      "C": 0.3,
+      "l1_ratio": null
+    },
+    "constrained_threshold": {
+      "feasible": false,
+      "minimum_unsafe_recall": 0.8269905956112853,
+      "minimum_safe_specificity": 0.8263497571131159
+    },
+    "unrestricted_diagnostic_threshold": {
+      "feasible": true,
+      "threshold": 0.14222925061567243,
+      "metrics": {
+        "sample_count": 1760,
+        "accuracy": 0.8625,
+        "macro_f1": 0.7683600947617795,
+        "unsafe_recall": 0.6206896551724138,
+        "safe_specificity": 0.916030534351145,
+        "false_safe_rate": 0.3793103448275862,
+        "mcc": 0.5367201895235588,
+        "unsafe_true_positive": 198,
+        "safe_true_positive": 1320,
+        "unsafe_false_positive": 121,
+        "unsafe_false_negative": 121
+      },
+      "minimum_unsafe_recall": 0.0,
+      "minimum_safe_specificity": 0.0,
+      "candidate_count": 1255
+    },
+    "folds": [
+      {
+        "fold": 0,
+        "calibrators": {
+          "qwen": {
+            "method": "beta",
+            "a": 0.3055550401090371,
+            "b": 0.006737946999085467,
+            "c": 0.7115703803144454,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.1678787165799591,
+            "monotonic": true
+          },
+          "minicpm": {
+            "method": "temperature",
+            "temperature": 1.6835632630484216,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.20781995683980656
+          }
+        },
+        "model": {
+          "feature_family": "F1",
+          "feature_names": [
+            "qwen",
+            "minicpm"
+          ],
+          "judge_order": [
+            "qwen",
+            "minicpm"
+          ],
+          "mean": [
+            -3.2074091655028476,
+            -3.020530557165603
+          ],
+          "scale": [
+            1.0515580726524871,
+            1.084155055356429
+          ],
+          "coefficients": [
+            0.9201727062313633,
+            0.21698438549118526
+          ],
+          "intercept": -3.2010378894889815,
+          "penalty": "l2",
+          "C": 0.3,
+          "l1_ratio": null
+        }
+      },
+      {
+        "fold": 1,
+        "calibrators": {
+          "qwen": {
+            "method": "beta",
+            "a": 0.3031236517306386,
+            "b": 0.006737946999085467,
+            "c": 0.6644156271477923,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.1683989930677967,
+            "monotonic": true
+          },
+          "minicpm": {
+            "method": "temperature",
+            "temperature": 1.727200827436498,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.21276820287161655
+          }
+        },
+        "model": {
+          "feature_family": "F1",
+          "feature_names": [
+            "qwen",
+            "minicpm"
+          ],
+          "judge_order": [
+            "qwen",
+            "minicpm"
+          ],
+          "mean": [
+            -3.217707224594179,
+            -2.966314594983839
+          ],
+          "scale": [
+            1.044489446788864,
+            1.0445982464616248
+          ],
+          "coefficients": [
+            0.9592624541738802,
+            0.1267947708858623
+          ],
+          "intercept": -3.2032441478445848,
+          "penalty": "l2",
+          "C": 0.3,
+          "l1_ratio": null
+        }
+      },
+      {
+        "fold": 2,
+        "calibrators": {
+          "qwen": {
+            "method": "beta",
+            "a": 0.3023678784120719,
+            "b": 0.006737946999085467,
+            "c": 0.6406903819532377,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.1670737593328492,
+            "monotonic": true
+          },
+          "minicpm": {
+            "method": "temperature",
+            "temperature": 1.6858627746199502,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.206385693066459
+          }
+        },
+        "model": {
+          "feature_family": "F1",
+          "feature_names": [
+            "qwen",
+            "minicpm"
+          ],
+          "judge_order": [
+            "qwen",
+            "minicpm"
+          ],
+          "mean": [
+            -3.2334347343887075,
+            -3.0346922629932673
+          ],
+          "scale": [
+            1.0417459400288274,
+            1.072406430873762
+          ],
+          "coefficients": [
+            0.9203713039464366,
+            0.19541663181392363
+          ],
+          "intercept": -3.2247413288183187,
+          "penalty": "l2",
+          "C": 0.3,
+          "l1_ratio": null
+        }
+      },
+      {
+        "fold": 3,
+        "calibrators": {
+          "qwen": {
+            "method": "beta",
+            "a": 0.30768489889254935,
+            "b": 0.006737946999085467,
+            "c": 0.7002044227231974,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.16520689113539488,
+            "monotonic": true
+          },
+          "minicpm": {
+            "method": "temperature",
+            "temperature": 1.6996175136862606,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.21018567463521987
+          }
+        },
+        "model": {
+          "feature_family": "F1",
+          "feature_names": [
+            "qwen",
+            "minicpm"
+          ],
+          "judge_order": [
+            "qwen",
+            "minicpm"
+          ],
+          "mean": [
+            -3.242748072859988,
+            -2.996645690102786
+          ],
+          "scale": [
+            1.0588645005306336,
+            1.1028248558480513
+          ],
+          "coefficients": [
+            0.9893223010448419,
+            0.09227122332321412
+          ],
+          "intercept": -3.2248766620272096,
+          "penalty": "l2",
+          "C": 0.3,
+          "l1_ratio": null
+        }
+      },
+      {
+        "fold": 4,
+        "calibrators": {
+          "qwen": {
+            "method": "beta",
+            "a": 0.3046897450859209,
+            "b": 0.006737946999085467,
+            "c": 0.6700455254455502,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.16622220181215988,
+            "monotonic": true
+          },
+          "minicpm": {
+            "method": "temperature",
+            "temperature": 1.6868263706838782,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.2068238997271451
+          }
+        },
+        "model": {
+          "feature_family": "F1",
+          "feature_names": [
+            "qwen",
+            "minicpm"
+          ],
+          "judge_order": [
+            "qwen",
+            "minicpm"
+          ],
+          "mean": [
+            -3.234032935697427,
+            -3.02776490742667
+          ],
+          "scale": [
+            1.0550430537910096,
+            1.1030965011010234
+          ],
+          "coefficients": [
+            0.9640956312356658,
+            0.12943880868576987
+          ],
+          "intercept": -3.2196570025027325,
+          "penalty": "l2",
+          "C": 0.3,
+          "l1_ratio": null
+        }
+      }
+    ]
+  },
+  "without_minicpm": {
+    "calibrators": {
+      "qwen": {
+        "method": "beta",
+        "a": 0.30465503442202674,
+        "b": 0.006737946999085467,
+        "c": 0.6771033074904367,
+        "optimizer": "L-BFGS-B",
+        "objective": 0.16696356729821205,
+        "monotonic": true
+      },
+      "safework": {
+        "method": "beta",
+        "a": 2.730912319083189,
+        "b": 0.006737946999085467,
+        "c": 1.0447366839522523,
+        "optimizer": "L-BFGS-B",
+        "objective": 0.11025551780758154,
+        "monotonic": true
+      }
+    },
+    "model": {
+      "feature_family": "F1",
+      "feature_names": [
+        "qwen",
+        "safework"
+      ],
+      "judge_order": [
+        "qwen",
+        "safework"
+      ],
+      "mean": [
+        -3.226968368362874,
+        -6.227509350325508
+      ],
+      "scale": [
+        1.0502473520552593,
+        3.1927769543629556
+      ],
+      "coefficients": [
+        0.2423298599701938,
+        2.3203259445767848
+      ],
+      "intercept": -5.078410454238182,
+      "penalty": "l2",
+      "C": 0.3,
+      "l1_ratio": null
+    },
+    "constrained_threshold": {
+      "feasible": true,
+      "threshold": 0.274343211159044,
+      "metrics": {
+        "sample_count": 1760,
+        "accuracy": 0.8732954545454545,
+        "macro_f1": 0.812712260313161,
+        "unsafe_recall": 0.8401253918495298,
+        "safe_specificity": 0.8806384455239417,
+        "false_safe_rate": 0.15987460815047017,
+        "mcc": 0.6412199367057746,
+        "unsafe_true_positive": 268,
+        "safe_true_positive": 1269,
+        "unsafe_false_positive": 172,
+        "unsafe_false_negative": 51
+      },
+      "minimum_unsafe_recall": 0.8269905956112853,
+      "minimum_safe_specificity": 0.8263497571131159,
+      "candidate_count": 2907
+    },
+    "unrestricted_diagnostic_threshold": {
+      "feasible": true,
+      "threshold": 0.274343211159044,
+      "metrics": {
+        "sample_count": 1760,
+        "accuracy": 0.8732954545454545,
+        "macro_f1": 0.812712260313161,
+        "unsafe_recall": 0.8401253918495298,
+        "safe_specificity": 0.8806384455239417,
+        "false_safe_rate": 0.15987460815047017,
+        "mcc": 0.6412199367057746,
+        "unsafe_true_positive": 268,
+        "safe_true_positive": 1269,
+        "unsafe_false_positive": 172,
+        "unsafe_false_negative": 51
+      },
+      "minimum_unsafe_recall": 0.0,
+      "minimum_safe_specificity": 0.0,
+      "candidate_count": 2907
+    },
+    "folds": [
+      {
+        "fold": 0,
+        "calibrators": {
+          "qwen": {
+            "method": "beta",
+            "a": 0.3055550401090371,
+            "b": 0.006737946999085467,
+            "c": 0.7115703803144454,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.1678787165799591,
+            "monotonic": true
+          },
+          "safework": {
+            "method": "beta",
+            "a": 2.7941383271471656,
+            "b": 0.006737946999085467,
+            "c": 1.1412620499969763,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.10849291197625081,
+            "monotonic": true
+          }
+        },
+        "model": {
+          "feature_family": "F1",
+          "feature_names": [
+            "qwen",
+            "safework"
+          ],
+          "judge_order": [
+            "qwen",
+            "safework"
+          ],
+          "mean": [
+            -3.2074091655028476,
+            -6.33577336424619
+          ],
+          "scale": [
+            1.0515580726524871,
+            3.262654972984625
+          ],
+          "coefficients": [
+            0.2484379152201122,
+            2.2792976412165666
+          ],
+          "intercept": -5.000007427158987,
+          "penalty": "l2",
+          "C": 0.3,
+          "l1_ratio": null
+        }
+      },
+      {
+        "fold": 1,
+        "calibrators": {
+          "qwen": {
+            "method": "beta",
+            "a": 0.3031236517306386,
+            "b": 0.006737946999085467,
+            "c": 0.6644156271477923,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.1683989930677967,
+            "monotonic": true
+          },
+          "safework": {
+            "method": "beta",
+            "a": 2.738375270191534,
+            "b": 0.006737946999085467,
+            "c": 1.0200435256157718,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.11007282614229573,
+            "monotonic": true
+          }
+        },
+        "model": {
+          "feature_family": "F1",
+          "feature_names": [
+            "qwen",
+            "safework"
+          ],
+          "judge_order": [
+            "qwen",
+            "safework"
+          ],
+          "mean": [
+            -3.217707224594179,
+            -6.297243755348744
+          ],
+          "scale": [
+            1.044489446788864,
+            3.2326882038342037
+          ],
+          "coefficients": [
+            0.2489238540484481,
+            2.262379955696226
+          ],
+          "intercept": -4.990729056397676,
+          "penalty": "l2",
+          "C": 0.3,
+          "l1_ratio": null
+        }
+      },
+      {
+        "fold": 2,
+        "calibrators": {
+          "qwen": {
+            "method": "beta",
+            "a": 0.3023678784120719,
+            "b": 0.006737946999085467,
+            "c": 0.6406903819532377,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.1670737593328492,
+            "monotonic": true
+          },
+          "safework": {
+            "method": "beta",
+            "a": 2.8220099469336644,
+            "b": 0.006737946999085467,
+            "c": 1.0397739767475758,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.10904907022970128,
+            "monotonic": true
+          }
+        },
+        "model": {
+          "feature_family": "F1",
+          "feature_names": [
+            "qwen",
+            "safework"
+          ],
+          "judge_order": [
+            "qwen",
+            "safework"
+          ],
+          "mean": [
+            -3.2334347343887075,
+            -6.438965798546026
+          ],
+          "scale": [
+            1.0417459400288274,
+            3.3191759318590583
+          ],
+          "coefficients": [
+            0.2484634044695185,
+            2.288922841494494
+          ],
+          "intercept": -5.03337739039686,
+          "penalty": "l2",
+          "C": 0.3,
+          "l1_ratio": null
+        }
+      },
+      {
+        "fold": 3,
+        "calibrators": {
+          "qwen": {
+            "method": "beta",
+            "a": 0.30768489889254935,
+            "b": 0.006737946999085467,
+            "c": 0.7002044227231974,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.16520689113539488,
+            "monotonic": true
+          },
+          "safework": {
+            "method": "beta",
+            "a": 2.659654394084188,
+            "b": 0.006737946999085467,
+            "c": 1.0422781093641704,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.11307637620420792,
+            "monotonic": true
+          }
+        },
+        "model": {
+          "feature_family": "F1",
+          "feature_names": [
+            "qwen",
+            "safework"
+          ],
+          "judge_order": [
+            "qwen",
+            "safework"
+          ],
+          "mean": [
+            -3.242748072859988,
+            -6.033616100412217
+          ],
+          "scale": [
+            1.0588645005306336,
+            3.090485964026873
+          ],
+          "coefficients": [
+            0.2806515824120736,
+            2.1583079531725473
+          ],
+          "intercept": -4.866571814023161,
+          "penalty": "l2",
+          "C": 0.3,
+          "l1_ratio": null
+        }
+      },
+      {
+        "fold": 4,
+        "calibrators": {
+          "qwen": {
+            "method": "beta",
+            "a": 0.3046897450859209,
+            "b": 0.006737946999085467,
+            "c": 0.6700455254455502,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.16622220181215988,
+            "monotonic": true
+          },
+          "safework": {
+            "method": "beta",
+            "a": 2.6636135469773756,
+            "b": 0.006737946999085467,
+            "c": 0.9930775615685101,
+            "optimizer": "L-BFGS-B",
+            "objective": 0.11030754656374321,
+            "monotonic": true
+          }
+        },
+        "model": {
+          "feature_family": "F1",
+          "feature_names": [
+            "qwen",
+            "safework"
+          ],
+          "judge_order": [
+            "qwen",
+            "safework"
+          ],
+          "mean": [
+            -3.234032935697427,
+            -6.0808220457605495
+          ],
+          "scale": [
+            1.0550430537910096,
+            3.0855554497132403
+          ],
+          "coefficients": [
+            0.25508462744187566,
+            2.1972232036596195
+          ],
+          "intercept": -4.916759774590701,
+          "penalty": "l2",
+          "C": 0.3,
+          "l1_ratio": null
+        }
+      }
+    ]
+  },
+  "single_calibrated_qwen": {
+    "judge": "qwen",
+    "calibrator": {
+      "method": "beta",
+      "a": 0.30465503442202674,
+      "b": 0.006737946999085467,
+      "c": 0.6771033074904367,
+      "optimizer": "L-BFGS-B",
+      "objective": 0.16696356729821205,
+      "monotonic": true
+    },
+    "constrained_threshold": {
+      "feasible": false,
+      "minimum_unsafe_recall": 0.8269905956112853,
+      "minimum_safe_specificity": 0.8263497571131159
+    },
+    "unrestricted_diagnostic_threshold": {
+      "feasible": true,
+      "threshold": 0.10097425342672676,
+      "metrics": {
+        "sample_count": 1760,
+        "accuracy": 0.8642045454545455,
+        "macro_f1": 0.7726160880172073,
+        "unsafe_recall": 0.6332288401253918,
+        "safe_specificity": 0.9153365718251214,
+        "false_safe_rate": 0.3667711598746082,
+        "mcc": 0.5452629990665102,
+        "unsafe_true_positive": 202,
+        "safe_true_positive": 1319,
+        "unsafe_false_positive": 122,
+        "unsafe_false_negative": 117
+      },
+      "minimum_unsafe_recall": 0.0,
+      "minimum_safe_specificity": 0.0,
+      "candidate_count": 283
+    }
+  },
+  "single_calibrated_safework": {
+    "judge": "safework",
+    "calibrator": {
+      "method": "beta",
+      "a": 2.730912319083189,
+      "b": 0.006737946999085467,
+      "c": 1.0447366839522523,
+      "optimizer": "L-BFGS-B",
+      "objective": 0.11025551780758154,
+      "monotonic": true
+    },
+    "constrained_threshold": {
+      "feasible": true,
+      "threshold": 0.274699059319783,
+      "metrics": {
+        "sample_count": 1760,
+        "accuracy": 0.8613636363636363,
+        "macro_f1": 0.7975729876085104,
+        "unsafe_recall": 0.8275862068965517,
+        "safe_specificity": 0.8688410825815406,
+        "false_safe_rate": 0.1724137931034483,
+        "mcc": 0.6136436121948314,
+        "unsafe_true_positive": 264,
+        "safe_true_positive": 1252,
+        "unsafe_false_positive": 189,
+        "unsafe_false_negative": 55
+      },
+      "minimum_unsafe_recall": 0.8269905956112853,
+      "minimum_safe_specificity": 0.8263497571131159,
+      "candidate_count": 2901
+    },
+    "unrestricted_diagnostic_threshold": {
+      "feasible": true,
+      "threshold": 0.274699059319783,
+      "metrics": {
+        "sample_count": 1760,
+        "accuracy": 0.8613636363636363,
+        "macro_f1": 0.7975729876085104,
+        "unsafe_recall": 0.8275862068965517,
+        "safe_specificity": 0.8688410825815406,
+        "false_safe_rate": 0.1724137931034483,
+        "mcc": 0.6136436121948314,
+        "unsafe_true_positive": 264,
+        "safe_true_positive": 1252,
+        "unsafe_false_positive": 189,
+        "unsafe_false_negative": 55
+      },
+      "minimum_unsafe_recall": 0.0,
+      "minimum_safe_specificity": 0.0,
+      "candidate_count": 2901
+    }
+  },
+  "single_calibrated_minicpm": {
+    "judge": "minicpm",
+    "calibrator": {
+      "method": "temperature",
+      "temperature": 1.6967220583025642,
+      "optimizer": "L-BFGS-B",
+      "objective": 0.20881337614761464
+    },
+    "constrained_threshold": {
+      "feasible": false,
+      "minimum_unsafe_recall": 0.8269905956112853,
+      "minimum_safe_specificity": 0.8263497571131159
+    },
+    "unrestricted_diagnostic_threshold": {
+      "feasible": true,
+      "threshold": 0.13291560277232747,
+      "metrics": {
+        "sample_count": 1760,
+        "accuracy": 0.7892045454545454,
+        "macro_f1": 0.6681491600813364,
+        "unsafe_recall": 0.5109717868338558,
+        "safe_specificity": 0.8507980569049272,
+        "false_safe_rate": 0.4890282131661442,
+        "mcc": 0.3393593136282865,
+        "unsafe_true_positive": 163,
+        "safe_true_positive": 1226,
+        "unsafe_false_positive": 215,
+        "unsafe_false_negative": 156
+      },
+      "minimum_unsafe_recall": 0.0,
+      "minimum_safe_specificity": 0.0,
+      "candidate_count": 1072
+    }
+  }
+}

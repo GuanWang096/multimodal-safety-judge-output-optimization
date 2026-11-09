@@ -1,0 +1,1066 @@
+[
+  {
+    "nodes": 4,
+    "groups": null,
+    "sender_type": "str",
+    "message": {
+      "type": "PREPARE",
+      "sender": "0",
+      "view": 0,
+      "sequence": 99,
+      "digest": "adoption-ingress",
+      "group": -1,
+      "payload": {},
+      "signature": "W+iS5Z4yGCFyE1RmhG8NQUuknQh6J/bdgX7z0mgQeZXGJXBxnnRAUZ4Y86aztoax2QdOd6c2T1Zjvk7K3C6CBw=="
+    },
+    "expected_accept_into_cache": true,
+    "observed_cached": true,
+    "pending_after": [
+      {
+        "type": "PREPARE",
+        "sender": "0",
+        "view": 0,
+        "sequence": 99,
+        "digest": "adoption-ingress",
+        "group": -1,
+        "payload": {},
+        "signature": "W+iS5Z4yGCFyE1RmhG8NQUuknQh6J/bdgX7z0mgQeZXGJXBxnnRAUZ4Y86aztoax2QdOd6c2T1Zjvk7K3C6CBw=="
+      }
+    ],
+    "events": [],
+    "checks": {
+      "pending_matches_expectation": true,
+      "identity_tracker_untouched_on_reject": true,
+      "invalid_event_matches_expectation": true,
+      "no_consensus_state_created": true,
+      "no_outgoing_messages": true
+    },
+    "all_checks_pass": true
+  },
+  {
+    "nodes": 4,
+    "groups": null,
+    "sender_type": "str",
+    "message": {
+      "type": "PREPARE",
+      "sender": "00",
+      "view": 0,
+      "sequence": 99,
+      "digest": "adoption-ingress",
+      "group": -1,
+      "payload": {},
+      "signature": "outl8AF7AxvFzdIKkNkObuJOC1zZnEuOVSYwZi3DZ7JLkWUwnaYFOTGea05V4nHMX+2CVCTytqpDq2HY0QwyAA=="
+    },
+    "expected_accept_into_cache": true,
+    "observed_cached": true,
+    "pending_after": [
+      {
+        "type": "PREPARE",
+        "sender": "00",
+        "view": 0,
+        "sequence": 99,
+        "digest": "adoption-ingress",
+        "group": -1,
+        "payload": {},
+        "signature": "outl8AF7AxvFzdIKkNkObuJOC1zZnEuOVSYwZi3DZ7JLkWUwnaYFOTGea05V4nHMX+2CVCTytqpDq2HY0QwyAA=="
+      }
+    ],
+    "events": [],
+    "checks": {
+      "pending_matches_expectation": true,
+      "identity_tracker_untouched_on_reject": true,
+      "invalid_event_matches_expectation": true,
+      "no_consensus_state_created": true,
+      "no_outgoing_messages": true
+    },
+    "all_checks_pass": true
+  },
+  {
+    "nodes": 4,
+    "groups": null,
+    "sender_type": "str",
+    "message": {
+      "type": "PREPARE",
+      "sender": "+0",
+      "view": 0,
+      "sequence": 99,
+      "digest": "adoption-ingress",
+      "group": -1,
+      "payload": {},
+      "signature": "T6mUCS1inYpd/qQkNZYna3fv3mpLSNDqEsCQmrKfD/Z46SoIoGCmCSP/eM3jZu9sbC1EsIGXxgyZptv9xBIwAg=="
+    },
+    "expected_accept_into_cache": true,
+    "observed_cached": true,
+    "pending_after": [
+      {
+        "type": "PREPARE",
+        "sender": "+0",
+        "view": 0,
+        "sequence": 99,
+        "digest": "adoption-ingress",
+        "group": -1,
+        "payload": {},
+        "signature": "T6mUCS1inYpd/qQkNZYna3fv3mpLSNDqEsCQmrKfD/Z46SoIoGCmCSP/eM3jZu9sbC1EsIGXxgyZptv9xBIwAg=="
+      }
+    ],
+    "events": [],
+    "checks": {
+      "pending_matches_expectation": true,
+      "identity_tracker_untouched_on_reject": true,
+      "invalid_event_matches_expectation": true,
+      "no_consensus_state_created": true,
+      "no_outgoing_messages": true
+    },
+    "all_checks_pass": true
+  },
+  {
+    "nodes": 4,
+    "groups": null,
+    "sender_type": "float",
+    "message": {
+      "type": "PREPARE",
+      "sender": 0.1,
+      "view": 0,
+      "sequence": 99,
+      "digest": "adoption-ingress",
+      "group": -1,
+      "payload": {},
+      "signature": "AKIJJ5SsGbJpgL+/tV4aIBoy2LnRW8GB69Hs03wgQWA7FgwcBC2+BkACflMzgEmly1pCh4yJtGfAdKlrYLXHDg=="
+    },
+    "expected_accept_into_cache": true,
+    "observed_cached": true,
+    "pending_after": [
+      {
+        "type": "PREPARE",
+        "sender": 0.1,
+        "view": 0,
+        "sequence": 99,
+        "digest": "adoption-ingress",
+        "group": -1,
+        "payload": {},
+        "signature": "AKIJJ5SsGbJpgL+/tV4aIBoy2LnRW8GB69Hs03wgQWA7FgwcBC2+BkACflMzgEmly1pCh4yJtGfAdKlrYLXHDg=="
+      }
+    ],
+    "events": [],
+    "checks": {
+      "pending_matches_expectation": true,
+      "identity_tracker_untouched_on_reject": true,
+      "invalid_event_matches_expectation": true,
+      "no_consensus_state_created": true,
+      "no_outgoing_messages": true
+    },
+    "all_checks_pass": true
+  },
+  {
+    "nodes": 4,
+    "groups": null,
+    "sender_type": "float",
+    "message": {
+      "type": "PREPARE",
+      "sender": 0.2,
+      "view": 0,
+      "sequence": 99,
+      "digest": "adoption-ingress",
+      "group": -1,
+      "payload": {},
+      "signature": "XVofuaVbDBC4SITz1J+tPouskaY6dWg1g7X89XTG9gA2bVYUZlQkjKIWxjugu0irV2jbVB7Hg42kQPH4j2FSBg=="
+    },
+    "expected_accept_into_cache": true,
+    "observed_cached": true,
+    "pending_after": [
+      {
+        "type": "PREPARE",
+        "sender": 0.2,
+        "view": 0,
+        "sequence": 99,
+        "digest": "adoption-ingress",
+        "group": -1,
+        "payload": {},
+        "signature": "XVofuaVbDBC4SITz1J+tPouskaY6dWg1g7X89XTG9gA2bVYUZlQkjKIWxjugu0irV2jbVB7Hg42kQPH4j2FSBg=="
+      }
+    ],
+    "events": [],
+    "checks": {
+      "pending_matches_expectation": true,
+      "identity_tracker_untouched_on_reject": true,
+      "invalid_event_matches_expectation": true,
+      "no_consensus_state_created": true,
+      "no_outgoing_messages": true
+    },
+    "all_checks_pass": true
+  },
+  {
+    "nodes": 4,
+    "groups": null,
+    "sender_type": "float",
+    "message": {
+      "type": "PREPARE",
+      "sender": 0.3,
+      "view": 0,
+      "sequence": 99,
+      "digest": "adoption-ingress",
+      "group": -1,
+      "payload": {},
+      "signature": "vri4b687ddLo0MiXMNNqtPOGtXtYll1qvrtSsfaaEwuM6sW6Xf/XaJ2bQg9r9oYV80O68K629AaiNYPjgE/UDQ=="
+    },
+    "expected_accept_into_cache": true,
+    "observed_cached": true,
+    "pending_after": [
+      {
+        "type": "PREPARE",
+        "sender": 0.3,
+        "view": 0,
+        "sequence": 99,
+        "digest": "adoption-ingress",
+        "group": -1,
+        "payload": {},
+        "signature": "vri4b687ddLo0MiXMNNqtPOGtXtYll1qvrtSsfaaEwuM6sW6Xf/XaJ2bQg9r9oYV80O68K629AaiNYPjgE/UDQ=="
+      }
+    ],
+    "events": [],
+    "checks": {
+      "pending_matches_expectation": true,
+      "identity_tracker_untouched_on_reject": true,
+      "invalid_event_matches_expectation": true,
+      "no_consensus_state_created": true,
+      "no_outgoing_messages": true
+    },
+    "all_checks_pass": true
+  },
+  {
+    "nodes": 4,
+    "groups": null,
+    "sender_type": "int",
+    "message": {
+      "type": "PREPARE",
+      "sender": 0,
+      "view": 0,
+      "sequence": 99,
+      "digest": "adoption-ingress",
+      "group": -1,
+      "payload": {},
+      "signature": "7Zp3yriBzzVnpziUKQK5+suyZwR2snZYKKatbaR2ryFW+difyb9lH21O+uwSK6TpmLywKtide9WMjqV1LdYxBA=="
+    },
+    "expected_accept_into_cache": true,
+    "observed_cached": true,
+    "pending_after": [
+      {
+        "type": "PREPARE",
+        "sender": 0,
+        "view": 0,
+        "sequence": 99,
+        "digest": "adoption-ingress",
+        "group": -1,
+        "payload": {},
+        "signature": "7Zp3yriBzzVnpziUKQK5+suyZwR2snZYKKatbaR2ryFW+difyb9lH21O+uwSK6TpmLywKtide9WMjqV1LdYxBA=="
+      }
+    ],
+    "events": [],
+    "checks": {
+      "pending_matches_expectation": true,
+      "identity_tracker_untouched_on_reject": true,
+      "invalid_event_matches_expectation": true,
+      "no_consensus_state_created": true,
+      "no_outgoing_messages": true
+    },
+    "all_checks_pass": true
+  },
+  {
+    "nodes": 16,
+    "groups": 4,
+    "sender_type": "str",
+    "message": {
+      "type": "PREPARE",
+      "sender": "0",
+      "view": 0,
+      "sequence": 99,
+      "digest": "adoption-ingress",
+      "group": 0,
+      "payload": {},
+      "signature": "ld+MFPnaVz2sGkF075OcinrdzEoxyFQcT9SikvcRY5kW7pi0XFxRHNZFJklaPIj6dfPyLMxB/7XuKh2CTtRlCg=="
+    },
+    "expected_accept_into_cache": true,
+    "observed_cached": true,
+    "pending_after": [
+      {
+        "type": "PREPARE",
+        "sender": "0",
+        "view": 0,
+        "sequence": 99,
+        "digest": "adoption-ingress",
+        "group": 0,
+        "payload": {},
+        "signature": "ld+MFPnaVz2sGkF075OcinrdzEoxyFQcT9SikvcRY5kW7pi0XFxRHNZFJklaPIj6dfPyLMxB/7XuKh2CTtRlCg=="
+      }
+    ],
+    "events": [],
+    "checks": {
+      "pending_matches_expectation": true,
+      "identity_tracker_untouched_on_reject": true,
+      "invalid_event_matches_expectation": true,
+      "no_consensus_state_created": true,
+      "no_outgoing_messages": true
+    },
+    "all_checks_pass": true
+  },
+  {
+    "nodes": 16,
+    "groups": 4,
+    "sender_type": "str",
+    "message": {
+      "type": "PREPARE",
+      "sender": "00",
+      "view": 0,
+      "sequence": 99,
+      "digest": "adoption-ingress",
+      "group": 0,
+      "payload": {},
+      "signature": "30450jCGpvjgrpZ4vAO+ldlyPuL/G9mmEGOf8ZB+5873FzAmFZvuRUOr3q+nklA5XnNJDy59tYEZ/pvbywisDg=="
+    },
+    "expected_accept_into_cache": true,
+    "observed_cached": true,
+    "pending_after": [
+      {
+        "type": "PREPARE",
+        "sender": "00",
+        "view": 0,
+        "sequence": 99,
+        "digest": "adoption-ingress",
+        "group": 0,
+        "payload": {},
+        "signature": "30450jCGpvjgrpZ4vAO+ldlyPuL/G9mmEGOf8ZB+5873FzAmFZvuRUOr3q+nklA5XnNJDy59tYEZ/pvbywisDg=="
+      }
+    ],
+    "events": [],
+    "checks": {
+      "pending_matches_expectation": true,
+      "identity_tracker_untouched_on_reject": true,
+      "invalid_event_matches_expectation": true,
+      "no_consensus_state_created": true,
+      "no_outgoing_messages": true
+    },
+    "all_checks_pass": true
+  },
+  {
+    "nodes": 16,
+    "groups": 4,
+    "sender_type": "str",
+    "message": {
+      "type": "PREPARE",
+      "sender": "+0",
+      "view": 0,
+      "sequence": 99,
+      "digest": "adoption-ingress",
+      "group": 0,
+      "payload": {},
+      "signature": "gvS7B3a35Of3FcmAvuvwAAiq1Mq8GasYlaROfR8TRng9Zw3+0J+O15F8glx4KLekSceYcvRyyTU4Nd1ZM2A1Aw=="
+    },
+    "expected_accept_into_cache": true,
+    "observed_cached": true,
+    "pending_after": [
+      {
+        "type": "PREPARE",
+        "sender": "+0",
+        "view": 0,
+        "sequence": 99,
+        "digest": "adoption-ingress",
+        "group": 0,
+        "payload": {},
+        "signature": "gvS7B3a35Of3FcmAvuvwAAiq1Mq8GasYlaROfR8TRng9Zw3+0J+O15F8glx4KLekSceYcvRyyTU4Nd1ZM2A1Aw=="
+      }
+    ],
+    "events": [],
+    "checks": {
+      "pending_matches_expectation": true,
+      "identity_tracker_untouched_on_reject": true,
+      "invalid_event_matches_expectation": true,
+      "no_consensus_state_created": true,
+      "no_outgoing_messages": true
+    },
+    "all_checks_pass": true
+  },
+  {
+    "nodes": 16,
+    "groups": 4,
+    "sender_type": "float",
+    "message": {
+      "type": "PREPARE",
+      "sender": 0.1,
+      "view": 0,
+      "sequence": 99,
+      "digest": "adoption-ingress",
+      "group": 0,
+      "payload": {},
+      "signature": "YBNGv7NHElpOoJ89zobPPMOsjzZL7UyED6oC2Pk9S8ZAGWkdnyJzNMliY3x/Topg4YBHkSZn0bxQQq4+oLmTAA=="
+    },
+    "expected_accept_into_cache": true,
+    "observed_cached": true,
+    "pending_after": [
+      {
+        "type": "PREPARE",
+        "sender": 0.1,
+        "view": 0,
+        "sequence": 99,
+        "digest": "adoption-ingress",
+        "group": 0,
+        "payload": {},
+        "signature": "YBNGv7NHElpOoJ89zobPPMOsjzZL7UyED6oC2Pk9S8ZAGWkdnyJzNMliY3x/Topg4YBHkSZn0bxQQq4+oLmTAA=="
+      }
+    ],
+    "events": [],
+    "checks": {
+      "pending_matches_expectation": true,
+      "identity_tracker_untouched_on_reject": true,
+      "invalid_event_matches_expectation": true,
+      "no_consensus_state_created": true,
+      "no_outgoing_messages": true
+    },
+    "all_checks_pass": true
+  },
+  {
+    "nodes": 16,
+    "groups": 4,
+    "sender_type": "float",
+    "message": {
+      "type": "PREPARE",
+      "sender": 0.2,
+      "view": 0,
+      "sequence": 99,
+      "digest": "adoption-ingress",
+      "group": 0,
+      "payload": {},
+      "signature": "RmnJXwG1StbTXSRRcgQcXc7zrVbNQVFVF/Sut2xTacShMwwfPlP9kttTAydXwo+1t/LVpa8my6V/ETyvYY2tDQ=="
+    },
+    "expected_accept_into_cache": true,
+    "observed_cached": true,
+    "pending_after": [
+      {
+        "type": "PREPARE",
+        "sender": 0.2,
+        "view": 0,
+        "sequence": 99,
+        "digest": "adoption-ingress",
+        "group": 0,
+        "payload": {},
+        "signature": "RmnJXwG1StbTXSRRcgQcXc7zrVbNQVFVF/Sut2xTacShMwwfPlP9kttTAydXwo+1t/LVpa8my6V/ETyvYY2tDQ=="
+      }
+    ],
+    "events": [],
+    "checks": {
+      "pending_matches_expectation": true,
+      "identity_tracker_untouched_on_reject": true,
+      "invalid_event_matches_expectation": true,
+      "no_consensus_state_created": true,
+      "no_outgoing_messages": true
+    },
+    "all_checks_pass": true
+  },
+  {
+    "nodes": 16,
+    "groups": 4,
+    "sender_type": "float",
+    "message": {
+      "type": "PREPARE",
+      "sender": 0.3,
+      "view": 0,
+      "sequence": 99,
+      "digest": "adoption-ingress",
+      "group": 0,
+      "payload": {},
+      "signature": "MIvxFkDWJfoE6HpQ7VwNqxSmCSyQc+LcD/yi0JSsVRVCPqsrolJGPchKzR/5hwIXQthmtSqM4JRhMDyIxmASAQ=="
+    },
+    "expected_accept_into_cache": true,
+    "observed_cached": true,
+    "pending_after": [
+      {
+        "type": "PREPARE",
+        "sender": 0.3,
+        "view": 0,
+        "sequence": 99,
+        "digest": "adoption-ingress",
+        "group": 0,
+        "payload": {},
+        "signature": "MIvxFkDWJfoE6HpQ7VwNqxSmCSyQc+LcD/yi0JSsVRVCPqsrolJGPchKzR/5hwIXQthmtSqM4JRhMDyIxmASAQ=="
+      }
+    ],
+    "events": [],
+    "checks": {
+      "pending_matches_expectation": true,
+      "identity_tracker_untouched_on_reject": true,
+      "invalid_event_matches_expectation": true,
+      "no_consensus_state_created": true,
+      "no_outgoing_messages": true
+    },
+    "all_checks_pass": true
+  },
+  {
+    "nodes": 16,
+    "groups": 4,
+    "sender_type": "int",
+    "message": {
+      "type": "PREPARE",
+      "sender": 0,
+      "view": 0,
+      "sequence": 99,
+      "digest": "adoption-ingress",
+      "group": 0,
+      "payload": {},
+      "signature": "wIwJjovFuTu7DNlbAPzLrLmhL7Me8mIUHVh6iuIjXizrfEIu+0mYjg0BmmHnXCkeJHI8GLMmHyqJGeu9byjSAw=="
+    },
+    "expected_accept_into_cache": true,
+    "observed_cached": true,
+    "pending_after": [
+      {
+        "type": "PREPARE",
+        "sender": 0,
+        "view": 0,
+        "sequence": 99,
+        "digest": "adoption-ingress",
+        "group": 0,
+        "payload": {},
+        "signature": "wIwJjovFuTu7DNlbAPzLrLmhL7Me8mIUHVh6iuIjXizrfEIu+0mYjg0BmmHnXCkeJHI8GLMmHyqJGeu9byjSAw=="
+      }
+    ],
+    "events": [],
+    "checks": {
+      "pending_matches_expectation": true,
+      "identity_tracker_untouched_on_reject": true,
+      "invalid_event_matches_expectation": true,
+      "no_consensus_state_created": true,
+      "no_outgoing_messages": true
+    },
+    "all_checks_pass": true
+  },
+  {
+    "nodes": 20,
+    "groups": 4,
+    "sender_type": "str",
+    "message": {
+      "type": "PREPARE",
+      "sender": "0",
+      "view": 0,
+      "sequence": 99,
+      "digest": "adoption-ingress",
+      "group": 0,
+      "payload": {},
+      "signature": "ld+MFPnaVz2sGkF075OcinrdzEoxyFQcT9SikvcRY5kW7pi0XFxRHNZFJklaPIj6dfPyLMxB/7XuKh2CTtRlCg=="
+    },
+    "expected_accept_into_cache": true,
+    "observed_cached": true,
+    "pending_after": [
+      {
+        "type": "PREPARE",
+        "sender": "0",
+        "view": 0,
+        "sequence": 99,
+        "digest": "adoption-ingress",
+        "group": 0,
+        "payload": {},
+        "signature": "ld+MFPnaVz2sGkF075OcinrdzEoxyFQcT9SikvcRY5kW7pi0XFxRHNZFJklaPIj6dfPyLMxB/7XuKh2CTtRlCg=="
+      }
+    ],
+    "events": [],
+    "checks": {
+      "pending_matches_expectation": true,
+      "identity_tracker_untouched_on_reject": true,
+      "invalid_event_matches_expectation": true,
+      "no_consensus_state_created": true,
+      "no_outgoing_messages": true
+    },
+    "all_checks_pass": true
+  },
+  {
+    "nodes": 20,
+    "groups": 4,
+    "sender_type": "str",
+    "message": {
+      "type": "PREPARE",
+      "sender": "00",
+      "view": 0,
+      "sequence": 99,
+      "digest": "adoption-ingress",
+      "group": 0,
+      "payload": {},
+      "signature": "30450jCGpvjgrpZ4vAO+ldlyPuL/G9mmEGOf8ZB+5873FzAmFZvuRUOr3q+nklA5XnNJDy59tYEZ/pvbywisDg=="
+    },
+    "expected_accept_into_cache": true,
+    "observed_cached": true,
+    "pending_after": [
+      {
+        "type": "PREPARE",
+        "sender": "00",
+        "view": 0,
+        "sequence": 99,
+        "digest": "adoption-ingress",
+        "group": 0,
+        "payload": {},
+        "signature": "30450jCGpvjgrpZ4vAO+ldlyPuL/G9mmEGOf8ZB+5873FzAmFZvuRUOr3q+nklA5XnNJDy59tYEZ/pvbywisDg=="
+      }
+    ],
+    "events": [],
+    "checks": {
+      "pending_matches_expectation": true,
+      "identity_tracker_untouched_on_reject": true,
+      "invalid_event_matches_expectation": true,
+      "no_consensus_state_created": true,
+      "no_outgoing_messages": true
+    },
+    "all_checks_pass": true
+  },
+  {
+    "nodes": 20,
+    "groups": 4,
+    "sender_type": "str",
+    "message": {
+      "type": "PREPARE",
+      "sender": "+0",
+      "view": 0,
+      "sequence": 99,
+      "digest": "adoption-ingress",
+      "group": 0,
+      "payload": {},
+      "signature": "gvS7B3a35Of3FcmAvuvwAAiq1Mq8GasYlaROfR8TRng9Zw3+0J+O15F8glx4KLekSceYcvRyyTU4Nd1ZM2A1Aw=="
+    },
+    "expected_accept_into_cache": true,
+    "observed_cached": true,
+    "pending_after": [
+      {
+        "type": "PREPARE",
+        "sender": "+0",
+        "view": 0,
+        "sequence": 99,
+        "digest": "adoption-ingress",
+        "group": 0,
+        "payload": {},
+        "signature": "gvS7B3a35Of3FcmAvuvwAAiq1Mq8GasYlaROfR8TRng9Zw3+0J+O15F8glx4KLekSceYcvRyyTU4Nd1ZM2A1Aw=="
+      }
+    ],
+    "events": [],
+    "checks": {
+      "pending_matches_expectation": true,
+      "identity_tracker_untouched_on_reject": true,
+      "invalid_event_matches_expectation": true,
+      "no_consensus_state_created": true,
+      "no_outgoing_messages": true
+    },
+    "all_checks_pass": true
+  },
+  {
+    "nodes": 20,
+    "groups": 4,
+    "sender_type": "float",
+    "message": {
+      "type": "PREPARE",
+      "sender": 0.1,
+      "view": 0,
+      "sequence": 99,
+      "digest": "adoption-ingress",
+      "group": 0,
+      "payload": {},
+      "signature": "YBNGv7NHElpOoJ89zobPPMOsjzZL7UyED6oC2Pk9S8ZAGWkdnyJzNMliY3x/Topg4YBHkSZn0bxQQq4+oLmTAA=="
+    },
+    "expected_accept_into_cache": true,
+    "observed_cached": true,
+    "pending_after": [
+      {
+        "type": "PREPARE",
+        "sender": 0.1,
+        "view": 0,
+        "sequence": 99,
+        "digest": "adoption-ingress",
+        "group": 0,
+        "payload": {},
+        "signature": "YBNGv7NHElpOoJ89zobPPMOsjzZL7UyED6oC2Pk9S8ZAGWkdnyJzNMliY3x/Topg4YBHkSZn0bxQQq4+oLmTAA=="
+      }
+    ],
+    "events": [],
+    "checks": {
+      "pending_matches_expectation": true,
+      "identity_tracker_untouched_on_reject": true,
+      "invalid_event_matches_expectation": true,
+      "no_consensus_state_created": true,
+      "no_outgoing_messages": true
+    },
+    "all_checks_pass": true
+  },
+  {
+    "nodes": 20,
+    "groups": 4,
+    "sender_type": "float",
+    "message": {
+      "type": "PREPARE",
+      "sender": 0.2,
+      "view": 0,
+      "sequence": 99,
+      "digest": "adoption-ingress",
+      "group": 0,
+      "payload": {},
+      "signature": "RmnJXwG1StbTXSRRcgQcXc7zrVbNQVFVF/Sut2xTacShMwwfPlP9kttTAydXwo+1t/LVpa8my6V/ETyvYY2tDQ=="
+    },
+    "expected_accept_into_cache": true,
+    "observed_cached": true,
+    "pending_after": [
+      {
+        "type": "PREPARE",
+        "sender": 0.2,
+        "view": 0,
+        "sequence": 99,
+        "digest": "adoption-ingress",
+        "group": 0,
+        "payload": {},
+        "signature": "RmnJXwG1StbTXSRRcgQcXc7zrVbNQVFVF/Sut2xTacShMwwfPlP9kttTAydXwo+1t/LVpa8my6V/ETyvYY2tDQ=="
+      }
+    ],
+    "events": [],
+    "checks": {
+      "pending_matches_expectation": true,
+      "identity_tracker_untouched_on_reject": true,
+      "invalid_event_matches_expectation": true,
+      "no_consensus_state_created": true,
+      "no_outgoing_messages": true
+    },
+    "all_checks_pass": true
+  },
+  {
+    "nodes": 20,
+    "groups": 4,
+    "sender_type": "float",
+    "message": {
+      "type": "PREPARE",
+      "sender": 0.3,
+      "view": 0,
+      "sequence": 99,
+      "digest": "adoption-ingress",
+      "group": 0,
+      "payload": {},
+      "signature": "MIvxFkDWJfoE6HpQ7VwNqxSmCSyQc+LcD/yi0JSsVRVCPqsrolJGPchKzR/5hwIXQthmtSqM4JRhMDyIxmASAQ=="
+    },
+    "expected_accept_into_cache": true,
+    "observed_cached": true,
+    "pending_after": [
+      {
+        "type": "PREPARE",
+        "sender": 0.3,
+        "view": 0,
+        "sequence": 99,
+        "digest": "adoption-ingress",
+        "group": 0,
+        "payload": {},
+        "signature": "MIvxFkDWJfoE6HpQ7VwNqxSmCSyQc+LcD/yi0JSsVRVCPqsrolJGPchKzR/5hwIXQthmtSqM4JRhMDyIxmASAQ=="
+      }
+    ],
+    "events": [],
+    "checks": {
+      "pending_matches_expectation": true,
+      "identity_tracker_untouched_on_reject": true,
+      "invalid_event_matches_expectation": true,
+      "no_consensus_state_created": true,
+      "no_outgoing_messages": true
+    },
+    "all_checks_pass": true
+  },
+  {
+    "nodes": 20,
+    "groups": 4,
+    "sender_type": "int",
+    "message": {
+      "type": "PREPARE",
+      "sender": 0,
+      "view": 0,
+      "sequence": 99,
+      "digest": "adoption-ingress",
+      "group": 0,
+      "payload": {},
+      "signature": "wIwJjovFuTu7DNlbAPzLrLmhL7Me8mIUHVh6iuIjXizrfEIu+0mYjg0BmmHnXCkeJHI8GLMmHyqJGeu9byjSAw=="
+    },
+    "expected_accept_into_cache": true,
+    "observed_cached": true,
+    "pending_after": [
+      {
+        "type": "PREPARE",
+        "sender": 0,
+        "view": 0,
+        "sequence": 99,
+        "digest": "adoption-ingress",
+        "group": 0,
+        "payload": {},
+        "signature": "wIwJjovFuTu7DNlbAPzLrLmhL7Me8mIUHVh6iuIjXizrfEIu+0mYjg0BmmHnXCkeJHI8GLMmHyqJGeu9byjSAw=="
+      }
+    ],
+    "events": [],
+    "checks": {
+      "pending_matches_expectation": true,
+      "identity_tracker_untouched_on_reject": true,
+      "invalid_event_matches_expectation": true,
+      "no_consensus_state_created": true,
+      "no_outgoing_messages": true
+    },
+    "all_checks_pass": true
+  },
+  {
+    "nodes": 24,
+    "groups": 4,
+    "sender_type": "str",
+    "message": {
+      "type": "PREPARE",
+      "sender": "0",
+      "view": 0,
+      "sequence": 99,
+      "digest": "adoption-ingress",
+      "group": 0,
+      "payload": {},
+      "signature": "ld+MFPnaVz2sGkF075OcinrdzEoxyFQcT9SikvcRY5kW7pi0XFxRHNZFJklaPIj6dfPyLMxB/7XuKh2CTtRlCg=="
+    },
+    "expected_accept_into_cache": true,
+    "observed_cached": true,
+    "pending_after": [
+      {
+        "type": "PREPARE",
+        "sender": "0",
+        "view": 0,
+        "sequence": 99,
+        "digest": "adoption-ingress",
+        "group": 0,
+        "payload": {},
+        "signature": "ld+MFPnaVz2sGkF075OcinrdzEoxyFQcT9SikvcRY5kW7pi0XFxRHNZFJklaPIj6dfPyLMxB/7XuKh2CTtRlCg=="
+      }
+    ],
+    "events": [],
+    "checks": {
+      "pending_matches_expectation": true,
+      "identity_tracker_untouched_on_reject": true,
+      "invalid_event_matches_expectation": true,
+      "no_consensus_state_created": true,
+      "no_outgoing_messages": true
+    },
+    "all_checks_pass": true
+  },
+  {
+    "nodes": 24,
+    "groups": 4,
+    "sender_type": "str",
+    "message": {
+      "type": "PREPARE",
+      "sender": "00",
+      "view": 0,
+      "sequence": 99,
+      "digest": "adoption-ingress",
+      "group": 0,
+      "payload": {},
+      "signature": "30450jCGpvjgrpZ4vAO+ldlyPuL/G9mmEGOf8ZB+5873FzAmFZvuRUOr3q+nklA5XnNJDy59tYEZ/pvbywisDg=="
+    },
+    "expected_accept_into_cache": true,
+    "observed_cached": true,
+    "pending_after": [
+      {
+        "type": "PREPARE",
+        "sender": "00",
+        "view": 0,
+        "sequence": 99,
+        "digest": "adoption-ingress",
+        "group": 0,
+        "payload": {},
+        "signature": "30450jCGpvjgrpZ4vAO+ldlyPuL/G9mmEGOf8ZB+5873FzAmFZvuRUOr3q+nklA5XnNJDy59tYEZ/pvbywisDg=="
+      }
+    ],
+    "events": [],
+    "checks": {
+      "pending_matches_expectation": true,
+      "identity_tracker_untouched_on_reject": true,
+      "invalid_event_matches_expectation": true,
+      "no_consensus_state_created": true,
+      "no_outgoing_messages": true
+    },
+    "all_checks_pass": true
+  },
+  {
+    "nodes": 24,
+    "groups": 4,
+    "sender_type": "str",
+    "message": {
+      "type": "PREPARE",
+      "sender": "+0",
+      "view": 0,
+      "sequence": 99,
+      "digest": "adoption-ingress",
+      "group": 0,
+      "payload": {},
+      "signature": "gvS7B3a35Of3FcmAvuvwAAiq1Mq8GasYlaROfR8TRng9Zw3+0J+O15F8glx4KLekSceYcvRyyTU4Nd1ZM2A1Aw=="
+    },
+    "expected_accept_into_cache": true,
+    "observed_cached": true,
+    "pending_after": [
+      {
+        "type": "PREPARE",
+        "sender": "+0",
+        "view": 0,
+        "sequence": 99,
+        "digest": "adoption-ingress",
+        "group": 0,
+        "payload": {},
+        "signature": "gvS7B3a35Of3FcmAvuvwAAiq1Mq8GasYlaROfR8TRng9Zw3+0J+O15F8glx4KLekSceYcvRyyTU4Nd1ZM2A1Aw=="
+      }
+    ],
+    "events": [],
+    "checks": {
+      "pending_matches_expectation": true,
+      "identity_tracker_untouched_on_reject": true,
+      "invalid_event_matches_expectation": true,
+      "no_consensus_state_created": true,
+      "no_outgoing_messages": true
+    },
+    "all_checks_pass": true
+  },
+  {
+    "nodes": 24,
+    "groups": 4,
+    "sender_type": "float",
+    "message": {
+      "type": "PREPARE",
+      "sender": 0.1,
+      "view": 0,
+      "sequence": 99,
+      "digest": "adoption-ingress",
+      "group": 0,
+      "payload": {},
+      "signature": "YBNGv7NHElpOoJ89zobPPMOsjzZL7UyED6oC2Pk9S8ZAGWkdnyJzNMliY3x/Topg4YBHkSZn0bxQQq4+oLmTAA=="
+    },
+    "expected_accept_into_cache": true,
+    "observed_cached": true,
+    "pending_after": [
+      {
+        "type": "PREPARE",
+        "sender": 0.1,
+        "view": 0,
+        "sequence": 99,
+        "digest": "adoption-ingress",
+        "group": 0,
+        "payload": {},
+        "signature": "YBNGv7NHElpOoJ89zobPPMOsjzZL7UyED6oC2Pk9S8ZAGWkdnyJzNMliY3x/Topg4YBHkSZn0bxQQq4+oLmTAA=="
+      }
+    ],
+    "events": [],
+    "checks": {
+      "pending_matches_expectation": true,
+      "identity_tracker_untouched_on_reject": true,
+      "invalid_event_matches_expectation": true,
+      "no_consensus_state_created": true,
+      "no_outgoing_messages": true
+    },
+    "all_checks_pass": true
+  },
+  {
+    "nodes": 24,
+    "groups": 4,
+    "sender_type": "float",
+    "message": {
+      "type": "PREPARE",
+      "sender": 0.2,
+      "view": 0,
+      "sequence": 99,
+      "digest": "adoption-ingress",
+      "group": 0,
+      "payload": {},
+      "signature": "RmnJXwG1StbTXSRRcgQcXc7zrVbNQVFVF/Sut2xTacShMwwfPlP9kttTAydXwo+1t/LVpa8my6V/ETyvYY2tDQ=="
+    },
+    "expected_accept_into_cache": true,
+    "observed_cached": true,
+    "pending_after": [
+      {
+        "type": "PREPARE",
+        "sender": 0.2,
+        "view": 0,
+        "sequence": 99,
+        "digest": "adoption-ingress",
+        "group": 0,
+        "payload": {},
+        "signature": "RmnJXwG1StbTXSRRcgQcXc7zrVbNQVFVF/Sut2xTacShMwwfPlP9kttTAydXwo+1t/LVpa8my6V/ETyvYY2tDQ=="
+      }
+    ],
+    "events": [],
+    "checks": {
+      "pending_matches_expectation": true,
+      "identity_tracker_untouched_on_reject": true,
+      "invalid_event_matches_expectation": true,
+      "no_consensus_state_created": true,
+      "no_outgoing_messages": true
+    },
+    "all_checks_pass": true
+  },
+  {
+    "nodes": 24,
+    "groups": 4,
+    "sender_type": "float",
+    "message": {
+      "type": "PREPARE",
+      "sender": 0.3,
+      "view": 0,
+      "sequence": 99,
+      "digest": "adoption-ingress",
+      "group": 0,
+      "payload": {},
+      "signature": "MIvxFkDWJfoE6HpQ7VwNqxSmCSyQc+LcD/yi0JSsVRVCPqsrolJGPchKzR/5hwIXQthmtSqM4JRhMDyIxmASAQ=="
+    },
+    "expected_accept_into_cache": true,
+    "observed_cached": true,
+    "pending_after": [
+      {
+        "type": "PREPARE",
+        "sender": 0.3,
+        "view": 0,
+        "sequence": 99,
+        "digest": "adoption-ingress",
+        "group": 0,
+        "payload": {},
+        "signature": "MIvxFkDWJfoE6HpQ7VwNqxSmCSyQc+LcD/yi0JSsVRVCPqsrolJGPchKzR/5hwIXQthmtSqM4JRhMDyIxmASAQ=="
+      }
+    ],
+    "events": [],
+    "checks": {
+      "pending_matches_expectation": true,
+      "identity_tracker_untouched_on_reject": true,
+      "invalid_event_matches_expectation": true,
+      "no_consensus_state_created": true,
+      "no_outgoing_messages": true
+    },
+    "all_checks_pass": true
+  },
+  {
+    "nodes": 24,
+    "groups": 4,
+    "sender_type": "int",
+    "message": {
+      "type": "PREPARE",
+      "sender": 0,
+      "view": 0,
+      "sequence": 99,
+      "digest": "adoption-ingress",
+      "group": 0,
+      "payload": {},
+      "signature": "wIwJjovFuTu7DNlbAPzLrLmhL7Me8mIUHVh6iuIjXizrfEIu+0mYjg0BmmHnXCkeJHI8GLMmHyqJGeu9byjSAw=="
+    },
+    "expected_accept_into_cache": true,
+    "observed_cached": true,
+    "pending_after": [
+      {
+        "type": "PREPARE",
+        "sender": 0,
+        "view": 0,
+        "sequence": 99,
+        "digest": "adoption-ingress",
+        "group": 0,
+        "payload": {},
+        "signature": "wIwJjovFuTu7DNlbAPzLrLmhL7Me8mIUHVh6iuIjXizrfEIu+0mYjg0BmmHnXCkeJHI8GLMmHyqJGeu9byjSAw=="
+      }
+    ],
+    "events": [],
+    "checks": {
+      "pending_matches_expectation": true,
+      "identity_tracker_untouched_on_reject": true,
+      "invalid_event_matches_expectation": true,
+      "no_consensus_state_created": true,
+      "no_outgoing_messages": true
+    },
+    "all_checks_pass": true
+  }
+]

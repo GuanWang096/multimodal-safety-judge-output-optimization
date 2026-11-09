@@ -1,0 +1,30 @@
+{
+  "variant": "original",
+  "implementation": "C:\\Users\\guan\\Desktop\\zte-sci\\v15\\src\\rggpbft",
+  "source_sha256": {
+    "protocol.py": "f1561f864c9a1353b4ac20ef7a0ab9e772828989bceaccda8caf2d3b54861ab0",
+    "view_change.py": "deb0b5ea2625bfbd72e7822b033429b5a94d6a574dc859f4f7682347e02ad7bc",
+    "view_runtime.py": "49957fd65cd6f4ca20f59fb1a4ecc65f35e6b7fdd921ac211c74ea03a27a84ae",
+    "node_v2.py": "97f19a718ee7d43f70c177baeca10f9de44ab867256c1e674e5d9793f46e6994",
+    "grouping.py": "df59fdecd5024eef88409ba6728806b65d18e0280596e84bcd5034b727c944aa",
+    "fault_policy.py": "bac511487be5140a4fab945360f5fee6d9f62dca0c4193a336a1b5bbdc46428b",
+    "network_utils.py": "71832d95e28d3b5b2d8f909d7298e5b86e3a4e40450412692f219ca3f8dea048"
+  },
+  "loaded_modules": {
+    "protocol": "C:\\Users\\guan\\Desktop\\zte-sci\\v15\\src\\rggpbft\\protocol.py",
+    "view_change": "C:\\Users\\guan\\Desktop\\zte-sci\\v15\\src\\rggpbft\\view_change.py",
+    "view_runtime": "C:\\Users\\guan\\Desktop\\zte-sci\\v15\\src\\rggpbft\\view_runtime.py"
+  },
+  "identity_cases": 42,
+  "identity_contract_matches": 21,
+  "regression_tests": 30,
+  "regression_failures": 0,
+  "regression_errors": 0,
+  "trace_passed": 8,
+  "trace_failed": 0,
+  "trace_check_count": 128,
+  "source_unchanged_during_execution": true,
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+  "evaluation_type": "bounded_code_regression_and_scheduled_handler_execution",
+  "scope": "No Docker; random-key tests share one host process; traces use demo keys and replace dispatch/emit; no timing/performance claim."
+}

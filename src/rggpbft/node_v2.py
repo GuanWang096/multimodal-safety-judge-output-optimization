@@ -281,6 +281,8 @@ def commit_locked(state, certificate_type):
 
 
 def process_prepare_locked(message, state, runtime, outgoing):
+    if message["view"] < runtime.requested_view:
+        return
     expected_group = -1 if K_G is None else GROUP
     members = group_members(expected_group)
     if message["group"] != expected_group or message["sender"] not in members:
@@ -337,6 +339,8 @@ def accept_preprepare_locked(message, outgoing):
     )
     if message["view"] != runtime.current_view:
         return None
+    if message["view"] < runtime.requested_view:
+        return None
     if message["sender"] != primary_for_view(message["view"]):
         return None
     if message["digest"] != runtime.selected_digest:
@@ -374,6 +378,8 @@ def accept_preprepare_locked(message, outgoing):
 
 def start_preprepare_locked(runtime, outgoing):
     if NODE_ID != primary_for_view(runtime.current_view):
+        return
+    if runtime.current_view < runtime.requested_view:
         return
     action = FAULT_POLICY.before_proposal(runtime.current_view)
     if action is not None:
@@ -441,6 +447,10 @@ def start_preprepare_locked(runtime, outgoing):
 
 
 def make_view_change_locked(runtime, target_view):
+    if K_G is not None and not IS_LEADER:
+        return None
+    # Under the node lock, retire lower-view voting before signing this report.
+    runtime.requested_view = max(runtime.requested_view, int(target_view))
     if K_G is None:
         prepared = runtime.prepared["certificate"] if runtime.prepared else None
         return make_message(
@@ -452,8 +462,6 @@ def make_view_change_locked(runtime, target_view):
             -1,
             {"prepared": prepared, "start_ns": runtime.start_ns},
         )
-    if not IS_LEADER:
-        return None
     global_lock = runtime.global_lock["certificate"] if runtime.global_lock else None
     payload = {"global_lock": global_lock, "start_ns": runtime.start_ns}
     if runtime.commit_certificate is not None:
@@ -673,6 +681,12 @@ def process_protocol(message):
             return
         if message["digest"] != runtime.selected_digest:
             return
+        if message["view"] < runtime.requested_view:
+            # A report freezes this node's lower-view voting, not verification
+            # of commits already signed before the report or their certificates.
+            vote_triggers = {"PRE_PREPARE", "PREPARE", "GROUP_CERTIFICATE", "GLOBAL_PREPARED"}
+            if message_type in vote_triggers or (message_type == "COMMIT" and K_G is not None):
+                return
         runtime.touch(time.monotonic())
         if message_type == "PRE_PREPARE":
             if message["sender"] != primary_for_view(message["view"]) or message["group"] != -1:

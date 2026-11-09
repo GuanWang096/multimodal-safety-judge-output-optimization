@@ -1,0 +1,2717 @@
+{
+  "qwen": {
+    "identity": {
+      "development_oof": {
+        "cluster_averaged_log_loss": 0.6255941262070228,
+        "cluster_averaged_brier": 0.053243913654327193,
+        "adaptive_ece": 0.04414821366805416,
+        "reliability_bins": [
+          {
+            "bin": 0,
+            "record_count": 137,
+            "weight": 0.03782965503437945,
+            "minimum_probability": 1e-06,
+            "maximum_probability": 1e-06,
+            "mean_probability": 9.999999999999997e-07,
+            "observed_unsafe_rate": 0.5036182608065818,
+            "absolute_gap": 0.5036172608065818
+          },
+          {
+            "bin": 1,
+            "record_count": 137,
+            "weight": 0.11756073760010768,
+            "minimum_probability": 1e-06,
+            "maximum_probability": 1e-06,
+            "mean_probability": 9.999999999999997e-07,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 9.999999999999997e-07
+          },
+          {
+            "bin": 2,
+            "record_count": 137,
+            "weight": 0.12962129733783279,
+            "minimum_probability": 1e-06,
+            "maximum_probability": 1e-06,
+            "mean_probability": 9.999999999999995e-07,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 9.999999999999995e-07
+          },
+          {
+            "bin": 3,
+            "record_count": 137,
+            "weight": 0.14067991501062366,
+            "minimum_probability": 1e-06,
+            "maximum_probability": 1e-06,
+            "mean_probability": 1.0000000000000002e-06,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 1.0000000000000002e-06
+          },
+          {
+            "bin": 4,
+            "record_count": 136,
+            "weight": 0.14042619672540935,
+            "minimum_probability": 1e-06,
+            "maximum_probability": 1e-06,
+            "mean_probability": 9.999999999999997e-07,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 9.999999999999997e-07
+          },
+          {
+            "bin": 5,
+            "record_count": 136,
+            "weight": 0.13623797025371828,
+            "minimum_probability": 1e-06,
+            "maximum_probability": 1e-06,
+            "mean_probability": 1e-06,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 1e-06
+          },
+          {
+            "bin": 6,
+            "record_count": 136,
+            "weight": 0.12494063242094738,
+            "minimum_probability": 1e-06,
+            "maximum_probability": 1e-06,
+            "mean_probability": 1.0000000000000002e-06,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 1.0000000000000002e-06
+          },
+          {
+            "bin": 7,
+            "record_count": 136,
+            "weight": 0.09483689538807649,
+            "minimum_probability": 1e-06,
+            "maximum_probability": 1.0783312222985274e-05,
+            "mean_probability": 1.6451164493110792e-06,
+            "observed_unsafe_rate": 0.07381488949511722,
+            "absolute_gap": 0.0738132443786679
+          },
+          {
+            "bin": 8,
+            "record_count": 136,
+            "weight": 0.03949714327667084,
+            "minimum_probability": 1.1478768127080351e-05,
+            "maximum_probability": 0.999981074851754,
+            "mean_probability": 0.36623779196308753,
+            "observed_unsafe_rate": 0.4770653621412345,
+            "absolute_gap": 0.11082757017814698
+          },
+          {
+            "bin": 9,
+            "record_count": 136,
+            "weight": 0.038369556952234124,
+            "minimum_probability": 0.999981074851754,
+            "maximum_probability": 0.999999,
+            "mean_probability": 0.9999979076721315,
+            "observed_unsafe_rate": 0.6424705685114394,
+            "absolute_gap": 0.3575273391606921
+          }
+        ]
+      },
+      "fold_parameters": [
+        {
+          "method": "identity"
+        },
+        {
+          "method": "identity"
+        },
+        {
+          "method": "identity"
+        },
+        {
+          "method": "identity"
+        },
+        {
+          "method": "identity"
+        }
+      ],
+      "full_fit_parameters": {
+        "method": "identity"
+      }
+    },
+    "temperature": {
+      "development_oof": {
+        "cluster_averaged_log_loss": 0.1921846019828446,
+        "cluster_averaged_brier": 0.04800474411528711,
+        "adaptive_ece": 0.0360175567527232,
+        "reliability_bins": [
+          {
+            "bin": 0,
+            "record_count": 137,
+            "weight": 0.11120359955005624,
+            "minimum_probability": 0.04229804620932698,
+            "maximum_probability": 0.04229804620932698,
+            "mean_probability": 0.04229804620932698,
+            "observed_unsafe_rate": 0.04447366646436038,
+            "absolute_gap": 0.0021756202550334003
+          },
+          {
+            "bin": 1,
+            "record_count": 137,
+            "weight": 0.10009099824060455,
+            "minimum_probability": 0.04229804620932698,
+            "maximum_probability": 0.04254927753702107,
+            "mean_probability": 0.04237128851517235,
+            "observed_unsafe_rate": 0.050588501421365284,
+            "absolute_gap": 0.008217212906192935
+          },
+          {
+            "bin": 2,
+            "record_count": 137,
+            "weight": 0.1425459317585302,
+            "minimum_probability": 0.04254927753702107,
+            "maximum_probability": 0.04254927753702107,
+            "mean_probability": 0.04254927753702106,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.04254927753702106
+          },
+          {
+            "bin": 3,
+            "record_count": 137,
+            "weight": 0.10538682664666917,
+            "minimum_probability": 0.04254927753702107,
+            "maximum_probability": 0.0441381183192167,
+            "mean_probability": 0.04399277138366621,
+            "observed_unsafe_rate": 0.042048149905123344,
+            "absolute_gap": 0.0019446214785428656
+          },
+          {
+            "bin": 4,
+            "record_count": 136,
+            "weight": 0.12645106861642294,
+            "minimum_probability": 0.0441381183192167,
+            "maximum_probability": 0.044358034067673364,
+            "mean_probability": 0.04420799354946735,
+            "observed_unsafe_rate": 0.013368125052508811,
+            "absolute_gap": 0.030839868496958536
+          },
+          {
+            "bin": 5,
+            "record_count": 136,
+            "weight": 0.12915135608048994,
+            "minimum_probability": 0.044358034067673364,
+            "maximum_probability": 0.044358034067673364,
+            "mean_probability": 0.04435803406767336,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.04435803406767336
+          },
+          {
+            "bin": 6,
+            "record_count": 136,
+            "weight": 0.11998318392019179,
+            "minimum_probability": 0.044358034067673364,
+            "maximum_probability": 0.04504316744106107,
+            "mean_probability": 0.04498549561661287,
+            "observed_unsafe_rate": 0.028719185139168775,
+            "absolute_gap": 0.016266310477444097
+          },
+          {
+            "bin": 7,
+            "record_count": 136,
+            "weight": 0.08732033495813023,
+            "minimum_probability": 0.04504316744106107,
+            "maximum_probability": 0.07205546538576854,
+            "mean_probability": 0.04752311183086784,
+            "observed_unsafe_rate": 0.07415730337078652,
+            "absolute_gap": 0.02663419153991868
+          },
+          {
+            "bin": 8,
+            "record_count": 136,
+            "weight": 0.03949714327667084,
+            "minimum_probability": 0.07393499133242433,
+            "maximum_probability": 0.9180880170254674,
+            "mean_probability": 0.4034128327001616,
+            "observed_unsafe_rate": 0.47706536214123446,
+            "absolute_gap": 0.07365252944107287
+          },
+          {
+            "bin": 9,
+            "record_count": 136,
+            "weight": 0.03836955695223412,
+            "minimum_probability": 0.9180880170254674,
+            "maximum_probability": 0.95770195379041,
+            "mean_probability": 0.9517756169342472,
+            "observed_unsafe_rate": 0.6424705685114394,
+            "absolute_gap": 0.3093050484228078
+          }
+        ]
+      },
+      "fold_parameters": [
+        {
+          "method": "temperature",
+          "temperature": 4.492425461511999,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.1931689339341342
+        },
+        {
+          "method": "temperature",
+          "temperature": 4.5236760820803745,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.19504761281765362
+        },
+        {
+          "method": "temperature",
+          "temperature": 4.437133564636925,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.1888878224928559
+        },
+        {
+          "method": "temperature",
+          "temperature": 4.500034809697319,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.19465261371027398
+        },
+        {
+          "method": "temperature",
+          "temperature": 4.428337877074776,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.18848455453359558
+        }
+      ],
+      "full_fit_parameters": {
+        "method": "temperature",
+        "temperature": 4.4764669069243626,
+        "optimizer": "L-BFGS-B",
+        "objective": 0.19206207145322846
+      }
+    },
+    "beta": {
+      "development_oof": {
+        "cluster_averaged_log_loss": 0.1705612120680413,
+        "cluster_averaged_brier": 0.04403656063152194,
+        "adaptive_ece": 0.02602715776023784,
+        "reliability_bins": [
+          {
+            "bin": 0,
+            "record_count": 137,
+            "weight": 0.11120359955005624,
+            "minimum_probability": 0.028765542459109172,
+            "maximum_probability": 0.028765542459109172,
+            "mean_probability": 0.028765542459109172,
+            "observed_unsafe_rate": 0.04447366646436038,
+            "absolute_gap": 0.015708124005251206
+          },
+          {
+            "bin": 1,
+            "record_count": 137,
+            "weight": 0.10009099824060455,
+            "minimum_probability": 0.028765542459109172,
+            "maximum_probability": 0.029085024116408897,
+            "mean_probability": 0.028858682010894803,
+            "observed_unsafe_rate": 0.050588501421365284,
+            "absolute_gap": 0.02172981941047048
+          },
+          {
+            "bin": 2,
+            "record_count": 137,
+            "weight": 0.1425459317585302,
+            "minimum_probability": 0.029085024116408897,
+            "maximum_probability": 0.029085024116408897,
+            "mean_probability": 0.0290850241164089,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.0290850241164089
+          },
+          {
+            "bin": 3,
+            "record_count": 137,
+            "weight": 0.10596425446819147,
+            "minimum_probability": 0.029085024116408897,
+            "maximum_probability": 0.02995458748360612,
+            "mean_probability": 0.02987706710438466,
+            "observed_unsafe_rate": 0.041819018187822896,
+            "absolute_gap": 0.011941951083438235
+          },
+          {
+            "bin": 4,
+            "record_count": 136,
+            "weight": 0.12504249468816397,
+            "minimum_probability": 0.02995458748360612,
+            "maximum_probability": 0.03134082378051812,
+            "mean_probability": 0.03039120862628545,
+            "observed_unsafe_rate": 0.013518713798083892,
+            "absolute_gap": 0.016872494828201558
+          },
+          {
+            "bin": 5,
+            "record_count": 136,
+            "weight": 0.12718285214348207,
+            "minimum_probability": 0.03134082378051812,
+            "maximum_probability": 0.03134082378051812,
+            "mean_probability": 0.03134082378051811,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.03134082378051811
+          },
+          {
+            "bin": 6,
+            "record_count": 136,
+            "weight": 0.12260785583620229,
+            "minimum_probability": 0.03134082378051812,
+            "maximum_probability": 0.03150373253933489,
+            "mean_probability": 0.03148622581558594,
+            "observed_unsafe_rate": 0.02382298319685956,
+            "absolute_gap": 0.00766324261872638
+          },
+          {
+            "bin": 7,
+            "record_count": 136,
+            "weight": 0.08749531308586428,
+            "minimum_probability": 0.03150373253933489,
+            "maximum_probability": 0.06022723218647168,
+            "mean_probability": 0.034007927172009955,
+            "observed_unsafe_rate": 0.08000857081637025,
+            "absolute_gap": 0.046000643644360295
+          },
+          {
+            "bin": 8,
+            "record_count": 136,
+            "weight": 0.04043248090492185,
+            "minimum_probability": 0.06234976941785367,
+            "maximum_probability": 0.6770153886170357,
+            "mean_probability": 0.3914291671719399,
+            "observed_unsafe_rate": 0.4855627495917687,
+            "absolute_gap": 0.09413358241982883
+          },
+          {
+            "bin": 9,
+            "record_count": 136,
+            "weight": 0.0374342193239831,
+            "minimum_probability": 0.6770153886170357,
+            "maximum_probability": 0.6964982074280636,
+            "mean_probability": 0.6862514474377588,
+            "observed_unsafe_rate": 0.6374254321143309,
+            "absolute_gap": 0.048826015323427896
+          }
+        ]
+      },
+      "fold_parameters": [
+        {
+          "method": "beta",
+          "a": 0.30140716026566927,
+          "b": 0.006737946999085467,
+          "c": 0.6864333949674741,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.1701057742481796,
+          "monotonic": true
+        },
+        {
+          "method": "beta",
+          "a": 0.29919839487244104,
+          "b": 0.006737946999085467,
+          "c": 0.7079399797710209,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.17327032508127405,
+          "monotonic": true
+        },
+        {
+          "method": "beta",
+          "a": 0.3073071614337049,
+          "b": 0.006737946999085467,
+          "c": 0.7375898321190235,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.16719137453943422,
+          "monotonic": true
+        },
+        {
+          "method": "beta",
+          "a": 0.2951749580066957,
+          "b": 0.006737946999085467,
+          "c": 0.6470014412151006,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.1741604890847887,
+          "monotonic": true
+        },
+        {
+          "method": "beta",
+          "a": 0.3029009084507262,
+          "b": 0.006737946999085467,
+          "c": 0.6653410213993669,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.16673550360331815,
+          "monotonic": true
+        }
+      ],
+      "full_fit_parameters": {
+        "method": "beta",
+        "a": 0.301131291612419,
+        "b": 0.006737946999085467,
+        "c": 0.6887381904309757,
+        "optimizer": "L-BFGS-B",
+        "objective": 0.17031971297320717,
+        "monotonic": true
+      }
+    },
+    "beta_wide": {
+      "development_oof": {
+        "cluster_averaged_log_loss": 0.17044728400423256,
+        "cluster_averaged_brier": 0.04401650454665676,
+        "adaptive_ece": 0.024654946678473292,
+        "reliability_bins": [
+          {
+            "bin": 0,
+            "record_count": 137,
+            "weight": 0.11120359955005624,
+            "minimum_probability": 0.02870810803584593,
+            "maximum_probability": 0.02870810803584593,
+            "mean_probability": 0.028708108035845933,
+            "observed_unsafe_rate": 0.04447366646436038,
+            "absolute_gap": 0.015765558428514445
+          },
+          {
+            "bin": 1,
+            "record_count": 137,
+            "weight": 0.10009099824060455,
+            "minimum_probability": 0.02870810803584593,
+            "maximum_probability": 0.0290226039094588,
+            "mean_probability": 0.028799794065505063,
+            "observed_unsafe_rate": 0.050588501421365284,
+            "absolute_gap": 0.02178870735586022
+          },
+          {
+            "bin": 2,
+            "record_count": 137,
+            "weight": 0.1425459317585302,
+            "minimum_probability": 0.0290226039094588,
+            "maximum_probability": 0.0290226039094588,
+            "mean_probability": 0.0290226039094588,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.0290226039094588
+          },
+          {
+            "bin": 3,
+            "record_count": 137,
+            "weight": 0.10596425446819147,
+            "minimum_probability": 0.0290226039094588,
+            "maximum_probability": 0.029898067752433578,
+            "mean_probability": 0.029820029925329828,
+            "observed_unsafe_rate": 0.041819018187822896,
+            "absolute_gap": 0.011998988262493068
+          },
+          {
+            "bin": 4,
+            "record_count": 136,
+            "weight": 0.12504249468816397,
+            "minimum_probability": 0.029898067752433578,
+            "maximum_probability": 0.031279599999804494,
+            "mean_probability": 0.030333310662111677,
+            "observed_unsafe_rate": 0.013518713798083892,
+            "absolute_gap": 0.016814596864027784
+          },
+          {
+            "bin": 5,
+            "record_count": 136,
+            "weight": 0.12718285214348207,
+            "minimum_probability": 0.031279599999804494,
+            "maximum_probability": 0.031279599999804494,
+            "mean_probability": 0.031279599999804494,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.031279599999804494
+          },
+          {
+            "bin": 6,
+            "record_count": 136,
+            "weight": 0.12260785583620229,
+            "minimum_probability": 0.031279599999804494,
+            "maximum_probability": 0.03144671056074584,
+            "mean_probability": 0.03142875229719279,
+            "observed_unsafe_rate": 0.02382298319685956,
+            "absolute_gap": 0.00760576910033323
+          },
+          {
+            "bin": 7,
+            "record_count": 136,
+            "weight": 0.08749531308586428,
+            "minimum_probability": 0.03144671056074584,
+            "maximum_probability": 0.06073963731961102,
+            "mean_probability": 0.03400171121177584,
+            "observed_unsafe_rate": 0.08000857081637025,
+            "absolute_gap": 0.04600685960459441
+          },
+          {
+            "bin": 8,
+            "record_count": 136,
+            "weight": 0.04147504289236573,
+            "minimum_probability": 0.06291413832169616,
+            "maximum_probability": 0.6757109619173488,
+            "mean_probability": 0.4021192932208314,
+            "observed_unsafe_rate": 0.4768852081769518,
+            "absolute_gap": 0.0747659149561204
+          },
+          {
+            "bin": 9,
+            "record_count": 136,
+            "weight": 0.03639165733653922,
+            "minimum_probability": 0.6757157819658537,
+            "maximum_probability": 0.6914728102562998,
+            "mean_probability": 0.683892593815415,
+            "observed_unsafe_rate": 0.6516657195982637,
+            "absolute_gap": 0.03222687421715131
+          }
+        ]
+      },
+      "fold_parameters": [
+        {
+          "method": "beta_wide",
+          "a": 0.30633117689228406,
+          "b": 0.00033546262790251185,
+          "c": 0.7525143121298078,
+          "objective": 0.16997482699942806,
+          "bounds": [
+            [
+              -8,
+              8
+            ],
+            [
+              -8,
+              8
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        },
+        {
+          "method": "beta_wide",
+          "a": 0.3042158384047323,
+          "b": 0.00033546262790251185,
+          "c": 0.7753880080720583,
+          "objective": 0.17311727885323713,
+          "bounds": [
+            [
+              -8,
+              8
+            ],
+            [
+              -8,
+              8
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        },
+        {
+          "method": "beta_wide",
+          "a": 0.3121569615557099,
+          "b": 0.00033546262790251185,
+          "c": 0.8023795802902091,
+          "objective": 0.16706539139623514,
+          "bounds": [
+            [
+              -8,
+              8
+            ],
+            [
+              -8,
+              8
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        },
+        {
+          "method": "beta_wide",
+          "a": 0.2999410655702618,
+          "b": 0.00033546262790251185,
+          "c": 0.7108290603206142,
+          "objective": 0.1740791559280226,
+          "bounds": [
+            [
+              -8,
+              8
+            ],
+            [
+              -8,
+              8
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        },
+        {
+          "method": "beta_wide",
+          "a": 0.3076951330888685,
+          "b": 0.00033546262790251185,
+          "c": 0.7295179195538368,
+          "objective": 0.16664105584188837,
+          "bounds": [
+            [
+              -8,
+              8
+            ],
+            [
+              -8,
+              8
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        }
+      ],
+      "full_fit_parameters": {
+        "method": "beta_wide",
+        "a": 0.3060013312710849,
+        "b": 0.00033546262790251185,
+        "c": 0.7539462221874346,
+        "objective": 0.17020290079690487,
+        "bounds": [
+          [
+            -8,
+            8
+          ],
+          [
+            -8,
+            8
+          ],
+          [
+            -10,
+            10
+          ]
+        ],
+        "optimizer_success": true
+      }
+    },
+    "beta_b_zero": {
+      "development_oof": {
+        "cluster_averaged_log_loss": 0.1704414123194226,
+        "cluster_averaged_brier": 0.044015468448733504,
+        "adaptive_ece": 0.024642554697115668,
+        "reliability_bins": [
+          {
+            "bin": 0,
+            "record_count": 137,
+            "weight": 0.11120359955005624,
+            "minimum_probability": 0.028704546407367162,
+            "maximum_probability": 0.028704546407367162,
+            "mean_probability": 0.028704546407367165,
+            "observed_unsafe_rate": 0.04447366646436038,
+            "absolute_gap": 0.015769120056993213
+          },
+          {
+            "bin": 1,
+            "record_count": 137,
+            "weight": 0.10009099824060455,
+            "minimum_probability": 0.028704546407367162,
+            "maximum_probability": 0.02902267047153272,
+            "mean_probability": 0.02879729017550408,
+            "observed_unsafe_rate": 0.050588501421365284,
+            "absolute_gap": 0.021791211245861204
+          },
+          {
+            "bin": 2,
+            "record_count": 137,
+            "weight": 0.1425459317585302,
+            "minimum_probability": 0.02902267047153272,
+            "maximum_probability": 0.02902267047153272,
+            "mean_probability": 0.029022670471532716,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.029022670471532716
+          },
+          {
+            "bin": 3,
+            "record_count": 137,
+            "weight": 0.10596425446819147,
+            "minimum_probability": 0.02902267047153272,
+            "maximum_probability": 0.029896763407143707,
+            "mean_probability": 0.0298188506135266,
+            "observed_unsafe_rate": 0.041819018187822896,
+            "absolute_gap": 0.012000167574296297
+          },
+          {
+            "bin": 4,
+            "record_count": 136,
+            "weight": 0.12504249468816397,
+            "minimum_probability": 0.029896763407143707,
+            "maximum_probability": 0.03127736377510016,
+            "mean_probability": 0.030331727458155572,
+            "observed_unsafe_rate": 0.013518713798083892,
+            "absolute_gap": 0.01681301366007168
+          },
+          {
+            "bin": 5,
+            "record_count": 136,
+            "weight": 0.12718285214348207,
+            "minimum_probability": 0.03127736377510016,
+            "maximum_probability": 0.03127736377510016,
+            "mean_probability": 0.03127736377510015,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.03127736377510015
+          },
+          {
+            "bin": 6,
+            "record_count": 136,
+            "weight": 0.12260785583620229,
+            "minimum_probability": 0.03127736377510016,
+            "maximum_probability": 0.031442670264728696,
+            "mean_probability": 0.03142490587275337,
+            "observed_unsafe_rate": 0.02382298319685956,
+            "absolute_gap": 0.007601922675893814
+          },
+          {
+            "bin": 7,
+            "record_count": 136,
+            "weight": 0.08749531308586428,
+            "minimum_probability": 0.031442670264728696,
+            "maximum_probability": 0.06076852630796022,
+            "mean_probability": 0.0340006279999127,
+            "observed_unsafe_rate": 0.08000857081637025,
+            "absolute_gap": 0.04600794281645755
+          },
+          {
+            "bin": 8,
+            "record_count": 136,
+            "weight": 0.04147504289236573,
+            "minimum_probability": 0.06294583921017796,
+            "maximum_probability": 0.6754124583895632,
+            "mean_probability": 0.40228481637672764,
+            "observed_unsafe_rate": 0.4768852081769518,
+            "absolute_gap": 0.07460039180022415
+          },
+          {
+            "bin": 9,
+            "record_count": 136,
+            "weight": 0.03639165733653922,
+            "minimum_probability": 0.6754124629601724,
+            "maximum_probability": 0.6911448626722477,
+            "mean_probability": 0.6837428662549978,
+            "observed_unsafe_rate": 0.6516657195982637,
+            "absolute_gap": 0.03207714665673411
+          }
+        ]
+      },
+      "fold_parameters": [
+        {
+          "method": "beta_b_zero",
+          "a": 0.3065737013936347,
+          "b": 0.0,
+          "c": 0.7558199403713269,
+          "objective": 0.16996766279220119,
+          "bounds": [
+            [
+              -5,
+              5
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        },
+        {
+          "method": "beta_b_zero",
+          "a": 0.3044825881632607,
+          "b": 0.0,
+          "c": 0.7789406320718751,
+          "objective": 0.17310887783561668,
+          "bounds": [
+            [
+              -5,
+              5
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        },
+        {
+          "method": "beta_b_zero",
+          "a": 0.3123810182687372,
+          "b": 0.0,
+          "c": 0.8054774005153811,
+          "objective": 0.16705848675132332,
+          "bounds": [
+            [
+              -5,
+              5
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        },
+        {
+          "method": "beta_b_zero",
+          "a": 0.300191581664757,
+          "b": 0.0,
+          "c": 0.7142162659462092,
+          "objective": 0.17407461971846527,
+          "bounds": [
+            [
+              -5,
+              5
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        },
+        {
+          "method": "beta_b_zero",
+          "a": 0.30793967179780285,
+          "b": 0.0,
+          "c": 0.7327686089123443,
+          "objective": 0.16663579516324906,
+          "bounds": [
+            [
+              -5,
+              5
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        }
+      ],
+      "full_fit_parameters": {
+        "method": "beta_b_zero",
+        "a": 0.30621365709778814,
+        "b": 0.0,
+        "c": 0.7568468843152478,
+        "objective": 0.17019646754739554,
+        "bounds": [
+          [
+            -5,
+            5
+          ],
+          [
+            -10,
+            10
+          ]
+        ],
+        "optimizer_success": true
+      }
+    }
+  },
+  "safework": {
+    "identity": {
+      "development_oof": {
+        "cluster_averaged_log_loss": 0.17970550462728221,
+        "cluster_averaged_brier": 0.04740197518570437,
+        "adaptive_ece": 0.08035299067909024,
+        "reliability_bins": [
+          {
+            "bin": 0,
+            "record_count": 137,
+            "weight": 0.1467541557305337,
+            "minimum_probability": 0.002801249752150232,
+            "maximum_probability": 0.02297622699506904,
+            "mean_probability": 0.015957391740764125,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.015957391740764125
+          },
+          {
+            "bin": 1,
+            "record_count": 137,
+            "weight": 0.1374715660542432,
+            "minimum_probability": 0.022976253764710266,
+            "maximum_probability": 0.033083445547136485,
+            "mean_probability": 0.027511747416038877,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.027511747416038877
+          },
+          {
+            "bin": 2,
+            "record_count": 137,
+            "weight": 0.13417072865891763,
+            "minimum_probability": 0.033083618175953934,
+            "maximum_probability": 0.04740683973899389,
+            "mean_probability": 0.03825539253742678,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.03825539253742678
+          },
+          {
+            "bin": 3,
+            "record_count": 137,
+            "weight": 0.1334708161479815,
+            "minimum_probability": 0.04741268999784376,
+            "maximum_probability": 0.06750448756518947,
+            "mean_probability": 0.05516696015182691,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.05516696015182691
+          },
+          {
+            "bin": 4,
+            "record_count": 136,
+            "weight": 0.13650418697662792,
+            "minimum_probability": 0.06751147575606131,
+            "maximum_probability": 0.09532196181727319,
+            "mean_probability": 0.07922860839346399,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.07922860839346399
+          },
+          {
+            "bin": 5,
+            "record_count": 136,
+            "weight": 0.11192350956130484,
+            "minimum_probability": 0.09532287657891085,
+            "maximum_probability": 0.18196533455945355,
+            "mean_probability": 0.12813578145066779,
+            "observed_unsafe_rate": 0.01336683417085427,
+            "absolute_gap": 0.11476894727981352
+          },
+          {
+            "bin": 6,
+            "record_count": 136,
+            "weight": 0.07367508257272037,
+            "minimum_probability": 0.18214311396976726,
+            "maximum_probability": 0.37687937945343114,
+            "mean_probability": 0.2607833421354121,
+            "observed_unsafe_rate": 0.09450045750136751,
+            "absolute_gap": 0.1662828846340446
+          },
+          {
+            "bin": 7,
+            "record_count": 136,
+            "weight": 0.047061027336617885,
+            "minimum_probability": 0.37687937945343114,
+            "maximum_probability": 0.6206589496906291,
+            "mean_probability": 0.48797360232328746,
+            "observed_unsafe_rate": 0.30403358408915887,
+            "absolute_gap": 0.1839400182341286
+          },
+          {
+            "bin": 8,
+            "record_count": 136,
+            "weight": 0.03918803418803419,
+            "minimum_probability": 0.6207113429578024,
+            "maximum_probability": 0.8153538978378284,
+            "mean_probability": 0.7189849346409366,
+            "observed_unsafe_rate": 0.5864896658910003,
+            "absolute_gap": 0.13249526874993633
+          },
+          {
+            "bin": 9,
+            "record_count": 136,
+            "weight": 0.03978089277301876,
+            "minimum_probability": 0.8153538978378284,
+            "maximum_probability": 0.9946797682980099,
+            "mean_probability": 0.8991615311636811,
+            "observed_unsafe_rate": 0.5981818533350411,
+            "absolute_gap": 0.30097967782864
+          }
+        ]
+      },
+      "fold_parameters": [
+        {
+          "method": "identity"
+        },
+        {
+          "method": "identity"
+        },
+        {
+          "method": "identity"
+        },
+        {
+          "method": "identity"
+        },
+        {
+          "method": "identity"
+        }
+      ],
+      "full_fit_parameters": {
+        "method": "identity"
+      }
+    },
+    "temperature": {
+      "development_oof": {
+        "cluster_averaged_log_loss": 0.1639458054526005,
+        "cluster_averaged_brier": 0.04560736699511161,
+        "adaptive_ece": 0.05163882206847438,
+        "reliability_bins": [
+          {
+            "bin": 0,
+            "record_count": 137,
+            "weight": 0.14902887139107612,
+            "minimum_probability": 0.00021923991956645372,
+            "maximum_probability": 0.004805951852478885,
+            "mean_probability": 0.0028718614052473277,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.0028718614052473277
+          },
+          {
+            "bin": 1,
+            "record_count": 137,
+            "weight": 0.1325634295713036,
+            "minimum_probability": 0.004807005621034256,
+            "maximum_probability": 0.008165325114340314,
+            "mean_probability": 0.006100449288166228,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.006100449288166228
+          },
+          {
+            "bin": 2,
+            "record_count": 137,
+            "weight": 0.13667291588551433,
+            "minimum_probability": 0.008165457848673657,
+            "maximum_probability": 0.013247718596229002,
+            "mean_probability": 0.009929566606763973,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.009929566606763973
+          },
+          {
+            "bin": 3,
+            "record_count": 137,
+            "weight": 0.1334708161479815,
+            "minimum_probability": 0.01334892966586054,
+            "maximum_probability": 0.022122383673313012,
+            "mean_probability": 0.017086503157046795,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.017086503157046795
+          },
+          {
+            "bin": 4,
+            "record_count": 136,
+            "weight": 0.1400474940632421,
+            "minimum_probability": 0.022123041057543313,
+            "maximum_probability": 0.039235354636664076,
+            "mean_probability": 0.029650504670753912,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.029650504670753912
+          },
+          {
+            "bin": 5,
+            "record_count": 136,
+            "weight": 0.1101737282839645,
+            "minimum_probability": 0.03924551498776076,
+            "maximum_probability": 0.10286030736818613,
+            "mean_probability": 0.06306653649486171,
+            "observed_unsafe_rate": 0.010005672149744753,
+            "absolute_gap": 0.05306086434511696
+          },
+          {
+            "bin": 6,
+            "record_count": 136,
+            "weight": 0.07193405020176674,
+            "minimum_probability": 0.10408488296140687,
+            "maximum_probability": 0.32708420005513855,
+            "mean_probability": 0.18994876878585387,
+            "observed_unsafe_rate": 0.10226074823177426,
+            "absolute_gap": 0.08768802055407961
+          },
+          {
+            "bin": 7,
+            "record_count": 136,
+            "weight": 0.0471397674940982,
+            "minimum_probability": 0.32708420005513855,
+            "maximum_probability": 0.6678262807048554,
+            "mean_probability": 0.4827826187591056,
+            "observed_unsafe_rate": 0.30352573999990917,
+            "absolute_gap": 0.17925687875919644
+          },
+          {
+            "bin": 8,
+            "record_count": 136,
+            "weight": 0.03913554074971398,
+            "minimum_probability": 0.668201699288016,
+            "maximum_probability": 0.893603248110372,
+            "mean_probability": 0.7892427574980645,
+            "observed_unsafe_rate": 0.5859350145740007,
+            "absolute_gap": 0.20330774292406384
+          },
+          {
+            "bin": 9,
+            "record_count": 136,
+            "weight": 0.039833386211338966,
+            "minimum_probability": 0.893603248110372,
+            "maximum_probability": 0.9994010863522929,
+            "mean_probability": 0.9514720074409659,
+            "observed_unsafe_rate": 0.5987113793960692,
+            "absolute_gap": 0.3527606280448967
+          }
+        ]
+      },
+      "fold_parameters": [
+        {
+          "method": "temperature",
+          "temperature": 0.7032046900008688,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.1665978302029047
+        },
+        {
+          "method": "temperature",
+          "temperature": 0.6973053445819684,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.16591953012635752
+        },
+        {
+          "method": "temperature",
+          "temperature": 0.6929539846085179,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.1579554083498374
+        },
+        {
+          "method": "temperature",
+          "temperature": 0.7036062946144576,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.16350065607487926
+        },
+        {
+          "method": "temperature",
+          "temperature": 0.7049931524109312,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.16551055980231955
+        }
+      ],
+      "full_fit_parameters": {
+        "method": "temperature",
+        "temperature": 0.7004243912430906,
+        "optimizer": "L-BFGS-B",
+        "objective": 0.16389901407478633
+      }
+    },
+    "beta": {
+      "development_oof": {
+        "cluster_averaged_log_loss": 0.11357534204667721,
+        "cluster_averaged_brier": 0.03680719900350929,
+        "adaptive_ece": 0.008544789416530071,
+        "reliability_bins": [
+          {
+            "bin": 0,
+            "record_count": 137,
+            "weight": 0.1493700787401575,
+            "minimum_probability": 1e-06,
+            "maximum_probability": 0.0001270304920820285,
+            "mean_probability": 6.238343614527348e-05,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 6.238343614527348e-05
+          },
+          {
+            "bin": 1,
+            "record_count": 137,
+            "weight": 0.13238845144356953,
+            "minimum_probability": 0.00012703415292629228,
+            "maximum_probability": 0.000376752537672223,
+            "mean_probability": 0.00021867348126448346,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.00021867348126448346
+          },
+          {
+            "bin": 2,
+            "record_count": 137,
+            "weight": 0.13566679165104362,
+            "minimum_probability": 0.0003767736933778886,
+            "maximum_probability": 0.0008156668893277592,
+            "mean_probability": 0.0005345208919587667,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.0005345208919587667
+          },
+          {
+            "bin": 3,
+            "record_count": 137,
+            "weight": 0.13399325084364455,
+            "minimum_probability": 0.0008157789234756565,
+            "maximum_probability": 0.002054665515814308,
+            "mean_probability": 0.0014003208709388573,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.0014003208709388573
+          },
+          {
+            "bin": 4,
+            "record_count": 136,
+            "weight": 0.13808148981377327,
+            "minimum_probability": 0.002055500336370345,
+            "maximum_probability": 0.005527477540461105,
+            "mean_probability": 0.003717051728476639,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.003717051728476639
+          },
+          {
+            "bin": 5,
+            "record_count": 136,
+            "weight": 0.11114485689288839,
+            "minimum_probability": 0.005527729297030533,
+            "maximum_probability": 0.027758289175212718,
+            "mean_probability": 0.013448431857193577,
+            "observed_unsafe_rate": 0.013460478819706051,
+            "absolute_gap": 1.2046962512474169e-05
+          },
+          {
+            "bin": 6,
+            "record_count": 136,
+            "weight": 0.07450622867945703,
+            "minimum_probability": 0.027778340887513527,
+            "maximum_probability": 0.1713483386847143,
+            "mean_probability": 0.08072640859584772,
+            "observed_unsafe_rate": 0.08816213541597015,
+            "absolute_gap": 0.007435726820122432
+          },
+          {
+            "bin": 7,
+            "record_count": 136,
+            "weight": 0.045879924974413164,
+            "minimum_probability": 0.1713483386847143,
+            "maximum_probability": 0.42831572323179384,
+            "mean_probability": 0.29732939250409807,
+            "observed_unsafe_rate": 0.32044153532662667,
+            "absolute_gap": 0.023112142822528603
+          },
+          {
+            "bin": 8,
+            "record_count": 136,
+            "weight": 0.038435628238777844,
+            "minimum_probability": 0.42897268322811677,
+            "maximum_probability": 0.6081824450199257,
+            "mean_probability": 0.5296178438729688,
+            "observed_unsafe_rate": 0.5988811360233928,
+            "absolute_gap": 0.06926329215042393
+          },
+          {
+            "bin": 9,
+            "record_count": 136,
+            "weight": 0.040533298722275096,
+            "minimum_probability": 0.6114003681776905,
+            "maximum_probability": 0.742394684274266,
+            "mean_probability": 0.6714582820824212,
+            "observed_unsafe_rate": 0.5862146257462661,
+            "absolute_gap": 0.08524365633615505
+          }
+        ]
+      },
+      "fold_parameters": [
+        {
+          "method": "beta",
+          "a": 2.557151617820337,
+          "b": 0.006737946999085467,
+          "c": 0.9904459905010616,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.11541631713444352,
+          "monotonic": true
+        },
+        {
+          "method": "beta",
+          "a": 2.659047160852323,
+          "b": 0.006737946999085467,
+          "c": 0.9807886512597163,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.11322537243895128,
+          "monotonic": true
+        },
+        {
+          "method": "beta",
+          "a": 2.726166606982152,
+          "b": 0.006737946999085467,
+          "c": 1.0809869348105634,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.1079902256297908,
+          "monotonic": true
+        },
+        {
+          "method": "beta",
+          "a": 2.4847310014010406,
+          "b": 0.006737946999085467,
+          "c": 0.9295873322362826,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.11654119696542908,
+          "monotonic": true
+        },
+        {
+          "method": "beta",
+          "a": 2.6602395658751727,
+          "b": 0.006737946999085467,
+          "c": 0.9736063869312976,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.11140052929856865,
+          "monotonic": true
+        }
+      ],
+      "full_fit_parameters": {
+        "method": "beta",
+        "a": 2.6121854797475215,
+        "b": 0.006737946999085467,
+        "c": 0.9889869914215073,
+        "optimizer": "L-BFGS-B",
+        "objective": 0.1129798653788167,
+        "monotonic": true
+      }
+    },
+    "beta_wide": {
+      "development_oof": {
+        "cluster_averaged_log_loss": 0.11354946426618384,
+        "cluster_averaged_brier": 0.03679896936458679,
+        "adaptive_ece": 0.008454539226447516,
+        "reliability_bins": [
+          {
+            "bin": 0,
+            "record_count": 137,
+            "weight": 0.1493700787401575,
+            "minimum_probability": 1e-06,
+            "maximum_probability": 0.00012488975276844815,
+            "mean_probability": 6.128010731247294e-05,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 6.128010731247294e-05
+          },
+          {
+            "bin": 1,
+            "record_count": 137,
+            "weight": 0.13238845144356953,
+            "minimum_probability": 0.00012489336247591303,
+            "maximum_probability": 0.0003718590543410972,
+            "mean_probability": 0.00021548271555603274,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.00021548271555603274
+          },
+          {
+            "bin": 2,
+            "record_count": 137,
+            "weight": 0.13566679165104362,
+            "minimum_probability": 0.0003718799931817925,
+            "maximum_probability": 0.0008062730169887359,
+            "mean_probability": 0.0005280032234019853,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.0005280032234019853
+          },
+          {
+            "bin": 3,
+            "record_count": 137,
+            "weight": 0.13399325084364455,
+            "minimum_probability": 0.0008063840800533688,
+            "maximum_probability": 0.002037217903176986,
+            "mean_probability": 0.0013870667569244898,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.0013870667569244898
+          },
+          {
+            "bin": 4,
+            "record_count": 136,
+            "weight": 0.13808148981377327,
+            "minimum_probability": 0.002038047897245374,
+            "maximum_probability": 0.005496962437092626,
+            "mean_probability": 0.0036919373229210013,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.0036919373229210013
+          },
+          {
+            "bin": 5,
+            "record_count": 136,
+            "weight": 0.11114485689288839,
+            "minimum_probability": 0.0054972134571705435,
+            "maximum_probability": 0.02771688363302399,
+            "mean_probability": 0.013404698509864397,
+            "observed_unsafe_rate": 0.013460478819706051,
+            "absolute_gap": 5.5780309841654135e-05
+          },
+          {
+            "bin": 6,
+            "record_count": 136,
+            "weight": 0.07450622867945703,
+            "minimum_probability": 0.02772956899213071,
+            "maximum_probability": 0.17165631240877963,
+            "mean_probability": 0.08079298474381968,
+            "observed_unsafe_rate": 0.08816213541597015,
+            "absolute_gap": 0.007369150672150465
+          },
+          {
+            "bin": 7,
+            "record_count": 136,
+            "weight": 0.045879924974413164,
+            "minimum_probability": 0.17165631240877963,
+            "maximum_probability": 0.4290175240852106,
+            "mean_probability": 0.2979205186778876,
+            "observed_unsafe_rate": 0.32044153532662667,
+            "absolute_gap": 0.022521016648739067
+          },
+          {
+            "bin": 8,
+            "record_count": 136,
+            "weight": 0.038435628238777844,
+            "minimum_probability": 0.42967409550488095,
+            "maximum_probability": 0.6081745208961516,
+            "mean_probability": 0.5300887388405581,
+            "observed_unsafe_rate": 0.5988811360233928,
+            "absolute_gap": 0.0687923971828347
+          },
+          {
+            "bin": 9,
+            "record_count": 136,
+            "weight": 0.040533298722275096,
+            "minimum_probability": 0.6114483348461609,
+            "maximum_probability": 0.7398912388220555,
+            "mean_probability": 0.670515467917082,
+            "observed_unsafe_rate": 0.586214625746266,
+            "absolute_gap": 0.08430084217081601
+          }
+        ]
+      },
+      "fold_parameters": [
+        {
+          "method": "beta_wide",
+          "a": 2.564779471843746,
+          "b": 0.00033546262790251185,
+          "c": 1.0032943562137475,
+          "objective": 0.11538375144592601,
+          "bounds": [
+            [
+              -8,
+              8
+            ],
+            [
+              -8,
+              8
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        },
+        {
+          "method": "beta_wide",
+          "a": 2.666732420851994,
+          "b": 0.00033546262790251185,
+          "c": 0.993404651387487,
+          "objective": 0.11319953384448576,
+          "bounds": [
+            [
+              -8,
+              8
+            ],
+            [
+              -8,
+              8
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        },
+        {
+          "method": "beta_wide",
+          "a": 2.733963503871722,
+          "b": 0.00033546262790251185,
+          "c": 1.0937913204293235,
+          "objective": 0.10795971335077582,
+          "bounds": [
+            [
+              -8,
+              8
+            ],
+            [
+              -8,
+              8
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        },
+        {
+          "method": "beta_wide",
+          "a": 2.491735635283901,
+          "b": 0.00033546262790251185,
+          "c": 0.9418502969274488,
+          "objective": 0.11652254394474099,
+          "bounds": [
+            [
+              -8,
+              8
+            ],
+            [
+              -8,
+              8
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        },
+        {
+          "method": "beta_wide",
+          "a": 2.668063214858264,
+          "b": 0.00033546262790251185,
+          "c": 0.9864096424796053,
+          "objective": 0.11137039664005634,
+          "bounds": [
+            [
+              -8,
+              8
+            ],
+            [
+              -8,
+              8
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        }
+      ],
+      "full_fit_parameters": {
+        "method": "beta_wide",
+        "a": 2.6196926032334997,
+        "b": 0.00033546262790251185,
+        "c": 1.0016159572459633,
+        "objective": 0.11295254457120898,
+        "bounds": [
+          [
+            -8,
+            8
+          ],
+          [
+            -8,
+            8
+          ],
+          [
+            -10,
+            10
+          ]
+        ],
+        "optimizer_success": true
+      }
+    },
+    "beta_b_zero": {
+      "development_oof": {
+        "cluster_averaged_log_loss": 0.11354752668318671,
+        "cluster_averaged_brier": 0.036798382796411185,
+        "adaptive_ece": 0.008450366406787155,
+        "reliability_bins": [
+          {
+            "bin": 0,
+            "record_count": 137,
+            "weight": 0.1493700787401575,
+            "minimum_probability": 1e-06,
+            "maximum_probability": 0.00012483369303605113,
+            "mean_probability": 6.120888778420615e-05,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 6.120888778420615e-05
+          },
+          {
+            "bin": 1,
+            "record_count": 137,
+            "weight": 0.13238845144356953,
+            "minimum_probability": 0.00012483730145516645,
+            "maximum_probability": 0.0003718828893143474,
+            "mean_probability": 0.000215281976053527,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.000215281976053527
+          },
+          {
+            "bin": 2,
+            "record_count": 137,
+            "weight": 0.13566679165104362,
+            "minimum_probability": 0.0003719038301894652,
+            "maximum_probability": 0.0008060475076607129,
+            "mean_probability": 0.0005275708438540962,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.0005275708438540962
+          },
+          {
+            "bin": 3,
+            "record_count": 137,
+            "weight": 0.13399325084364455,
+            "minimum_probability": 0.0008061585495597042,
+            "maximum_probability": 0.00203541826042815,
+            "mean_probability": 0.0013863009547849365,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.0013863009547849365
+          },
+          {
+            "bin": 4,
+            "record_count": 136,
+            "weight": 0.13808148981377327,
+            "minimum_probability": 0.002036247708776197,
+            "maximum_probability": 0.00549281722001777,
+            "mean_probability": 0.0036899061790834726,
+            "observed_unsafe_rate": 0.0,
+            "absolute_gap": 0.0036899061790834726
+          },
+          {
+            "bin": 5,
+            "record_count": 136,
+            "weight": 0.11114485689288839,
+            "minimum_probability": 0.00549306811214447,
+            "maximum_probability": 0.027706804360480026,
+            "mean_probability": 0.013401302598949668,
+            "observed_unsafe_rate": 0.013460478819706051,
+            "absolute_gap": 5.9176220756382986e-05
+          },
+          {
+            "bin": 6,
+            "record_count": 136,
+            "weight": 0.07450622867945703,
+            "minimum_probability": 0.02771940949326016,
+            "maximum_probability": 0.17167870042729638,
+            "mean_probability": 0.0807913224697818,
+            "observed_unsafe_rate": 0.08816213541597015,
+            "absolute_gap": 0.007370812946188354
+          },
+          {
+            "bin": 7,
+            "record_count": 136,
+            "weight": 0.045879924974413164,
+            "minimum_probability": 0.17167870042729638,
+            "maximum_probability": 0.4290611731982301,
+            "mean_probability": 0.2979459279269053,
+            "observed_unsafe_rate": 0.32044153532662667,
+            "absolute_gap": 0.022495607399721396
+          },
+          {
+            "bin": 8,
+            "record_count": 136,
+            "weight": 0.038435628238777844,
+            "minimum_probability": 0.42971778904615815,
+            "maximum_probability": 0.6082047147928232,
+            "mean_probability": 0.530114838594836,
+            "observed_unsafe_rate": 0.5988811360233928,
+            "absolute_gap": 0.06876629742855678
+          },
+          {
+            "bin": 9,
+            "record_count": 136,
+            "weight": 0.040533298722275096,
+            "minimum_probability": 0.6114768677412812,
+            "maximum_probability": 0.7397118364075346,
+            "mean_probability": 0.6704654788033022,
+            "observed_unsafe_rate": 0.586214625746266,
+            "absolute_gap": 0.08425085305703617
+          }
+        ]
+      },
+      "fold_parameters": [
+        {
+          "method": "beta_b_zero",
+          "a": 2.5650222538029674,
+          "b": 0.0,
+          "c": 1.0037979885161301,
+          "objective": 0.11538140297073263,
+          "bounds": [
+            [
+              -5,
+              5
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        },
+        {
+          "method": "beta_b_zero",
+          "a": 2.667354690255762,
+          "b": 0.0,
+          "c": 0.9942197109353687,
+          "objective": 0.1131975352541316,
+          "bounds": [
+            [
+              -5,
+              5
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        },
+        {
+          "method": "beta_b_zero",
+          "a": 2.7340669577362715,
+          "b": 0.0,
+          "c": 1.0942083955546138,
+          "objective": 0.10795747115039678,
+          "bounds": [
+            [
+              -5,
+              5
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        },
+        {
+          "method": "beta_b_zero",
+          "a": 2.4923657956261382,
+          "b": 0.0,
+          "c": 0.9426743710475942,
+          "objective": 0.11652092348507777,
+          "bounds": [
+            [
+              -5,
+              5
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        },
+        {
+          "method": "beta_b_zero",
+          "a": 2.6687261892136878,
+          "b": 0.0,
+          "c": 0.987229219611817,
+          "objective": 0.11136817408085435,
+          "bounds": [
+            [
+              -5,
+              5
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        }
+      ],
+      "full_fit_parameters": {
+        "method": "beta_b_zero",
+        "a": 2.620134431465513,
+        "b": 0.0,
+        "c": 1.0022530637691922,
+        "objective": 0.11295046949735163,
+        "bounds": [
+          [
+            -5,
+            5
+          ],
+          [
+            -10,
+            10
+          ]
+        ],
+        "optimizer_success": true
+      }
+    }
+  },
+  "minicpm": {
+    "identity": {
+      "development_oof": {
+        "cluster_averaged_log_loss": 0.26332255904725,
+        "cluster_averaged_brier": 0.06034245303426393,
+        "adaptive_ece": 0.0465450462778069,
+        "reliability_bins": [
+          {
+            "bin": 0,
+            "record_count": 137,
+            "weight": 0.11405449318835145,
+            "minimum_probability": 8.481104172358075e-05,
+            "maximum_probability": 0.0010322310367548194,
+            "mean_probability": 0.0006048529397558351,
+            "observed_unsafe_rate": 0.0522053586104871,
+            "absolute_gap": 0.05160050567073127
+          },
+          {
+            "bin": 1,
+            "record_count": 137,
+            "weight": 0.13011729303067887,
+            "minimum_probability": 0.0010322310367548194,
+            "maximum_probability": 0.0019267346633274755,
+            "mean_probability": 0.0014214520425222714,
+            "observed_unsafe_rate": 0.014849389200000885,
+            "absolute_gap": 0.013427937157478614
+          },
+          {
+            "bin": 2,
+            "record_count": 137,
+            "weight": 0.13106611673540808,
+            "minimum_probability": 0.0019267346633274755,
+            "maximum_probability": 0.0031726828424851893,
+            "mean_probability": 0.002480303858744542,
+            "observed_unsafe_rate": 0.020988690328609845,
+            "absolute_gap": 0.0185083864698653
+          },
+          {
+            "bin": 3,
+            "record_count": 137,
+            "weight": 0.1200824896887889,
+            "minimum_probability": 0.0031726828424851893,
+            "maximum_probability": 0.00433150202056399,
+            "mean_probability": 0.0037708292404639607,
+            "observed_unsafe_rate": 0.022512958221445077,
+            "absolute_gap": 0.018742128980981116
+          },
+          {
+            "bin": 4,
+            "record_count": 136,
+            "weight": 0.11506360655966956,
+            "minimum_probability": 0.00433150202056399,
+            "maximum_probability": 0.006692850924284856,
+            "mean_probability": 0.005393856777022817,
+            "observed_unsafe_rate": 0.029577767342639782,
+            "absolute_gap": 0.024183910565616966
+          },
+          {
+            "bin": 5,
+            "record_count": 136,
+            "weight": 0.10389297491659696,
+            "minimum_probability": 0.006692850924284856,
+            "maximum_probability": 0.009708476481474066,
+            "mean_probability": 0.00813642749103663,
+            "observed_unsafe_rate": 0.04047946460464436,
+            "absolute_gap": 0.03234303711360773
+          },
+          {
+            "bin": 6,
+            "record_count": 136,
+            "weight": 0.10421947256592926,
+            "minimum_probability": 0.009708476481474066,
+            "maximum_probability": 0.017986209962091555,
+            "mean_probability": 0.013326306322944457,
+            "observed_unsafe_rate": 0.06529873120188041,
+            "absolute_gap": 0.051972424878935955
+          },
+          {
+            "bin": 7,
+            "record_count": 136,
+            "weight": 0.09735124018588585,
+            "minimum_probability": 0.017986209962091555,
+            "maximum_probability": 0.053403329799824234,
+            "mean_probability": 0.030220744769696252,
+            "observed_unsafe_rate": 0.09335047467431064,
+            "absolute_gap": 0.06312972990461438
+          },
+          {
+            "bin": 8,
+            "record_count": 136,
+            "weight": 0.04683994046198771,
+            "minimum_probability": 0.053403329799824234,
+            "maximum_probability": 0.29421497216298875,
+            "mean_probability": 0.12579898501437542,
+            "observed_unsafe_rate": 0.33434406405930484,
+            "absolute_gap": 0.20854507904492942
+          },
+          {
+            "bin": 9,
+            "record_count": 136,
+            "weight": 0.03731237266670337,
+            "minimum_probability": 0.29421497216298875,
+            "maximum_probability": 0.994445075296309,
+            "mean_probability": 0.6380024672283514,
+            "observed_unsafe_rate": 0.4567567308000879,
+            "absolute_gap": 0.18124573642826353
+          }
+        ]
+      },
+      "fold_parameters": [
+        {
+          "method": "identity"
+        },
+        {
+          "method": "identity"
+        },
+        {
+          "method": "identity"
+        },
+        {
+          "method": "identity"
+        },
+        {
+          "method": "identity"
+        }
+      ],
+      "full_fit_parameters": {
+        "method": "identity"
+      }
+    },
+    "temperature": {
+      "development_oof": {
+        "cluster_averaged_log_loss": 0.21200674756425497,
+        "cluster_averaged_brier": 0.05629055369429997,
+        "adaptive_ece": 0.02552606254630678,
+        "reliability_bins": [
+          {
+            "bin": 0,
+            "record_count": 137,
+            "weight": 0.11308336457942758,
+            "minimum_probability": 0.003923706695637591,
+            "maximum_probability": 0.017577555034113006,
+            "mean_probability": 0.012736765830082996,
+            "observed_unsafe_rate": 0.05265368376842988,
+            "absolute_gap": 0.03991691793834688
+          },
+          {
+            "bin": 1,
+            "record_count": 137,
+            "weight": 0.1318758232144059,
+            "minimum_probability": 0.017577555034113006,
+            "maximum_probability": 0.025443803212053882,
+            "mean_probability": 0.02134388342339354,
+            "observed_unsafe_rate": 0.010670856176367663,
+            "absolute_gap": 0.010673027247025877
+          },
+          {
+            "bin": 2,
+            "record_count": 137,
+            "weight": 0.12626296712910887,
+            "minimum_probability": 0.025443803212053882,
+            "maximum_probability": 0.033479016684304475,
+            "mean_probability": 0.02917641932505225,
+            "observed_unsafe_rate": 0.025944586876255903,
+            "absolute_gap": 0.0032318324487963478
+          },
+          {
+            "bin": 3,
+            "record_count": 137,
+            "weight": 0.1252355955505562,
+            "minimum_probability": 0.033479016684304475,
+            "maximum_probability": 0.040981801320233734,
+            "mean_probability": 0.03698610495802066,
+            "observed_unsafe_rate": 0.021586610912066748,
+            "absolute_gap": 0.015399494045953914
+          },
+          {
+            "bin": 4,
+            "record_count": 136,
+            "weight": 0.11584782671396845,
+            "minimum_probability": 0.04125588999195815,
+            "maximum_probability": 0.05074441578037098,
+            "mean_probability": 0.045527716985652174,
+            "observed_unsafe_rate": 0.028622336858738155,
+            "absolute_gap": 0.01690538012691402
+          },
+          {
+            "bin": 5,
+            "record_count": 136,
+            "weight": 0.10257507147270926,
+            "minimum_probability": 0.05099788821452707,
+            "maximum_probability": 0.06406327510479805,
+            "mean_probability": 0.05729837469027799,
+            "observed_unsafe_rate": 0.04441126085383888,
+            "absolute_gap": 0.012887113836439104
+          },
+          {
+            "bin": 6,
+            "record_count": 136,
+            "weight": 0.10409948756405449,
+            "minimum_probability": 0.06406327510479805,
+            "maximum_probability": 0.08903697583983573,
+            "mean_probability": 0.07469065149398015,
+            "observed_unsafe_rate": 0.062204346260055235,
+            "absolute_gap": 0.01248630523392491
+          },
+          {
+            "bin": 7,
+            "record_count": 136,
+            "weight": 0.0986928906613946,
+            "minimum_probability": 0.08953809562152895,
+            "maximum_probability": 0.1597175330483478,
+            "mean_probability": 0.116471936387497,
+            "observed_unsafe_rate": 0.08877615397545031,
+            "absolute_gap": 0.02769578241204669
+          },
+          {
+            "bin": 8,
+            "record_count": 136,
+            "weight": 0.044935860290191004,
+            "minimum_probability": 0.1597175330483478,
+            "maximum_probability": 0.3735313469324369,
+            "mean_probability": 0.23846827487029856,
+            "observed_unsafe_rate": 0.34851132154190423,
+            "absolute_gap": 0.11004304667160567
+          },
+          {
+            "bin": 9,
+            "record_count": 136,
+            "weight": 0.037391112824183684,
+            "minimum_probability": 0.373608576023528,
+            "maximum_probability": 0.9523847092495935,
+            "mean_probability": 0.600301458072535,
+            "observed_unsafe_rate": 0.4663241296675751,
+            "absolute_gap": 0.1339773284049599
+          }
+        ]
+      },
+      "fold_parameters": [
+        {
+          "method": "temperature",
+          "temperature": 1.7246673192732607,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.2154193602098008
+        },
+        {
+          "method": "temperature",
+          "temperature": 1.7315821570451564,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.21540004050741648
+        },
+        {
+          "method": "temperature",
+          "temperature": 1.6921396224702052,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.20795929331917284
+        },
+        {
+          "method": "temperature",
+          "temperature": 1.7284784774267725,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.21351567323722648
+        },
+        {
+          "method": "temperature",
+          "temperature": 1.6932202549066628,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.20681536103397788
+        }
+      ],
+      "full_fit_parameters": {
+        "method": "temperature",
+        "temperature": 1.7140815952245347,
+        "optimizer": "L-BFGS-B",
+        "objective": 0.21184079310270726
+      }
+    },
+    "beta": {
+      "development_oof": {
+        "cluster_averaged_log_loss": 0.20915494944708518,
+        "cluster_averaged_brier": 0.05491665933954912,
+        "adaptive_ece": 0.018896723855599182,
+        "reliability_bins": [
+          {
+            "bin": 0,
+            "record_count": 137,
+            "weight": 0.11041494813148356,
+            "minimum_probability": 0.002567458982996517,
+            "maximum_probability": 0.01521790680616862,
+            "mean_probability": 0.010614464404031135,
+            "observed_unsafe_rate": 0.05511472329443193,
+            "absolute_gap": 0.044500258890400796
+          },
+          {
+            "bin": 1,
+            "record_count": 137,
+            "weight": 0.13277696057223615,
+            "minimum_probability": 0.01521790680616862,
+            "maximum_probability": 0.02285375863868688,
+            "mean_probability": 0.018931385056674375,
+            "observed_unsafe_rate": 0.014354264463420308,
+            "absolute_gap": 0.004577120593254068
+          },
+          {
+            "bin": 2,
+            "record_count": 137,
+            "weight": 0.12688788901387327,
+            "minimum_probability": 0.02285375863868688,
+            "maximum_probability": 0.030302852418473622,
+            "mean_probability": 0.026525290433643177,
+            "observed_unsafe_rate": 0.0208524176787526,
+            "absolute_gap": 0.005672872754890576
+          },
+          {
+            "bin": 3,
+            "record_count": 137,
+            "weight": 0.12769028871391075,
+            "minimum_probability": 0.03035082435187402,
+            "maximum_probability": 0.03850524119356121,
+            "mean_probability": 0.034249460793111475,
+            "observed_unsafe_rate": 0.021171634121274412,
+            "absolute_gap": 0.013077826671837062
+          },
+          {
+            "bin": 4,
+            "record_count": 136,
+            "weight": 0.11466672435176373,
+            "minimum_probability": 0.03850524119356121,
+            "maximum_probability": 0.04836554023558779,
+            "mean_probability": 0.04311819991315116,
+            "observed_unsafe_rate": 0.028917155690154045,
+            "absolute_gap": 0.014201044222997117
+          },
+          {
+            "bin": 5,
+            "record_count": 136,
+            "weight": 0.10407113446483525,
+            "minimum_probability": 0.04836554023558779,
+            "maximum_probability": 0.06155044884274087,
+            "mean_probability": 0.05502195704901698,
+            "observed_unsafe_rate": 0.041250833737429694,
+            "absolute_gap": 0.013771123311587287
+          },
+          {
+            "bin": 6,
+            "record_count": 136,
+            "weight": 0.1017785276840395,
+            "minimum_probability": 0.06155044884274087,
+            "maximum_probability": 0.08785875831995736,
+            "mean_probability": 0.0730674297745591,
+            "observed_unsafe_rate": 0.06686478454680535,
+            "absolute_gap": 0.006202645227753753
+          },
+          {
+            "bin": 7,
+            "record_count": 136,
+            "weight": 0.09874231630137142,
+            "minimum_probability": 0.08841487217561958,
+            "maximum_probability": 0.1577226069395265,
+            "mean_probability": 0.11590237225909102,
+            "observed_unsafe_rate": 0.0920353585158813,
+            "absolute_gap": 0.023867013743209722
+          },
+          {
+            "bin": 8,
+            "record_count": 136,
+            "weight": 0.04565883809978298,
+            "minimum_probability": 0.15828367712050864,
+            "maximum_probability": 0.35171782709786426,
+            "mean_probability": 0.23732775593714978,
+            "observed_unsafe_rate": 0.33437020963150244,
+            "absolute_gap": 0.09704245369435266
+          },
+          {
+            "bin": 9,
+            "record_count": 136,
+            "weight": 0.037312372666703376,
+            "minimum_probability": 0.35171782709786426,
+            "maximum_probability": 0.6754560115625772,
+            "mean_probability": 0.4808526185286398,
+            "observed_unsafe_rate": 0.4673082116967423,
+            "absolute_gap": 0.013544406831897504
+          }
+        ]
+      },
+      "fold_parameters": [
+        {
+          "method": "beta",
+          "a": 0.6253390630945236,
+          "b": 0.006737946999085467,
+          "c": 0.1725194756625158,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.21080620289615357,
+          "monotonic": true
+        },
+        {
+          "method": "beta",
+          "a": 0.5791771652852057,
+          "b": 0.14340651478774924,
+          "c": -0.008526923062808672,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.2137805454050558,
+          "monotonic": true
+        },
+        {
+          "method": "beta",
+          "a": 0.6641504980214898,
+          "b": 0.006737946999085467,
+          "c": 0.3138375846123166,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.20449844697815683,
+          "monotonic": true
+        },
+        {
+          "method": "beta",
+          "a": 0.6088665844688896,
+          "b": 0.006737946999085467,
+          "c": 0.09751031167634391,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.20888613245818488,
+          "monotonic": true
+        },
+        {
+          "method": "beta",
+          "a": 0.6712632092948443,
+          "b": 0.006737946999085467,
+          "c": 0.3308811174140717,
+          "optimizer": "L-BFGS-B",
+          "objective": 0.2014171250168467,
+          "monotonic": true
+        }
+      ],
+      "full_fit_parameters": {
+        "method": "beta",
+        "a": 0.6343717882948778,
+        "b": 0.006737946999085467,
+        "c": 0.20553485390420706,
+        "optimizer": "L-BFGS-B",
+        "objective": 0.20797980449171932,
+        "monotonic": true
+      }
+    },
+    "beta_wide": {
+      "development_oof": {
+        "cluster_averaged_log_loss": 0.20916140178801473,
+        "cluster_averaged_brier": 0.05491252496743281,
+        "adaptive_ece": 0.018868111772718833,
+        "reliability_bins": [
+          {
+            "bin": 0,
+            "record_count": 137,
+            "weight": 0.11067741532308462,
+            "minimum_probability": 0.002549955895879359,
+            "maximum_probability": 0.0151778401343269,
+            "mean_probability": 0.01059280962249608,
+            "observed_unsafe_rate": 0.054984020868858195,
+            "absolute_gap": 0.04439121124636211
+          },
+          {
+            "bin": 1,
+            "record_count": 137,
+            "weight": 0.13251449338063512,
+            "minimum_probability": 0.0151778401343269,
+            "maximum_probability": 0.02281303809337307,
+            "mean_probability": 0.0189025894532064,
+            "observed_unsafe_rate": 0.014382695493001278,
+            "absolute_gap": 0.0045198939602051225
+          },
+          {
+            "bin": 2,
+            "record_count": 137,
+            "weight": 0.12688788901387327,
+            "minimum_probability": 0.02281303809337307,
+            "maximum_probability": 0.03026665818357962,
+            "mean_probability": 0.026492358197425347,
+            "observed_unsafe_rate": 0.0208524176787526,
+            "absolute_gap": 0.005639940518672747
+          },
+          {
+            "bin": 3,
+            "record_count": 137,
+            "weight": 0.12769028871391075,
+            "minimum_probability": 0.03030778501462504,
+            "maximum_probability": 0.038478280171273783,
+            "mean_probability": 0.03421982891323401,
+            "observed_unsafe_rate": 0.021171634121274412,
+            "absolute_gap": 0.013048194791959598
+          },
+          {
+            "bin": 4,
+            "record_count": 136,
+            "weight": 0.11466672435176373,
+            "minimum_probability": 0.038478280171273783,
+            "maximum_probability": 0.04836552053213285,
+            "mean_probability": 0.04310293210953983,
+            "observed_unsafe_rate": 0.028917155690154045,
+            "absolute_gap": 0.014185776419385787
+          },
+          {
+            "bin": 5,
+            "record_count": 136,
+            "weight": 0.10407113446483525,
+            "minimum_probability": 0.04836552053213285,
+            "maximum_probability": 0.06157216148011494,
+            "mean_probability": 0.055025552808591636,
+            "observed_unsafe_rate": 0.041250833737429694,
+            "absolute_gap": 0.013774719071161942
+          },
+          {
+            "bin": 6,
+            "record_count": 136,
+            "weight": 0.1017785276840395,
+            "minimum_probability": 0.06157216148011494,
+            "maximum_probability": 0.08795296651668401,
+            "mean_probability": 0.0731095775079462,
+            "observed_unsafe_rate": 0.06686478454680535,
+            "absolute_gap": 0.0062447929611408465
+          },
+          {
+            "bin": 7,
+            "record_count": 136,
+            "weight": 0.09874231630137142,
+            "minimum_probability": 0.08841494476591803,
+            "maximum_probability": 0.1580537880511196,
+            "mean_probability": 0.11605012527190352,
+            "observed_unsafe_rate": 0.0920353585158813,
+            "absolute_gap": 0.024014766756022224
+          },
+          {
+            "bin": 8,
+            "record_count": 136,
+            "weight": 0.04565883809978298,
+            "minimum_probability": 0.1585737453970116,
+            "maximum_probability": 0.35171848016484286,
+            "mean_probability": 0.23777343919212612,
+            "observed_unsafe_rate": 0.33437020963150244,
+            "absolute_gap": 0.09659677043937631
+          },
+          {
+            "bin": 9,
+            "record_count": 136,
+            "weight": 0.037312372666703376,
+            "minimum_probability": 0.35171848016484286,
+            "maximum_probability": 0.6754523310540018,
+            "mean_probability": 0.48062135322739685,
+            "observed_unsafe_rate": 0.4673082116967423,
+            "absolute_gap": 0.013313141530654549
+          }
+        ]
+      },
+      "fold_parameters": [
+        {
+          "method": "beta_wide",
+          "a": 0.6268596652727062,
+          "b": 0.0004998772777079777,
+          "c": 0.1799176857432521,
+          "objective": 0.2107904953810821,
+          "bounds": [
+            [
+              -8,
+              8
+            ],
+            [
+              -8,
+              8
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        },
+        {
+          "method": "beta_wide",
+          "a": 0.5791784074817684,
+          "b": 0.14340213317633912,
+          "c": -0.008520951555236378,
+          "objective": 0.21378054537908223,
+          "bounds": [
+            [
+              -8,
+              8
+            ],
+            [
+              -8,
+              8
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        },
+        {
+          "method": "beta_wide",
+          "a": 0.6655262833526272,
+          "b": 0.00033546262790251185,
+          "c": 0.3204562170785506,
+          "objective": 0.20448735228744103,
+          "bounds": [
+            [
+              -8,
+              8
+            ],
+            [
+              -8,
+              8
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        },
+        {
+          "method": "beta_wide",
+          "a": 0.6103613139366606,
+          "b": 0.00033546262790251185,
+          "c": 0.10487631639603863,
+          "objective": 0.20887891840470407,
+          "bounds": [
+            [
+              -8,
+              8
+            ],
+            [
+              -8,
+              8
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        },
+        {
+          "method": "beta_wide",
+          "a": 0.6727788983612878,
+          "b": 0.00033546262790251185,
+          "c": 0.33823320205979257,
+          "objective": 0.20138831262405268,
+          "bounds": [
+            [
+              -8,
+              8
+            ],
+            [
+              -8,
+              8
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        }
+      ],
+      "full_fit_parameters": {
+        "method": "beta_wide",
+        "a": 0.6357729765625476,
+        "b": 0.00033546262790251185,
+        "c": 0.21236648049586782,
+        "objective": 0.20796895407920274,
+        "bounds": [
+          [
+            -8,
+            8
+          ],
+          [
+            -8,
+            8
+          ],
+          [
+            -10,
+            10
+          ]
+        ],
+        "optimizer_success": true
+      }
+    },
+    "beta_b_zero": {
+      "development_oof": {
+        "cluster_averaged_log_loss": 0.2087337283572174,
+        "cluster_averaged_brier": 0.05473780607422926,
+        "adaptive_ece": 0.01851668914333509,
+        "reliability_bins": [
+          {
+            "bin": 0,
+            "record_count": 137,
+            "weight": 0.11185851768528934,
+            "minimum_probability": 0.0025494069524219713,
+            "maximum_probability": 0.015179318122942832,
+            "mean_probability": 0.010523965804395019,
+            "observed_unsafe_rate": 0.05440345035643254,
+            "absolute_gap": 0.04387948455203752
+          },
+          {
+            "bin": 1,
+            "record_count": 137,
+            "weight": 0.13119340851624317,
+            "minimum_probability": 0.015179318122942832,
+            "maximum_probability": 0.022815242346228476,
+            "mean_probability": 0.01875145791980965,
+            "observed_unsafe_rate": 0.0145275256452159,
+            "absolute_gap": 0.004223932274593752
+          },
+          {
+            "bin": 2,
+            "record_count": 137,
+            "weight": 0.12510311211098613,
+            "minimum_probability": 0.022815242346228476,
+            "maximum_probability": 0.03026955550301723,
+            "mean_probability": 0.026250409630241736,
+            "observed_unsafe_rate": 0.0211499075877916,
+            "absolute_gap": 0.005100502042450137
+          },
+          {
+            "bin": 3,
+            "record_count": 137,
+            "weight": 0.1296150481189851,
+            "minimum_probability": 0.03026955550301723,
+            "maximum_probability": 0.03848192083938795,
+            "mean_probability": 0.034071686140586185,
+            "observed_unsafe_rate": 0.02085723928450895,
+            "absolute_gap": 0.013214446856077235
+          },
+          {
+            "bin": 4,
+            "record_count": 136,
+            "weight": 0.11466672435176373,
+            "minimum_probability": 0.03848192083938795,
+            "maximum_probability": 0.04812168907285126,
+            "mean_probability": 0.04299037111859353,
+            "observed_unsafe_rate": 0.028917155690154045,
+            "absolute_gap": 0.014073215428439485
+          },
+          {
+            "bin": 5,
+            "record_count": 136,
+            "weight": 0.10407113446483525,
+            "minimum_probability": 0.04812168907285126,
+            "maximum_probability": 0.06157577346152585,
+            "mean_probability": 0.055022904974907305,
+            "observed_unsafe_rate": 0.041250833737429694,
+            "absolute_gap": 0.01377207123747761
+          },
+          {
+            "bin": 6,
+            "record_count": 136,
+            "weight": 0.1017785276840395,
+            "minimum_probability": 0.06157577346152585,
+            "maximum_probability": 0.08795629961286067,
+            "mean_probability": 0.07326338835956617,
+            "observed_unsafe_rate": 0.06686478454680533,
+            "absolute_gap": 0.0063986038127608336
+          },
+          {
+            "bin": 7,
+            "record_count": 136,
+            "weight": 0.0989928531660815,
+            "minimum_probability": 0.08916959270948792,
+            "maximum_probability": 0.16083505339764795,
+            "mean_probability": 0.11689655072834527,
+            "observed_unsafe_rate": 0.0918024300828928,
+            "absolute_gap": 0.02509412064545248
+          },
+          {
+            "bin": 8,
+            "record_count": 136,
+            "weight": 0.04540830123507289,
+            "minimum_probability": 0.16083505339764795,
+            "maximum_probability": 0.36206643693702734,
+            "mean_probability": 0.240178069503716,
+            "observed_unsafe_rate": 0.3362150719517169,
+            "absolute_gap": 0.0960370024480009
+          },
+          {
+            "bin": 9,
+            "record_count": 136,
+            "weight": 0.037312372666703376,
+            "minimum_probability": 0.36206643693702734,
+            "maximum_probability": 0.5710632327575162,
+            "mean_probability": 0.47159907588628125,
+            "observed_unsafe_rate": 0.4673082116967423,
+            "absolute_gap": 0.0042908641895389454
+          }
+        ]
+      },
+      "fold_parameters": [
+        {
+          "method": "beta_b_zero",
+          "a": 0.6268630839485252,
+          "b": 0.0,
+          "c": 0.179982045390115,
+          "objective": 0.21078865349970108,
+          "bounds": [
+            [
+              -5,
+              5
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        },
+        {
+          "method": "beta_b_zero",
+          "a": 0.6054739387046436,
+          "b": 0.0,
+          "c": 0.1219393435160979,
+          "objective": 0.2138676463591983,
+          "bounds": [
+            [
+              -5,
+              5
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        },
+        {
+          "method": "beta_b_zero",
+          "a": 0.6655268281221132,
+          "b": 0.0,
+          "c": 0.3205591615531098,
+          "objective": 0.20448612583325204,
+          "bounds": [
+            [
+              -5,
+              5
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        },
+        {
+          "method": "beta_b_zero",
+          "a": 0.6103526061433762,
+          "b": 0.0,
+          "c": 0.10490174047376753,
+          "objective": 0.20887789716560062,
+          "bounds": [
+            [
+              -5,
+              5
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        },
+        {
+          "method": "beta_b_zero",
+          "a": 0.672820197792336,
+          "b": 0.0,
+          "c": 0.3384045669915853,
+          "objective": 0.2013861585035186,
+          "bounds": [
+            [
+              -5,
+              5
+            ],
+            [
+              -10,
+              10
+            ]
+          ],
+          "optimizer_success": true
+        }
+      ],
+      "full_fit_parameters": {
+        "method": "beta_b_zero",
+        "a": 0.6358332177645954,
+        "b": 0.0,
+        "c": 0.21266644306508897,
+        "objective": 0.20796773993430565,
+        "bounds": [
+          [
+            -5,
+            5
+          ],
+          [
+            -10,
+            10
+          ]
+        ],
+        "optimizer_success": true
+      }
+    }
+  }
+}

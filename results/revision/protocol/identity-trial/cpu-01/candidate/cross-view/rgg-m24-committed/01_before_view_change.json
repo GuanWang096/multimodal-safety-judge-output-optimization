@@ -1,0 +1,2914 @@
+[
+  {
+    "commit_certificate": [
+      {
+        "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+        "group": -1,
+        "payload": {
+          "start_ns": 1793634343314721800
+        },
+        "sender": 0,
+        "sequence": 0,
+        "signature": "RpL2/BxHVMcESh96wc7boEjUA2Bcuq40H6zG5pbvPQ+lVgv9aOfX8Otn41vU4V5RmJAMzzRNIx7J9Xaf5lNCDA==",
+        "type": "GLOBAL_COMMIT",
+        "view": 0
+      },
+      {
+        "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+        "group": -1,
+        "payload": {
+          "start_ns": 1793634343314721800
+        },
+        "sender": 1,
+        "sequence": 0,
+        "signature": "KUCPWPK3RSM/DD6ECVpvkOBVg6YLXCF+dT9bg1ctTSUwx1qiYrmCZKICsqaQMiMWKdFz+OOpyb7qsvh+CO16Dw==",
+        "type": "GLOBAL_COMMIT",
+        "view": 0
+      },
+      {
+        "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+        "group": -1,
+        "payload": {
+          "start_ns": 1793634343314721800
+        },
+        "sender": 2,
+        "sequence": 0,
+        "signature": "HuW8c3engihKiKTFnz/ExZQR4cKOOiwd5k98uI9AviSOxXXtXGrds59bdjZoGrrq1J8DAFMOLTdCUf6yKtbfCA==",
+        "type": "GLOBAL_COMMIT",
+        "view": 0
+      }
+    ],
+    "committed_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "global_lock": {
+      "certificate": {
+        "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+        "group": -1,
+        "payload": {
+          "group_certificates": [
+            {
+              "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+              "group": -1,
+              "payload": {
+                "certificate": [
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 0,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 0,
+                    "sequence": 0,
+                    "signature": "Xbbln3IkIoBqtJrhj4FEoVnT/sgf6wgWoHuZtArfZGfYOWSo/WX/6OgjNMvlQQaFDpjc5HHFmM2mUj3ud3X8AA==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 0,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 12,
+                    "sequence": 0,
+                    "signature": "Ot4zxchkT+wj6Msryq56BJ0P5duXAIfjTqJftmvAOioeNGtnJUVm2PhZ4lRaHHSSCyncixyO4DNsE0kTJUhyBQ==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 0,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 16,
+                    "sequence": 0,
+                    "signature": "QRT1TJR2uZhK23saJiDI+15KUvGqfszL6P87UqAPLJZhsgei2v1dZHD2NjINHhYk4m43UtOLZeUKBKkcMjqOBg==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 0,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 20,
+                    "sequence": 0,
+                    "signature": "QrQR/lOpd2pmHGrKa6TxXu2y6cZUWYMFFEp43aB8ort8br1O7aZGYAqyX6aaovxZzBFIPP7pZ6S6/BebNmtFBQ==",
+                    "type": "COMMIT",
+                    "view": 0
+                  }
+                ],
+                "source_group": 0,
+                "start_ns": 1793634343314721800
+              },
+              "sender": 0,
+              "sequence": 0,
+              "signature": "PoQGR+IQpi9QwVZLtEDWR8mUABGtWEVU09M1OSuaUob3gvXSjbeMFjQHm/eoqT8aRwkITF3qOjmGwP61+9XBBA==",
+              "type": "GROUP_CERTIFICATE",
+              "view": 0
+            },
+            {
+              "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+              "group": -1,
+              "payload": {
+                "certificate": [
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 1,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 1,
+                    "sequence": 0,
+                    "signature": "I9VY6x89O+JZkZKKuHUPN/FsI2OsFD08qzCenTv0yY7RLUdUfkrCLwjnTs0tZUU3XlYHhm7593mVC+qd8hWPDQ==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 1,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 13,
+                    "sequence": 0,
+                    "signature": "FoRSiEsO+TiamM0wKtPprmAt0/WMO1S23zip/JUayExna+GH8E1py3AVlTO5Ok4AySHYk6PoG8UGEZ16ogkXCQ==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 1,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 17,
+                    "sequence": 0,
+                    "signature": "vNuL/R/ccDonz/9rGY0xPxAZ16GTVWp7ndE3X2NfOqk1DgdN9OdXp1loeoO+XwPlLZzfl7oiXjkbRZeIA66LBQ==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 1,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 21,
+                    "sequence": 0,
+                    "signature": "NMv0o3cxxSnK96++/WaET7LQMHycxphJzw1Wrxpsb08cyNobvmZZUJJQoN0fysXvBrtwoOXD6zmO7xx7cbmeDQ==",
+                    "type": "COMMIT",
+                    "view": 0
+                  }
+                ],
+                "source_group": 1,
+                "start_ns": 1793634343314721800
+              },
+              "sender": 1,
+              "sequence": 0,
+              "signature": "LyO2A+7pwDl+TCMVCuLfbjTOPm95Efr77LY/wlQutcN0GfJ7Ib6Bv+sRYG77dQUQRK5xMjdFYFHiZhEY98YDCA==",
+              "type": "GROUP_CERTIFICATE",
+              "view": 0
+            },
+            {
+              "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+              "group": -1,
+              "payload": {
+                "certificate": [
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 2,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 2,
+                    "sequence": 0,
+                    "signature": "5ktDa0GI7+Qpe6aNb9IfNXCFYJ+BcylhWhQWayn/AjNUpZt9jelnf8TVvNILmnF86A5FLxnfZPtdUlJOmB/5DQ==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 2,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 14,
+                    "sequence": 0,
+                    "signature": "MbV414G25hPAyxGdDBNisazAd8QR2k3anwkL4KLBXqH+I0BInGyhOlQj+sqZG34KinXy7cCiyScL9mMpeIcAAA==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 2,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 18,
+                    "sequence": 0,
+                    "signature": "znJ9s4WQtGcEZQYz8MOxOnFs6SJz1Xk/NJ5JxIyXEQsn09x4ojrEnDTjm4Af8epdK4CSL0rSLC7N1KIHdF83AA==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 2,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 22,
+                    "sequence": 0,
+                    "signature": "x6VEtqV0bVzO4askl8VCrchepzoTKl+qG/18QLT/wGX50FKT/r2BG8EekwxbomzmG4W1AjWUFstPPnDCKIeVCg==",
+                    "type": "COMMIT",
+                    "view": 0
+                  }
+                ],
+                "source_group": 2,
+                "start_ns": 1793634343314721800
+              },
+              "sender": 2,
+              "sequence": 0,
+              "signature": "QuF03Jl2cFBnjrXrR7BDxqd7A+BfQbmSUzDugrlDFD3cfuawJq0hgLFnVwXxO1aQEw1G+dN/bPBgRIpXt1SXBg==",
+              "type": "GROUP_CERTIFICATE",
+              "view": 0
+            }
+          ]
+        },
+        "sender": 0,
+        "sequence": 0,
+        "signature": "eX+WuXxP+YzOBouWFe8CXN0tjVdSkLEBqMWcW6tbmTnmakcdOk+TCIxH5l0+yw2/MkSXaEVScy/ISSOzNoTlBw==",
+        "type": "GLOBAL_PREPARED",
+        "view": 0
+      },
+      "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+      "view": 0
+    },
+    "groups": {
+      "0": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "1": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21
+      ],
+      "2": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22
+      ],
+      "3": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23
+      ]
+    },
+    "leaders": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "members": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "node": 0,
+    "prepared": null,
+    "rank": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selected_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "view": 0
+  },
+  {
+    "commit_certificate": [
+      {
+        "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+        "group": -1,
+        "payload": {
+          "start_ns": 1793634343314721800
+        },
+        "sender": 0,
+        "sequence": 0,
+        "signature": "RpL2/BxHVMcESh96wc7boEjUA2Bcuq40H6zG5pbvPQ+lVgv9aOfX8Otn41vU4V5RmJAMzzRNIx7J9Xaf5lNCDA==",
+        "type": "GLOBAL_COMMIT",
+        "view": 0
+      },
+      {
+        "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+        "group": -1,
+        "payload": {
+          "start_ns": 1793634343314721800
+        },
+        "sender": 1,
+        "sequence": 0,
+        "signature": "KUCPWPK3RSM/DD6ECVpvkOBVg6YLXCF+dT9bg1ctTSUwx1qiYrmCZKICsqaQMiMWKdFz+OOpyb7qsvh+CO16Dw==",
+        "type": "GLOBAL_COMMIT",
+        "view": 0
+      },
+      {
+        "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+        "group": -1,
+        "payload": {
+          "start_ns": 1793634343314721800
+        },
+        "sender": 2,
+        "sequence": 0,
+        "signature": "HuW8c3engihKiKTFnz/ExZQR4cKOOiwd5k98uI9AviSOxXXtXGrds59bdjZoGrrq1J8DAFMOLTdCUf6yKtbfCA==",
+        "type": "GLOBAL_COMMIT",
+        "view": 0
+      }
+    ],
+    "committed_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "global_lock": {
+      "certificate": {
+        "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+        "group": -1,
+        "payload": {
+          "group_certificates": [
+            {
+              "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+              "group": -1,
+              "payload": {
+                "certificate": [
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 0,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 0,
+                    "sequence": 0,
+                    "signature": "Xbbln3IkIoBqtJrhj4FEoVnT/sgf6wgWoHuZtArfZGfYOWSo/WX/6OgjNMvlQQaFDpjc5HHFmM2mUj3ud3X8AA==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 0,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 12,
+                    "sequence": 0,
+                    "signature": "Ot4zxchkT+wj6Msryq56BJ0P5duXAIfjTqJftmvAOioeNGtnJUVm2PhZ4lRaHHSSCyncixyO4DNsE0kTJUhyBQ==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 0,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 16,
+                    "sequence": 0,
+                    "signature": "QRT1TJR2uZhK23saJiDI+15KUvGqfszL6P87UqAPLJZhsgei2v1dZHD2NjINHhYk4m43UtOLZeUKBKkcMjqOBg==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 0,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 20,
+                    "sequence": 0,
+                    "signature": "QrQR/lOpd2pmHGrKa6TxXu2y6cZUWYMFFEp43aB8ort8br1O7aZGYAqyX6aaovxZzBFIPP7pZ6S6/BebNmtFBQ==",
+                    "type": "COMMIT",
+                    "view": 0
+                  }
+                ],
+                "source_group": 0,
+                "start_ns": 1793634343314721800
+              },
+              "sender": 0,
+              "sequence": 0,
+              "signature": "PoQGR+IQpi9QwVZLtEDWR8mUABGtWEVU09M1OSuaUob3gvXSjbeMFjQHm/eoqT8aRwkITF3qOjmGwP61+9XBBA==",
+              "type": "GROUP_CERTIFICATE",
+              "view": 0
+            },
+            {
+              "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+              "group": -1,
+              "payload": {
+                "certificate": [
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 1,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 1,
+                    "sequence": 0,
+                    "signature": "I9VY6x89O+JZkZKKuHUPN/FsI2OsFD08qzCenTv0yY7RLUdUfkrCLwjnTs0tZUU3XlYHhm7593mVC+qd8hWPDQ==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 1,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 13,
+                    "sequence": 0,
+                    "signature": "FoRSiEsO+TiamM0wKtPprmAt0/WMO1S23zip/JUayExna+GH8E1py3AVlTO5Ok4AySHYk6PoG8UGEZ16ogkXCQ==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 1,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 17,
+                    "sequence": 0,
+                    "signature": "vNuL/R/ccDonz/9rGY0xPxAZ16GTVWp7ndE3X2NfOqk1DgdN9OdXp1loeoO+XwPlLZzfl7oiXjkbRZeIA66LBQ==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 1,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 21,
+                    "sequence": 0,
+                    "signature": "NMv0o3cxxSnK96++/WaET7LQMHycxphJzw1Wrxpsb08cyNobvmZZUJJQoN0fysXvBrtwoOXD6zmO7xx7cbmeDQ==",
+                    "type": "COMMIT",
+                    "view": 0
+                  }
+                ],
+                "source_group": 1,
+                "start_ns": 1793634343314721800
+              },
+              "sender": 1,
+              "sequence": 0,
+              "signature": "LyO2A+7pwDl+TCMVCuLfbjTOPm95Efr77LY/wlQutcN0GfJ7Ib6Bv+sRYG77dQUQRK5xMjdFYFHiZhEY98YDCA==",
+              "type": "GROUP_CERTIFICATE",
+              "view": 0
+            },
+            {
+              "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+              "group": -1,
+              "payload": {
+                "certificate": [
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 2,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 2,
+                    "sequence": 0,
+                    "signature": "5ktDa0GI7+Qpe6aNb9IfNXCFYJ+BcylhWhQWayn/AjNUpZt9jelnf8TVvNILmnF86A5FLxnfZPtdUlJOmB/5DQ==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 2,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 14,
+                    "sequence": 0,
+                    "signature": "MbV414G25hPAyxGdDBNisazAd8QR2k3anwkL4KLBXqH+I0BInGyhOlQj+sqZG34KinXy7cCiyScL9mMpeIcAAA==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 2,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 18,
+                    "sequence": 0,
+                    "signature": "znJ9s4WQtGcEZQYz8MOxOnFs6SJz1Xk/NJ5JxIyXEQsn09x4ojrEnDTjm4Af8epdK4CSL0rSLC7N1KIHdF83AA==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 2,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 22,
+                    "sequence": 0,
+                    "signature": "x6VEtqV0bVzO4askl8VCrchepzoTKl+qG/18QLT/wGX50FKT/r2BG8EekwxbomzmG4W1AjWUFstPPnDCKIeVCg==",
+                    "type": "COMMIT",
+                    "view": 0
+                  }
+                ],
+                "source_group": 2,
+                "start_ns": 1793634343314721800
+              },
+              "sender": 2,
+              "sequence": 0,
+              "signature": "QuF03Jl2cFBnjrXrR7BDxqd7A+BfQbmSUzDugrlDFD3cfuawJq0hgLFnVwXxO1aQEw1G+dN/bPBgRIpXt1SXBg==",
+              "type": "GROUP_CERTIFICATE",
+              "view": 0
+            }
+          ]
+        },
+        "sender": 0,
+        "sequence": 0,
+        "signature": "eX+WuXxP+YzOBouWFe8CXN0tjVdSkLEBqMWcW6tbmTnmakcdOk+TCIxH5l0+yw2/MkSXaEVScy/ISSOzNoTlBw==",
+        "type": "GLOBAL_PREPARED",
+        "view": 0
+      },
+      "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+      "view": 0
+    },
+    "groups": {
+      "0": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "1": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21
+      ],
+      "2": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22
+      ],
+      "3": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23
+      ]
+    },
+    "leaders": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "members": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "node": 1,
+    "prepared": null,
+    "rank": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selected_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "view": 0
+  },
+  {
+    "commit_certificate": [
+      {
+        "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+        "group": -1,
+        "payload": {
+          "start_ns": 1793634343314721800
+        },
+        "sender": 0,
+        "sequence": 0,
+        "signature": "RpL2/BxHVMcESh96wc7boEjUA2Bcuq40H6zG5pbvPQ+lVgv9aOfX8Otn41vU4V5RmJAMzzRNIx7J9Xaf5lNCDA==",
+        "type": "GLOBAL_COMMIT",
+        "view": 0
+      },
+      {
+        "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+        "group": -1,
+        "payload": {
+          "start_ns": 1793634343314721800
+        },
+        "sender": 1,
+        "sequence": 0,
+        "signature": "KUCPWPK3RSM/DD6ECVpvkOBVg6YLXCF+dT9bg1ctTSUwx1qiYrmCZKICsqaQMiMWKdFz+OOpyb7qsvh+CO16Dw==",
+        "type": "GLOBAL_COMMIT",
+        "view": 0
+      },
+      {
+        "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+        "group": -1,
+        "payload": {
+          "start_ns": 1793634343314721800
+        },
+        "sender": 2,
+        "sequence": 0,
+        "signature": "HuW8c3engihKiKTFnz/ExZQR4cKOOiwd5k98uI9AviSOxXXtXGrds59bdjZoGrrq1J8DAFMOLTdCUf6yKtbfCA==",
+        "type": "GLOBAL_COMMIT",
+        "view": 0
+      }
+    ],
+    "committed_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "global_lock": {
+      "certificate": {
+        "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+        "group": -1,
+        "payload": {
+          "group_certificates": [
+            {
+              "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+              "group": -1,
+              "payload": {
+                "certificate": [
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 0,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 0,
+                    "sequence": 0,
+                    "signature": "Xbbln3IkIoBqtJrhj4FEoVnT/sgf6wgWoHuZtArfZGfYOWSo/WX/6OgjNMvlQQaFDpjc5HHFmM2mUj3ud3X8AA==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 0,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 12,
+                    "sequence": 0,
+                    "signature": "Ot4zxchkT+wj6Msryq56BJ0P5duXAIfjTqJftmvAOioeNGtnJUVm2PhZ4lRaHHSSCyncixyO4DNsE0kTJUhyBQ==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 0,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 16,
+                    "sequence": 0,
+                    "signature": "QRT1TJR2uZhK23saJiDI+15KUvGqfszL6P87UqAPLJZhsgei2v1dZHD2NjINHhYk4m43UtOLZeUKBKkcMjqOBg==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 0,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 20,
+                    "sequence": 0,
+                    "signature": "QrQR/lOpd2pmHGrKa6TxXu2y6cZUWYMFFEp43aB8ort8br1O7aZGYAqyX6aaovxZzBFIPP7pZ6S6/BebNmtFBQ==",
+                    "type": "COMMIT",
+                    "view": 0
+                  }
+                ],
+                "source_group": 0,
+                "start_ns": 1793634343314721800
+              },
+              "sender": 0,
+              "sequence": 0,
+              "signature": "PoQGR+IQpi9QwVZLtEDWR8mUABGtWEVU09M1OSuaUob3gvXSjbeMFjQHm/eoqT8aRwkITF3qOjmGwP61+9XBBA==",
+              "type": "GROUP_CERTIFICATE",
+              "view": 0
+            },
+            {
+              "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+              "group": -1,
+              "payload": {
+                "certificate": [
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 1,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 1,
+                    "sequence": 0,
+                    "signature": "I9VY6x89O+JZkZKKuHUPN/FsI2OsFD08qzCenTv0yY7RLUdUfkrCLwjnTs0tZUU3XlYHhm7593mVC+qd8hWPDQ==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 1,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 13,
+                    "sequence": 0,
+                    "signature": "FoRSiEsO+TiamM0wKtPprmAt0/WMO1S23zip/JUayExna+GH8E1py3AVlTO5Ok4AySHYk6PoG8UGEZ16ogkXCQ==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 1,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 17,
+                    "sequence": 0,
+                    "signature": "vNuL/R/ccDonz/9rGY0xPxAZ16GTVWp7ndE3X2NfOqk1DgdN9OdXp1loeoO+XwPlLZzfl7oiXjkbRZeIA66LBQ==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 1,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 21,
+                    "sequence": 0,
+                    "signature": "NMv0o3cxxSnK96++/WaET7LQMHycxphJzw1Wrxpsb08cyNobvmZZUJJQoN0fysXvBrtwoOXD6zmO7xx7cbmeDQ==",
+                    "type": "COMMIT",
+                    "view": 0
+                  }
+                ],
+                "source_group": 1,
+                "start_ns": 1793634343314721800
+              },
+              "sender": 1,
+              "sequence": 0,
+              "signature": "LyO2A+7pwDl+TCMVCuLfbjTOPm95Efr77LY/wlQutcN0GfJ7Ib6Bv+sRYG77dQUQRK5xMjdFYFHiZhEY98YDCA==",
+              "type": "GROUP_CERTIFICATE",
+              "view": 0
+            },
+            {
+              "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+              "group": -1,
+              "payload": {
+                "certificate": [
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 2,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 2,
+                    "sequence": 0,
+                    "signature": "5ktDa0GI7+Qpe6aNb9IfNXCFYJ+BcylhWhQWayn/AjNUpZt9jelnf8TVvNILmnF86A5FLxnfZPtdUlJOmB/5DQ==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 2,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 14,
+                    "sequence": 0,
+                    "signature": "MbV414G25hPAyxGdDBNisazAd8QR2k3anwkL4KLBXqH+I0BInGyhOlQj+sqZG34KinXy7cCiyScL9mMpeIcAAA==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 2,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 18,
+                    "sequence": 0,
+                    "signature": "znJ9s4WQtGcEZQYz8MOxOnFs6SJz1Xk/NJ5JxIyXEQsn09x4ojrEnDTjm4Af8epdK4CSL0rSLC7N1KIHdF83AA==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 2,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 22,
+                    "sequence": 0,
+                    "signature": "x6VEtqV0bVzO4askl8VCrchepzoTKl+qG/18QLT/wGX50FKT/r2BG8EekwxbomzmG4W1AjWUFstPPnDCKIeVCg==",
+                    "type": "COMMIT",
+                    "view": 0
+                  }
+                ],
+                "source_group": 2,
+                "start_ns": 1793634343314721800
+              },
+              "sender": 2,
+              "sequence": 0,
+              "signature": "QuF03Jl2cFBnjrXrR7BDxqd7A+BfQbmSUzDugrlDFD3cfuawJq0hgLFnVwXxO1aQEw1G+dN/bPBgRIpXt1SXBg==",
+              "type": "GROUP_CERTIFICATE",
+              "view": 0
+            }
+          ]
+        },
+        "sender": 0,
+        "sequence": 0,
+        "signature": "eX+WuXxP+YzOBouWFe8CXN0tjVdSkLEBqMWcW6tbmTnmakcdOk+TCIxH5l0+yw2/MkSXaEVScy/ISSOzNoTlBw==",
+        "type": "GLOBAL_PREPARED",
+        "view": 0
+      },
+      "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+      "view": 0
+    },
+    "groups": {
+      "0": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "1": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21
+      ],
+      "2": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22
+      ],
+      "3": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23
+      ]
+    },
+    "leaders": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "members": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "node": 2,
+    "prepared": null,
+    "rank": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selected_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "view": 0
+  },
+  {
+    "commit_certificate": [
+      {
+        "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+        "group": -1,
+        "payload": {
+          "start_ns": 1793634343314721800
+        },
+        "sender": 0,
+        "sequence": 0,
+        "signature": "RpL2/BxHVMcESh96wc7boEjUA2Bcuq40H6zG5pbvPQ+lVgv9aOfX8Otn41vU4V5RmJAMzzRNIx7J9Xaf5lNCDA==",
+        "type": "GLOBAL_COMMIT",
+        "view": 0
+      },
+      {
+        "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+        "group": -1,
+        "payload": {
+          "start_ns": 1793634343314721800
+        },
+        "sender": 1,
+        "sequence": 0,
+        "signature": "KUCPWPK3RSM/DD6ECVpvkOBVg6YLXCF+dT9bg1ctTSUwx1qiYrmCZKICsqaQMiMWKdFz+OOpyb7qsvh+CO16Dw==",
+        "type": "GLOBAL_COMMIT",
+        "view": 0
+      },
+      {
+        "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+        "group": -1,
+        "payload": {
+          "start_ns": 1793634343314721800
+        },
+        "sender": 3,
+        "sequence": 0,
+        "signature": "+MToEFyoJrIvTH4qFk5A4YCWDI9fsA/k9oTfn3n04ENv2rbTM8RRskkm65AlQJq9FfpEyGPESweMvnYZahzrBg==",
+        "type": "GLOBAL_COMMIT",
+        "view": 0
+      }
+    ],
+    "committed_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "global_lock": {
+      "certificate": {
+        "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+        "group": -1,
+        "payload": {
+          "group_certificates": [
+            {
+              "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+              "group": -1,
+              "payload": {
+                "certificate": [
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 0,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 0,
+                    "sequence": 0,
+                    "signature": "Xbbln3IkIoBqtJrhj4FEoVnT/sgf6wgWoHuZtArfZGfYOWSo/WX/6OgjNMvlQQaFDpjc5HHFmM2mUj3ud3X8AA==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 0,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 12,
+                    "sequence": 0,
+                    "signature": "Ot4zxchkT+wj6Msryq56BJ0P5duXAIfjTqJftmvAOioeNGtnJUVm2PhZ4lRaHHSSCyncixyO4DNsE0kTJUhyBQ==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 0,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 16,
+                    "sequence": 0,
+                    "signature": "QRT1TJR2uZhK23saJiDI+15KUvGqfszL6P87UqAPLJZhsgei2v1dZHD2NjINHhYk4m43UtOLZeUKBKkcMjqOBg==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 0,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 20,
+                    "sequence": 0,
+                    "signature": "QrQR/lOpd2pmHGrKa6TxXu2y6cZUWYMFFEp43aB8ort8br1O7aZGYAqyX6aaovxZzBFIPP7pZ6S6/BebNmtFBQ==",
+                    "type": "COMMIT",
+                    "view": 0
+                  }
+                ],
+                "source_group": 0,
+                "start_ns": 1793634343314721800
+              },
+              "sender": 0,
+              "sequence": 0,
+              "signature": "PoQGR+IQpi9QwVZLtEDWR8mUABGtWEVU09M1OSuaUob3gvXSjbeMFjQHm/eoqT8aRwkITF3qOjmGwP61+9XBBA==",
+              "type": "GROUP_CERTIFICATE",
+              "view": 0
+            },
+            {
+              "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+              "group": -1,
+              "payload": {
+                "certificate": [
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 1,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 1,
+                    "sequence": 0,
+                    "signature": "I9VY6x89O+JZkZKKuHUPN/FsI2OsFD08qzCenTv0yY7RLUdUfkrCLwjnTs0tZUU3XlYHhm7593mVC+qd8hWPDQ==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 1,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 13,
+                    "sequence": 0,
+                    "signature": "FoRSiEsO+TiamM0wKtPprmAt0/WMO1S23zip/JUayExna+GH8E1py3AVlTO5Ok4AySHYk6PoG8UGEZ16ogkXCQ==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 1,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 17,
+                    "sequence": 0,
+                    "signature": "vNuL/R/ccDonz/9rGY0xPxAZ16GTVWp7ndE3X2NfOqk1DgdN9OdXp1loeoO+XwPlLZzfl7oiXjkbRZeIA66LBQ==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 1,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 21,
+                    "sequence": 0,
+                    "signature": "NMv0o3cxxSnK96++/WaET7LQMHycxphJzw1Wrxpsb08cyNobvmZZUJJQoN0fysXvBrtwoOXD6zmO7xx7cbmeDQ==",
+                    "type": "COMMIT",
+                    "view": 0
+                  }
+                ],
+                "source_group": 1,
+                "start_ns": 1793634343314721800
+              },
+              "sender": 1,
+              "sequence": 0,
+              "signature": "LyO2A+7pwDl+TCMVCuLfbjTOPm95Efr77LY/wlQutcN0GfJ7Ib6Bv+sRYG77dQUQRK5xMjdFYFHiZhEY98YDCA==",
+              "type": "GROUP_CERTIFICATE",
+              "view": 0
+            },
+            {
+              "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+              "group": -1,
+              "payload": {
+                "certificate": [
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 2,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 2,
+                    "sequence": 0,
+                    "signature": "5ktDa0GI7+Qpe6aNb9IfNXCFYJ+BcylhWhQWayn/AjNUpZt9jelnf8TVvNILmnF86A5FLxnfZPtdUlJOmB/5DQ==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 2,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 14,
+                    "sequence": 0,
+                    "signature": "MbV414G25hPAyxGdDBNisazAd8QR2k3anwkL4KLBXqH+I0BInGyhOlQj+sqZG34KinXy7cCiyScL9mMpeIcAAA==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 2,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 18,
+                    "sequence": 0,
+                    "signature": "znJ9s4WQtGcEZQYz8MOxOnFs6SJz1Xk/NJ5JxIyXEQsn09x4ojrEnDTjm4Af8epdK4CSL0rSLC7N1KIHdF83AA==",
+                    "type": "COMMIT",
+                    "view": 0
+                  },
+                  {
+                    "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                    "group": 2,
+                    "payload": {
+                      "start_ns": 1793634343314721800
+                    },
+                    "sender": 22,
+                    "sequence": 0,
+                    "signature": "x6VEtqV0bVzO4askl8VCrchepzoTKl+qG/18QLT/wGX50FKT/r2BG8EekwxbomzmG4W1AjWUFstPPnDCKIeVCg==",
+                    "type": "COMMIT",
+                    "view": 0
+                  }
+                ],
+                "source_group": 2,
+                "start_ns": 1793634343314721800
+              },
+              "sender": 2,
+              "sequence": 0,
+              "signature": "QuF03Jl2cFBnjrXrR7BDxqd7A+BfQbmSUzDugrlDFD3cfuawJq0hgLFnVwXxO1aQEw1G+dN/bPBgRIpXt1SXBg==",
+              "type": "GROUP_CERTIFICATE",
+              "view": 0
+            }
+          ]
+        },
+        "sender": 0,
+        "sequence": 0,
+        "signature": "eX+WuXxP+YzOBouWFe8CXN0tjVdSkLEBqMWcW6tbmTnmakcdOk+TCIxH5l0+yw2/MkSXaEVScy/ISSOzNoTlBw==",
+        "type": "GLOBAL_PREPARED",
+        "view": 0
+      },
+      "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+      "view": 0
+    },
+    "groups": {
+      "0": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "1": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21
+      ],
+      "2": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22
+      ],
+      "3": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23
+      ]
+    },
+    "leaders": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "members": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "node": 3,
+    "prepared": null,
+    "rank": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selected_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "view": 0
+  },
+  {
+    "commit_certificate": null,
+    "committed_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "global_lock": null,
+    "groups": {
+      "0": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "1": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21
+      ],
+      "2": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22
+      ],
+      "3": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23
+      ]
+    },
+    "leaders": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "members": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "node": 4,
+    "prepared": null,
+    "rank": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selected_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "view": 0
+  },
+  {
+    "commit_certificate": null,
+    "committed_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "global_lock": null,
+    "groups": {
+      "0": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "1": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21
+      ],
+      "2": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22
+      ],
+      "3": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23
+      ]
+    },
+    "leaders": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "members": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "node": 5,
+    "prepared": null,
+    "rank": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selected_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "view": 0
+  },
+  {
+    "commit_certificate": null,
+    "committed_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "global_lock": null,
+    "groups": {
+      "0": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "1": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21
+      ],
+      "2": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22
+      ],
+      "3": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23
+      ]
+    },
+    "leaders": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "members": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "node": 6,
+    "prepared": null,
+    "rank": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selected_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "view": 0
+  },
+  {
+    "commit_certificate": null,
+    "committed_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "global_lock": null,
+    "groups": {
+      "0": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "1": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21
+      ],
+      "2": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22
+      ],
+      "3": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23
+      ]
+    },
+    "leaders": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "members": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "node": 7,
+    "prepared": null,
+    "rank": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selected_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "view": 0
+  },
+  {
+    "commit_certificate": null,
+    "committed_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "global_lock": null,
+    "groups": {
+      "0": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "1": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21
+      ],
+      "2": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22
+      ],
+      "3": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23
+      ]
+    },
+    "leaders": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "members": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "node": 8,
+    "prepared": null,
+    "rank": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selected_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "view": 0
+  },
+  {
+    "commit_certificate": null,
+    "committed_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "global_lock": null,
+    "groups": {
+      "0": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "1": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21
+      ],
+      "2": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22
+      ],
+      "3": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23
+      ]
+    },
+    "leaders": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "members": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "node": 9,
+    "prepared": null,
+    "rank": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selected_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "view": 0
+  },
+  {
+    "commit_certificate": null,
+    "committed_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "global_lock": null,
+    "groups": {
+      "0": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "1": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21
+      ],
+      "2": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22
+      ],
+      "3": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23
+      ]
+    },
+    "leaders": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "members": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "node": 10,
+    "prepared": null,
+    "rank": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selected_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "view": 0
+  },
+  {
+    "commit_certificate": null,
+    "committed_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "global_lock": null,
+    "groups": {
+      "0": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "1": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21
+      ],
+      "2": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22
+      ],
+      "3": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23
+      ]
+    },
+    "leaders": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "members": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "node": 11,
+    "prepared": null,
+    "rank": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selected_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "view": 0
+  },
+  {
+    "commit_certificate": null,
+    "committed_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "global_lock": null,
+    "groups": {
+      "0": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "1": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21
+      ],
+      "2": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22
+      ],
+      "3": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23
+      ]
+    },
+    "leaders": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "members": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "node": 12,
+    "prepared": null,
+    "rank": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selected_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "view": 0
+  },
+  {
+    "commit_certificate": null,
+    "committed_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "global_lock": null,
+    "groups": {
+      "0": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "1": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21
+      ],
+      "2": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22
+      ],
+      "3": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23
+      ]
+    },
+    "leaders": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "members": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "node": 13,
+    "prepared": null,
+    "rank": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selected_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "view": 0
+  },
+  {
+    "commit_certificate": null,
+    "committed_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "global_lock": null,
+    "groups": {
+      "0": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "1": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21
+      ],
+      "2": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22
+      ],
+      "3": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23
+      ]
+    },
+    "leaders": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "members": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "node": 14,
+    "prepared": null,
+    "rank": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selected_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "view": 0
+  },
+  {
+    "commit_certificate": null,
+    "committed_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "global_lock": null,
+    "groups": {
+      "0": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "1": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21
+      ],
+      "2": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22
+      ],
+      "3": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23
+      ]
+    },
+    "leaders": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "members": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "node": 15,
+    "prepared": null,
+    "rank": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selected_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "view": 0
+  },
+  {
+    "commit_certificate": null,
+    "committed_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "global_lock": null,
+    "groups": {
+      "0": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "1": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21
+      ],
+      "2": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22
+      ],
+      "3": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23
+      ]
+    },
+    "leaders": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "members": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "node": 16,
+    "prepared": null,
+    "rank": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selected_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "view": 0
+  },
+  {
+    "commit_certificate": null,
+    "committed_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "global_lock": null,
+    "groups": {
+      "0": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "1": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21
+      ],
+      "2": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22
+      ],
+      "3": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23
+      ]
+    },
+    "leaders": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "members": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "node": 17,
+    "prepared": null,
+    "rank": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selected_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "view": 0
+  },
+  {
+    "commit_certificate": null,
+    "committed_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "global_lock": null,
+    "groups": {
+      "0": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "1": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21
+      ],
+      "2": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22
+      ],
+      "3": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23
+      ]
+    },
+    "leaders": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "members": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "node": 18,
+    "prepared": null,
+    "rank": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selected_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "view": 0
+  },
+  {
+    "commit_certificate": null,
+    "committed_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "global_lock": null,
+    "groups": {
+      "0": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "1": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21
+      ],
+      "2": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22
+      ],
+      "3": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23
+      ]
+    },
+    "leaders": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "members": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "node": 19,
+    "prepared": null,
+    "rank": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selected_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "view": 0
+  },
+  {
+    "commit_certificate": null,
+    "committed_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "global_lock": null,
+    "groups": {
+      "0": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "1": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21
+      ],
+      "2": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22
+      ],
+      "3": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23
+      ]
+    },
+    "leaders": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "members": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "node": 20,
+    "prepared": null,
+    "rank": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selected_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "view": 0
+  },
+  {
+    "commit_certificate": null,
+    "committed_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "global_lock": null,
+    "groups": {
+      "0": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "1": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21
+      ],
+      "2": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22
+      ],
+      "3": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23
+      ]
+    },
+    "leaders": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "members": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "node": 21,
+    "prepared": null,
+    "rank": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selected_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "view": 0
+  },
+  {
+    "commit_certificate": null,
+    "committed_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "global_lock": null,
+    "groups": {
+      "0": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "1": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21
+      ],
+      "2": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22
+      ],
+      "3": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23
+      ]
+    },
+    "leaders": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "members": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "node": 22,
+    "prepared": null,
+    "rank": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selected_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "view": 0
+  },
+  {
+    "commit_certificate": null,
+    "committed_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "global_lock": null,
+    "groups": {
+      "0": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "1": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21
+      ],
+      "2": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22
+      ],
+      "3": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23
+      ]
+    },
+    "leaders": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "members": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "node": 23,
+    "prepared": null,
+    "rank": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selected_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "view": 0
+  }
+]

@@ -109,4 +109,34 @@ The consensus code applies `ceil((n + t + 1) / 2)`, with `t = floor((n - 1) / 3)
 
 ## Repository version
 
-This is the public reproduction repository for the current article. Version `v1.0.0` identifies the code, frozen configurations, and retained result artifacts prepared for submission. The separate 330-record sequential judge-reputation diagnostic remains outside the 513-record confirmatory claim hierarchy. No open-source license is asserted until the authors' institutions approve one. The code repository is not a journal ESM upload.
+The initial-submission tag `v1.0.0` remains at commit `de61496dd6195bc54d9cec205f0f117534d2824f`. Revision release `v1.1.0` adds the revision diagnostics and two adopted local protocol guards: strict integer sender identities and retirement of lower-view voting after a higher-view report. It preserves the original frozen statistical configuration and results. Historical performance measurements predate these two guards; the new CPU regressions are not replacement performance measurements. The separate 330-record sequential judge-reputation diagnostic remains outside the 513-record confirmatory claim hierarchy.
+
+## Revision diagnostics
+
+`src/revision/` contains relocated experiment drivers and bounded protocol checks. `results/revision/` contains the retained revision results, including unsuccessful settlement cases, and minimal numeric development inputs. Relocation changes paths and output destinations, not analysis algorithms. Original manifests may retain historical workspace-relative paths; these are provenance records, not current execution instructions.
+
+From the repository root, the following checks require only a CPU and the analysis/test dependencies:
+
+```bash
+python src/revision/run_cpu.py
+python src/revision/run_archive.py
+python src/revision/run_qualification.py
+python src/revision/summarize_external.py
+python src/revision/run_adopted_checks.py
+python src/revision/run_cross_view_traces.py --session cross-view
+python src/revision/run_protocol_checks.py
+python src/revision/summarize_matrix.py
+python src/revision/verify_architecture.py --session architecture-formal-20261031
+```
+
+Fresh outputs go to `results/reproduced/revision/`; generators refuse to replace existing runs. The retained outputs are under `results/revision/{cpu,archive,protocol,system}`. The CPU analysis refits exploratory alternatives on 1,760 development records and evaluates the archived 513-record confirmation set. Its design is post hoc; it does not replace the original confirmatory result. Minimal inputs retain sample/component identifiers, policy labels, hashes and numeric scores, without source media or conversations.
+
+The protocol entry point reruns 28 sender-ingress cases (24 alias rejections and four controls), 34 voting-retirement cases with 80 checks, and 30 existing regressions. The separate cross-view driver runs eight fixed schedules with 128 assertions. These are bounded in-process tests, not performance or production-authentication tests. The retained node-local-key fixture results contain public keys and signatures only; fresh private keys are generated at runtime and are not published.
+
+The system archive contains all 18 retained settlement runs (1,728 executions of the 96-record capacity workload), including the 79 unsuccessful settlements, and the 144-execution architecture diagnostic. The 96 selected J3/J4 evidence bundles are supplied under `results/capacity/bundles/`; they contain archived outputs and media references, not original media. Offline extraction can be rerun without Docker. Re-executing `run_settlement.py`, `run_architecture.py`, or container-key drivers requires the documented WSL/Linux, Docker, Fabric and IPFS setup and creates service state. The original sender probe records pre-fix behavior; its expectations and source version must be matched to that historical result, rather than applied as pass criteria for the corrected verifier. Use `run_adopted_checks.py` for current guards. Original collector versions differ; the retained matrix is descriptive, not a matched causal speed comparison. The initial staged replay and revision local-service diagnostics do not establish independently administered cross-organization deployment.
+
+## License and third-party assets
+
+The authors' original software and accompanying software documentation are licensed under the [Apache License 2.0](LICENSE). This permits use, modification and redistribution, including commercial use, subject to its terms. Retain the license and applicable notices when redistributing, and identify changes to modified files.
+
+This software license does not relicense third-party datasets, checkpoints, dependencies, or dataset-derived artifacts. Those remain subject to their providers' terms; in particular, the MMDS and BeaverTails-V sources carry non-commercial restrictions. See [THIRD_PARTY.md](THIRD_PARTY.md) for the asset-specific sources and scope. Restricted raw media and model weights are not redistributed. The public code repository is separate from the journal's supplementary-material upload.

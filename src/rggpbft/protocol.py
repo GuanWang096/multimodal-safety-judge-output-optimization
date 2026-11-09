@@ -46,7 +46,11 @@ def make_message(message_type, sender, view, sequence, digest, group, payload=No
 
 def verify_message(message, allowed_members):
     try:
-        sender = int(message["sender"])
+        sender = message["sender"]
+        # Wire identities are JSON integers; bool is an int subclass in Python.
+        # Reject aliases before key lookup so verification and vote counting agree.
+        if type(sender) is not int:
+            return False
         if sender not in set(allowed_members):
             return False
         if any(field not in message for field in SIGNED_FIELDS) or "signature" not in message:

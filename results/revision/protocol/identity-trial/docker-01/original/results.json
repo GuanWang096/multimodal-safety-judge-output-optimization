@@ -1,0 +1,497 @@
+{
+  "state": "completed_pending_independent_audit",
+  "started_at": "2026-11-02T15:49:56.957342+00:00",
+  "image_id": "sha256:1d16f1669bf445755a2342b22d02b329db140472c36606a797da2d45218b7355",
+  "container_count": 4,
+  "network_mode": "none",
+  "node_count": 4,
+  "scope": "isolated_container_protocol_authentication_fixture_not_live_consensus_or_independent_organizations",
+  "trust": "host_orchestrator_and_Docker_trusted; node_containers_untrusted_with_own_key_only",
+  "key_lifecycle": "random_once_per_run; no_private_keys_in_retained_artifacts",
+  "gpu_count": 0,
+  "variant": "original",
+  "protocol_sha256": "f1561f864c9a1353b4ac20ef7a0ab9e772828989bceaccda8caf2d3b54861ab0",
+  "identity_cases": [
+    {
+      "name": "one_key_three_string_aliases",
+      "actual_signing_key_count": 1,
+      "claimed_raw_sender_count": 3,
+      "security_expected_acceptance": false,
+      "observed": {
+        "accepted": true,
+        "signers": [
+          "+0",
+          "0",
+          "00"
+        ]
+      }
+    },
+    {
+      "name": "one_key_three_fractional_ids",
+      "actual_signing_key_count": 1,
+      "claimed_raw_sender_count": 3,
+      "security_expected_acceptance": false,
+      "observed": {
+        "accepted": true,
+        "signers": [
+          0.1,
+          0.2,
+          0.3
+        ]
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "container_0_mounts",
+      "passed": true,
+      "details": {
+        "id": "82d6b05cc45e963bc01a1373a886c15d64ea7b30ba1dba46e92550b883f5991a",
+        "name": "zte-identityfix-20261102-original-0",
+        "image": "sha256:1d16f1669bf445755a2342b22d02b329db140472c36606a797da2d45218b7355",
+        "user": "1000:1000",
+        "network": "none",
+        "readonly_rootfs": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_opt": [
+          "no-new-privileges"
+        ],
+        "mounts": [
+          {
+            "destination": "/fixture/key_fixture_worker.py",
+            "rw": false,
+            "type": "bind"
+          },
+          {
+            "destination": "/fixture/public_registry.json",
+            "rw": false,
+            "type": "bind"
+          },
+          {
+            "destination": "/run/node-secrets",
+            "rw": false,
+            "type": "bind"
+          },
+          {
+            "destination": "/fixture/protocol",
+            "rw": false,
+            "type": "bind"
+          }
+        ]
+      }
+    },
+    {
+      "name": "node_0_secret_visibility",
+      "passed": true,
+      "details": {
+        "node": 0,
+        "visible_secret_files": [
+          "node_0.key"
+        ],
+        "other_node_private_keys_readable": [],
+        "docker_socket_visible": false,
+        "protocol_sha256": "f1561f864c9a1353b4ac20ef7a0ab9e772828989bceaccda8caf2d3b54861ab0",
+        "python": "3.11.18 (main, Oct 28 2026, 02:02:50) [GCC 14.2.0]"
+      }
+    },
+    {
+      "name": "node_0_loaded_selected_protocol",
+      "passed": true,
+      "details": {
+        "node": 0,
+        "visible_secret_files": [
+          "node_0.key"
+        ],
+        "other_node_private_keys_readable": [],
+        "docker_socket_visible": false,
+        "protocol_sha256": "f1561f864c9a1353b4ac20ef7a0ab9e772828989bceaccda8caf2d3b54861ab0",
+        "python": "3.11.18 (main, Oct 28 2026, 02:02:50) [GCC 14.2.0]"
+      }
+    },
+    {
+      "name": "container_1_mounts",
+      "passed": true,
+      "details": {
+        "id": "e61c603d995eea10b73dd456db9b0786cec6715131fcc8a8f95101dc8b86fcbb",
+        "name": "zte-identityfix-20261102-original-1",
+        "image": "sha256:1d16f1669bf445755a2342b22d02b329db140472c36606a797da2d45218b7355",
+        "user": "1000:1000",
+        "network": "none",
+        "readonly_rootfs": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_opt": [
+          "no-new-privileges"
+        ],
+        "mounts": [
+          {
+            "destination": "/fixture/public_registry.json",
+            "rw": false,
+            "type": "bind"
+          },
+          {
+            "destination": "/run/node-secrets",
+            "rw": false,
+            "type": "bind"
+          },
+          {
+            "destination": "/fixture/protocol",
+            "rw": false,
+            "type": "bind"
+          },
+          {
+            "destination": "/fixture/key_fixture_worker.py",
+            "rw": false,
+            "type": "bind"
+          }
+        ]
+      }
+    },
+    {
+      "name": "node_1_secret_visibility",
+      "passed": true,
+      "details": {
+        "node": 1,
+        "visible_secret_files": [
+          "node_1.key"
+        ],
+        "other_node_private_keys_readable": [],
+        "docker_socket_visible": false,
+        "protocol_sha256": "f1561f864c9a1353b4ac20ef7a0ab9e772828989bceaccda8caf2d3b54861ab0",
+        "python": "3.11.18 (main, Oct 28 2026, 02:02:50) [GCC 14.2.0]"
+      }
+    },
+    {
+      "name": "node_1_loaded_selected_protocol",
+      "passed": true,
+      "details": {
+        "node": 1,
+        "visible_secret_files": [
+          "node_1.key"
+        ],
+        "other_node_private_keys_readable": [],
+        "docker_socket_visible": false,
+        "protocol_sha256": "f1561f864c9a1353b4ac20ef7a0ab9e772828989bceaccda8caf2d3b54861ab0",
+        "python": "3.11.18 (main, Oct 28 2026, 02:02:50) [GCC 14.2.0]"
+      }
+    },
+    {
+      "name": "container_2_mounts",
+      "passed": true,
+      "details": {
+        "id": "9da892c1fa5ed349c4711da163f1cef814ea928a7e2c65e5b740ce31afe885d1",
+        "name": "zte-identityfix-20261102-original-2",
+        "image": "sha256:1d16f1669bf445755a2342b22d02b329db140472c36606a797da2d45218b7355",
+        "user": "1000:1000",
+        "network": "none",
+        "readonly_rootfs": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_opt": [
+          "no-new-privileges"
+        ],
+        "mounts": [
+          {
+            "destination": "/run/node-secrets",
+            "rw": false,
+            "type": "bind"
+          },
+          {
+            "destination": "/fixture/protocol",
+            "rw": false,
+            "type": "bind"
+          },
+          {
+            "destination": "/fixture/key_fixture_worker.py",
+            "rw": false,
+            "type": "bind"
+          },
+          {
+            "destination": "/fixture/public_registry.json",
+            "rw": false,
+            "type": "bind"
+          }
+        ]
+      }
+    },
+    {
+      "name": "node_2_secret_visibility",
+      "passed": true,
+      "details": {
+        "node": 2,
+        "visible_secret_files": [
+          "node_2.key"
+        ],
+        "other_node_private_keys_readable": [],
+        "docker_socket_visible": false,
+        "protocol_sha256": "f1561f864c9a1353b4ac20ef7a0ab9e772828989bceaccda8caf2d3b54861ab0",
+        "python": "3.11.18 (main, Oct 28 2026, 02:02:50) [GCC 14.2.0]"
+      }
+    },
+    {
+      "name": "node_2_loaded_selected_protocol",
+      "passed": true,
+      "details": {
+        "node": 2,
+        "visible_secret_files": [
+          "node_2.key"
+        ],
+        "other_node_private_keys_readable": [],
+        "docker_socket_visible": false,
+        "protocol_sha256": "f1561f864c9a1353b4ac20ef7a0ab9e772828989bceaccda8caf2d3b54861ab0",
+        "python": "3.11.18 (main, Oct 28 2026, 02:02:50) [GCC 14.2.0]"
+      }
+    },
+    {
+      "name": "container_3_mounts",
+      "passed": true,
+      "details": {
+        "id": "f318436964d2dae4e9db3d61a07154e8f89f67b860c8254524dac04ceb769021",
+        "name": "zte-identityfix-20261102-original-3",
+        "image": "sha256:1d16f1669bf445755a2342b22d02b329db140472c36606a797da2d45218b7355",
+        "user": "1000:1000",
+        "network": "none",
+        "readonly_rootfs": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_opt": [
+          "no-new-privileges"
+        ],
+        "mounts": [
+          {
+            "destination": "/run/node-secrets",
+            "rw": false,
+            "type": "bind"
+          },
+          {
+            "destination": "/fixture/protocol",
+            "rw": false,
+            "type": "bind"
+          },
+          {
+            "destination": "/fixture/key_fixture_worker.py",
+            "rw": false,
+            "type": "bind"
+          },
+          {
+            "destination": "/fixture/public_registry.json",
+            "rw": false,
+            "type": "bind"
+          }
+        ]
+      }
+    },
+    {
+      "name": "node_3_secret_visibility",
+      "passed": true,
+      "details": {
+        "node": 3,
+        "visible_secret_files": [
+          "node_3.key"
+        ],
+        "other_node_private_keys_readable": [],
+        "docker_socket_visible": false,
+        "protocol_sha256": "f1561f864c9a1353b4ac20ef7a0ab9e772828989bceaccda8caf2d3b54861ab0",
+        "python": "3.11.18 (main, Oct 28 2026, 02:02:50) [GCC 14.2.0]"
+      }
+    },
+    {
+      "name": "node_3_loaded_selected_protocol",
+      "passed": true,
+      "details": {
+        "node": 3,
+        "visible_secret_files": [
+          "node_3.key"
+        ],
+        "other_node_private_keys_readable": [],
+        "docker_socket_visible": false,
+        "protocol_sha256": "f1561f864c9a1353b4ac20ef7a0ab9e772828989bceaccda8caf2d3b54861ab0",
+        "python": "3.11.18 (main, Oct 28 2026, 02:02:50) [GCC 14.2.0]"
+      }
+    },
+    {
+      "name": "valid_sender_0_verifier_0",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "valid_sender_1_verifier_0",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "valid_sender_2_verifier_0",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "valid_sender_3_verifier_0",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "valid_sender_0_verifier_1",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "valid_sender_1_verifier_1",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "valid_sender_2_verifier_1",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "valid_sender_3_verifier_1",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "valid_sender_0_verifier_2",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "valid_sender_1_verifier_2",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "valid_sender_2_verifier_2",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "valid_sender_3_verifier_2",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "valid_sender_0_verifier_3",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "valid_sender_1_verifier_3",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "valid_sender_2_verifier_3",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "valid_sender_3_verifier_3",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "honest_signing_api_rejects_other_identity",
+      "passed": true,
+      "details": {
+        "error_type": "PermissionError",
+        "error": "node cannot access another node private key"
+      }
+    },
+    {
+      "name": "malicious_own_key_cannot_impersonate_node1",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "public_legacy_key_rejected",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "changed_digest_rejected",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "unregistered_sender_rejected",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "valid_three_signer_certificate",
+      "passed": true,
+      "details": {
+        "accepted": true,
+        "signers": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "name": "duplicate_signer_certificate_rejected",
+      "passed": true,
+      "details": {
+        "accepted": false,
+        "reason": "certificate has 2 valid distinct votes; need 3"
+      }
+    },
+    {
+      "name": "stale_view_certificate_rejected",
+      "passed": true,
+      "details": {
+        "accepted": false,
+        "reason": "certificate has 0 valid distinct votes; need 3"
+      }
+    },
+    {
+      "name": "one_key_three_string_aliases_variant_observation",
+      "passed": true,
+      "details": {
+        "accepted": true,
+        "signers": [
+          "+0",
+          "0",
+          "00"
+        ]
+      }
+    },
+    {
+      "name": "one_key_three_fractional_ids_variant_observation",
+      "passed": true,
+      "details": {
+        "accepted": true,
+        "signers": [
+          0.1,
+          0.2,
+          0.3
+        ]
+      }
+    },
+    {
+      "name": "mounted_source_unchanged",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "check_count": 39,
+  "sources": {
+    "期刊审稿人修订意见/identity-fix-trial-20261102/run_container_fixture.py": "98b18213e1eb5a4ca8f849be8a7ec55361b0dfadf1c52aac2eff742b61e6638a",
+    "期刊审稿人修订意见/identity-fix-trial-20261102/key_fixture_worker.py": "81525d327ab3804df78059bfacd97d8b7e1ed224e9d57148195899cd211e14e3",
+    "v15/src/rggpbft/protocol.py": "f1561f864c9a1353b4ac20ef7a0ab9e772828989bceaccda8caf2d3b54861ab0"
+  },
+  "removed_fixture_container_ids": [
+    "82d6b05cc45e963bc01a1373a886c15d64ea7b30ba1dba46e92550b883f5991a",
+    "e61c603d995eea10b73dd456db9b0786cec6715131fcc8a8f95101dc8b86fcbb",
+    "9da892c1fa5ed349c4711da163f1cef814ea928a7e2c65e5b740ce31afe885d1",
+    "f318436964d2dae4e9db3d61a07154e8f89f67b860c8254524dac04ceb769021"
+  ],
+  "ephemeral_private_directory_removed": true,
+  "finished_at": "2026-11-02T15:50:15.621036+00:00"
+}

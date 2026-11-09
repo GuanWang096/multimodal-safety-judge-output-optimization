@@ -1,0 +1,376 @@
+{
+  "state": "counterexample_confirmed_candidate_guard_passed_pending_audit",
+  "started_at": "2026-10-30T16:35:49.849758+00:00",
+  "image_id": "sha256:1d16f1669bf445755a2342b22d02b329db140472c36606a797da2d45218b7355",
+  "scope": "authentication_API_counterexample_and_candidate_guard_not_live_consensus",
+  "original_source_modified": false,
+  "host_and_Docker_trusted": true,
+  "gpu_count": 0,
+  "checks": [
+    {
+      "name": "isolated_mounts_0",
+      "passed": true,
+      "details": {
+        "id": "743ba70e418fc9b02dc3e7f343a828f9430e9000d84cd84ddbdad6d359ae1ac0",
+        "image": "sha256:1d16f1669bf445755a2342b22d02b329db140472c36606a797da2d45218b7355",
+        "user": "1000:1000",
+        "network": "none",
+        "readonly_rootfs": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_opt": [
+          "no-new-privileges"
+        ],
+        "mounts": [
+          {
+            "destination": "/fixture/protocol",
+            "rw": false
+          },
+          {
+            "destination": "/fixture/worker.py",
+            "rw": false
+          },
+          {
+            "destination": "/fixture/public_registry.json",
+            "rw": false
+          },
+          {
+            "destination": "/run/node-secrets",
+            "rw": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "only_own_key_0",
+      "passed": true,
+      "details": {
+        "node": 0,
+        "visible_secret_files": [
+          "node_0.key"
+        ],
+        "other_private_keys_readable": []
+      }
+    },
+    {
+      "name": "isolated_mounts_1",
+      "passed": true,
+      "details": {
+        "id": "6e8db7791cee3231d0bab6ec13a68eb1dfd5c653d2f1de71833d3096fa8a4d3d",
+        "image": "sha256:1d16f1669bf445755a2342b22d02b329db140472c36606a797da2d45218b7355",
+        "user": "1000:1000",
+        "network": "none",
+        "readonly_rootfs": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_opt": [
+          "no-new-privileges"
+        ],
+        "mounts": [
+          {
+            "destination": "/fixture/protocol",
+            "rw": false
+          },
+          {
+            "destination": "/fixture/worker.py",
+            "rw": false
+          },
+          {
+            "destination": "/fixture/public_registry.json",
+            "rw": false
+          },
+          {
+            "destination": "/run/node-secrets",
+            "rw": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "only_own_key_1",
+      "passed": true,
+      "details": {
+        "node": 1,
+        "visible_secret_files": [
+          "node_1.key"
+        ],
+        "other_private_keys_readable": []
+      }
+    },
+    {
+      "name": "isolated_mounts_2",
+      "passed": true,
+      "details": {
+        "id": "388abf8fac62de1f14d8f0c9f7e8209991f5d083fcf23a3d6992b36b2a9b8e0a",
+        "image": "sha256:1d16f1669bf445755a2342b22d02b329db140472c36606a797da2d45218b7355",
+        "user": "1000:1000",
+        "network": "none",
+        "readonly_rootfs": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_opt": [
+          "no-new-privileges"
+        ],
+        "mounts": [
+          {
+            "destination": "/run/node-secrets",
+            "rw": false
+          },
+          {
+            "destination": "/fixture/protocol",
+            "rw": false
+          },
+          {
+            "destination": "/fixture/worker.py",
+            "rw": false
+          },
+          {
+            "destination": "/fixture/public_registry.json",
+            "rw": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "only_own_key_2",
+      "passed": true,
+      "details": {
+        "node": 2,
+        "visible_secret_files": [
+          "node_2.key"
+        ],
+        "other_private_keys_readable": []
+      }
+    },
+    {
+      "name": "isolated_mounts_3",
+      "passed": true,
+      "details": {
+        "id": "d9a49c2cd3b2940cfb06f92062a56b599614f578960f25cfd4635c6dc8736d48",
+        "image": "sha256:1d16f1669bf445755a2342b22d02b329db140472c36606a797da2d45218b7355",
+        "user": "1000:1000",
+        "network": "none",
+        "readonly_rootfs": true,
+        "cap_drop": [
+          "ALL"
+        ],
+        "security_opt": [
+          "no-new-privileges"
+        ],
+        "mounts": [
+          {
+            "destination": "/fixture/worker.py",
+            "rw": false
+          },
+          {
+            "destination": "/fixture/public_registry.json",
+            "rw": false
+          },
+          {
+            "destination": "/run/node-secrets",
+            "rw": false
+          },
+          {
+            "destination": "/fixture/protocol",
+            "rw": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "only_own_key_3",
+      "passed": true,
+      "details": {
+        "node": 3,
+        "visible_secret_files": [
+          "node_3.key"
+        ],
+        "other_private_keys_readable": []
+      }
+    },
+    {
+      "name": "three_distinct_integer_signers_original_matches_reproduction_prediction",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "three_distinct_integer_signers_candidate_guard",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "one_integer_signer_repeated_original_matches_reproduction_prediction",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "one_integer_signer_repeated_candidate_guard",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "one_key_three_string_aliases_original_matches_reproduction_prediction",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "one_key_three_string_aliases_candidate_guard",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "one_key_three_fractional_ids_original_matches_reproduction_prediction",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "one_key_three_fractional_ids_candidate_guard",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "cases": [
+    {
+      "name": "three_distinct_integer_signers",
+      "original": {
+        "accepted": true,
+        "raw_signers": [
+          0,
+          1,
+          2
+        ],
+        "canonical_verified_ids": [
+          0,
+          1,
+          2
+        ],
+        "individual_verified": [
+          true,
+          true,
+          true
+        ]
+      },
+      "candidate_strict_integer": {
+        "accepted": true,
+        "raw_signers": [
+          0,
+          1,
+          2
+        ],
+        "canonical_verified_ids": [
+          0,
+          1,
+          2
+        ],
+        "individual_verified": [
+          true,
+          true,
+          true
+        ]
+      },
+      "security_expected_acceptance": true,
+      "counterexample_observed": false
+    },
+    {
+      "name": "one_integer_signer_repeated",
+      "original": {
+        "accepted": false,
+        "reason": "certificate has 1 valid distinct votes; need 3",
+        "individual_verified": [
+          true,
+          true,
+          true
+        ]
+      },
+      "candidate_strict_integer": {
+        "accepted": false,
+        "reason": "certificate has 1 valid distinct votes; need 3",
+        "individual_verified": [
+          true,
+          true,
+          true
+        ]
+      },
+      "security_expected_acceptance": false,
+      "counterexample_observed": false
+    },
+    {
+      "name": "one_key_three_string_aliases",
+      "original": {
+        "accepted": true,
+        "raw_signers": [
+          "+0",
+          "0",
+          "00"
+        ],
+        "canonical_verified_ids": [
+          0
+        ],
+        "individual_verified": [
+          true,
+          true,
+          true
+        ]
+      },
+      "candidate_strict_integer": {
+        "accepted": false,
+        "reason": "certificate has 0 valid distinct votes; need 3",
+        "individual_verified": [
+          false,
+          false,
+          false
+        ]
+      },
+      "security_expected_acceptance": false,
+      "counterexample_observed": true
+    },
+    {
+      "name": "one_key_three_fractional_ids",
+      "original": {
+        "accepted": true,
+        "raw_signers": [
+          0.1,
+          0.2,
+          0.3
+        ],
+        "canonical_verified_ids": [
+          0
+        ],
+        "individual_verified": [
+          true,
+          true,
+          true
+        ]
+      },
+      "candidate_strict_integer": {
+        "accepted": false,
+        "reason": "certificate has 0 valid distinct votes; need 3",
+        "individual_verified": [
+          false,
+          false,
+          false
+        ]
+      },
+      "security_expected_acceptance": false,
+      "counterexample_observed": true
+    }
+  ],
+  "counterexample_count": 2,
+  "sources": {
+    "v15/experiments/revision-r1-20261030/run_sender_identity_probe.py": "711dee51de1d9c2a259fe8692bef8eb821602ab758df9ee0261c49d9dbd37a2b",
+    "v15/experiments/revision-r1-20261030/sender_identity_worker.py": "23cc13c0773c1db67cac514eb25dc84a1b6a9a4959e65ac0f47c3672d0bca77e",
+    "v15/experiments/revision-r1-20261030/run_node_key_fixture.py": "401ca4080c48a0a4666edff5ea1b42f40b1bd83527e30bb5dd0d5b67f9f27cb4",
+    "v15/src/rggpbft/protocol.py": "f1561f864c9a1353b4ac20ef7a0ab9e772828989bceaccda8caf2d3b54861ab0"
+  },
+  "removed_fixture_container_ids": [
+    "743ba70e418fc9b02dc3e7f343a828f9430e9000d84cd84ddbdad6d359ae1ac0",
+    "6e8db7791cee3231d0bab6ec13a68eb1dfd5c653d2f1de71833d3096fa8a4d3d",
+    "388abf8fac62de1f14d8f0c9f7e8209991f5d083fcf23a3d6992b36b2a9b8e0a",
+    "d9a49c2cd3b2940cfb06f92062a56b599614f578960f25cfd4635c6dc8736d48"
+  ],
+  "ephemeral_private_directory_removed": true,
+  "finished_at": "2026-10-30T16:36:02.141118+00:00"
+}

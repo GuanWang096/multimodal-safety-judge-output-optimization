@@ -1,0 +1,386 @@
+[
+  {
+    "commit_certificate": null,
+    "committed_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "global_lock": null,
+    "groups": {
+      "-1": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "leaders": {
+      "-1": 0
+    },
+    "members": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "node": 0,
+    "prepared": {
+      "certificate": {
+        "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+        "group": -1,
+        "payload": {
+          "prepares": [
+            {
+              "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+              "group": -1,
+              "payload": {
+                "start_ns": 1793990056606651100
+              },
+              "sender": 0,
+              "sequence": 0,
+              "signature": "EpTHfuKT1j7zbsUaZAnoIh6YXwHjUW4F9j1i0jdV5u8BPzs48a5GT63h7IRA2s7j7JnalsBVagYOPpk7fhvpDw==",
+              "type": "PREPARE",
+              "view": 0
+            },
+            {
+              "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+              "group": -1,
+              "payload": {
+                "start_ns": 1793990056606651100
+              },
+              "sender": 1,
+              "sequence": 0,
+              "signature": "+sGDsRZByFrB33K+ievhf7FzxVpCkegKo1+IOlPE54SpabXS80LTHtxlh+k9xgg5sIWzpfyug0otgUx0aLMXDA==",
+              "type": "PREPARE",
+              "view": 0
+            },
+            {
+              "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+              "group": -1,
+              "payload": {
+                "start_ns": 1793990056606651100
+              },
+              "sender": 2,
+              "sequence": 0,
+              "signature": "znSFZz/g4vgGdiS50MyK6GjyJ1ifwOqdVcaCqiUdF3m3xkl0PitjMAwm9yJpOPth+1n7BNQ7DjW60VDaKoR/Bw==",
+              "type": "PREPARE",
+              "view": 0
+            }
+          ],
+          "preprepare": {
+            "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+            "group": -1,
+            "payload": {
+              "start_ns": 1793990056606651100
+            },
+            "sender": 0,
+            "sequence": 0,
+            "signature": "/jxDYI878BPVMcSZkgjXkskeioDJ1QDfqYNcXs9NWvzJeDoHv0NOVB2CHTjNkRSQgPIniaYh9mm8Hx+/kRApBQ==",
+            "type": "PRE_PREPARE",
+            "view": 0
+          }
+        },
+        "sender": 0,
+        "sequence": 0,
+        "signature": "FnpG4uQ7OirCwVJYxI3U4kE9pB5E8vRGCmHLzcJxq7cpvRdI22PRHjBbvjYLHkBHXqk0gSnyUtn3wc3H6uNdBA==",
+        "type": "PBFT_PREPARED",
+        "view": 0
+      },
+      "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+      "view": 0
+    },
+    "rank": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selected_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "view": 1
+  },
+  {
+    "commit_certificate": null,
+    "committed_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "global_lock": null,
+    "groups": {
+      "-1": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "leaders": {
+      "-1": 0
+    },
+    "members": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "node": 1,
+    "prepared": {
+      "certificate": {
+        "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+        "group": -1,
+        "payload": {
+          "prepares": [
+            {
+              "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+              "group": -1,
+              "payload": {
+                "start_ns": 1793990056606651100
+              },
+              "sender": 1,
+              "sequence": 0,
+              "signature": "+sGDsRZByFrB33K+ievhf7FzxVpCkegKo1+IOlPE54SpabXS80LTHtxlh+k9xgg5sIWzpfyug0otgUx0aLMXDA==",
+              "type": "PREPARE",
+              "view": 0
+            },
+            {
+              "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+              "group": -1,
+              "payload": {
+                "start_ns": 1793990056606651100
+              },
+              "sender": 0,
+              "sequence": 0,
+              "signature": "EpTHfuKT1j7zbsUaZAnoIh6YXwHjUW4F9j1i0jdV5u8BPzs48a5GT63h7IRA2s7j7JnalsBVagYOPpk7fhvpDw==",
+              "type": "PREPARE",
+              "view": 0
+            },
+            {
+              "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+              "group": -1,
+              "payload": {
+                "start_ns": 1793990056606651100
+              },
+              "sender": 2,
+              "sequence": 0,
+              "signature": "znSFZz/g4vgGdiS50MyK6GjyJ1ifwOqdVcaCqiUdF3m3xkl0PitjMAwm9yJpOPth+1n7BNQ7DjW60VDaKoR/Bw==",
+              "type": "PREPARE",
+              "view": 0
+            }
+          ],
+          "preprepare": {
+            "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+            "group": -1,
+            "payload": {
+              "start_ns": 1793990056606651100
+            },
+            "sender": 0,
+            "sequence": 0,
+            "signature": "/jxDYI878BPVMcSZkgjXkskeioDJ1QDfqYNcXs9NWvzJeDoHv0NOVB2CHTjNkRSQgPIniaYh9mm8Hx+/kRApBQ==",
+            "type": "PRE_PREPARE",
+            "view": 0
+          }
+        },
+        "sender": 1,
+        "sequence": 0,
+        "signature": "xrrvk7FsxHu2zAnhuv4vvc6sA4jhHV2s+M/x+xCcbLwfj0ofiDneUyvTsR2lY57/mCLQX+F/lEJr6CQTc5KLAA==",
+        "type": "PBFT_PREPARED",
+        "view": 0
+      },
+      "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+      "view": 0
+    },
+    "rank": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selected_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "view": 1
+  },
+  {
+    "commit_certificate": null,
+    "committed_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "global_lock": null,
+    "groups": {
+      "-1": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "leaders": {
+      "-1": 0
+    },
+    "members": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "node": 2,
+    "prepared": {
+      "certificate": {
+        "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+        "group": -1,
+        "payload": {
+          "prepares": [
+            {
+              "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+              "group": -1,
+              "payload": {
+                "start_ns": 1793990056606651100
+              },
+              "sender": 2,
+              "sequence": 0,
+              "signature": "znSFZz/g4vgGdiS50MyK6GjyJ1ifwOqdVcaCqiUdF3m3xkl0PitjMAwm9yJpOPth+1n7BNQ7DjW60VDaKoR/Bw==",
+              "type": "PREPARE",
+              "view": 0
+            },
+            {
+              "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+              "group": -1,
+              "payload": {
+                "start_ns": 1793990056606651100
+              },
+              "sender": 0,
+              "sequence": 0,
+              "signature": "EpTHfuKT1j7zbsUaZAnoIh6YXwHjUW4F9j1i0jdV5u8BPzs48a5GT63h7IRA2s7j7JnalsBVagYOPpk7fhvpDw==",
+              "type": "PREPARE",
+              "view": 0
+            },
+            {
+              "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+              "group": -1,
+              "payload": {
+                "start_ns": 1793990056606651100
+              },
+              "sender": 1,
+              "sequence": 0,
+              "signature": "+sGDsRZByFrB33K+ievhf7FzxVpCkegKo1+IOlPE54SpabXS80LTHtxlh+k9xgg5sIWzpfyug0otgUx0aLMXDA==",
+              "type": "PREPARE",
+              "view": 0
+            }
+          ],
+          "preprepare": {
+            "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+            "group": -1,
+            "payload": {
+              "start_ns": 1793990056606651100
+            },
+            "sender": 0,
+            "sequence": 0,
+            "signature": "/jxDYI878BPVMcSZkgjXkskeioDJ1QDfqYNcXs9NWvzJeDoHv0NOVB2CHTjNkRSQgPIniaYh9mm8Hx+/kRApBQ==",
+            "type": "PRE_PREPARE",
+            "view": 0
+          }
+        },
+        "sender": 2,
+        "sequence": 0,
+        "signature": "f58hQdg5cE2kodn/DwWZjFjULRZwDcSovUVRoxQCvt0dLVVqBtcEcAyxrqBpPIX/Q+PbitNT1BYbOt58o+emCQ==",
+        "type": "PBFT_PREPARED",
+        "view": 0
+      },
+      "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+      "view": 0
+    },
+    "rank": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selected_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "view": 1
+  },
+  {
+    "commit_certificate": null,
+    "committed_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "global_lock": null,
+    "groups": {
+      "-1": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "leaders": {
+      "-1": 0
+    },
+    "members": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "node": 3,
+    "prepared": {
+      "certificate": {
+        "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+        "group": -1,
+        "payload": {
+          "prepares": [
+            {
+              "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+              "group": -1,
+              "payload": {
+                "start_ns": 1793990056606651100
+              },
+              "sender": 3,
+              "sequence": 0,
+              "signature": "E/ztxyXkDS+0smYi4tHDVomRB0AUKchIetITm9HxF5Dkutk0XMzsS/BSWrjiC/svrvKjmAciD/7eyvAI0sV5Cw==",
+              "type": "PREPARE",
+              "view": 0
+            },
+            {
+              "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+              "group": -1,
+              "payload": {
+                "start_ns": 1793990056606651100
+              },
+              "sender": 0,
+              "sequence": 0,
+              "signature": "EpTHfuKT1j7zbsUaZAnoIh6YXwHjUW4F9j1i0jdV5u8BPzs48a5GT63h7IRA2s7j7JnalsBVagYOPpk7fhvpDw==",
+              "type": "PREPARE",
+              "view": 0
+            },
+            {
+              "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+              "group": -1,
+              "payload": {
+                "start_ns": 1793990056606651100
+              },
+              "sender": 1,
+              "sequence": 0,
+              "signature": "+sGDsRZByFrB33K+ievhf7FzxVpCkegKo1+IOlPE54SpabXS80LTHtxlh+k9xgg5sIWzpfyug0otgUx0aLMXDA==",
+              "type": "PREPARE",
+              "view": 0
+            }
+          ],
+          "preprepare": {
+            "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+            "group": -1,
+            "payload": {
+              "start_ns": 1793990056606651100
+            },
+            "sender": 0,
+            "sequence": 0,
+            "signature": "/jxDYI878BPVMcSZkgjXkskeioDJ1QDfqYNcXs9NWvzJeDoHv0NOVB2CHTjNkRSQgPIniaYh9mm8Hx+/kRApBQ==",
+            "type": "PRE_PREPARE",
+            "view": 0
+          }
+        },
+        "sender": 3,
+        "sequence": 0,
+        "signature": "3ypA6Xj+nNbOG7YBoYHS/BqvQLF2KifxWPRYSJU/pnXZ2Gl908GQ0dc3Z2rhwU+D3ZZbWh7Z46sAns6t38wsAg==",
+        "type": "PBFT_PREPARED",
+        "view": 0
+      },
+      "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+      "view": 0
+    },
+    "rank": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selected_digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+    "view": 1
+  }
+]

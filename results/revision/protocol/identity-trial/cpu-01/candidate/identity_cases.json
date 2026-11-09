@@ -1,0 +1,296 @@
+[
+  {
+    "name": "verify_integer_0",
+    "security_expected_acceptance": true,
+    "observed_acceptance": true,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "verify_integer_1",
+    "security_expected_acceptance": true,
+    "observed_acceptance": true,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "verify_string_0",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "verify_leading_zero",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "verify_plus_sign",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "verify_whitespace",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "verify_negative_zero_string",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "verify_whole_float",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "verify_fraction_01",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "verify_fraction_09",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "verify_negative_fraction",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "verify_bool_false",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "verify_bool_true",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "verify_null",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "verify_list",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "verify_object",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "verify_negative_integer",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "verify_unregistered_integer",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "verify_different_integer_same_key",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "missing_sender",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "missing_signature",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "bad_base64",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "changed_digest",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "three_distinct_integer_signers",
+    "security_expected_acceptance": true,
+    "observed_acceptance": true,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "one_integer_signer_repeated",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": "certificate has 1 valid distinct votes; need 3"
+  },
+  {
+    "name": "two_signers_plus_duplicate",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": "certificate has 2 valid distinct votes; need 3"
+  },
+  {
+    "name": "one_key_three_string_aliases",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": "certificate has 0 valid distinct votes; need 3"
+  },
+  {
+    "name": "one_key_three_fractional_ids",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": "certificate has 0 valid distinct votes; need 3"
+  },
+  {
+    "name": "one_key_mixed_types",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": "certificate has 1 valid distinct votes; need 3"
+  },
+  {
+    "name": "three_whole_float_ids",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": "certificate has 0 valid distinct votes; need 3"
+  },
+  {
+    "name": "nested_group_legitimate",
+    "security_expected_acceptance": true,
+    "observed_acceptance": true,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "nested_global_lock_legitimate",
+    "security_expected_acceptance": true,
+    "observed_acceptance": true,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "global_commit_legitimate",
+    "security_expected_acceptance": true,
+    "observed_acceptance": true,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "nested_pbft_prepared_legitimate",
+    "security_expected_acceptance": true,
+    "observed_acceptance": true,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "pbft_new_view_legitimate",
+    "security_expected_acceptance": true,
+    "observed_acceptance": true,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "rgg_new_view_legitimate",
+    "security_expected_acceptance": true,
+    "observed_acceptance": true,
+    "matches_contract": true,
+    "error": null
+  },
+  {
+    "name": "nested_group_alias",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": "certificate has 0 valid distinct votes; need 3"
+  },
+  {
+    "name": "nested_global_lock_alias",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": "certificate has 0 valid distinct votes; need 3"
+  },
+  {
+    "name": "global_commit_alias",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": "certificate has 0 valid distinct votes; need 3"
+  },
+  {
+    "name": "nested_pbft_prepared_alias",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": "invalid prepared PREPARE certificate: certificate has 0 valid distinct votes; need 3"
+  },
+  {
+    "name": "pbft_new_view_alias",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": "invalid VIEW_CHANGE signature"
+  },
+  {
+    "name": "rgg_new_view_alias",
+    "security_expected_acceptance": false,
+    "observed_acceptance": false,
+    "matches_contract": true,
+    "error": "invalid LEADER_VIEW_CHANGE signature"
+  }
+]

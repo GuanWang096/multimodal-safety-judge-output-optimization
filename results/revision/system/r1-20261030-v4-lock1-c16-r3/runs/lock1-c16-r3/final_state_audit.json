@@ -1,0 +1,879 @@
+{
+  "attempt_cause_audit_complete": true,
+  "attempt_class_counts": {
+    "mvcc": 0,
+    "proposal_payload_mismatch": 0,
+    "unresolved_attempt": 0,
+    "valid": 96
+  },
+  "final_state_checks_pass": true,
+  "measurement_complete": true,
+  "note": "Final record states checked; four retained v3 attempts remain unclassified, not claimed MVCC/known invalid.",
+  "original_summary_state_retained": "completed",
+  "records": [
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0000",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0004",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0010",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0014",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0018",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0020",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0022",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0024",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0025",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0026",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0031",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0032",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0034",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0036",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0038",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0039",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0040",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0058",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0061",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0062",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0070",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0071",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0080",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0086",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0091",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0093",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0099",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0101",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0104",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0105",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0113",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0116",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0118",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0127",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0129",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0131",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0132",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0134",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0139",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0142",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0149",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0150",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0153",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0159",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0167",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0169",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0171",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0172",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0176",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0184",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0185",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0194",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0195",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0196",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0197",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0198",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0199",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0200",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0202",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0206",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0208",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0209",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0215",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0218",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0222",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0223",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0224",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0230",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0235",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0240",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0241",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0242",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0243",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0251",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0261",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0262",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0269",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0272",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0273",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0274",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0275",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0281",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0282",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0285",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0290",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0293",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0296",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0297",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0300",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0304",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0306",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0307",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0312",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0320",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0324",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v4-lock1-c16-r3::lock1-c16-r3::0328",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    }
+  ]
+}

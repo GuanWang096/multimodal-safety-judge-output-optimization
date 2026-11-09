@@ -1,0 +1,808 @@
+{
+  "entries": [
+    {
+      "concurrency": 8,
+      "execution_batch_count": 2,
+      "judge_count": 3,
+      "lock_enabled": false,
+      "repeat": 1,
+      "run_id": "lock0-c8-r1",
+      "sample_count": 96
+    },
+    {
+      "concurrency": 16,
+      "execution_batch_count": 2,
+      "judge_count": 3,
+      "lock_enabled": false,
+      "repeat": 1,
+      "run_id": "lock0-c16-r1",
+      "sample_count": 96
+    },
+    {
+      "concurrency": 1,
+      "execution_batch_count": 2,
+      "judge_count": 3,
+      "lock_enabled": true,
+      "repeat": 1,
+      "run_id": "lock1-c1-r1",
+      "sample_count": 96
+    },
+    {
+      "concurrency": 1,
+      "execution_batch_count": 2,
+      "judge_count": 3,
+      "lock_enabled": false,
+      "repeat": 1,
+      "run_id": "lock0-c1-r1",
+      "sample_count": 96
+    },
+    {
+      "concurrency": 8,
+      "execution_batch_count": 2,
+      "judge_count": 3,
+      "lock_enabled": true,
+      "repeat": 1,
+      "run_id": "lock1-c8-r1",
+      "sample_count": 96
+    },
+    {
+      "concurrency": 16,
+      "execution_batch_count": 2,
+      "judge_count": 3,
+      "lock_enabled": true,
+      "repeat": 1,
+      "run_id": "lock1-c16-r1",
+      "sample_count": 96
+    },
+    {
+      "concurrency": 8,
+      "execution_batch_count": 2,
+      "judge_count": 3,
+      "lock_enabled": false,
+      "repeat": 2,
+      "run_id": "lock0-c8-r2",
+      "sample_count": 96
+    },
+    {
+      "concurrency": 16,
+      "execution_batch_count": 2,
+      "judge_count": 3,
+      "lock_enabled": true,
+      "repeat": 2,
+      "run_id": "lock1-c16-r2",
+      "sample_count": 96
+    },
+    {
+      "concurrency": 1,
+      "execution_batch_count": 2,
+      "judge_count": 3,
+      "lock_enabled": false,
+      "repeat": 2,
+      "run_id": "lock0-c1-r2",
+      "sample_count": 96
+    },
+    {
+      "concurrency": 1,
+      "execution_batch_count": 2,
+      "judge_count": 3,
+      "lock_enabled": true,
+      "repeat": 2,
+      "run_id": "lock1-c1-r2",
+      "sample_count": 96
+    },
+    {
+      "concurrency": 8,
+      "execution_batch_count": 2,
+      "judge_count": 3,
+      "lock_enabled": true,
+      "repeat": 2,
+      "run_id": "lock1-c8-r2",
+      "sample_count": 96
+    },
+    {
+      "concurrency": 16,
+      "execution_batch_count": 2,
+      "judge_count": 3,
+      "lock_enabled": false,
+      "repeat": 2,
+      "run_id": "lock0-c16-r2",
+      "sample_count": 96
+    },
+    {
+      "concurrency": 1,
+      "execution_batch_count": 2,
+      "judge_count": 3,
+      "lock_enabled": true,
+      "repeat": 3,
+      "run_id": "lock1-c1-r3",
+      "sample_count": 96
+    },
+    {
+      "concurrency": 8,
+      "execution_batch_count": 2,
+      "judge_count": 3,
+      "lock_enabled": true,
+      "repeat": 3,
+      "run_id": "lock1-c8-r3",
+      "sample_count": 96
+    },
+    {
+      "concurrency": 1,
+      "execution_batch_count": 2,
+      "judge_count": 3,
+      "lock_enabled": false,
+      "repeat": 3,
+      "run_id": "lock0-c1-r3",
+      "sample_count": 96
+    },
+    {
+      "concurrency": 16,
+      "execution_batch_count": 2,
+      "judge_count": 3,
+      "lock_enabled": true,
+      "repeat": 3,
+      "run_id": "lock1-c16-r3",
+      "sample_count": 96
+    },
+    {
+      "concurrency": 8,
+      "execution_batch_count": 2,
+      "judge_count": 3,
+      "lock_enabled": false,
+      "repeat": 3,
+      "run_id": "lock0-c8-r3",
+      "sample_count": 96
+    },
+    {
+      "concurrency": 16,
+      "execution_batch_count": 2,
+      "judge_count": 3,
+      "lock_enabled": false,
+      "repeat": 3,
+      "run_id": "lock0-c16-r3",
+      "sample_count": 96
+    }
+  ],
+  "measured": [
+    {
+      "attempt_cause_audit_complete": true,
+      "attempt_classes": {
+        "mvcc": 494,
+        "proposal_payload_mismatch": 0,
+        "unresolved_attempt": 0,
+        "valid": 78
+      },
+      "final_states_verified": true,
+      "measurement_prefix": "r1-20261030-v3",
+      "retry_exhausted_records": 18,
+      "summary": {
+        "all_state_checks_pass": true,
+        "attempt_count": 572,
+        "elapsed_seconds": 218.18366628900003,
+        "entry": {
+          "concurrency": 8,
+          "execution_batch_count": 2,
+          "judge_count": 3,
+          "lock_enabled": false,
+          "repeat": 1,
+          "run_id": "lock0-c8-r1",
+          "sample_count": 96
+        },
+        "failure_count": 18,
+        "mvcc_conflict_attempts": 494,
+        "record_count": 96,
+        "sampler_teardown_seconds_excluded": 2.1927336220001052,
+        "state": "failed",
+        "success_count": 78,
+        "successful_settlements_per_second": 0.3574969718250282,
+        "timing_scope": "driver_settlement_phase_including_queue_retries_and_final_snapshot_queries_excluding_sampler_teardown",
+        "unknown_outcome_attempts": 0
+      }
+    },
+    {
+      "attempt_cause_audit_complete": false,
+      "attempt_classes": {
+        "mvcc": 682,
+        "proposal_payload_mismatch": 0,
+        "unresolved_attempt": 4,
+        "valid": 86
+      },
+      "final_states_verified": true,
+      "measurement_prefix": "r1-20261030-v3",
+      "retry_exhausted_records": 6,
+      "summary": {
+        "all_state_checks_pass": true,
+        "attempt_count": 772,
+        "elapsed_seconds": 139.84684959300012,
+        "entry": {
+          "concurrency": 16,
+          "execution_batch_count": 2,
+          "judge_count": 3,
+          "lock_enabled": false,
+          "repeat": 1,
+          "run_id": "lock0-c16-r1",
+          "sample_count": 96
+        },
+        "failure_count": 10,
+        "mvcc_conflict_attempts": 682,
+        "record_count": 96,
+        "sampler_teardown_seconds_excluded": 0.00021963200015306938,
+        "state": "failed",
+        "success_count": 86,
+        "successful_settlements_per_second": 0.6149584366776085,
+        "timing_scope": "driver_settlement_phase_including_queue_retries_and_final_snapshot_queries_excluding_sampler_teardown",
+        "unknown_outcome_attempts": 0
+      }
+    },
+    {
+      "attempt_cause_audit_complete": true,
+      "attempt_classes": {
+        "mvcc": 0,
+        "proposal_payload_mismatch": 0,
+        "unresolved_attempt": 0,
+        "valid": 96
+      },
+      "final_states_verified": true,
+      "measurement_prefix": "r1-20261030-v4",
+      "retry_exhausted_records": 0,
+      "summary": {
+        "all_state_checks_pass": true,
+        "attempt_count": 96,
+        "elapsed_seconds": 321.32898128600027,
+        "entry": {
+          "concurrency": 1,
+          "execution_batch_count": 2,
+          "judge_count": 3,
+          "lock_enabled": true,
+          "repeat": 1,
+          "run_id": "lock1-c1-r1",
+          "sample_count": 96
+        },
+        "failure_count": 0,
+        "mvcc_conflict_attempts": 0,
+        "record_count": 96,
+        "sampler_teardown_seconds_excluded": 0.0001879089995782124,
+        "state": "completed",
+        "success_count": 96,
+        "successful_settlements_per_second": 0.2987592330321266,
+        "timing_scope": "driver_settlement_phase_including_queue_retries_and_final_snapshot_queries_excluding_sampler_teardown",
+        "unknown_outcome_attempts": 0
+      }
+    },
+    {
+      "attempt_cause_audit_complete": true,
+      "attempt_classes": {
+        "mvcc": 0,
+        "proposal_payload_mismatch": 0,
+        "unresolved_attempt": 0,
+        "valid": 96
+      },
+      "final_states_verified": true,
+      "measurement_prefix": "r1-20261030-v4",
+      "retry_exhausted_records": 0,
+      "summary": {
+        "all_state_checks_pass": true,
+        "attempt_count": 96,
+        "elapsed_seconds": 318.168053761,
+        "entry": {
+          "concurrency": 1,
+          "execution_batch_count": 2,
+          "judge_count": 3,
+          "lock_enabled": false,
+          "repeat": 1,
+          "run_id": "lock0-c1-r1",
+          "sample_count": 96
+        },
+        "failure_count": 0,
+        "mvcc_conflict_attempts": 0,
+        "record_count": 96,
+        "sampler_teardown_seconds_excluded": 1.7787848970001505,
+        "state": "completed",
+        "success_count": 96,
+        "successful_settlements_per_second": 0.30172733832075055,
+        "timing_scope": "driver_settlement_phase_including_queue_retries_and_final_snapshot_queries_excluding_sampler_teardown",
+        "unknown_outcome_attempts": 0
+      }
+    },
+    {
+      "attempt_cause_audit_complete": true,
+      "attempt_classes": {
+        "mvcc": 0,
+        "proposal_payload_mismatch": 0,
+        "unresolved_attempt": 0,
+        "valid": 96
+      },
+      "final_states_verified": true,
+      "measurement_prefix": "r1-20261030-v4",
+      "retry_exhausted_records": 0,
+      "summary": {
+        "all_state_checks_pass": true,
+        "attempt_count": 96,
+        "elapsed_seconds": 247.98337428299965,
+        "entry": {
+          "concurrency": 8,
+          "execution_batch_count": 2,
+          "judge_count": 3,
+          "lock_enabled": true,
+          "repeat": 1,
+          "run_id": "lock1-c8-r1",
+          "sample_count": 96
+        },
+        "failure_count": 0,
+        "mvcc_conflict_attempts": 0,
+        "record_count": 96,
+        "sampler_teardown_seconds_excluded": 0.00020153600053163245,
+        "state": "completed",
+        "success_count": 96,
+        "successful_settlements_per_second": 0.38712272658426045,
+        "timing_scope": "driver_settlement_phase_including_queue_retries_and_final_snapshot_queries_excluding_sampler_teardown",
+        "unknown_outcome_attempts": 0
+      }
+    },
+    {
+      "attempt_cause_audit_complete": true,
+      "attempt_classes": {
+        "mvcc": 0,
+        "proposal_payload_mismatch": 0,
+        "unresolved_attempt": 0,
+        "valid": 96
+      },
+      "final_states_verified": true,
+      "measurement_prefix": "r1-20261030-v4",
+      "retry_exhausted_records": 0,
+      "summary": {
+        "all_state_checks_pass": true,
+        "attempt_count": 96,
+        "elapsed_seconds": 250.09881167299955,
+        "entry": {
+          "concurrency": 16,
+          "execution_batch_count": 2,
+          "judge_count": 3,
+          "lock_enabled": true,
+          "repeat": 1,
+          "run_id": "lock1-c16-r1",
+          "sample_count": 96
+        },
+        "failure_count": 0,
+        "mvcc_conflict_attempts": 0,
+        "record_count": 96,
+        "sampler_teardown_seconds_excluded": 2.0433437840001716,
+        "state": "completed",
+        "success_count": 96,
+        "successful_settlements_per_second": 0.38384828523503167,
+        "timing_scope": "driver_settlement_phase_including_queue_retries_and_final_snapshot_queries_excluding_sampler_teardown",
+        "unknown_outcome_attempts": 0
+      }
+    },
+    {
+      "attempt_cause_audit_complete": true,
+      "attempt_classes": {
+        "mvcc": 494,
+        "proposal_payload_mismatch": 0,
+        "unresolved_attempt": 0,
+        "valid": 78
+      },
+      "final_states_verified": true,
+      "measurement_prefix": "r1-20261030-v4",
+      "retry_exhausted_records": 18,
+      "summary": {
+        "all_state_checks_pass": true,
+        "attempt_count": 572,
+        "elapsed_seconds": 224.1393885870002,
+        "entry": {
+          "concurrency": 8,
+          "execution_batch_count": 2,
+          "judge_count": 3,
+          "lock_enabled": false,
+          "repeat": 2,
+          "run_id": "lock0-c8-r2",
+          "sample_count": 96
+        },
+        "failure_count": 18,
+        "mvcc_conflict_attempts": 494,
+        "record_count": 96,
+        "sampler_teardown_seconds_excluded": 0.0003034490000572987,
+        "state": "failed",
+        "success_count": 78,
+        "successful_settlements_per_second": 0.34799773699625364,
+        "timing_scope": "driver_settlement_phase_including_queue_retries_and_final_snapshot_queries_excluding_sampler_teardown",
+        "unknown_outcome_attempts": 0
+      }
+    },
+    {
+      "attempt_cause_audit_complete": true,
+      "attempt_classes": {
+        "mvcc": 0,
+        "proposal_payload_mismatch": 0,
+        "unresolved_attempt": 0,
+        "valid": 96
+      },
+      "final_states_verified": true,
+      "measurement_prefix": "r1-20261030-v4",
+      "retry_exhausted_records": 0,
+      "summary": {
+        "all_state_checks_pass": true,
+        "attempt_count": 96,
+        "elapsed_seconds": 247.16639152900007,
+        "entry": {
+          "concurrency": 16,
+          "execution_batch_count": 2,
+          "judge_count": 3,
+          "lock_enabled": true,
+          "repeat": 2,
+          "run_id": "lock1-c16-r2",
+          "sample_count": 96
+        },
+        "failure_count": 0,
+        "mvcc_conflict_attempts": 0,
+        "record_count": 96,
+        "sampler_teardown_seconds_excluded": 0.4231738039998163,
+        "state": "completed",
+        "success_count": 96,
+        "successful_settlements_per_second": 0.38840232042120626,
+        "timing_scope": "driver_settlement_phase_including_queue_retries_and_final_snapshot_queries_excluding_sampler_teardown",
+        "unknown_outcome_attempts": 0
+      }
+    },
+    {
+      "attempt_cause_audit_complete": true,
+      "attempt_classes": {
+        "mvcc": 0,
+        "proposal_payload_mismatch": 0,
+        "unresolved_attempt": 0,
+        "valid": 96
+      },
+      "final_states_verified": true,
+      "measurement_prefix": "r1-20261030-v4",
+      "retry_exhausted_records": 0,
+      "summary": {
+        "all_state_checks_pass": true,
+        "attempt_count": 96,
+        "elapsed_seconds": 316.62629569099954,
+        "entry": {
+          "concurrency": 1,
+          "execution_batch_count": 2,
+          "judge_count": 3,
+          "lock_enabled": false,
+          "repeat": 2,
+          "run_id": "lock0-c1-r2",
+          "sample_count": 96
+        },
+        "failure_count": 0,
+        "mvcc_conflict_attempts": 0,
+        "record_count": 96,
+        "sampler_teardown_seconds_excluded": 0.00025407999964954797,
+        "state": "completed",
+        "success_count": 96,
+        "successful_settlements_per_second": 0.3031965484436197,
+        "timing_scope": "driver_settlement_phase_including_queue_retries_and_final_snapshot_queries_excluding_sampler_teardown",
+        "unknown_outcome_attempts": 0
+      }
+    },
+    {
+      "attempt_cause_audit_complete": true,
+      "attempt_classes": {
+        "mvcc": 0,
+        "proposal_payload_mismatch": 0,
+        "unresolved_attempt": 0,
+        "valid": 96
+      },
+      "final_states_verified": true,
+      "measurement_prefix": "r1-20261030-v4",
+      "retry_exhausted_records": 0,
+      "summary": {
+        "all_state_checks_pass": true,
+        "attempt_count": 96,
+        "elapsed_seconds": 318.35319861300013,
+        "entry": {
+          "concurrency": 1,
+          "execution_batch_count": 2,
+          "judge_count": 3,
+          "lock_enabled": true,
+          "repeat": 2,
+          "run_id": "lock1-c1-r2",
+          "sample_count": 96
+        },
+        "failure_count": 0,
+        "mvcc_conflict_attempts": 0,
+        "record_count": 96,
+        "sampler_teardown_seconds_excluded": 1.9839489860005415,
+        "state": "completed",
+        "success_count": 96,
+        "successful_settlements_per_second": 0.30155186257984024,
+        "timing_scope": "driver_settlement_phase_including_queue_retries_and_final_snapshot_queries_excluding_sampler_teardown",
+        "unknown_outcome_attempts": 0
+      }
+    },
+    {
+      "attempt_cause_audit_complete": true,
+      "attempt_classes": {
+        "mvcc": 0,
+        "proposal_payload_mismatch": 0,
+        "unresolved_attempt": 0,
+        "valid": 96
+      },
+      "final_states_verified": true,
+      "measurement_prefix": "r1-20261030-v4",
+      "retry_exhausted_records": 0,
+      "summary": {
+        "all_state_checks_pass": true,
+        "attempt_count": 96,
+        "elapsed_seconds": 248.27341145300124,
+        "entry": {
+          "concurrency": 8,
+          "execution_batch_count": 2,
+          "judge_count": 3,
+          "lock_enabled": true,
+          "repeat": 2,
+          "run_id": "lock1-c8-r2",
+          "sample_count": 96
+        },
+        "failure_count": 0,
+        "mvcc_conflict_attempts": 0,
+        "record_count": 96,
+        "sampler_teardown_seconds_excluded": 0.00017431299966119695,
+        "state": "completed",
+        "success_count": 96,
+        "successful_settlements_per_second": 0.3866704833117945,
+        "timing_scope": "driver_settlement_phase_including_queue_retries_and_final_snapshot_queries_excluding_sampler_teardown",
+        "unknown_outcome_attempts": 0
+      }
+    },
+    {
+      "attempt_cause_audit_complete": true,
+      "attempt_classes": {
+        "mvcc": 695,
+        "proposal_payload_mismatch": 2,
+        "unresolved_attempt": 0,
+        "valid": 87
+      },
+      "final_states_verified": true,
+      "measurement_prefix": "r1-20261030-v4",
+      "retry_exhausted_records": 7,
+      "summary": {
+        "all_state_checks_pass": true,
+        "attempt_count": 784,
+        "elapsed_seconds": 150.18835846599904,
+        "entry": {
+          "concurrency": 16,
+          "execution_batch_count": 2,
+          "judge_count": 3,
+          "lock_enabled": false,
+          "repeat": 2,
+          "run_id": "lock0-c16-r2",
+          "sample_count": 96
+        },
+        "failure_count": 9,
+        "mvcc_conflict_attempts": 695,
+        "record_count": 96,
+        "sampler_teardown_seconds_excluded": 1.6700509150014113,
+        "state": "failed",
+        "success_count": 87,
+        "successful_settlements_per_second": 0.5792725940186357,
+        "timing_scope": "driver_settlement_phase_including_queue_retries_and_final_snapshot_queries_excluding_sampler_teardown",
+        "unknown_outcome_attempts": 0
+      }
+    },
+    {
+      "attempt_cause_audit_complete": true,
+      "attempt_classes": {
+        "mvcc": 0,
+        "proposal_payload_mismatch": 0,
+        "unresolved_attempt": 0,
+        "valid": 96
+      },
+      "final_states_verified": true,
+      "measurement_prefix": "r1-20261030-v4",
+      "retry_exhausted_records": 0,
+      "summary": {
+        "all_state_checks_pass": true,
+        "attempt_count": 96,
+        "elapsed_seconds": 317.9319679979999,
+        "entry": {
+          "concurrency": 1,
+          "execution_batch_count": 2,
+          "judge_count": 3,
+          "lock_enabled": true,
+          "repeat": 3,
+          "run_id": "lock1-c1-r3",
+          "sample_count": 96
+        },
+        "failure_count": 0,
+        "mvcc_conflict_attempts": 0,
+        "record_count": 96,
+        "sampler_teardown_seconds_excluded": 0.7838370530007523,
+        "state": "completed",
+        "success_count": 96,
+        "successful_settlements_per_second": 0.30195139106176305,
+        "timing_scope": "driver_settlement_phase_including_queue_retries_and_final_snapshot_queries_excluding_sampler_teardown",
+        "unknown_outcome_attempts": 0
+      }
+    },
+    {
+      "attempt_cause_audit_complete": true,
+      "attempt_classes": {
+        "mvcc": 0,
+        "proposal_payload_mismatch": 0,
+        "unresolved_attempt": 0,
+        "valid": 96
+      },
+      "final_states_verified": true,
+      "measurement_prefix": "r1-20261030-v4",
+      "retry_exhausted_records": 0,
+      "summary": {
+        "all_state_checks_pass": true,
+        "attempt_count": 96,
+        "elapsed_seconds": 247.57297759600078,
+        "entry": {
+          "concurrency": 8,
+          "execution_batch_count": 2,
+          "judge_count": 3,
+          "lock_enabled": true,
+          "repeat": 3,
+          "run_id": "lock1-c8-r3",
+          "sample_count": 96
+        },
+        "failure_count": 0,
+        "mvcc_conflict_attempts": 0,
+        "record_count": 96,
+        "sampler_teardown_seconds_excluded": 0.00045994199899723753,
+        "state": "completed",
+        "success_count": 96,
+        "successful_settlements_per_second": 0.3877644520504032,
+        "timing_scope": "driver_settlement_phase_including_queue_retries_and_final_snapshot_queries_excluding_sampler_teardown",
+        "unknown_outcome_attempts": 0
+      }
+    },
+    {
+      "attempt_cause_audit_complete": true,
+      "attempt_classes": {
+        "mvcc": 0,
+        "proposal_payload_mismatch": 0,
+        "unresolved_attempt": 0,
+        "valid": 96
+      },
+      "final_states_verified": true,
+      "measurement_prefix": "r1-20261030-v4",
+      "retry_exhausted_records": 0,
+      "summary": {
+        "all_state_checks_pass": true,
+        "attempt_count": 96,
+        "elapsed_seconds": 320.3233212520008,
+        "entry": {
+          "concurrency": 1,
+          "execution_batch_count": 2,
+          "judge_count": 3,
+          "lock_enabled": false,
+          "repeat": 3,
+          "run_id": "lock0-c1-r3",
+          "sample_count": 96
+        },
+        "failure_count": 0,
+        "mvcc_conflict_attempts": 0,
+        "record_count": 96,
+        "sampler_teardown_seconds_excluded": 0.00016948499978752807,
+        "state": "completed",
+        "success_count": 96,
+        "successful_settlements_per_second": 0.2996971922767873,
+        "timing_scope": "driver_settlement_phase_including_queue_retries_and_final_snapshot_queries_excluding_sampler_teardown",
+        "unknown_outcome_attempts": 0
+      }
+    },
+    {
+      "attempt_cause_audit_complete": true,
+      "attempt_classes": {
+        "mvcc": 0,
+        "proposal_payload_mismatch": 0,
+        "unresolved_attempt": 0,
+        "valid": 96
+      },
+      "final_states_verified": true,
+      "measurement_prefix": "r1-20261030-v4",
+      "retry_exhausted_records": 0,
+      "summary": {
+        "all_state_checks_pass": true,
+        "attempt_count": 96,
+        "elapsed_seconds": 247.79444991000128,
+        "entry": {
+          "concurrency": 16,
+          "execution_batch_count": 2,
+          "judge_count": 3,
+          "lock_enabled": true,
+          "repeat": 3,
+          "run_id": "lock1-c16-r3",
+          "sample_count": 96
+        },
+        "failure_count": 0,
+        "mvcc_conflict_attempts": 0,
+        "record_count": 96,
+        "sampler_teardown_seconds_excluded": 0.0002097429987770738,
+        "state": "completed",
+        "success_count": 96,
+        "successful_settlements_per_second": 0.3874178781440307,
+        "timing_scope": "driver_settlement_phase_including_queue_retries_and_final_snapshot_queries_excluding_sampler_teardown",
+        "unknown_outcome_attempts": 0
+      }
+    },
+    {
+      "attempt_cause_audit_complete": true,
+      "attempt_classes": {
+        "mvcc": 494,
+        "proposal_payload_mismatch": 0,
+        "unresolved_attempt": 0,
+        "valid": 78
+      },
+      "final_states_verified": true,
+      "measurement_prefix": "r1-20261030-v4",
+      "retry_exhausted_records": 18,
+      "summary": {
+        "all_state_checks_pass": true,
+        "attempt_count": 572,
+        "elapsed_seconds": 218.59355220900034,
+        "entry": {
+          "concurrency": 8,
+          "execution_batch_count": 2,
+          "judge_count": 3,
+          "lock_enabled": false,
+          "repeat": 3,
+          "run_id": "lock0-c8-r3",
+          "sample_count": 96
+        },
+        "failure_count": 18,
+        "mvcc_conflict_attempts": 494,
+        "record_count": 96,
+        "sampler_teardown_seconds_excluded": 0.00013272999967739452,
+        "state": "failed",
+        "success_count": 78,
+        "successful_settlements_per_second": 0.3568266273719872,
+        "timing_scope": "driver_settlement_phase_including_queue_retries_and_final_snapshot_queries_excluding_sampler_teardown",
+        "unknown_outcome_attempts": 0
+      }
+    },
+    {
+      "attempt_cause_audit_complete": true,
+      "attempt_classes": {
+        "mvcc": 705,
+        "proposal_payload_mismatch": 3,
+        "unresolved_attempt": 0,
+        "valid": 90
+      },
+      "final_states_verified": true,
+      "measurement_prefix": "r1-20261030-v4",
+      "retry_exhausted_records": 3,
+      "summary": {
+        "all_state_checks_pass": true,
+        "attempt_count": 798,
+        "elapsed_seconds": 164.14739495399954,
+        "entry": {
+          "concurrency": 16,
+          "execution_batch_count": 2,
+          "judge_count": 3,
+          "lock_enabled": false,
+          "repeat": 3,
+          "run_id": "lock0-c16-r3",
+          "sample_count": 96
+        },
+        "failure_count": 6,
+        "mvcc_conflict_attempts": 705,
+        "record_count": 96,
+        "sampler_teardown_seconds_excluded": 0.00020871100059594028,
+        "state": "failed",
+        "success_count": 90,
+        "successful_settlements_per_second": 0.5482877143753727,
+        "timing_scope": "driver_settlement_phase_including_queue_retries_and_final_snapshot_queries_excluding_sampler_teardown",
+        "unknown_outcome_attempts": 0
+      }
+    }
+  ],
+  "pid": 55570,
+  "state": "measurements_completed_with_retained_log_gap_pending_final_audit",
+  "wrapper_source": {
+    "algorithm": "sha256",
+    "file_count": 1,
+    "files": {
+      "v15/experiments/revision-r1-20261030/resume_logged_matrix.py": "968c684584a556513787aad07c136cd9781f2b611f7594c4c9c14e8495481267"
+    },
+    "manifest_sha256": "aff6388221f281d16132a6c3965ac0ed50c72aed4cdec3343ca9f14326bb6e8a"
+  }
+}

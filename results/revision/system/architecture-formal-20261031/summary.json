@@ -1,0 +1,78 @@
+{
+  "blocks": [
+    {
+      "arm": "signed_log",
+      "completed": 16,
+      "mean_ms": 52.76530237438237,
+      "median_ms": 50.43796749851026,
+      "p95_nearest_rank_ms": 74.08798899996327,
+      "repeat": 1
+    },
+    {
+      "arm": "fabric",
+      "completed": 16,
+      "mean_ms": 3353.283627312294,
+      "median_ms": 3331.6544070003147,
+      "p95_nearest_rank_ms": 3526.5161829993303,
+      "repeat": 1
+    },
+    {
+      "arm": "full",
+      "completed": 16,
+      "mean_ms": 13021.75686612486,
+      "median_ms": 13016.34771049794,
+      "p95_nearest_rank_ms": 13213.981853001314,
+      "repeat": 1
+    },
+    {
+      "arm": "signed_log",
+      "completed": 16,
+      "mean_ms": 58.872596374840214,
+      "median_ms": 52.578739499949734,
+      "p95_nearest_rank_ms": 90.03470700190519,
+      "repeat": 2
+    },
+    {
+      "arm": "fabric",
+      "completed": 16,
+      "mean_ms": 3339.9874568754058,
+      "median_ms": 3330.293740002162,
+      "p95_nearest_rank_ms": 3419.4429909985047,
+      "repeat": 2
+    },
+    {
+      "arm": "full",
+      "completed": 16,
+      "mean_ms": 13174.186085124575,
+      "median_ms": 13141.529503001948,
+      "p95_nearest_rank_ms": 13433.672612998635,
+      "repeat": 2
+    },
+    {
+      "arm": "signed_log",
+      "completed": 16,
+      "mean_ms": 53.198460937665004,
+      "median_ms": 51.56331800026237,
+      "p95_nearest_rank_ms": 81.00262800144264,
+      "repeat": 3
+    },
+    {
+      "arm": "fabric",
+      "completed": 16,
+      "mean_ms": 3377.326035375063,
+      "median_ms": 3341.1787980003282,
+      "p95_nearest_rank_ms": 3485.9227320011996,
+      "repeat": 3
+    },
+    {
+      "arm": "full",
+      "completed": 16,
+      "mean_ms": 13167.391353063067,
+      "median_ms": 13122.315733500727,
+      "p95_nearest_rank_ms": 13446.810082998127,
+      "repeat": 3
+    }
+  ],
+  "completed": 144,
+  "scope": "different_acceptance_endpoints_not_security_equivalent; single_host_warm_services_serial_small_workload"
+}

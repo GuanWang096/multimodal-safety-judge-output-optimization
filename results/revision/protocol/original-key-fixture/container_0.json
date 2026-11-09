@@ -1,0 +1,36 @@
+{
+  "id": "c2df003c55cee86b805b4670f11439b17ad8b6856bcb1ff19bc40b9419ed41ac",
+  "name": "zte-revision-key-20261031-v3-0",
+  "image": "sha256:1d16f1669bf445755a2342b22d02b329db140472c36606a797da2d45218b7355",
+  "user": "1000:1000",
+  "network": "none",
+  "readonly_rootfs": true,
+  "cap_drop": [
+    "ALL"
+  ],
+  "security_opt": [
+    "no-new-privileges"
+  ],
+  "mounts": [
+    {
+      "destination": "/run/node-secrets",
+      "rw": false,
+      "type": "bind"
+    },
+    {
+      "destination": "/fixture/protocol",
+      "rw": false,
+      "type": "bind"
+    },
+    {
+      "destination": "/fixture/key_fixture_worker.py",
+      "rw": false,
+      "type": "bind"
+    },
+    {
+      "destination": "/fixture/public_registry.json",
+      "rw": false,
+      "type": "bind"
+    }
+  ]
+}

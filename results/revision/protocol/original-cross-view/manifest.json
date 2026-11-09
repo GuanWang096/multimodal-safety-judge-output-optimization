@@ -1,0 +1,25 @@
+{
+  "delivery_bound_per_trace": 20000,
+  "evaluation_type": "bounded_deterministic_real_handler_execution_not_exhaustive_model_check",
+  "limitations": [
+    "fixed_membership_no_reconfiguration",
+    "canonical_integer_ids_only",
+    "public_demo_keys_not_authentication_security",
+    "no_socket_or_timeout_thread",
+    "committed_schedule_forces_new_view_for_state_retention_check"
+  ],
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+  "source_sha256": {
+    "v15\\experiments\\revision-r1-20261030\\run_cross_view_traces.py": "bc0df17ab5ab8bbaeb79e8c5d7daa45e44c5fe09863852b467c655e22d5ab510",
+    "v15\\src\\rggpbft\\fault_policy.py": "bac511487be5140a4fab945360f5fee6d9f62dca0c4193a336a1b5bbdc46428b",
+    "v15\\src\\rggpbft\\grouping.py": "df59fdecd5024eef88409ba6728806b65d18e0280596e84bcd5034b727c944aa",
+    "v15\\src\\rggpbft\\node_v2.py": "97f19a718ee7d43f70c177baeca10f9de44ab867256c1e674e5d9793f46e6994",
+    "v15\\src\\rggpbft\\protocol.py": "f1561f864c9a1353b4ac20ef7a0ab9e772828989bceaccda8caf2d3b54861ab0",
+    "v15\\src\\rggpbft\\view_change.py": "deb0b5ea2625bfbd72e7822b033429b5a94d6a574dc859f4f7682347e02ad7bc",
+    "v15\\src\\rggpbft\\view_runtime.py": "49957fd65cd6f4ca20f59fb1a4ecc65f35e6b7fdd921ac211c74ea03a27a84ae"
+  },
+  "transport_replacements": [
+    "dispatch",
+    "emit"
+  ]
+}

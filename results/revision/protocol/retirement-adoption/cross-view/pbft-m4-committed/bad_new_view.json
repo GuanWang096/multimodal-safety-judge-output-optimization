@@ -1,0 +1,319 @@
+{
+  "digest": "f869f4cb72d8557e63fb8b30df2bd815d1d9fdfeda822e0172b3afe29e6cc044",
+  "group": -1,
+  "payload": {
+    "fallback_digest": "f869f4cb72d8557e63fb8b30df2bd815d1d9fdfeda822e0172b3afe29e6cc044",
+    "mode": "pbft",
+    "preprepare": {
+      "digest": "f869f4cb72d8557e63fb8b30df2bd815d1d9fdfeda822e0172b3afe29e6cc044",
+      "group": -1,
+      "payload": {
+        "start_ns": 1793990056724932200
+      },
+      "sender": 1,
+      "sequence": 0,
+      "signature": "Ny4VMaE73Bgcyfqib9kb/TYoi1tsRSpRGxYSxhvSz5axESRv0pkJJwZA3FybXCt3XKZ7iokNmTpACsaQrmZFCw==",
+      "type": "PRE_PREPARE",
+      "view": 1
+    },
+    "view_changes": [
+      {
+        "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+        "group": -1,
+        "payload": {
+          "prepared": {
+            "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+            "group": -1,
+            "payload": {
+              "prepares": [
+                {
+                  "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                  "group": -1,
+                  "payload": {
+                    "start_ns": 1793990056724932200
+                  },
+                  "sender": 0,
+                  "sequence": 0,
+                  "signature": "hlbbZAkujzklgSoWp6Bwb24issNnov+ePCE1LKs/Cnp19ibohRH3YKkXSRF2vSacMrGRvuSuwQ6W3PEZG+JRDA==",
+                  "type": "PREPARE",
+                  "view": 0
+                },
+                {
+                  "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                  "group": -1,
+                  "payload": {
+                    "start_ns": 1793990056724932200
+                  },
+                  "sender": 1,
+                  "sequence": 0,
+                  "signature": "x92gZ9ISFMS9fqHAoP/rIK/Cbihmt+Dv/OcRtrVFmR9vPwuehfv8Fn4xxZKpFHR8JDbTMc4us0p7TSikODrbDg==",
+                  "type": "PREPARE",
+                  "view": 0
+                },
+                {
+                  "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                  "group": -1,
+                  "payload": {
+                    "start_ns": 1793990056724932200
+                  },
+                  "sender": 2,
+                  "sequence": 0,
+                  "signature": "W/i/+0iVlAP6Ib/o/3J8yvuOt3caLfTss9YN73sxdUnYEH5paZJ657kedZdYvET7Od5zLT0Cf9SSrDLLrRQ1DA==",
+                  "type": "PREPARE",
+                  "view": 0
+                }
+              ],
+              "preprepare": {
+                "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                "group": -1,
+                "payload": {
+                  "start_ns": 1793990056724932200
+                },
+                "sender": 0,
+                "sequence": 0,
+                "signature": "uajQs4T/3UDjxvM3AUwu++NFXuBW5FmeHpR0130vQiHmktlO/5yBzkaDi57j2/HDu/YTHK6HOCSPBMXAaQYBBw==",
+                "type": "PRE_PREPARE",
+                "view": 0
+              }
+            },
+            "sender": 0,
+            "sequence": 0,
+            "signature": "TCy3pHa5fYHktTvRbAqSpoMr+hp1UUIMapQUqgfh8HXGgABzOdmfhzc9qUMN0eFSRz7GKtWwfwfUVKHuxg2sAQ==",
+            "type": "PBFT_PREPARED",
+            "view": 0
+          },
+          "start_ns": 1793990056724932200
+        },
+        "sender": 0,
+        "sequence": 0,
+        "signature": "gnNPrTYrH4BM0Rjx8wNolmuUdOtCpe2WrZvGpvotj4cxHN5V+4VlfcHBLiHSRvqdCzRb4zKgSn77Uc8IVnTYDg==",
+        "type": "VIEW_CHANGE",
+        "view": 1
+      },
+      {
+        "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+        "group": -1,
+        "payload": {
+          "prepared": {
+            "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+            "group": -1,
+            "payload": {
+              "prepares": [
+                {
+                  "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                  "group": -1,
+                  "payload": {
+                    "start_ns": 1793990056724932200
+                  },
+                  "sender": 1,
+                  "sequence": 0,
+                  "signature": "x92gZ9ISFMS9fqHAoP/rIK/Cbihmt+Dv/OcRtrVFmR9vPwuehfv8Fn4xxZKpFHR8JDbTMc4us0p7TSikODrbDg==",
+                  "type": "PREPARE",
+                  "view": 0
+                },
+                {
+                  "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                  "group": -1,
+                  "payload": {
+                    "start_ns": 1793990056724932200
+                  },
+                  "sender": 0,
+                  "sequence": 0,
+                  "signature": "hlbbZAkujzklgSoWp6Bwb24issNnov+ePCE1LKs/Cnp19ibohRH3YKkXSRF2vSacMrGRvuSuwQ6W3PEZG+JRDA==",
+                  "type": "PREPARE",
+                  "view": 0
+                },
+                {
+                  "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                  "group": -1,
+                  "payload": {
+                    "start_ns": 1793990056724932200
+                  },
+                  "sender": 2,
+                  "sequence": 0,
+                  "signature": "W/i/+0iVlAP6Ib/o/3J8yvuOt3caLfTss9YN73sxdUnYEH5paZJ657kedZdYvET7Od5zLT0Cf9SSrDLLrRQ1DA==",
+                  "type": "PREPARE",
+                  "view": 0
+                }
+              ],
+              "preprepare": {
+                "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                "group": -1,
+                "payload": {
+                  "start_ns": 1793990056724932200
+                },
+                "sender": 0,
+                "sequence": 0,
+                "signature": "uajQs4T/3UDjxvM3AUwu++NFXuBW5FmeHpR0130vQiHmktlO/5yBzkaDi57j2/HDu/YTHK6HOCSPBMXAaQYBBw==",
+                "type": "PRE_PREPARE",
+                "view": 0
+              }
+            },
+            "sender": 1,
+            "sequence": 0,
+            "signature": "4gsnsiUDT/6wW3SaHvXh7Mhsf7DgVygW9Ctc5ICL9DXeKncmruWyNbdpduqudcBFEVR1SezJz06BOM0In3b8Cw==",
+            "type": "PBFT_PREPARED",
+            "view": 0
+          },
+          "start_ns": 1793990056724932200
+        },
+        "sender": 1,
+        "sequence": 0,
+        "signature": "LU4Z+DYTaBqqLnPgTyTa7A4cPJnB9UtRdw3yMfCqFK+A/Sf3s6H9UfT5kFyCz0jNABj+M5CazjsnfxNjPaGcAw==",
+        "type": "VIEW_CHANGE",
+        "view": 1
+      },
+      {
+        "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+        "group": -1,
+        "payload": {
+          "prepared": {
+            "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+            "group": -1,
+            "payload": {
+              "prepares": [
+                {
+                  "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                  "group": -1,
+                  "payload": {
+                    "start_ns": 1793990056724932200
+                  },
+                  "sender": 2,
+                  "sequence": 0,
+                  "signature": "W/i/+0iVlAP6Ib/o/3J8yvuOt3caLfTss9YN73sxdUnYEH5paZJ657kedZdYvET7Od5zLT0Cf9SSrDLLrRQ1DA==",
+                  "type": "PREPARE",
+                  "view": 0
+                },
+                {
+                  "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                  "group": -1,
+                  "payload": {
+                    "start_ns": 1793990056724932200
+                  },
+                  "sender": 0,
+                  "sequence": 0,
+                  "signature": "hlbbZAkujzklgSoWp6Bwb24issNnov+ePCE1LKs/Cnp19ibohRH3YKkXSRF2vSacMrGRvuSuwQ6W3PEZG+JRDA==",
+                  "type": "PREPARE",
+                  "view": 0
+                },
+                {
+                  "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                  "group": -1,
+                  "payload": {
+                    "start_ns": 1793990056724932200
+                  },
+                  "sender": 1,
+                  "sequence": 0,
+                  "signature": "x92gZ9ISFMS9fqHAoP/rIK/Cbihmt+Dv/OcRtrVFmR9vPwuehfv8Fn4xxZKpFHR8JDbTMc4us0p7TSikODrbDg==",
+                  "type": "PREPARE",
+                  "view": 0
+                }
+              ],
+              "preprepare": {
+                "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                "group": -1,
+                "payload": {
+                  "start_ns": 1793990056724932200
+                },
+                "sender": 0,
+                "sequence": 0,
+                "signature": "uajQs4T/3UDjxvM3AUwu++NFXuBW5FmeHpR0130vQiHmktlO/5yBzkaDi57j2/HDu/YTHK6HOCSPBMXAaQYBBw==",
+                "type": "PRE_PREPARE",
+                "view": 0
+              }
+            },
+            "sender": 2,
+            "sequence": 0,
+            "signature": "3PRKnkiu7aKP162qdw2Ff7cW5Iw546ZRDMHNcJTdkzGHwxWBwOBdb/C1t9/N2NVuBvdPVUJKP+NPzk5WDZfqDg==",
+            "type": "PBFT_PREPARED",
+            "view": 0
+          },
+          "start_ns": 1793990056724932200
+        },
+        "sender": 2,
+        "sequence": 0,
+        "signature": "tk47CgH8AHVASL8aPjDPYxrHN5C9w3J6nK7W+Ta8nGRmc7hlMHQvumpTEg/aXEkBQ1zwSXuIRqrKy3IDYkl2Cg==",
+        "type": "VIEW_CHANGE",
+        "view": 1
+      },
+      {
+        "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+        "group": -1,
+        "payload": {
+          "prepared": {
+            "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+            "group": -1,
+            "payload": {
+              "prepares": [
+                {
+                  "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                  "group": -1,
+                  "payload": {
+                    "start_ns": 1793990056724932200
+                  },
+                  "sender": 3,
+                  "sequence": 0,
+                  "signature": "fprxJwi7D/zZ8hXi/NpQXnrXu0vGC7FITB4qdSbnpYf7kvuFbmnuwSKjG46uaw4Z72D5U/h+aZbn1zx/cjLoDg==",
+                  "type": "PREPARE",
+                  "view": 0
+                },
+                {
+                  "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                  "group": -1,
+                  "payload": {
+                    "start_ns": 1793990056724932200
+                  },
+                  "sender": 0,
+                  "sequence": 0,
+                  "signature": "hlbbZAkujzklgSoWp6Bwb24issNnov+ePCE1LKs/Cnp19ibohRH3YKkXSRF2vSacMrGRvuSuwQ6W3PEZG+JRDA==",
+                  "type": "PREPARE",
+                  "view": 0
+                },
+                {
+                  "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                  "group": -1,
+                  "payload": {
+                    "start_ns": 1793990056724932200
+                  },
+                  "sender": 1,
+                  "sequence": 0,
+                  "signature": "x92gZ9ISFMS9fqHAoP/rIK/Cbihmt+Dv/OcRtrVFmR9vPwuehfv8Fn4xxZKpFHR8JDbTMc4us0p7TSikODrbDg==",
+                  "type": "PREPARE",
+                  "view": 0
+                }
+              ],
+              "preprepare": {
+                "digest": "997fb2cebaa042d169cb09dbfd5d6e2e956a7a95b1fba5a7ec91e13bd09c8770",
+                "group": -1,
+                "payload": {
+                  "start_ns": 1793990056724932200
+                },
+                "sender": 0,
+                "sequence": 0,
+                "signature": "uajQs4T/3UDjxvM3AUwu++NFXuBW5FmeHpR0130vQiHmktlO/5yBzkaDi57j2/HDu/YTHK6HOCSPBMXAaQYBBw==",
+                "type": "PRE_PREPARE",
+                "view": 0
+              }
+            },
+            "sender": 3,
+            "sequence": 0,
+            "signature": "H0OYiMSZL9q+QOuWl14YBzu0I8jKf0Tw0/CTaAa5GVUTs0gNG1SSbr4IIyNuVdNvFNyHCEvHTEpDF7LAm5QcAQ==",
+            "type": "PBFT_PREPARED",
+            "view": 0
+          },
+          "start_ns": 1793990056724932200
+        },
+        "sender": 3,
+        "sequence": 0,
+        "signature": "Pny0cQ1KboW4bPmOHW/2njBDOigPvNcE8b3gZoerlROOxH6y3lhtnIyfS04cVttvylNmDFg5YV+0w3pker1GAg==",
+        "type": "VIEW_CHANGE",
+        "view": 1
+      }
+    ]
+  },
+  "sender": 1,
+  "sequence": 0,
+  "signature": "7MhqmPBEwDIjdHE3FZRfE1Hi+rta6Ols+9VgDmMaf6h4MWkqrWZRkpPZhQa0hU34rPNu85DYian8YgsYwqfzAA==",
+  "type": "NEW_VIEW",
+  "view": 1
+}

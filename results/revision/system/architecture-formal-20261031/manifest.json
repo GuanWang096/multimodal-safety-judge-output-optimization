@@ -1,0 +1,64 @@
+{
+  "arms": [
+    "signed_log",
+    "fabric",
+    "full"
+  ],
+  "count": 16,
+  "judge_ids": {
+    "internvl": "architecture-formal-20261031::internvl",
+    "minicpm": "architecture-formal-20261031::minicpm",
+    "qwen": "architecture-formal-20261031::qwen",
+    "safework": "architecture-formal-20261031::safework"
+  },
+  "key_mode": "original_public_deterministic_protocol_fixture; random_in_memory_log_owner",
+  "not_measured": [
+    "independent_organization_control",
+    "power_loss_recovery",
+    "production_security",
+    "label_settlement",
+    "GPU_inference"
+  ],
+  "order": "cyclic_rotation_by_block",
+  "owner_public_key": "04aa19f6bcffb0a70677ecfe389581df7625f1ad862b824cba3be1577d5b9c8a",
+  "repeats": 3,
+  "sample_ids": [
+    "mmds:test:4155:4154",
+    "mmds:test:4159:4158",
+    "mmds:test:4165:4164",
+    "mmds:test:4169:4168",
+    "mmds:test:4173:4172",
+    "mmds:test:4175:4174",
+    "mmds:test:4177:4176",
+    "mmds:test:4179:4178",
+    "mmds:test:4180:4179",
+    "mmds:test:4181:4180",
+    "mmds:test:4186:4185",
+    "mmds:test:4187:4186",
+    "mmds:test:4189:4188",
+    "mmds:test:4191:4190",
+    "mmds:test:4193:4192",
+    "mmds:test:4194:4193"
+  ],
+  "session": "architecture-formal-20261031",
+  "source_sha256": {
+    "v15/experiments/exp-multijudge/mj5_common.py": "1c3b49d547b166cc008a061decfb1a70a5fd01a64cf8e62c79b8f59b7921375b",
+    "v15/experiments/exp-multijudge/mj5_fabric_client.py": "200ade64e3b2aa68e6c023bf47281f5553fbc84a267da996df285fd318ccbdd3",
+    "v15/experiments/exp-multijudge/mj5_rgg_bridge.py": "9ff392074ac0f8344cf0cb79a11349b7584afad130d4ef955d06d102bded7aeb",
+    "v15/experiments/revision-r1-20261030/REMAINING_LOCAL.md": "139366041013b4cea19fbb40b0050718554910af1cccaab9833b6e75b968db60",
+    "v15/experiments/revision-r1-20261030/run_architecture.py": "f0cbaea7b8abec0adcc07cb0e67039d90aaefbb4284e4db44a0ff8a11d979ac0",
+    "v15/results/multijudge-v15/mj5/workload/j3_manifest.json": "c8c54a0e75a30e2040228fa451af6ea13124a8f5035d471b2951dc92baec571d",
+    "v15/results/multijudge-v15/mj5/workload/registrations.json": "f256814701fa0f3dc4f584736b9e2ce91b12498d7feedfaa55633a485892375c",
+    "v15/results/multijudge-v15/mj5/workload/system_selection.json": "1e8f38fd8b670880abbbb1e77f23924857ece7073305fd53ac45edc41dbebd4c",
+    "v15/src/rggpbft/collector_v2.py": "001c5eb59bce461e8bd21400d8a1c269dbca5b5bc152cd01e3bf7ddf77ae2983",
+    "v15/src/rggpbft/driver_v2.py": "503f1d130434b341896021a674969b334a557755a392eb467153b59c5987d7a1",
+    "v15/src/rggpbft/fault_policy.py": "bac511487be5140a4fab945360f5fee6d9f62dca0c4193a336a1b5bbdc46428b",
+    "v15/src/rggpbft/grouping.py": "df59fdecd5024eef88409ba6728806b65d18e0280596e84bcd5034b727c944aa",
+    "v15/src/rggpbft/node_v2.py": "97f19a718ee7d43f70c177baeca10f9de44ab867256c1e674e5d9793f46e6994",
+    "v15/src/rggpbft/protocol.py": "f1561f864c9a1353b4ac20ef7a0ab9e772828989bceaccda8caf2d3b54861ab0",
+    "v15/src/rggpbft/run_v2.py": "ec4b82f12c1fdd4f2f7e5d98580b20e87f7624bcbb2759a2f416c546ffc8e364",
+    "v15/src/rggpbft/view_change.py": "deb0b5ea2625bfbd72e7822b033429b5a94d6a574dc859f4f7682347e02ad7bc",
+    "v15/src/rggpbft/view_runtime.py": "49957fd65cd6f4ca20f59fb1a4ecc65f35e6b7fdd921ac211c74ea03a27a84ae"
+  },
+  "timing": "warm_services_IPFS_add_to_endpoint_receipt_readback_including_CLI_capture_and_full_docker_exec"
+}

@@ -1,0 +1,170 @@
+{
+  "after": {
+    "minicpm": {
+      "adapterVersion": "minicpm-v4.5-binary-judge-v2",
+      "gSafePpm": 990291,
+      "gUnsafePpm": 287879,
+      "judgeId": "r1-20261030-v4-lock0-c16-r2::minicpm",
+      "lastSettlementAtUnix": 1793369899,
+      "modelId": "OpenBMB/MiniCPM-V-4_5",
+      "modelRevision": "2626e837a54905aab70fae9325153ef3454387ab",
+      "organization": "OpenBMB",
+      "policySha256": "18ea5fc49baf2c5e0ad2bfe441a5d7dad4926186f76276a59288e5fef37cb9e6",
+      "publicKeyFingerprint": "235274b19efaac6cb0df5484452e5f3ea47ea8c014f46b027c75bd769f33e102",
+      "publicKeyHex": "3e3c351fe22213dc66d5be2a854da2f22259b10e8fae1a27891af673a933350c",
+      "registeredAtUnix": 1793369617,
+      "safeCorrectMicro": 102000000,
+      "safeIncorrectMicro": 1000000,
+      "unsafeCorrectMicro": 19000000,
+      "unsafeIncorrectMicro": 47000000,
+      "version": 88
+    },
+    "qwen": {
+      "adapterVersion": "qwen3-vl-binary-judge-v4",
+      "gSafePpm": 980583,
+      "gUnsafePpm": 515152,
+      "judgeId": "r1-20261030-v4-lock0-c16-r2::qwen",
+      "lastSettlementAtUnix": 1793369899,
+      "modelId": "Qwen/Qwen3-VL-8B-Instruct",
+      "modelRevision": "5d854aab08710c16b980ec6d603d863b3821b915",
+      "organization": "Qwen",
+      "policySha256": "18ea5fc49baf2c5e0ad2bfe441a5d7dad4926186f76276a59288e5fef37cb9e6",
+      "publicKeyFingerprint": "4368f9605d97d18eea08b9918b779e22e2f93d13c4d403a2de658171ad47727d",
+      "publicKeyHex": "ff4b55d2edb2eee0bcad9b1b1349cc68fe6b34cf237c500ff3edc2405973a11f",
+      "registeredAtUnix": 1793369620,
+      "safeCorrectMicro": 101000000,
+      "safeIncorrectMicro": 2000000,
+      "unsafeCorrectMicro": 34000000,
+      "unsafeIncorrectMicro": 32000000,
+      "version": 88
+    },
+    "safework": {
+      "adapterVersion": "safework-rm-safety-turnwise-v5",
+      "gSafePpm": 941748,
+      "gUnsafePpm": 772727,
+      "judgeId": "r1-20261030-v4-lock0-c16-r2::safework",
+      "lastSettlementAtUnix": 1793369899,
+      "modelId": "AI45Research/SafeWork-RM-Safety-7B",
+      "modelRevision": "be345f29425fe94586c0598785a143703bbbc4fc",
+      "organization": "AI45Research",
+      "policySha256": "18ea5fc49baf2c5e0ad2bfe441a5d7dad4926186f76276a59288e5fef37cb9e6",
+      "publicKeyFingerprint": "e4983ba7608066c371090161af6bd43180e73199f863dcc9c7a0d8275be84492",
+      "publicKeyHex": "7278907ed353c3b657aa257941590454f7b5983de091e2fe61732fb1b0c0d218",
+      "registeredAtUnix": 1793369624,
+      "safeCorrectMicro": 97000000,
+      "safeIncorrectMicro": 6000000,
+      "unsafeCorrectMicro": 51000000,
+      "unsafeIncorrectMicro": 15000000,
+      "version": 88
+    }
+  },
+  "before": {
+    "minicpm": {
+      "adapterVersion": "minicpm-v4.5-binary-judge-v2",
+      "gSafePpm": 979167,
+      "gUnsafePpm": 294118,
+      "judgeId": "r1-20261030-v4-lock0-c16-r2::minicpm",
+      "modelId": "OpenBMB/MiniCPM-V-4_5",
+      "modelRevision": "2626e837a54905aab70fae9325153ef3454387ab",
+      "organization": "OpenBMB",
+      "policySha256": "18ea5fc49baf2c5e0ad2bfe441a5d7dad4926186f76276a59288e5fef37cb9e6",
+      "publicKeyFingerprint": "235274b19efaac6cb0df5484452e5f3ea47ea8c014f46b027c75bd769f33e102",
+      "publicKeyHex": "3e3c351fe22213dc66d5be2a854da2f22259b10e8fae1a27891af673a933350c",
+      "registeredAtUnix": 1793369617,
+      "safeCorrectMicro": 47000000,
+      "safeIncorrectMicro": 1000000,
+      "unsafeCorrectMicro": 10000000,
+      "unsafeIncorrectMicro": 24000000,
+      "version": 1
+    },
+    "qwen": {
+      "adapterVersion": "qwen3-vl-binary-judge-v4",
+      "gSafePpm": 958333,
+      "gUnsafePpm": 558824,
+      "judgeId": "r1-20261030-v4-lock0-c16-r2::qwen",
+      "modelId": "Qwen/Qwen3-VL-8B-Instruct",
+      "modelRevision": "5d854aab08710c16b980ec6d603d863b3821b915",
+      "organization": "Qwen",
+      "policySha256": "18ea5fc49baf2c5e0ad2bfe441a5d7dad4926186f76276a59288e5fef37cb9e6",
+      "publicKeyFingerprint": "4368f9605d97d18eea08b9918b779e22e2f93d13c4d403a2de658171ad47727d",
+      "publicKeyHex": "ff4b55d2edb2eee0bcad9b1b1349cc68fe6b34cf237c500ff3edc2405973a11f",
+      "registeredAtUnix": 1793369620,
+      "safeCorrectMicro": 46000000,
+      "safeIncorrectMicro": 2000000,
+      "unsafeCorrectMicro": 19000000,
+      "unsafeIncorrectMicro": 15000000,
+      "version": 1
+    },
+    "safework": {
+      "adapterVersion": "safework-rm-safety-turnwise-v5",
+      "gSafePpm": 916667,
+      "gUnsafePpm": 764706,
+      "judgeId": "r1-20261030-v4-lock0-c16-r2::safework",
+      "modelId": "AI45Research/SafeWork-RM-Safety-7B",
+      "modelRevision": "be345f29425fe94586c0598785a143703bbbc4fc",
+      "organization": "AI45Research",
+      "policySha256": "18ea5fc49baf2c5e0ad2bfe441a5d7dad4926186f76276a59288e5fef37cb9e6",
+      "publicKeyFingerprint": "e4983ba7608066c371090161af6bd43180e73199f863dcc9c7a0d8275be84492",
+      "publicKeyHex": "7278907ed353c3b657aa257941590454f7b5983de091e2fe61732fb1b0c0d218",
+      "registeredAtUnix": 1793369624,
+      "safeCorrectMicro": 44000000,
+      "safeIncorrectMicro": 4000000,
+      "unsafeCorrectMicro": 26000000,
+      "unsafeIncorrectMicro": 8000000,
+      "version": 1
+    }
+  },
+  "checks": {
+    "minicpm": {
+      "actual": {
+        "safeCorrectMicro": 102000000,
+        "safeIncorrectMicro": 1000000,
+        "unsafeCorrectMicro": 19000000,
+        "unsafeIncorrectMicro": 47000000,
+        "version": 88
+      },
+      "expected": {
+        "safeCorrectMicro": 102000000,
+        "safeIncorrectMicro": 1000000,
+        "unsafeCorrectMicro": 19000000,
+        "unsafeIncorrectMicro": 47000000,
+        "version": 88
+      },
+      "matches": true
+    },
+    "qwen": {
+      "actual": {
+        "safeCorrectMicro": 101000000,
+        "safeIncorrectMicro": 2000000,
+        "unsafeCorrectMicro": 34000000,
+        "unsafeIncorrectMicro": 32000000,
+        "version": 88
+      },
+      "expected": {
+        "safeCorrectMicro": 101000000,
+        "safeIncorrectMicro": 2000000,
+        "unsafeCorrectMicro": 34000000,
+        "unsafeIncorrectMicro": 32000000,
+        "version": 88
+      },
+      "matches": true
+    },
+    "safework": {
+      "actual": {
+        "safeCorrectMicro": 97000000,
+        "safeIncorrectMicro": 6000000,
+        "unsafeCorrectMicro": 51000000,
+        "unsafeIncorrectMicro": 15000000,
+        "version": 88
+      },
+      "expected": {
+        "safeCorrectMicro": 97000000,
+        "safeIncorrectMicro": 6000000,
+        "unsafeCorrectMicro": 51000000,
+        "unsafeIncorrectMicro": 15000000,
+        "version": 88
+      },
+      "matches": true
+    }
+  }
+}

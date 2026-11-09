@@ -1,0 +1,36 @@
+{
+  "id": "eba16fef0482d416da674d85c08d27f03f94947ddc9d77878d19de3811d8ad29",
+  "name": "zte-identityfix-20261102-candidate-0",
+  "image": "sha256:1d16f1669bf445755a2342b22d02b329db140472c36606a797da2d45218b7355",
+  "user": "1000:1000",
+  "network": "none",
+  "readonly_rootfs": true,
+  "cap_drop": [
+    "ALL"
+  ],
+  "security_opt": [
+    "no-new-privileges"
+  ],
+  "mounts": [
+    {
+      "destination": "/fixture/key_fixture_worker.py",
+      "rw": false,
+      "type": "bind"
+    },
+    {
+      "destination": "/fixture/public_registry.json",
+      "rw": false,
+      "type": "bind"
+    },
+    {
+      "destination": "/run/node-secrets",
+      "rw": false,
+      "type": "bind"
+    },
+    {
+      "destination": "/fixture/protocol",
+      "rw": false,
+      "type": "bind"
+    }
+  ]
+}

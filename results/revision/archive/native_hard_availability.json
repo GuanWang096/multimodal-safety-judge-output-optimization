@@ -1,0 +1,110 @@
+{
+  "archive": "v15\\results\\multijudge-v15\\softfusion\\softfusion-confirmatory-raw-20260731.tar.gz",
+  "archive_sha256": "b699631ae7c3f7a924bc910fa3635ab2bf96716638e0ff19516190b05151471f",
+  "target_records": 513,
+  "branches": [
+    {
+      "judge": "qwen",
+      "records": 513,
+      "matches_confirmation_ids": true,
+      "archive_matches_extracted_file": true,
+      "hard_regression_config": false,
+      "hard_regression_records": 0,
+      "top_level_field_counts": {
+        "schema": 513,
+        "score_schema_version": 513,
+        "sample_id": 513,
+        "dataset": 513,
+        "split": 513,
+        "conversation_sha256": 513,
+        "target_response_sha256": 513,
+        "image_hashes": 513,
+        "judge_service": 513,
+        "policy_id": 513,
+        "policy_version": 513,
+        "policy_sha256": 513,
+        "input_mode": 513,
+        "prompt_hashes": 513,
+        "soft_evidence": 513,
+        "latency_ms_total": 513,
+        "peak_vram_gib_max": 513,
+        "input_tokens": 513,
+        "runtime": 513,
+        "consistency_view": 513
+      },
+      "score_methods": {
+        "symmetric_binary_codebook_next_token": 513
+      }
+    },
+    {
+      "judge": "safework",
+      "records": 513,
+      "matches_confirmation_ids": true,
+      "archive_matches_extracted_file": true,
+      "hard_regression_config": false,
+      "hard_regression_records": 0,
+      "top_level_field_counts": {
+        "schema": 513,
+        "score_schema_version": 513,
+        "sample_id": 513,
+        "dataset": 513,
+        "split": 513,
+        "conversation_sha256": 513,
+        "target_response_sha256": 513,
+        "image_hashes": 513,
+        "judge_service": 513,
+        "policy_id": 513,
+        "policy_version": 513,
+        "policy_sha256": 513,
+        "input_mode": 513,
+        "prompt_hashes": 513,
+        "soft_evidence": 513,
+        "latency_ms_total": 513,
+        "peak_vram_gib_max": 513,
+        "input_tokens": 513,
+        "runtime": 513,
+        "consistency_view": 513
+      },
+      "score_methods": {
+        "native_label_sequence_likelihood": 513
+      }
+    },
+    {
+      "judge": "minicpm",
+      "records": 513,
+      "matches_confirmation_ids": true,
+      "archive_matches_extracted_file": true,
+      "hard_regression_config": false,
+      "hard_regression_records": 0,
+      "top_level_field_counts": {
+        "schema": 513,
+        "score_schema_version": 513,
+        "sample_id": 513,
+        "dataset": 513,
+        "split": 513,
+        "conversation_sha256": 513,
+        "target_response_sha256": 513,
+        "image_hashes": 513,
+        "judge_service": 513,
+        "policy_id": 513,
+        "policy_version": 513,
+        "policy_sha256": 513,
+        "input_mode": 513,
+        "prompt_hashes": 513,
+        "soft_evidence": 513,
+        "latency_ms_total": 513,
+        "peak_vram_gib_max": 513,
+        "input_tokens": 513,
+        "runtime": 513,
+        "consistency_view": 513
+      },
+      "score_methods": {
+        "symmetric_binary_codebook_next_token": 513
+      }
+    }
+  ],
+  "other_hard_candidate_members": [],
+  "scope": "this_exact_local_confirmation_archive_only; not_a_claim_about_all_remote_or_private_archives",
+  "interpretation": "soft_evidence.predicted_label and native_candidate_distribution labels are score-derived, not independently generated direct-hard outputs",
+  "complete_aligned_native_hard_panel_available_here": false
+}

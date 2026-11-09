@@ -1,0 +1,31 @@
+{
+  "id": "6e8db7791cee3231d0bab6ec13a68eb1dfd5c653d2f1de71833d3096fa8a4d3d",
+  "image": "sha256:1d16f1669bf445755a2342b22d02b329db140472c36606a797da2d45218b7355",
+  "user": "1000:1000",
+  "network": "none",
+  "readonly_rootfs": true,
+  "cap_drop": [
+    "ALL"
+  ],
+  "security_opt": [
+    "no-new-privileges"
+  ],
+  "mounts": [
+    {
+      "destination": "/fixture/protocol",
+      "rw": false
+    },
+    {
+      "destination": "/fixture/worker.py",
+      "rw": false
+    },
+    {
+      "destination": "/fixture/public_registry.json",
+      "rw": false
+    },
+    {
+      "destination": "/run/node-secrets",
+      "rw": false
+    }
+  ]
+}

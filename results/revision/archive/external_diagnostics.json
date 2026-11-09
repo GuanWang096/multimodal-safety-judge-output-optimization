@@ -1,0 +1,248 @@
+{
+  "role": "archived_posthoc_diagnostic_recomputation_no_new_inference_or_training",
+  "beaver": [
+    {
+      "family": "soft_logits",
+      "adaptation_groups": 25,
+      "labeled_record_counts": [
+        50
+      ],
+      "repeats": 30,
+      "mean_macro_f1_delta": 0.0009888635494553063,
+      "split_variability_interval": [
+        -0.05287208112995577,
+        0.022564345908785415
+      ],
+      "positive_delta_fraction": 0.6666666666666666
+    },
+    {
+      "family": "soft_logits",
+      "adaptation_groups": 50,
+      "labeled_record_counts": [
+        100
+      ],
+      "repeats": 30,
+      "mean_macro_f1_delta": 0.009588570714870851,
+      "split_variability_interval": [
+        -0.030793337895094457,
+        0.021104928081391278
+      ],
+      "positive_delta_fraction": 0.9
+    },
+    {
+      "family": "soft_logits",
+      "adaptation_groups": 100,
+      "labeled_record_counts": [
+        200
+      ],
+      "repeats": 30,
+      "mean_macro_f1_delta": 0.011652197199845045,
+      "split_variability_interval": [
+        -0.005722983565923432,
+        0.0236420359098865
+      ],
+      "positive_delta_fraction": 0.9333333333333333
+    },
+    {
+      "family": "soft_logits",
+      "adaptation_groups": 150,
+      "labeled_record_counts": [
+        300
+      ],
+      "repeats": 30,
+      "mean_macro_f1_delta": 0.013337220731112905,
+      "split_variability_interval": [
+        0.00030628617155303297,
+        0.021564741154412204
+      ],
+      "positive_delta_fraction": 0.9666666666666667
+    },
+    {
+      "family": "soft_logits",
+      "adaptation_groups": 200,
+      "labeled_record_counts": [
+        400
+      ],
+      "repeats": 30,
+      "mean_macro_f1_delta": 0.0161057043483106,
+      "split_variability_interval": [
+        0.0038295771374053196,
+        0.026476439424095544
+      ],
+      "positive_delta_fraction": 0.9666666666666667
+    },
+    {
+      "family": "soft_plus_vote",
+      "adaptation_groups": 25,
+      "labeled_record_counts": [
+        50
+      ],
+      "repeats": 30,
+      "mean_macro_f1_delta": -0.001920101155597568,
+      "split_variability_interval": [
+        -0.0660946465404056,
+        0.021308014671477138
+      ],
+      "positive_delta_fraction": 0.6666666666666666
+    },
+    {
+      "family": "soft_plus_vote",
+      "adaptation_groups": 50,
+      "labeled_record_counts": [
+        100
+      ],
+      "repeats": 30,
+      "mean_macro_f1_delta": 0.009652898634654232,
+      "split_variability_interval": [
+        -0.01204393606061896,
+        0.02100742288258602
+      ],
+      "positive_delta_fraction": 0.9
+    },
+    {
+      "family": "soft_plus_vote",
+      "adaptation_groups": 100,
+      "labeled_record_counts": [
+        200
+      ],
+      "repeats": 30,
+      "mean_macro_f1_delta": 0.011525624326603319,
+      "split_variability_interval": [
+        -0.004944119751103326,
+        0.023085650507196766
+      ],
+      "positive_delta_fraction": 0.8666666666666667
+    },
+    {
+      "family": "soft_plus_vote",
+      "adaptation_groups": 150,
+      "labeled_record_counts": [
+        300
+      ],
+      "repeats": 30,
+      "mean_macro_f1_delta": 0.01313308639210049,
+      "split_variability_interval": [
+        -0.0007387654836037148,
+        0.023552626849172167
+      ],
+      "positive_delta_fraction": 0.9666666666666667
+    },
+    {
+      "family": "soft_plus_vote",
+      "adaptation_groups": 200,
+      "labeled_record_counts": [
+        400
+      ],
+      "repeats": 30,
+      "mean_macro_f1_delta": 0.013121772091548734,
+      "split_variability_interval": [
+        -0.013260039223838414,
+        0.027197504853556115
+      ],
+      "positive_delta_fraction": 0.9
+    }
+  ],
+  "falcon": {
+    "feature_names": [
+      "qwen",
+      "safework",
+      "minicpm"
+    ],
+    "patterns": [
+      {
+        "votes": [
+          0,
+          0,
+          0
+        ],
+        "unsafe_probability": 0.11716165737820491,
+        "adapted_hard_decision": 0,
+        "majority_decision": 0
+      },
+      {
+        "votes": [
+          0,
+          0,
+          1
+        ],
+        "unsafe_probability": 0.23175202032287512,
+        "adapted_hard_decision": 0,
+        "majority_decision": 0
+      },
+      {
+        "votes": [
+          0,
+          1,
+          0
+        ],
+        "unsafe_probability": 0.3157880197185417,
+        "adapted_hard_decision": 0,
+        "majority_decision": 0
+      },
+      {
+        "votes": [
+          0,
+          1,
+          1
+        ],
+        "unsafe_probability": 0.5119842471772356,
+        "adapted_hard_decision": 1,
+        "majority_decision": 1
+      },
+      {
+        "votes": [
+          1,
+          0,
+          0
+        ],
+        "unsafe_probability": 0.34564535115135536,
+        "adapted_hard_decision": 0,
+        "majority_decision": 0
+      },
+      {
+        "votes": [
+          1,
+          0,
+          1
+        ],
+        "unsafe_probability": 0.5455995839172515,
+        "adapted_hard_decision": 1,
+        "majority_decision": 1
+      },
+      {
+        "votes": [
+          1,
+          1,
+          0
+        ],
+        "unsafe_probability": 0.6475197248386413,
+        "adapted_hard_decision": 1,
+        "majority_decision": 1
+      },
+      {
+        "votes": [
+          1,
+          1,
+          1
+        ],
+        "unsafe_probability": 0.8067918160752999,
+        "adapted_hard_decision": 1,
+        "majority_decision": 1
+      }
+    ],
+    "all_eight_patterns_equal_majority": true,
+    "archived_confirmation_records_checked": 1068,
+    "max_posterior_reconstruction_error": 0.0,
+    "hard_decision_disagreements": 0
+  },
+  "interpretation": [
+    "Beaver results are existing post-hoc adaptation-budget diagnostics; intervals describe repeated-split variability, not confirmation CIs.",
+    "Falcon equality applies to this archived fitted binary-feature rule at its frozen threshold, not to every logistic model or its probability values.",
+    "No claim of unchanged cross-domain superiority or statistically established Falcon superiority."
+  ],
+  "inputs": {
+    "v15/Multimedia Systems paper/multijudge-reproduction-github/results/external/beavertails_v/adaptation_budget_diagnostic.json": "b257149f66d4d100f5e6d980eaa76be69db2f4c4bfb4ef2214f4dcd87dfde3ec",
+    "v15/Multimedia Systems paper/multijudge-reproduction-github/results/external/falcon_test/adapted_models.json": "1875689a011b3d3f0fc46b00ac5e63c589b759b51ea5795c25e5ece560e5aeef",
+    "v15/Multimedia Systems paper/multijudge-reproduction-github/results/external/falcon_test/confirmation_predictions_labeled.jsonl": "81d23f7dbd867cab273f2f27eb7040c18302abf9bf21d911806aa4885d15ee9e"
+  }
+}

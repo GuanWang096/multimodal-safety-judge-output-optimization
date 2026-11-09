@@ -1,0 +1,42 @@
+{
+  "preflight_pass": true,
+  "go_version": "go version go1.22.2 linux/amd64",
+  "source": "/mnt/c/Users/guan/Desktop/zte-sci/v15/src/fabric_chaincode",
+  "network": "disabled_by_GOPROXY_off",
+  "command": [
+    "go",
+    "test",
+    "-json",
+    "-count=1",
+    "-p=1",
+    "-run",
+    "^(TestMJ5|TestCertificateQuorumForMemberCount)",
+    "./core"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 2.1491753420013993,
+  "source_sha256": {
+    "v15/src/fabric_chaincode/core/canonical.go": "91ec99ba032a61ca240292e3a086c7a15eb46e95ed0cbe2ef5bcbeb4494d035e",
+    "v15/src/fabric_chaincode/core/errors.go": "05123b81aa14f277c0d94ddf34222db7676cbb4f6b68501faf90bb682d834ae9",
+    "v15/src/fabric_chaincode/core/keys.go": "11d8d080a8c10e0c4fa89cf8f8fafd86c419b21ba8d7ec4803161c2065c287c4",
+    "v15/src/fabric_chaincode/core/mj5_canonical.go": "e991c56a509495e4308238c1376a1a23a44c43db632955058b6f191855aaee69",
+    "v15/src/fabric_chaincode/core/mj5_keys.go": "53beb5c48a3a4ced276d25d8f4fa45d48137a762ea67a4028089ed1061d4b860",
+    "v15/src/fabric_chaincode/core/mj5_models.go": "19401bee3e26d9afda581d30a47257b378a619087b0023da0ad10cb04a5ab9d0",
+    "v15/src/fabric_chaincode/core/mj5_service.go": "8ea07c5df6e1172c1e2d12797c0abd585a48404fc7e97de8e42a5d83200f59e6",
+    "v15/src/fabric_chaincode/core/mj5_service_test.go": "74afa91adb2d6a147301e25724726e3f2e92612b94d7bd9399e5cf9111141c04",
+    "v15/src/fabric_chaincode/core/models.go": "bdb064f164db3b2eda3044fdf366632f15e37ce23834ce8dbdaf41aad9608eb4",
+    "v15/src/fabric_chaincode/core/service.go": "428a058ed8e38936b397d5e80a7c9362ff21353075ed1e93bc63190af6a87bf5",
+    "v15/src/fabric_chaincode/core/service_test.go": "6b021d05e5783609e1a89f908780eb663d4599406457bf32a7af9e1cff6960a5",
+    "v15/src/fabric_chaincode/core/store.go": "4a8aa143a73349390ec35658914f343074528c82c924e1305c1b1848ee52d670",
+    "v15/src/fabric_chaincode/go.mod": "3177e35ae04b7b6e6c97f8e1ef50acbef69c352f237693576cfd6801b450176a",
+    "v15/src/fabric_chaincode/go.sum": "cfbe6fdfad8582acbe4422ec4a8558330b4e80640a31594115c49d56edeabd0e",
+    "v15/experiments/revision-r1-20261030/run_workflow_regressions.py": "529a932b10e8368fdcd173dd7e6b39253e109d7bf0d384f1267b7743e644ef41"
+  },
+  "sources_unchanged": true,
+  "top_level_tests": 12,
+  "subtests": 7,
+  "failed": [],
+  "skipped": [],
+  "evaluation_type": "original_contract_in_memory_transaction_fixture_not_live_organization_test",
+  "passed": true
+}

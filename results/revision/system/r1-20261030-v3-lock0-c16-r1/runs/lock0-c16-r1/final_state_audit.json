@@ -1,0 +1,1555 @@
+{
+  "attempt_cause_audit_complete": false,
+  "attempt_class_counts": {
+    "mvcc": 682,
+    "proposal_payload_mismatch": 0,
+    "unresolved_attempt": 4,
+    "valid": 86
+  },
+  "final_state_checks_pass": true,
+  "measurement_complete": true,
+  "note": "Final record states checked; four retained v3 attempts remain unclassified, not claimed MVCC/known invalid.",
+  "original_summary_state_retained": "failed",
+  "records": [
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0026",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0038",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0020",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0034",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0000",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0025",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0058",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0031",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0061",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0039",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0062",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0071",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0080",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0086",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0091",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0093",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0099",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0101",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0116",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0127",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0024",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0010",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0022",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0134",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0129",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0118",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0149",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0150",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "unresolved_attempt"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0139",
+      "digest_matches": true,
+      "final_status": "Certified",
+      "outcome": "retained_unknown_attempt_cause_final_not_settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0153",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "unresolved_attempt"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0032",
+      "digest_matches": true,
+      "final_status": "Certified",
+      "outcome": "retained_unknown_attempt_cause_final_not_settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0113",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0018",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0172",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0040",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0167",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0185",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0171",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0131",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0196",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0184",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0004",
+      "digest_matches": true,
+      "final_status": "Certified",
+      "outcome": "retry_exhausted"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0014",
+      "digest_matches": true,
+      "final_status": "Certified",
+      "outcome": "retry_exhausted"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0036",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0200",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0206",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0070",
+      "digest_matches": true,
+      "final_status": "Certified",
+      "outcome": "retry_exhausted"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0208",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0198",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0199",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0169",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0142",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0215",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0105",
+      "digest_matches": true,
+      "final_status": "Certified",
+      "outcome": "retry_exhausted"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0202",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0104",
+      "digest_matches": true,
+      "final_status": "Certified",
+      "outcome": "retry_exhausted"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0159",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0176",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0218",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0132",
+      "digest_matches": true,
+      "final_status": "Certified",
+      "outcome": "retry_exhausted"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0195",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0209",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0197",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0194",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0262",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0240",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0222",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0281",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0235",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0242",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0272",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0273",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0223",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0285",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0290",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0293",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0296",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0297",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0300",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0304",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0306",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0307",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0275",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0261",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0328",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "unresolved_attempt"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0251",
+      "digest_matches": true,
+      "final_status": "Certified",
+      "outcome": "retained_unknown_attempt_cause_final_not_settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "unresolved_attempt"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0324",
+      "digest_matches": true,
+      "final_status": "Certified",
+      "outcome": "retained_unknown_attempt_cause_final_not_settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0274",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0230",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0320",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0224",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0243",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0269",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0312",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0241",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    },
+    {
+      "attempt_classes": [
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "mvcc",
+        "valid"
+      ],
+      "decision_id": "r1-20261030-v3-lock0-c16-r1::lock0-c16-r1::0282",
+      "digest_matches": true,
+      "final_status": "Settled",
+      "outcome": "settled"
+    }
+  ]
+}

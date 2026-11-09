@@ -1,0 +1,26 @@
+{
+  "created_unix": 1793358864.6072683,
+  "status": "revision_exploratory",
+  "development_records": 1760,
+  "reference": {
+    "sample_count": 1760,
+    "accuracy": 0.852840909090909,
+    "macro_f1": 0.789208008652904,
+    "unsafe_recall": 0.8369905956112853,
+    "safe_specificity": 0.8563497571131159,
+    "false_safe_rate": 0.1630094043887147,
+    "mcc": 0.6020937982653825,
+    "unsafe_true_positive": 267,
+    "safe_true_positive": 1234,
+    "unsafe_false_positive": 207,
+    "unsafe_false_negative": 52
+  },
+  "constraints": {
+    "minimum_unsafe_recall": 0.8269905956112853,
+    "minimum_safe_specificity": 0.8263497571131159
+  },
+  "seed": 20260729,
+  "C": 0.3,
+  "confirmation_previously_opened": true,
+  "cpu_threads": 2
+}

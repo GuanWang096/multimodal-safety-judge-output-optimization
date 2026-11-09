@@ -1,0 +1,23 @@
+{
+  "all_state_checks_pass": true,
+  "attempt_count": 96,
+  "elapsed_seconds": 250.09881167299955,
+  "entry": {
+    "concurrency": 16,
+    "execution_batch_count": 2,
+    "judge_count": 3,
+    "lock_enabled": true,
+    "repeat": 1,
+    "run_id": "lock1-c16-r1",
+    "sample_count": 96
+  },
+  "failure_count": 0,
+  "mvcc_conflict_attempts": 0,
+  "record_count": 96,
+  "sampler_teardown_seconds_excluded": 2.0433437840001716,
+  "state": "completed",
+  "success_count": 96,
+  "successful_settlements_per_second": 0.38384828523503167,
+  "timing_scope": "driver_settlement_phase_including_queue_retries_and_final_snapshot_queries_excluding_sampler_teardown",
+  "unknown_outcome_attempts": 0
+}

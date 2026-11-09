@@ -1,0 +1,673 @@
+{
+  "failed": 0,
+  "passed": 8,
+  "sources_unchanged": true,
+  "traces": [
+    {
+      "case": "pbft-m4-locked",
+      "checks": [
+        {
+          "name": "all_frozen_voters_have_original_lock",
+          "pass": true
+        },
+        {
+          "name": "no_commit_before_release",
+          "pass": true
+        },
+        {
+          "name": "node_0_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "node_1_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "node_2_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "node_3_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "safe_selection_overrides_conflicting_fallback",
+          "pass": true
+        },
+        {
+          "name": "all_nodes_reject_conflicting_new_view",
+          "pass": true
+        },
+        {
+          "name": "invalid_message_does_not_advance_or_change_commit",
+          "pass": true
+        },
+        {
+          "name": "view_advanced_preserving_original_value",
+          "pass": true
+        },
+        {
+          "name": "locks_carried_before_new_round_votes",
+          "pass": true
+        },
+        {
+          "name": "previous_commits_not_cleared",
+          "pass": true
+        },
+        {
+          "name": "all_nodes_finish_original_value",
+          "pass": true
+        },
+        {
+          "name": "fixed_membership_and_ranking",
+          "pass": true
+        },
+        {
+          "name": "all_nodes_ignore_replayed_new_view",
+          "pass": true
+        },
+        {
+          "name": "no_conflicting_commit_event",
+          "pass": true
+        }
+      ],
+      "deliveries": 63,
+      "events": {
+        "COMMIT": 4,
+        "EQUIVOCATION_OBSERVED": 8,
+        "INVALID_NEW_VIEW": 4,
+        "NEW_VIEW_ACCEPTED": 4,
+        "PBFT_PREPARED": 4,
+        "PRE_PREPARE_SENT": 2,
+        "STALE_NEW_VIEW_IGNORED": 4
+      },
+      "groups": null,
+      "held_old_votes": 12,
+      "nodes": 4,
+      "passed": true,
+      "stage": "locked"
+    },
+    {
+      "case": "pbft-m4-committed",
+      "checks": [
+        {
+          "name": "all_frozen_voters_have_original_lock",
+          "pass": true
+        },
+        {
+          "name": "all_nodes_committed_before_view_change",
+          "pass": true
+        },
+        {
+          "name": "node_0_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "node_1_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "node_2_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "node_3_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "safe_selection_overrides_conflicting_fallback",
+          "pass": true
+        },
+        {
+          "name": "all_nodes_reject_conflicting_new_view",
+          "pass": true
+        },
+        {
+          "name": "invalid_message_does_not_advance_or_change_commit",
+          "pass": true
+        },
+        {
+          "name": "view_advanced_preserving_original_value",
+          "pass": true
+        },
+        {
+          "name": "locks_carried_before_new_round_votes",
+          "pass": true
+        },
+        {
+          "name": "previous_commits_not_cleared",
+          "pass": true
+        },
+        {
+          "name": "all_nodes_finish_original_value",
+          "pass": true
+        },
+        {
+          "name": "fixed_membership_and_ranking",
+          "pass": true
+        },
+        {
+          "name": "all_nodes_ignore_replayed_new_view",
+          "pass": true
+        },
+        {
+          "name": "no_conflicting_commit_event",
+          "pass": true
+        }
+      ],
+      "deliveries": 63,
+      "events": {
+        "COMMIT": 8,
+        "EQUIVOCATION_OBSERVED": 8,
+        "INVALID_NEW_VIEW": 4,
+        "NEW_VIEW_ACCEPTED": 4,
+        "PBFT_PREPARED": 4,
+        "PRE_PREPARE_SENT": 2,
+        "STALE_NEW_VIEW_IGNORED": 4
+      },
+      "groups": null,
+      "held_old_votes": 0,
+      "nodes": 4,
+      "passed": true,
+      "stage": "committed"
+    },
+    {
+      "case": "rgg-m16-locked",
+      "checks": [
+        {
+          "name": "all_frozen_voters_have_original_lock",
+          "pass": true
+        },
+        {
+          "name": "no_commit_before_release",
+          "pass": true
+        },
+        {
+          "name": "node_0_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "node_1_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "node_2_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "node_3_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "safe_selection_overrides_conflicting_fallback",
+          "pass": true
+        },
+        {
+          "name": "all_nodes_reject_conflicting_new_view",
+          "pass": true
+        },
+        {
+          "name": "invalid_message_does_not_advance_or_change_commit",
+          "pass": true
+        },
+        {
+          "name": "view_advanced_preserving_original_value",
+          "pass": true
+        },
+        {
+          "name": "locks_carried_before_new_round_votes",
+          "pass": true
+        },
+        {
+          "name": "previous_commits_not_cleared",
+          "pass": true
+        },
+        {
+          "name": "all_nodes_finish_original_value",
+          "pass": true
+        },
+        {
+          "name": "fixed_membership_and_ranking",
+          "pass": true
+        },
+        {
+          "name": "all_nodes_ignore_replayed_new_view",
+          "pass": true
+        },
+        {
+          "name": "no_conflicting_commit_event",
+          "pass": true
+        }
+      ],
+      "deliveries": 351,
+      "events": {
+        "COMMIT": 16,
+        "EQUIVOCATION_OBSERVED": 32,
+        "INVALID_NEW_VIEW": 16,
+        "NEW_VIEW_ACCEPTED": 16,
+        "PRE_PREPARE_SENT": 2,
+        "STALE_NEW_VIEW_IGNORED": 16
+      },
+      "groups": 4,
+      "held_old_votes": 12,
+      "nodes": 16,
+      "passed": true,
+      "stage": "locked"
+    },
+    {
+      "case": "rgg-m16-committed",
+      "checks": [
+        {
+          "name": "all_frozen_voters_have_original_lock",
+          "pass": true
+        },
+        {
+          "name": "all_nodes_committed_before_view_change",
+          "pass": true
+        },
+        {
+          "name": "node_0_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "node_1_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "node_2_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "node_3_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "safe_selection_overrides_conflicting_fallback",
+          "pass": true
+        },
+        {
+          "name": "all_nodes_reject_conflicting_new_view",
+          "pass": true
+        },
+        {
+          "name": "invalid_message_does_not_advance_or_change_commit",
+          "pass": true
+        },
+        {
+          "name": "view_advanced_preserving_original_value",
+          "pass": true
+        },
+        {
+          "name": "locks_carried_before_new_round_votes",
+          "pass": true
+        },
+        {
+          "name": "previous_commits_not_cleared",
+          "pass": true
+        },
+        {
+          "name": "all_nodes_finish_original_value",
+          "pass": true
+        },
+        {
+          "name": "fixed_membership_and_ranking",
+          "pass": true
+        },
+        {
+          "name": "all_nodes_ignore_replayed_new_view",
+          "pass": true
+        },
+        {
+          "name": "no_conflicting_commit_event",
+          "pass": true
+        }
+      ],
+      "deliveries": 411,
+      "events": {
+        "COMMIT": 32,
+        "EQUIVOCATION_OBSERVED": 32,
+        "INVALID_NEW_VIEW": 16,
+        "NEW_VIEW_ACCEPTED": 16,
+        "PRE_PREPARE_SENT": 2,
+        "STALE_NEW_VIEW_IGNORED": 16
+      },
+      "groups": 4,
+      "held_old_votes": 0,
+      "nodes": 16,
+      "passed": true,
+      "stage": "committed"
+    },
+    {
+      "case": "rgg-m20-locked",
+      "checks": [
+        {
+          "name": "all_frozen_voters_have_original_lock",
+          "pass": true
+        },
+        {
+          "name": "no_commit_before_release",
+          "pass": true
+        },
+        {
+          "name": "node_0_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "node_1_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "node_2_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "node_3_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "safe_selection_overrides_conflicting_fallback",
+          "pass": true
+        },
+        {
+          "name": "all_nodes_reject_conflicting_new_view",
+          "pass": true
+        },
+        {
+          "name": "invalid_message_does_not_advance_or_change_commit",
+          "pass": true
+        },
+        {
+          "name": "view_advanced_preserving_original_value",
+          "pass": true
+        },
+        {
+          "name": "locks_carried_before_new_round_votes",
+          "pass": true
+        },
+        {
+          "name": "previous_commits_not_cleared",
+          "pass": true
+        },
+        {
+          "name": "all_nodes_finish_original_value",
+          "pass": true
+        },
+        {
+          "name": "fixed_membership_and_ranking",
+          "pass": true
+        },
+        {
+          "name": "all_nodes_ignore_replayed_new_view",
+          "pass": true
+        },
+        {
+          "name": "no_conflicting_commit_event",
+          "pass": true
+        }
+      ],
+      "deliveries": 511,
+      "events": {
+        "COMMIT": 20,
+        "EQUIVOCATION_OBSERVED": 40,
+        "INVALID_NEW_VIEW": 20,
+        "NEW_VIEW_ACCEPTED": 20,
+        "PRE_PREPARE_SENT": 2,
+        "STALE_NEW_VIEW_IGNORED": 20
+      },
+      "groups": 4,
+      "held_old_votes": 12,
+      "nodes": 20,
+      "passed": true,
+      "stage": "locked"
+    },
+    {
+      "case": "rgg-m20-committed",
+      "checks": [
+        {
+          "name": "all_frozen_voters_have_original_lock",
+          "pass": true
+        },
+        {
+          "name": "all_nodes_committed_before_view_change",
+          "pass": true
+        },
+        {
+          "name": "node_0_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "node_1_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "node_2_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "node_3_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "safe_selection_overrides_conflicting_fallback",
+          "pass": true
+        },
+        {
+          "name": "all_nodes_reject_conflicting_new_view",
+          "pass": true
+        },
+        {
+          "name": "invalid_message_does_not_advance_or_change_commit",
+          "pass": true
+        },
+        {
+          "name": "view_advanced_preserving_original_value",
+          "pass": true
+        },
+        {
+          "name": "locks_carried_before_new_round_votes",
+          "pass": true
+        },
+        {
+          "name": "previous_commits_not_cleared",
+          "pass": true
+        },
+        {
+          "name": "all_nodes_finish_original_value",
+          "pass": true
+        },
+        {
+          "name": "fixed_membership_and_ranking",
+          "pass": true
+        },
+        {
+          "name": "all_nodes_ignore_replayed_new_view",
+          "pass": true
+        },
+        {
+          "name": "no_conflicting_commit_event",
+          "pass": true
+        }
+      ],
+      "deliveries": 587,
+      "events": {
+        "COMMIT": 40,
+        "EQUIVOCATION_OBSERVED": 40,
+        "INVALID_NEW_VIEW": 20,
+        "NEW_VIEW_ACCEPTED": 20,
+        "PRE_PREPARE_SENT": 2,
+        "STALE_NEW_VIEW_IGNORED": 20
+      },
+      "groups": 4,
+      "held_old_votes": 0,
+      "nodes": 20,
+      "passed": true,
+      "stage": "committed"
+    },
+    {
+      "case": "rgg-m24-locked",
+      "checks": [
+        {
+          "name": "all_frozen_voters_have_original_lock",
+          "pass": true
+        },
+        {
+          "name": "no_commit_before_release",
+          "pass": true
+        },
+        {
+          "name": "node_0_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "node_1_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "node_2_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "node_3_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "safe_selection_overrides_conflicting_fallback",
+          "pass": true
+        },
+        {
+          "name": "all_nodes_reject_conflicting_new_view",
+          "pass": true
+        },
+        {
+          "name": "invalid_message_does_not_advance_or_change_commit",
+          "pass": true
+        },
+        {
+          "name": "view_advanced_preserving_original_value",
+          "pass": true
+        },
+        {
+          "name": "locks_carried_before_new_round_votes",
+          "pass": true
+        },
+        {
+          "name": "previous_commits_not_cleared",
+          "pass": true
+        },
+        {
+          "name": "all_nodes_finish_original_value",
+          "pass": true
+        },
+        {
+          "name": "fixed_membership_and_ranking",
+          "pass": true
+        },
+        {
+          "name": "all_nodes_ignore_replayed_new_view",
+          "pass": true
+        },
+        {
+          "name": "no_conflicting_commit_event",
+          "pass": true
+        }
+      ],
+      "deliveries": 703,
+      "events": {
+        "COMMIT": 24,
+        "EQUIVOCATION_OBSERVED": 48,
+        "INVALID_NEW_VIEW": 24,
+        "NEW_VIEW_ACCEPTED": 24,
+        "PRE_PREPARE_SENT": 2,
+        "STALE_NEW_VIEW_IGNORED": 24
+      },
+      "groups": 4,
+      "held_old_votes": 12,
+      "nodes": 24,
+      "passed": true,
+      "stage": "locked"
+    },
+    {
+      "case": "rgg-m24-committed",
+      "checks": [
+        {
+          "name": "all_frozen_voters_have_original_lock",
+          "pass": true
+        },
+        {
+          "name": "all_nodes_committed_before_view_change",
+          "pass": true
+        },
+        {
+          "name": "node_0_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "node_1_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "node_2_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "node_3_requests_view_1",
+          "pass": true
+        },
+        {
+          "name": "safe_selection_overrides_conflicting_fallback",
+          "pass": true
+        },
+        {
+          "name": "all_nodes_reject_conflicting_new_view",
+          "pass": true
+        },
+        {
+          "name": "invalid_message_does_not_advance_or_change_commit",
+          "pass": true
+        },
+        {
+          "name": "view_advanced_preserving_original_value",
+          "pass": true
+        },
+        {
+          "name": "locks_carried_before_new_round_votes",
+          "pass": true
+        },
+        {
+          "name": "previous_commits_not_cleared",
+          "pass": true
+        },
+        {
+          "name": "all_nodes_finish_original_value",
+          "pass": true
+        },
+        {
+          "name": "fixed_membership_and_ranking",
+          "pass": true
+        },
+        {
+          "name": "all_nodes_ignore_replayed_new_view",
+          "pass": true
+        },
+        {
+          "name": "no_conflicting_commit_event",
+          "pass": true
+        }
+      ],
+      "deliveries": 795,
+      "events": {
+        "COMMIT": 48,
+        "EQUIVOCATION_OBSERVED": 48,
+        "INVALID_NEW_VIEW": 24,
+        "NEW_VIEW_ACCEPTED": 24,
+        "PRE_PREPARE_SENT": 2,
+        "STALE_NEW_VIEW_IGNORED": 24
+      },
+      "groups": 4,
+      "held_old_votes": 0,
+      "nodes": 24,
+      "passed": true,
+      "stage": "committed"
+    }
+  ]
+}

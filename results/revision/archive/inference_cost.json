@@ -1,0 +1,35 @@
+{
+  "source": "archived_model_score_runs_not_new_GPU_measurements",
+  "judges": {
+    "qwen": {
+      "n": 513,
+      "mean_seconds": 1.1632663021442495,
+      "p50_seconds": 0.798528,
+      "p95_seconds": 2.9189363999999984,
+      "sum_seconds": 596.755613,
+      "peak_vram_gib_median": 17.3676,
+      "peak_vram_gib_max": 25.1914
+    },
+    "safework": {
+      "n": 513,
+      "mean_seconds": 6.094878904483432,
+      "p50_seconds": 5.445442,
+      "p95_seconds": 14.659341399999995,
+      "sum_seconds": 3126.6728780000003,
+      "peak_vram_gib_median": 16.3026,
+      "peak_vram_gib_max": 18.8625
+    },
+    "minicpm": {
+      "n": 513,
+      "mean_seconds": 0.898535857699805,
+      "p50_seconds": 0.905476,
+      "p95_seconds": 1.7499147999999998,
+      "sum_seconds": 460.948895,
+      "peak_vram_gib_median": 18.4969,
+      "peak_vram_gib_max": 20.3216
+    }
+  },
+  "derived_serial_mean_seconds": 8.156681064327486,
+  "ideal_independent_parallel_max_mean_seconds": 6.1693737563352835,
+  "parallel_warning": "derived_lower_bound_for_ideal_parallel_latency_not_measured_parallel_throughput"
+}

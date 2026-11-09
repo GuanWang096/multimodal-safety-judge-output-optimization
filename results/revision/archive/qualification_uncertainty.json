@@ -1,0 +1,79 @@
+{
+  "status": "completed_pending_audit",
+  "role": "engineering_interface_fidelity_not_accuracy",
+  "limitations": [
+    "Wilson assumes independent records and is nominal only",
+    "bootstrap groups only observed exact conversation/image hashes within the 100 engineering records; not full-source perceptual components",
+    "does not bound actual direct-hard majority disagreement on the distinct 513-record set"
+  ],
+  "results": {
+    "qwen": {
+      "n": 100,
+      "agree_count": 99,
+      "agreement": 0.99,
+      "nominal_iid_wilson95": [
+        0.9455138038212946,
+        0.9982325679358593
+      ],
+      "known_exact_identity_group_bootstrap95": [
+        0.9705882352941176,
+        1.0
+      ],
+      "known_exact_identity_component_count": 99,
+      "component_sizes": {
+        "1": 98,
+        "2": 1
+      },
+      "mismatched_sample_ids": [
+        "mmds:train:297:296"
+      ]
+    },
+    "safework": {
+      "n": 100,
+      "agree_count": 97,
+      "agreement": 0.97,
+      "nominal_iid_wilson95": [
+        0.9154806357094724,
+        0.9897454759759611
+      ],
+      "known_exact_identity_group_bootstrap95": [
+        0.93,
+        1.0
+      ],
+      "known_exact_identity_component_count": 99,
+      "component_sizes": {
+        "1": 98,
+        "2": 1
+      },
+      "mismatched_sample_ids": [
+        "mmds:train:1299:1298",
+        "mmds:train:838:837",
+        "mmds:train:43:42"
+      ]
+    },
+    "minicpm": {
+      "n": 100,
+      "agree_count": 96,
+      "agreement": 0.96,
+      "nominal_iid_wilson95": [
+        0.9016292856411208,
+        0.9843366960084523
+      ],
+      "known_exact_identity_group_bootstrap95": [
+        0.9191919191919192,
+        0.9900990099009901
+      ],
+      "known_exact_identity_component_count": 99,
+      "component_sizes": {
+        "1": 98,
+        "2": 1
+      },
+      "mismatched_sample_ids": [
+        "mmds:train:606:605",
+        "mmds:train:1359:1358",
+        "mmds:train:1291:1290",
+        "mmds:train:374:373"
+      ]
+    }
+  }
+}

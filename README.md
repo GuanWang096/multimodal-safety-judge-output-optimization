@@ -1,20 +1,5 @@
 # Optimizing Multimodal Safety Judge Outputs for Auditable Enterprise Model Acceptance
 
-Article: **Optimizing Multimodal Safety Judge Outputs for Auditable Enterprise Model Acceptance**  
-Journal: **Multimedia Systems**  
-Repository snapshot: **2026-09-02**
-
-Authors: Jinxin Zhang, Guan Wang, Zhipeng Ruan, Changsheng Wan, Yunhao Xia, and Weichen Lu.
-
-Affiliations:
-
-1. School of Cyber Science and Engineering, Southeast University, Nanjing, China.
-2. ZTE Corporation, Shenzhen, China.
-
-Corresponding author: Guan Wang, `guan.wang@seu.edu.cn`.
-
-Canonical repository: <https://github.com/GuanWang096/multimodal-safety-judge-output-optimization>
-
 ## Scope
 
 This repository contains the code and non-proprietary artifacts needed to inspect and reproduce the article's output-layer analysis from archived judge scores. It also contains the evidence-record, Hyperledger Fabric, RGG-PBFT, capacity-analysis, and exploratory sequential reputation-update code used by the reported experiments.
